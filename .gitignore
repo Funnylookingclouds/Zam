@@ -2,3 +2,7 @@ node_modules/
 temp/*
 !temp/.gitkeep
 video/public/voiceover.mp3
+# Local secrets written by `elevenlabs onboard`
+/.env.local
+.env
+.env.local
