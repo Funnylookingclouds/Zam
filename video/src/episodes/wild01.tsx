@@ -6,7 +6,7 @@ import { P, HAND, clamp, onTwos, PaperCard, Slap, Stamp } from "../presenter/kit
 import { ComicBurst, Scoreboard, VersusCard, ReplayOverlay } from "../presenter/banana";
 import { FONT } from "../theme";
 import { Mascot, mouthOpen, type Mood, type Who } from "../mascots/Gang";
-import { BoardFoot, Caption, Chip, Confetti, Header, Ice, IceWipe, Lineup, Logo, PaperGoalie, RinkDiagram, buildSegs, type W } from "../zam/common";
+import { BoardFoot, Caption, Chip, Confetti, HalfRink, Header, Ice, IceWipe, Lineup, Logo, PaperGoalie, Play, RinkDiagram, buildSegs, type Key, type Track, type W } from "../zam/common";
 
 export const FPS = 60;
 const WORDS = words as W[];
@@ -62,6 +62,39 @@ const NET = ({ s = 300 }: { s?: number }) => (
   </svg>
 );
 
+
+// Five mini-recreations, one per scoring type, timed to Helmy's list. Paths follow the recaps where known
+// (PP: shot from above the circle · SH: puck between Sauve's legs · PS: Terreri's stick thrown at the puck); others approximate.
+const PIT = { c1: "#111", c2: "#fcb514" }, NJD = { c1: "#c8102e", c2: "#1b5e20" };
+const LemieuxPlays: React.FC<{ t: number }> = ({ t }) => {
+  const t0 = S("h_lemieux").start - 0.1;
+  const ways = ["even", "power", "shorthanded", "penalty", "empty"].map((k) => at("h_lemieux", k) - t0);
+  const ends = [...ways.slice(1), S("h_lemieux").end - t0 + 0.4];
+  const i = Math.max(0, ways.filter((w) => t >= w - 0.05).length - 1);
+  const a = ways[i], d = ends[i] - ways[i];
+  const u = (x: number) => a + x * d;
+  const NET: [number, number] = [190, 46];
+  const G = (keys?: Key[]): Track => ({ id: "g", ...NJD, n: "", goalie: true, s: 46, keys: keys ?? [[0, 190, 74]] });
+  const L = (keys: Key[]): Track => ({ id: "l", ...PIT, n: 66, s: 52, keys });
+  let tracks: Track[] = []; let puck: Key[] = []; let label = ""; let empty = false;
+  if (i === 0) { label = "EVEN STRENGTH"; tracks = [G(), L([[u(0), 260, 310], [u(0.55), 222, 150]]), { id: "d", ...NJD, n: "", s: 44, keys: [[u(0), 150, 200], [u(0.6), 175, 170]] }]; puck = [[u(0), 250, 300], [u(0.55), 212, 142], [u(0.85), ...NET]]; }
+  if (i === 1) { label = "POWER PLAY"; tracks = [G(), { id: "m", ...PIT, n: "", s: 44, keys: [[u(0), 300, 250]] }, L([[u(0), 95, 240]])]; puck = [[u(0), 290, 245], [u(0.3), 104, 232], [u(0.42), 104, 232], [u(0.85), ...NET]]; }
+  if (i === 2) { label = "SHORTHANDED"; tracks = [G([[u(0), 190, 74], [u(0.6), 190, 80]]), L([[u(0), 200, 300], [u(0.55), 192, 128]])]; puck = [[u(0), 205, 292], [u(0.55), 196, 120], [u(0.9), ...NET]]; }
+  if (i === 3) { label = "PENALTY SHOT"; tracks = [G(), { id: "st", ...NJD, n: "", kind: "stick", keys: [[u(0), 200, 80], [u(0.28), 282, 160]], hideAfter: u(0.4) }, L([[u(0.3), 190, 300], [u(0.72), 192, 132]])]; puck = [[u(0), 285, 165], [u(0.3), 190, 292], [u(0.72), 196, 124], [u(0.9), ...NET]]; }
+  if (i === 4) { label = "EMPTY NET · 19:59"; empty = true; tracks = [L([[u(0), 190, 300], [u(0.2), 190, 285]])]; puck = [[u(0), 190, 292], [u(0.2), 190, 277], [u(0.7), ...NET]]; }
+  const scored = t >= puck[puck.length - 1][0];
+  return (
+    <div style={{ position: "relative", width: 380, height: 430 }}>
+      <HalfRink emptyNet={empty}>
+        <Play t={t} tracks={tracks} puck={puck} trailFrom={puck[0][0]} />
+        {scored && <div style={{ position: "absolute", left: 166, top: 2, width: 48, height: 26, borderRadius: 6, background: "#ff3b30", boxShadow: "0 0 34px 14px #ff3b3088", border: `3px solid ${P.ink}` }} />}
+      </HalfRink>
+      <div style={{ position: "absolute", left: 14, top: 336, padding: "2px 12px", background: P.red, color: "#fff", fontSize: 26, fontWeight: 900, letterSpacing: 1 }}>{i + 1}/5 · {label}</div>
+      <div style={{ position: "absolute", left: 12, top: 404, fontFamily: HAND, fontSize: 26, color: P.muted }}>recreation · paths approx.</div>
+    </div>
+  );
+};
+
 const LemieuxBoard: React.FC = () => {
   const f = useCurrentFrame();
   const from = SC[1].from;
@@ -70,10 +103,12 @@ const LemieuxBoard: React.FC = () => {
   const scored = pucks.filter((p) => f >= p + 10).length;
   const ways: [string, string][] = [["Even strength", "even"], ["Power play", "power"], ["Shorthanded", "shorthanded"], ["Penalty shot", "penalty"], ["Empty net", "empty"]];
   const flash = pucks.some((p) => f >= p + 10 && f < p + 18);
+  const hB = lf(from, S("h_lemieux").start - 0.1);
   return (
     <PaperCard w={960} h={740} seed="lem" tag={TAG}>
       <Header title="MARIO LEMIEUX" sub="Dec 31, 1988 · Penguins 8–6 Devils" />
-      <div style={{ position: "absolute", left: 0, top: 150, width: 380, height: 380 }}>
+      {f >= hB && <div style={{ position: "absolute", left: 0, top: 140, opacity: interpolate(f, [hB, hB + 6], [0, 1], clamp) }}><LemieuxPlays t={(f - hB) / FPS} /></div>}
+      <div style={{ position: "absolute", left: 0, top: 150, width: 380, height: 380, opacity: f >= hB ? 0 : 1 }}>
         <div style={{ position: "absolute", left: 30, top: 60 }}><NET s={320} /></div>
         {flash && <div style={{ position: "absolute", left: 160, top: 10, width: 60, height: 40, borderRadius: 10, background: "#ff3b30", boxShadow: "0 0 50px 20px #ff3b3088", border: `4px solid ${P.ink}` }} />}
         {pucks.map((p, i) => {
@@ -171,34 +206,40 @@ const RoastBoard: React.FC = () => {
   );
 };
 
+// Recreation per recaps: VAN goalie pulled, puck chipped into BOS zone but short of the corner, Ullmark leaves
+// his crease, lifts a high wrist shot over the traffic, it lands past the blue line in the slot and slides in (0:48 left).
+const BOS = { c1: "#111", c2: "#fcb514" }, VAN = { c1: "#00205b", c2: "#00843d" };
 const UllmarkBoard: React.FC = () => {
   const f = useCurrentFrame();
   const from = SC[5].from;
-  const s0 = lf(from, at("z_ullmark", "fires"));
-  const g = lf(from, at("z_ullmark", "goal", 1));
-  const k = interpolate(f, [s0, g], [0, 1], { ...clamp, easing: Easing.inOut(Easing.quad) });
-  const x0 = 110, x1 = 812, y = 170;
-  const px = x0 + (x1 - x0) * k;
-  const lit = f >= g && f < g + 50 && Math.floor((f - g) / 6) % 2 === 0;
+  const T = (news: number) => news - from; // news time → local seconds
+  const t = f / FPS;
+  const fire = T(at("z_ullmark", "fires")), g = T(at("z_ullmark", "goal", 1));
+  const chip = fire - 1.1;
+  const van: Track[] = [[300, 80], [250, 250], [200, 120], [330, 200], [380, 280], [420, 130]].map(([x, y], k) => ({ id: `v${k}`, ...VAN, n: "", s: 44, keys: [[0, x + 120, y], [chip, x, y], [fire, x - 20, y + (k % 2 ? 10 : -10)], [g, x + 90, y]] as Key[] }));
+  const bos: Track[] = [[220, 180], [300, 240], [260, 100]].map(([x, y], k) => ({ id: `b${k}`, ...BOS, n: "", s: 44, keys: [[0, x, y], [fire, x - 30, y], [g, x + 60, y]] as Key[] }));
+  const ull: Track = { id: "u", ...BOS, n: 35, goalie: true, s: 62, keys: [[0, 92, 170], [chip + 0.3, 92, 170], [fire - 0.15, 138, 246], [g, 132, 236]] };
+  const puck: Key[] = [[0, 520, 120], [chip, 480, 110], [chip + 0.75, 150, 258], [fire, 150, 254], [fire + (g - fire) * 0.45, 470, 205, 135], [fire + (g - fire) * 0.72, 690, 178, 0], [g, 826, 170, 0]];
+  const lit = f >= F(g) && f < F(g) + 50 && Math.floor((f - F(g)) / 6) % 2 === 0;
+  const scored = t >= g;
   return (
     <PaperCard w={960} h={740} seed="ull" tag={TAG}>
-      <Header title="LINUS ULLMARK" sub="Feb 25, 2023 · Bruins 3–1 Canucks" accent={P.teal} />
+      <Header title="LINUS ULLMARK" sub="Feb 25, 2023 · at Vancouver" accent={P.teal} />
+      <div style={{ position: "absolute", right: 0, top: 70, display: "flex", alignItems: "center", gap: 10, padding: "8px 14px", background: P.ink, borderRadius: 12, border: `4px solid ${P.mustard}`, color: "#fff", fontWeight: 900, fontSize: 30 }}>
+        BOS <span style={{ color: "#f7d84a", fontSize: 40 }}>{scored ? 3 : 2}</span> – <span style={{ color: "#f7d84a", fontSize: 40 }}>1</span> VAN
+        <span style={{ marginLeft: 8, padding: "2px 8px", background: P.red, borderRadius: 6, fontSize: 24 }}>0:48 · 3RD</span>
+      </div>
       <div style={{ position: "absolute", left: 0, top: 150 }}>
         <RinkDiagram w={890} h={340}>
-          <div style={{ position: "absolute", left: 40, top: 130 }}><Chip c1="#111" c2="#fcb514" n={35} s={80} goalie /></div>
-          <div style={{ position: "absolute", left: 795, top: 135, width: 36, height: 70, border: `5px dashed ${P.red}`, borderRadius: 6 }} />
-          <div style={{ position: "absolute", left: 745, top: 210, fontFamily: HAND, fontSize: 32, color: P.red, fontWeight: 700 }}>empty net!</div>
-          <svg width={890} height={340} style={{ position: "absolute", left: 0, top: 0 }}>
-            <path d={`M${x0 + 20} ${y} L${px} ${y}`} stroke={P.mustard} strokeWidth={8} strokeDasharray="20 14" />
-          </svg>
-          {f >= s0 && <div style={{ position: "absolute", left: px - 16, top: y - 10, width: 34, height: 20, borderRadius: "50%", background: "#111", border: `3px solid ${P.ink}` }} />}
-          {lit && <div style={{ position: "absolute", left: 790, top: 70, width: 46, height: 34, borderRadius: 8, background: "#ff3b30", boxShadow: "0 0 44px 18px #ff3b3088", border: `4px solid ${P.ink}` }} />}
+          <div style={{ position: "absolute", left: 798, top: 120, fontFamily: HAND, fontSize: 30, color: P.red, fontWeight: 700 }}>empty!</div>
+          <Play t={t} tracks={[...van, ...bos, ull]} puck={puck} trailFrom={fire} />
+          {lit && <div style={{ position: "absolute", left: 808, top: 76, width: 40, height: 30, borderRadius: 8, background: "#ff3b30", boxShadow: "0 0 44px 18px #ff3b3088", border: `4px solid ${P.ink}` }} />}
         </RinkDiagram>
       </div>
-      <Sequence from={g + 30} layout="none"><div style={{ position: "absolute", left: 0, top: 170, width: 890, height: 340 }}><ReplayOverlay cx={815} cy={150} /></div></Sequence>
-      <div style={{ position: "absolute", left: 20, top: 505, fontFamily: HAND, fontSize: 40, color: P.ink }}>goalie shot · whole rink · into the empty net</div>
+      <Sequence from={F(g) + 30} layout="none"><div style={{ position: "absolute", left: 0, top: 150, width: 890, height: 340 }}><ReplayOverlay cx={826} cy={170} /></div></Sequence>
+      <div style={{ position: "absolute", left: 20, top: 505, fontFamily: HAND, fontSize: 38, color: P.ink }}>chip-in → Ullmark lifts it over everyone → empty net</div>
       <div style={{ position: "absolute", left: 430, top: 560 }}><Stamp color={P.teal} at={lf(from, at("p_ullmark", "took"))} rot={-4} size={38}>FIRST GOALIE GOAL SINCE 2020</Stamp></div>
-      <BoardFoot source="NHL.com · CBC" />
+      <BoardFoot source="NHL.com · CBC · ESPN (recreation)" />
     </PaperCard>
   );
 };

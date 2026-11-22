@@ -192,3 +192,61 @@ export const Header: React.FC<{ title: string; sub: string; accent?: string }> =
     <div style={{ fontFamily: HAND, fontSize: 46, color: accent, marginTop: 4 }}>{sub}</div>
   </div>
 );
+
+// ---------------------------------------------------------------------------
+// Play engine – paper chips moving along timed paths (local seconds), puck with height + trail.
+// ---------------------------------------------------------------------------
+export type Key = [number, number, number, number?]; // [t, x, y, z]
+export type Track = { id: string; c1: string; c2: string; n: string | number; goalie?: boolean; s?: number; keys: Key[]; kind?: "chip" | "stick"; hideAfter?: number };
+export const sample = (keys: Key[], t: number): { x: number; y: number; z: number } => {
+  if (t <= keys[0][0]) return { x: keys[0][1], y: keys[0][2], z: keys[0][3] ?? 0 };
+  for (let i = 1; i < keys.length; i++) {
+    const [t1, x1, y1, z1 = 0] = keys[i];
+    const [t0, x0, y0, z0 = 0] = keys[i - 1];
+    if (t <= t1) { const u = (t - t0) / Math.max(1e-6, t1 - t0); const e = u * u * (3 - 2 * u) * 0.35 + u * 0.65; return { x: x0 + (x1 - x0) * e, y: y0 + (y1 - y0) * e, z: z0 + (z1 - z0) * e }; }
+  }
+  const k = keys[keys.length - 1];
+  return { x: k[1], y: k[2], z: k[3] ?? 0 };
+};
+export const Play: React.FC<{ t: number; tracks: Track[]; puck?: Key[]; trailFrom?: number }> = ({ t, tracks, puck, trailFrom }) => {
+  const tt = onTwos(Math.round(t * 60)) / 60; // stop-motion on twos
+  const pk = puck ? sample(puck, tt) : null;
+  const trail = puck && trailFrom !== undefined && tt > trailFrom ? [...Array(24)].map((_, i) => sample(puck, trailFrom + ((tt - trailFrom) * i) / 23)) : [];
+  return (
+    <>
+      {trail.length > 1 && (
+        <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>
+          <path d={"M" + trail.map((p) => `${p.x} ${p.y - p.z}`).join(" L")} stroke={P.mustard} strokeWidth={6} strokeDasharray="14 10" fill="none" strokeLinecap="round" />
+        </svg>
+      )}
+      {tracks.map((tr) => {
+        if (tr.hideAfter !== undefined && tt > tr.hideAfter) return null;
+        const p = sample(tr.keys, tt);
+        const s = tr.s ?? 54;
+        if (tr.kind === "stick") return <div key={tr.id} style={{ position: "absolute", left: p.x - 40, top: p.y - 5, width: 80, height: 10, background: "#a8733a", border: `3px solid ${P.ink}`, borderRadius: 4, transform: `rotate(${tt * 900}deg)` }} />;
+        return <div key={tr.id} style={{ position: "absolute", left: p.x - s / 2, top: p.y - s / 2 - p.z }}><Chip c1={tr.c1} c2={tr.c2} n={tr.n} s={s} goalie={tr.goalie} /></div>;
+      })}
+      {pk && (
+        <>
+          {pk.z > 2 && <div style={{ position: "absolute", left: pk.x - 12, top: pk.y - 5, width: 24, height: 10, borderRadius: "50%", background: "#0003" }} />}
+          <div style={{ position: "absolute", left: pk.x - 13 * (1 + pk.z / 90), top: pk.y - 8 * (1 + pk.z / 90) - pk.z, width: 26 * (1 + pk.z / 90), height: 16 * (1 + pk.z / 90), borderRadius: "50%", background: "#111", border: `3px solid ${P.ink}` }} />
+        </>
+      )}
+    </>
+  );
+};
+
+/** Vertical half-rink (net at top) for close-up recreations. */
+export const HalfRink: React.FC<{ w?: number; h?: number; emptyNet?: boolean; children?: React.ReactNode }> = ({ w = 380, h = 400, emptyNet, children }) => (
+  <div style={{ position: "relative", width: w, height: h }}>
+    <svg width={w} height={h} style={{ position: "absolute" }}>
+      <path d={`M4 ${h - 4} V90 Q4 4 90 4 H${w - 90} Q${w - 4} 4 ${w - 4} 90 V${h - 4} Z`} fill="#f4fbff" stroke={P.ink} strokeWidth={6} />
+      <line x1={4} y1={56} x2={w - 4} y2={56} stroke="#d94b3b" strokeWidth={3} />
+      <path d={`M${w / 2 - 34} 56 a 34 34 0 0 0 68 0`} fill="#bfe3ff" stroke="#d94b3b" strokeWidth={3} />
+      <rect x={w / 2 - 24} y={36} width={48} height={20} fill={emptyNet ? "#fff" : "#fff"} stroke="#d94b3b" strokeWidth={5} />
+      {[0.26, 0.74].map((k) => <g key={k}><circle cx={w * k} cy={160} r={56} fill="none" stroke="#d94b3b" strokeWidth={3} /><circle cx={w * k} cy={160} r={5} fill="#d94b3b" /></g>)}
+      <rect x={4} y={h - 70} width={w - 8} height={10} fill="#3b82f6" opacity={0.85} />
+    </svg>
+    {children}
+  </div>
+);
