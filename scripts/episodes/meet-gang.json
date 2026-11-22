@@ -1,0 +1,18 @@
+{
+  "id": "meet-gang",
+  "language": "en",
+  "voice_id": "wGkprrTXgBM5EC3Znt6U",
+  "model_id": "eleven_multilingual_v2",
+  "speed": 1.08,
+  "voice_gap": 0.3,
+  "segments": [
+    {"id": "zam1", "tts": "Hey hey! I'm Zam – I keep the ice fresh and the highlights fresher!"},
+    {"id": "pucky", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "I'm Pucky. I go top shelf. Every. Single. Time."},
+    {"id": "biscuit", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Biscuit. Goalie. And no, you don't."},
+    {"id": "helmy", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Helmy here. Technically, he scores on eleven percent of shots."},
+    {"id": "clubby", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Clubby. Back in my day, pucks knew their place."},
+    {"id": "zam2", "tts": "The NHL week – in under a minute!"}
+  ],
+  "display_map": {"eleven": "11", "percent": "%"},
+  "keywords": ["zam", "fresh", "fresher", "pucky", "top", "shelf", "biscuit", "goalie", "no", "helmy", "eleven", "percent", "clubby", "place", "nhl", "minute"]
+}

@@ -1,9 +1,11 @@
 import React from "react";
-import { Still } from "remotion";
+import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
+import { MeetGang, MEET_FRAMES, FPS } from "./MeetGang";
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="MeetGang" component={MeetGang} durationInFrames={MEET_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
 );

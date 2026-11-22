@@ -1,0 +1,434 @@
+[
+ {
+  "word": "Hey",
+  "display": "Hey",
+  "start": 0.058,
+  "end": 0.174,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "hey!",
+  "display": "hey!",
+  "start": 0.244,
+  "end": 0.488,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 0.522,
+  "end": 0.662,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "Zam",
+  "display": "Zam",
+  "start": 0.731,
+  "end": 1.08,
+  "segment": "zam1",
+  "keyword": true
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 1.207,
+  "end": 1.242,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "keep",
+  "display": "keep",
+  "start": 1.324,
+  "end": 1.509,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 1.556,
+  "end": 1.625,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 1.683,
+  "end": 1.858,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "fresh",
+  "display": "fresh",
+  "start": 1.904,
+  "end": 2.171,
+  "segment": "zam1",
+  "keyword": true
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 2.206,
+  "end": 2.287,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 2.322,
+  "end": 2.392,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "highlights",
+  "display": "highlights",
+  "start": 2.426,
+  "end": 2.891,
+  "segment": "zam1",
+  "keyword": false
+ },
+ {
+  "word": "fresher!",
+  "display": "fresher!",
+  "start": 2.961,
+  "end": 3.483,
+  "segment": "zam1",
+  "keyword": true
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 4.05,
+  "end": 4.212,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "Pucky.",
+  "display": "Pucky.",
+  "start": 4.282,
+  "end": 4.642,
+  "segment": "pucky",
+  "keyword": true
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 4.677,
+  "end": 4.712,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "go",
+  "display": "go",
+  "start": 4.781,
+  "end": 4.909,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "top",
+  "display": "top",
+  "start": 4.979,
+  "end": 5.188,
+  "segment": "pucky",
+  "keyword": true
+ },
+ {
+  "word": "shelf.",
+  "display": "shelf.",
+  "start": 5.246,
+  "end": 5.756,
+  "segment": "pucky",
+  "keyword": true
+ },
+ {
+  "word": "Every.",
+  "display": "Every.",
+  "start": 5.896,
+  "end": 6.395,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "Single.",
+  "display": "Single.",
+  "start": 6.592,
+  "end": 7.092,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "Time.",
+  "display": "Time.",
+  "start": 7.161,
+  "end": 7.684,
+  "segment": "pucky",
+  "keyword": false
+ },
+ {
+  "word": "Biscuit.",
+  "display": "Biscuit.",
+  "start": 8.286,
+  "end": 8.727,
+  "segment": "biscuit",
+  "keyword": true
+ },
+ {
+  "word": "Goalie.",
+  "display": "Goalie.",
+  "start": 8.773,
+  "end": 9.261,
+  "segment": "biscuit",
+  "keyword": true
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 9.296,
+  "end": 9.435,
+  "segment": "biscuit",
+  "keyword": false
+ },
+ {
+  "word": "no,",
+  "display": "no,",
+  "start": 9.505,
+  "end": 9.737,
+  "segment": "biscuit",
+  "keyword": true
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 9.783,
+  "end": 9.876,
+  "segment": "biscuit",
+  "keyword": false
+ },
+ {
+  "word": "don't.",
+  "display": "don't.",
+  "start": 9.946,
+  "end": 10.271,
+  "segment": "biscuit",
+  "keyword": false
+ },
+ {
+  "word": "Helmy",
+  "display": "Helmy",
+  "start": 10.862,
+  "end": 11.175,
+  "segment": "helmy",
+  "keyword": true
+ },
+ {
+  "word": "here.",
+  "display": "here.",
+  "start": 11.245,
+  "end": 11.558,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "Technically,",
+  "display": "Technically,",
+  "start": 12.034,
+  "end": 12.615,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "he",
+  "display": "he",
+  "start": 12.638,
+  "end": 12.708,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "scores",
+  "display": "scores",
+  "start": 12.766,
+  "end": 13.137,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "on",
+  "display": "on",
+  "start": 13.195,
+  "end": 13.346,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "eleven",
+  "display": "11",
+  "start": 13.416,
+  "end": 13.741,
+  "segment": "helmy",
+  "keyword": true
+ },
+ {
+  "word": "percent",
+  "display": "%",
+  "start": 13.787,
+  "end": 14.101,
+  "segment": "helmy",
+  "keyword": true
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 14.147,
+  "end": 14.194,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "shots.",
+  "display": "shots.",
+  "start": 14.263,
+  "end": 14.681,
+  "segment": "helmy",
+  "keyword": false
+ },
+ {
+  "word": "Clubby.",
+  "display": "Clubby.",
+  "start": 15.283,
+  "end": 15.724,
+  "segment": "clubby",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 15.771,
+  "end": 16.003,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 16.038,
+  "end": 16.096,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 16.154,
+  "end": 16.27,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 16.34,
+  "end": 16.595,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "pucks",
+  "display": "pucks",
+  "start": 16.653,
+  "end": 16.932,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "knew",
+  "display": "knew",
+  "start": 16.966,
+  "end": 17.141,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "their",
+  "display": "their",
+  "start": 17.187,
+  "end": 17.361,
+  "segment": "clubby",
+  "keyword": false
+ },
+ {
+  "word": "place.",
+  "display": "place.",
+  "start": 17.431,
+  "end": 17.872,
+  "segment": "clubby",
+  "keyword": true
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 18.45,
+  "end": 18.543,
+  "segment": "zam2",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 18.601,
+  "end": 18.938,
+  "segment": "zam2",
+  "keyword": true
+ },
+ {
+  "word": "week",
+  "display": "week",
+  "start": 18.996,
+  "end": 19.217,
+  "segment": "zam2",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 19.344,
+  "end": 19.449,
+  "segment": "zam2",
+  "keyword": false
+ },
+ {
+  "word": "under",
+  "display": "under",
+  "start": 19.519,
+  "end": 19.716,
+  "segment": "zam2",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 19.762,
+  "end": 19.786,
+  "segment": "zam2",
+  "keyword": false
+ },
+ {
+  "word": "minute!",
+  "display": "minute!",
+  "start": 19.832,
+  "end": 20.192,
+  "segment": "zam2",
+  "keyword": true
+ }
+]
