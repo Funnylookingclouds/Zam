@@ -34,7 +34,13 @@ Original sketch: `hockey_mascot_ideas.png` (from AI_weekly `output/proto/`), fir
 * **Running pairs:** Pucky vs Biscuit (shooter vs goalie roasts), Pucky & Clubby (stick and puck – partners who bicker), Helmy vs Clubby (analytics vs "eye test"), Zam the naive peacemaker.
 * **Implementation:** code-drawn in Remotion (pattern: AI_weekly `video/src/presenter/Bouncy.tsx`), one component per mascot in `video/src/mascots/`. Lip-sync from word timestamps, squash-and-stretch on every word, bigger hop + ink doodles ("!", "?!") on keywords, paper-sticker white border, stop-motion on twos.
 * **Moods:** `talk`, `wow`, `laugh`, `grumpy`, `smug` (Pucky), `sad` (Biscuit after a goal), `celebrate` (confetti). Set per plate.
-* **Voices (ElevenLabs, per-segment `voice_id`):** Zam = TBD, Pucky = TBD, Biscuit = TBD, Helmy = TBD, Clubby = TBD (pick from generated samples; record the IDs here once approved).
+* **Voices (ElevenLabs, per-segment `voice_id`, model `eleven_multilingual_v2`) – approved:**
+  * Zam = **Gus** (natural goofy best friend) `wGkprrTXgBM5EC3Znt6U`
+  * Pucky = **Little Dude II** (high-pitched, mischievous cartoon) `fBD19tfE58bkETeiwUoC`
+  * Biscuit = **Fin** (old sailor, gruff) `D38z5RcWu1voky8WS1ja`
+  * Helmy = **Dr. Quibble** (nasal nerdy cartoon scientist) `RDSy0QN68yhrjuOgqzQ4`
+  * Clubby = **Matthew Schmitz** (gravelly, weathered) `Q4oILuo4P8VeXtE6FMLI`
+  * Sample settings: stability 0.35, similarity 0.8, style 0.45, speaker boost, speed 1.08. Samples in `output/voice_samples_v2/` (A = approved).
 * **Recurring segments (optional, for series recognition):** "Pucky's Snipe of the Week", "Biscuit's Save of the Week", "Zam's Clean Sheet" (shutout), "Helmy's Number of the Week", "Clubby's Old-School Hit of the Week".
 
 ## 4. Workflow (step by step)
