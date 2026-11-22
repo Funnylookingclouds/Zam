@@ -1,0 +1,26 @@
+{
+  "id": "wild-01",
+  "language": "en",
+  "voice_id": "wGkprrTXgBM5EC3Znt6U",
+  "model_id": "eleven_multilingual_v2",
+  "speed": 1.1,
+  "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "Hockey's wildest moments – any year, any era. Let's go!"},
+    {"id": "p_lemieux", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Mario Lemieux, 1988. Five goals. Five different ways!"},
+    {"id": "h_lemieux", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Even strength, power play, shorthanded, penalty shot, empty net. Never done before or since."},
+    {"id": "b_lemieux", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Five?! That goalie needs a hug."},
+    {"id": "z_holt", "tts": "Randy Holt, 1979. Sixty-seven penalty minutes in one game!"},
+    {"id": "c_holt", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "All in the first period. Now that's efficient."},
+    {"id": "z_fight", "tts": "1997, Detroit versus Colorado. Even the goalies fought!"},
+    {"id": "b_fight", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Patrick Roy and Mike Vernon. Masks off, gloves off. Respect."},
+    {"id": "p_roast", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Biscuit, you lose fights to the ice machine."},
+    {"id": "z_ullmark", "tts": "Hey! And in 2023, Linus Ullmark – a goalie – fires it down the whole rink. Goal!"},
+    {"id": "b_ullmark", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Finally! Goalies score too!"},
+    {"id": "p_ullmark", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Took you guys long enough."},
+    {"id": "h_joke", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fun fact: pucks are frozen before games."},
+    {"id": "p_joke", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "That's why I'm so cool!"}
+  ],
+  "display_map": {"sixty-seven": "67", "sixtyseven": "67"},
+  "keywords": ["wildest", "lemieux", "1988", "five", "never", "hug", "randy", "holt", "1979", "sixty-seven", "sixtyseven", "first", "efficient", "1997", "detroit", "colorado", "goalies", "roy", "vernon", "respect", "ice", "2023", "linus", "ullmark", "goal", "finally", "frozen", "cool"]
+}

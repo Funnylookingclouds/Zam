@@ -9,7 +9,7 @@ import { P, onTwos } from "../presenter/kit";
 
 export type Who = "zam" | "pucky" | "biscuit" | "helmy" | "clubby";
 export type Mood = "talk" | "wow" | "laugh" | "grumpy" | "smug";
-export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood };
+export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood; shades?: boolean };
 
 export const GANG: Record<Who, { name: string; role: string; accent: string; voice: string }> = {
   zam: { name: "Zam", role: "the host · ice machine", accent: "#3b82f6", voice: "wGkprrTXgBM5EC3Znt6U" },
@@ -76,7 +76,13 @@ const Pucky: React.FC<{ p: Pose }> = ({ p }) => (
     <ellipse cx={0} cy={-40} rx={112} ry={42} fill="#2b2b2b" stroke={INK} strokeWidth={5} />
     <rect x={-112} y={-64} width={224} height={18} fill={P.red} stroke={INK} strokeWidth={3} />
     <path d="M100 -58 L138 -84 M100 -52 L142 -62" stroke={P.red} strokeWidth={9} strokeLinecap="round" />
-    <Eyes y={-6} p={p} brow={p.mood === "smug" ? "angry" : "none"} />
+    {p.shades ? (
+      <g>
+        <path d="M-78 -24 H78" stroke={INK} strokeWidth={6} />
+        {[-36, 36].map((x) => <path key={x} d={`M${x - 32} -26 H${x + 32} Q${x + 30} 8 ${x} 10 Q${x - 30} 8 ${x - 32} -26 Z`} fill="#111" stroke={INK} strokeWidth={4} />)}
+        {[-36, 36].map((x) => <path key={`g${x}`} d={`M${x - 18} -18 L${x - 4} -18`} stroke="#9cd3ff" strokeWidth={5} strokeLinecap="round" />)}
+      </g>
+    ) : <Eyes y={-6} p={p} brow={p.mood === "smug" ? "angry" : "none"} />}
     <Mouth y={26} w={40} open={p.open} tooth smile={1.4} />
   </g>
 );
@@ -147,8 +153,8 @@ export const mouthOpen = (words: { start: number; end: number; word: string }[],
 };
 
 export const Mascot: React.FC<{
-  who: Who; size?: number; open?: number; mood?: Mood; talking?: boolean; hop?: number; flip?: boolean; seed?: string; dim?: boolean;
-}> = ({ who, size = 300, open = 0, mood = "talk", talking = false, hop = 0, flip = false, seed = "", dim = false }) => {
+  who: Who; size?: number; open?: number; mood?: Mood; talking?: boolean; hop?: number; flip?: boolean; seed?: string; dim?: boolean; shades?: boolean;
+}> = ({ who, size = 300, open = 0, mood = "talk", talking = false, hop = 0, flip = false, seed = "", dim = false, shades = false }) => {
   const f = useCurrentFrame();
   const g = onTwos(f);
   const ph = random(who + seed) * 100;
@@ -165,7 +171,7 @@ export const Mascot: React.FC<{
         <ellipse cx={0} cy={172} rx={110 - hop * 0.3} ry={12} fill="#0004" />
         <g transform={`translate(0 ${sq * 120}) scale(${(flip ? -1 : 1) * (1 + sq)}, ${1 - sq})`}>
           <path d={tornCircle(158, who + "st")} fill={P.paper2} stroke="#0002" strokeWidth={2} />
-          <Draw p={{ open, blink, look, arm, mood }} />
+          <Draw p={{ open, blink, look, arm, mood, shades }} />
         </g>
       </svg>
     </div>

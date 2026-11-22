@@ -1,0 +1,930 @@
+[
+ {
+  "word": "Hockey's",
+  "display": "Hockey's",
+  "start": 0.058,
+  "end": 0.36,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "wildest",
+  "display": "wildest",
+  "start": 0.406,
+  "end": 0.731,
+  "segment": "z_hook",
+  "keyword": true
+ },
+ {
+  "word": "moments",
+  "display": "moments",
+  "start": 0.778,
+  "end": 1.103,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "any",
+  "display": "any",
+  "start": 1.184,
+  "end": 1.382,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "year,",
+  "display": "year,",
+  "start": 1.44,
+  "end": 1.695,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "any",
+  "display": "any",
+  "start": 1.73,
+  "end": 1.927,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "era.",
+  "display": "era.",
+  "start": 1.985,
+  "end": 2.276,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "Let's",
+  "display": "Let's",
+  "start": 2.322,
+  "end": 2.566,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "go!",
+  "display": "go!",
+  "start": 2.624,
+  "end": 3.042,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "Mario",
+  "display": "Mario",
+  "start": 3.552,
+  "end": 3.935,
+  "segment": "p_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "Lemieux,",
+  "display": "Lemieux,",
+  "start": 3.97,
+  "end": 4.423,
+  "segment": "p_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "1988.",
+  "display": "1988.",
+  "start": 4.562,
+  "end": 5.7,
+  "segment": "p_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "Five",
+  "display": "Five",
+  "start": 5.804,
+  "end": 6.152,
+  "segment": "p_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "goals.",
+  "display": "goals.",
+  "start": 6.199,
+  "end": 6.733,
+  "segment": "p_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "Five",
+  "display": "Five",
+  "start": 6.954,
+  "end": 7.279,
+  "segment": "p_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "different",
+  "display": "different",
+  "start": 7.325,
+  "end": 7.697,
+  "segment": "p_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "ways!",
+  "display": "ways!",
+  "start": 7.743,
+  "end": 8.254,
+  "segment": "p_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "Even",
+  "display": "Even",
+  "start": 8.695,
+  "end": 8.904,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "strength,",
+  "display": "strength,",
+  "start": 8.973,
+  "end": 9.438,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "power",
+  "display": "power",
+  "start": 9.473,
+  "end": 9.74,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "play,",
+  "display": "play,",
+  "start": 9.798,
+  "end": 10.1,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "shorthanded,",
+  "display": "shorthanded,",
+  "start": 10.134,
+  "end": 10.773,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "penalty",
+  "display": "penalty",
+  "start": 10.819,
+  "end": 11.214,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "shot,",
+  "display": "shot,",
+  "start": 11.272,
+  "end": 11.644,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "empty",
+  "display": "empty",
+  "start": 11.992,
+  "end": 12.271,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "net.",
+  "display": "net.",
+  "start": 12.329,
+  "end": 12.7,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "Never",
+  "display": "Never",
+  "start": 13.246,
+  "end": 13.467,
+  "segment": "h_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "done",
+  "display": "done",
+  "start": 13.513,
+  "end": 13.676,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "before",
+  "display": "before",
+  "start": 13.722,
+  "end": 14.244,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "or",
+  "display": "or",
+  "start": 14.535,
+  "end": 14.697,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "since.",
+  "display": "since.",
+  "start": 14.755,
+  "end": 15.08,
+  "segment": "h_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "Five?!",
+  "display": "Five?!",
+  "start": 15.381,
+  "end": 15.962,
+  "segment": "b_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "That",
+  "display": "That",
+  "start": 16.217,
+  "end": 16.392,
+  "segment": "b_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 16.45,
+  "end": 16.74,
+  "segment": "b_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "needs",
+  "display": "needs",
+  "start": 16.775,
+  "end": 16.984,
+  "segment": "b_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 17.018,
+  "end": 17.042,
+  "segment": "b_lemieux",
+  "keyword": false
+ },
+ {
+  "word": "hug.",
+  "display": "hug.",
+  "start": 17.1,
+  "end": 17.448,
+  "segment": "b_lemieux",
+  "keyword": true
+ },
+ {
+  "word": "Randy",
+  "display": "Randy",
+  "start": 17.981,
+  "end": 18.306,
+  "segment": "z_holt",
+  "keyword": true
+ },
+ {
+  "word": "Holt,",
+  "display": "Holt,",
+  "start": 18.364,
+  "end": 18.747,
+  "segment": "z_holt",
+  "keyword": true
+ },
+ {
+  "word": "1979.",
+  "display": "1979.",
+  "start": 18.805,
+  "end": 20.024,
+  "segment": "z_holt",
+  "keyword": true
+ },
+ {
+  "word": "Sixty-seven",
+  "display": "67",
+  "start": 20.315,
+  "end": 21.023,
+  "segment": "z_holt",
+  "keyword": true
+ },
+ {
+  "word": "penalty",
+  "display": "penalty",
+  "start": 21.081,
+  "end": 21.452,
+  "segment": "z_holt",
+  "keyword": false
+ },
+ {
+  "word": "minutes",
+  "display": "minutes",
+  "start": 21.51,
+  "end": 21.824,
+  "segment": "z_holt",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 21.87,
+  "end": 21.94,
+  "segment": "z_holt",
+  "keyword": false
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 22.01,
+  "end": 22.195,
+  "segment": "z_holt",
+  "keyword": false
+ },
+ {
+  "word": "game!",
+  "display": "game!",
+  "start": 22.242,
+  "end": 22.671,
+  "segment": "z_holt",
+  "keyword": false
+ },
+ {
+  "word": "All",
+  "display": "All",
+  "start": 23.148,
+  "end": 23.31,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 23.368,
+  "end": 23.426,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 23.461,
+  "end": 23.531,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "first",
+  "display": "first",
+  "start": 23.577,
+  "end": 23.821,
+  "segment": "c_holt",
+  "keyword": true
+ },
+ {
+  "word": "period.",
+  "display": "period.",
+  "start": 23.879,
+  "end": 24.344,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "Now",
+  "display": "Now",
+  "start": 24.634,
+  "end": 24.762,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "that's",
+  "display": "that's",
+  "start": 24.808,
+  "end": 25.005,
+  "segment": "c_holt",
+  "keyword": false
+ },
+ {
+  "word": "efficient.",
+  "display": "efficient.",
+  "start": 25.04,
+  "end": 25.621,
+  "segment": "c_holt",
+  "keyword": true
+ },
+ {
+  "word": "1997,",
+  "display": "1997,",
+  "start": 26.131,
+  "end": 27.176,
+  "segment": "z_fight",
+  "keyword": true
+ },
+ {
+  "word": "Detroit",
+  "display": "Detroit",
+  "start": 27.362,
+  "end": 27.803,
+  "segment": "z_fight",
+  "keyword": true
+ },
+ {
+  "word": "versus",
+  "display": "versus",
+  "start": 27.861,
+  "end": 28.14,
+  "segment": "z_fight",
+  "keyword": false
+ },
+ {
+  "word": "Colorado.",
+  "display": "Colorado.",
+  "start": 28.198,
+  "end": 28.801,
+  "segment": "z_fight",
+  "keyword": true
+ },
+ {
+  "word": "Even",
+  "display": "Even",
+  "start": 28.964,
+  "end": 29.219,
+  "segment": "z_fight",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 29.254,
+  "end": 29.324,
+  "segment": "z_fight",
+  "keyword": false
+ },
+ {
+  "word": "goalies",
+  "display": "goalies",
+  "start": 29.359,
+  "end": 29.707,
+  "segment": "z_fight",
+  "keyword": true
+ },
+ {
+  "word": "fought!",
+  "display": "fought!",
+  "start": 29.765,
+  "end": 30.113,
+  "segment": "z_fight",
+  "keyword": false
+ },
+ {
+  "word": "Patrick",
+  "display": "Patrick",
+  "start": 30.589,
+  "end": 30.949,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "Roy",
+  "display": "Roy",
+  "start": 31.007,
+  "end": 31.262,
+  "segment": "b_fight",
+  "keyword": true
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 31.343,
+  "end": 31.471,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "Mike",
+  "display": "Mike",
+  "start": 31.529,
+  "end": 31.75,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "Vernon.",
+  "display": "Vernon.",
+  "start": 31.796,
+  "end": 32.237,
+  "segment": "b_fight",
+  "keyword": true
+ },
+ {
+  "word": "Masks",
+  "display": "Masks",
+  "start": 32.423,
+  "end": 32.806,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "off,",
+  "display": "off,",
+  "start": 32.864,
+  "end": 33.096,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "gloves",
+  "display": "gloves",
+  "start": 33.178,
+  "end": 33.468,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "off.",
+  "display": "off.",
+  "start": 33.526,
+  "end": 33.781,
+  "segment": "b_fight",
+  "keyword": false
+ },
+ {
+  "word": "Respect.",
+  "display": "Respect.",
+  "start": 33.886,
+  "end": 34.478,
+  "segment": "b_fight",
+  "keyword": true
+ },
+ {
+  "word": "Biscuit,",
+  "display": "Biscuit,",
+  "start": 35.035,
+  "end": 35.453,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 35.476,
+  "end": 35.569,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "lose",
+  "display": "lose",
+  "start": 35.627,
+  "end": 35.847,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "fights",
+  "display": "fights",
+  "start": 35.894,
+  "end": 36.172,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 36.207,
+  "end": 36.289,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 36.347,
+  "end": 36.428,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 36.486,
+  "end": 36.648,
+  "segment": "p_roast",
+  "keyword": true
+ },
+ {
+  "word": "machine.",
+  "display": "machine.",
+  "start": 36.695,
+  "end": 37.136,
+  "segment": "p_roast",
+  "keyword": false
+ },
+ {
+  "word": "Hey!",
+  "display": "Hey!",
+  "start": 37.611,
+  "end": 38.006,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 38.192,
+  "end": 38.331,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 38.389,
+  "end": 38.447,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "2023,",
+  "display": "2023,",
+  "start": 38.505,
+  "end": 39.353,
+  "segment": "z_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "Linus",
+  "display": "Linus",
+  "start": 39.422,
+  "end": 39.759,
+  "segment": "z_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "Ullmark",
+  "display": "Ullmark",
+  "start": 39.863,
+  "end": 40.305,
+  "segment": "z_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 40.397,
+  "end": 40.444,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 40.502,
+  "end": 40.827,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "fires",
+  "display": "fires",
+  "start": 41.129,
+  "end": 41.512,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "it",
+  "display": "it",
+  "start": 41.57,
+  "end": 41.651,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "down",
+  "display": "down",
+  "start": 41.686,
+  "end": 41.849,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 41.884,
+  "end": 41.965,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "whole",
+  "display": "whole",
+  "start": 42.023,
+  "end": 42.255,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "rink.",
+  "display": "rink.",
+  "start": 42.313,
+  "end": 42.615,
+  "segment": "z_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "Goal!",
+  "display": "Goal!",
+  "start": 42.719,
+  "end": 43.137,
+  "segment": "z_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "Finally!",
+  "display": "Finally!",
+  "start": 43.613,
+  "end": 44.031,
+  "segment": "b_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "Goalies",
+  "display": "Goalies",
+  "start": 44.077,
+  "end": 44.414,
+  "segment": "b_ullmark",
+  "keyword": true
+ },
+ {
+  "word": "score",
+  "display": "score",
+  "start": 44.449,
+  "end": 44.716,
+  "segment": "b_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "too!",
+  "display": "too!",
+  "start": 44.762,
+  "end": 45.145,
+  "segment": "b_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "Took",
+  "display": "Took",
+  "start": 45.667,
+  "end": 45.853,
+  "segment": "p_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 45.899,
+  "end": 45.969,
+  "segment": "p_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "guys",
+  "display": "guys",
+  "start": 46.015,
+  "end": 46.213,
+  "segment": "p_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "long",
+  "display": "long",
+  "start": 46.271,
+  "end": 46.433,
+  "segment": "p_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "enough.",
+  "display": "enough.",
+  "start": 46.48,
+  "end": 46.828,
+  "segment": "p_ullmark",
+  "keyword": false
+ },
+ {
+  "word": "Fun",
+  "display": "Fun",
+  "start": 47.327,
+  "end": 47.501,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "fact:",
+  "display": "fact:",
+  "start": 47.559,
+  "end": 47.873,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "pucks",
+  "display": "pucks",
+  "start": 48.163,
+  "end": 48.442,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "are",
+  "display": "are",
+  "start": 48.476,
+  "end": 48.593,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "frozen",
+  "display": "frozen",
+  "start": 48.651,
+  "end": 48.999,
+  "segment": "h_joke",
+  "keyword": true
+ },
+ {
+  "word": "before",
+  "display": "before",
+  "start": 49.057,
+  "end": 49.359,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "games.",
+  "display": "games.",
+  "start": 49.417,
+  "end": 49.881,
+  "segment": "h_joke",
+  "keyword": false
+ },
+ {
+  "word": "That's",
+  "display": "That's",
+  "start": 50.426,
+  "end": 50.705,
+  "segment": "p_joke",
+  "keyword": false
+ },
+ {
+  "word": "why",
+  "display": "why",
+  "start": 50.74,
+  "end": 50.879,
+  "segment": "p_joke",
+  "keyword": false
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 50.937,
+  "end": 51.041,
+  "segment": "p_joke",
+  "keyword": false
+ },
+ {
+  "word": "so",
+  "display": "so",
+  "start": 51.099,
+  "end": 51.239,
+  "segment": "p_joke",
+  "keyword": false
+ },
+ {
+  "word": "cool!",
+  "display": "cool!",
+  "start": 51.297,
+  "end": 51.715,
+  "segment": "p_joke",
+  "keyword": true
+ }
+]

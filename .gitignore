@@ -6,3 +6,4 @@ video/public/voiceover.mp3
 /.env.local
 .env
 .env.local
+video/node_modules
