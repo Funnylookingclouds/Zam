@@ -1,0 +1,4 @@
+node_modules/
+temp/*
+!temp/.gitkeep
+video/public/voiceover.mp3
