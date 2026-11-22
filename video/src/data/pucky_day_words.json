@@ -1,0 +1,930 @@
+[
+ {
+  "word": "Ever",
+  "display": "Ever",
+  "start": 0.046,
+  "end": 0.232,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "wondered",
+  "display": "wondered",
+  "start": 0.279,
+  "end": 0.522,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "what",
+  "display": "what",
+  "start": 0.546,
+  "end": 0.662,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 0.708,
+  "end": 0.731,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "puck",
+  "display": "puck",
+  "start": 0.813,
+  "end": 1.068,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "does",
+  "display": "does",
+  "start": 1.138,
+  "end": 1.486,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "all",
+  "display": "all",
+  "start": 1.544,
+  "end": 1.707,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "day?",
+  "display": "day?",
+  "start": 1.765,
+  "end": 2.078,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Today:",
+  "display": "Today:",
+  "start": 2.125,
+  "end": 2.647,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 2.833,
+  "end": 2.891,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "day",
+  "display": "day",
+  "start": 2.961,
+  "end": 3.111,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "at",
+  "display": "at",
+  "start": 3.158,
+  "end": 3.228,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "work",
+  "display": "work",
+  "start": 3.286,
+  "end": 3.553,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "with",
+  "display": "with",
+  "start": 3.692,
+  "end": 3.924,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Pucky!",
+  "display": "Pucky!",
+  "start": 4.029,
+  "end": 4.598,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "5",
+  "display": "5",
+  "start": 5.073,
+  "end": 5.293,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "a.m.",
+  "display": "a.m.",
+  "start": 5.363,
+  "end": 5.804,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 6.013,
+  "end": 6.071,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "wake",
+  "display": "wake",
+  "start": 6.176,
+  "end": 6.338,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "up",
+  "display": "up",
+  "start": 6.373,
+  "end": 6.454,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 6.501,
+  "end": 6.547,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 6.582,
+  "end": 6.652,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "freezer.",
+  "display": "freezer.",
+  "start": 6.686,
+  "end": 7.162,
+  "segment": "p_wake",
+  "keyword": true
+ },
+ {
+  "word": "Minus",
+  "display": "Minus",
+  "start": 7.511,
+  "end": 7.871,
+  "segment": "p_wake",
+  "keyword": true
+ },
+ {
+  "word": "ten",
+  "display": "10",
+  "start": 7.929,
+  "end": 8.114,
+  "segment": "p_wake",
+  "keyword": true
+ },
+ {
+  "word": "Celsius.",
+  "display": "Celsius.",
+  "start": 8.184,
+  "end": 8.811,
+  "segment": "p_wake",
+  "keyword": false
+ },
+ {
+  "word": "Cozy.",
+  "display": "Cozy.",
+  "start": 9.159,
+  "end": 9.624,
+  "segment": "p_wake",
+  "keyword": true
+ },
+ {
+  "word": "Fun",
+  "display": "Fun",
+  "start": 9.902,
+  "end": 10.076,
+  "segment": "h_bounce",
+  "keyword": false
+ },
+ {
+  "word": "fact:",
+  "display": "fact:",
+  "start": 10.146,
+  "end": 10.494,
+  "segment": "h_bounce",
+  "keyword": false
+ },
+ {
+  "word": "frozen",
+  "display": "frozen",
+  "start": 10.784,
+  "end": 11.121,
+  "segment": "h_bounce",
+  "keyword": true
+ },
+ {
+  "word": "pucks",
+  "display": "pucks",
+  "start": 11.179,
+  "end": 11.458,
+  "segment": "h_bounce",
+  "keyword": false
+ },
+ {
+  "word": "bounce",
+  "display": "bounce",
+  "start": 11.516,
+  "end": 11.817,
+  "segment": "h_bounce",
+  "keyword": true
+ },
+ {
+  "word": "less.",
+  "display": "less.",
+  "start": 11.876,
+  "end": 12.27,
+  "segment": "h_bounce",
+  "keyword": false
+ },
+ {
+  "word": "Then",
+  "display": "Then",
+  "start": 12.746,
+  "end": 12.955,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "warm-ups.",
+  "display": "warm-ups.",
+  "start": 13.013,
+  "end": 13.698,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "Clubby",
+  "display": "Clubby",
+  "start": 14.244,
+  "end": 14.557,
+  "segment": "p_warm",
+  "keyword": true
+ },
+ {
+  "word": "slaps",
+  "display": "slaps",
+  "start": 14.604,
+  "end": 14.871,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "me",
+  "display": "me",
+  "start": 14.917,
+  "end": 15.01,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "around.",
+  "display": "around.",
+  "start": 15.056,
+  "end": 15.579,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "It's",
+  "display": "It's",
+  "start": 15.799,
+  "end": 16.032,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "fine.",
+  "display": "fine.",
+  "start": 16.078,
+  "end": 16.519,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "We're",
+  "display": "We're",
+  "start": 16.577,
+  "end": 16.821,
+  "segment": "p_warm",
+  "keyword": false
+ },
+ {
+  "word": "friends.",
+  "display": "friends.",
+  "start": 16.868,
+  "end": 17.32,
+  "segment": "p_warm",
+  "keyword": true
+ },
+ {
+  "word": "Partners.",
+  "display": "Partners.",
+  "start": 17.656,
+  "end": 18.283,
+  "segment": "c_partners",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 18.631,
+  "end": 18.852,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 18.887,
+  "end": 18.945,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 19.003,
+  "end": 19.119,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 19.2,
+  "end": 19.456,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "pucks",
+  "display": "pucks",
+  "start": 19.514,
+  "end": 19.781,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "didn't",
+  "display": "didn't",
+  "start": 19.827,
+  "end": 20.094,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "complain.",
+  "display": "complain.",
+  "start": 20.141,
+  "end": 20.744,
+  "segment": "c_partners",
+  "keyword": false
+ },
+ {
+  "word": "Game",
+  "display": "Game",
+  "start": 21.232,
+  "end": 21.51,
+  "segment": "p_game",
+  "keyword": true
+ },
+ {
+  "word": "time!",
+  "display": "time!",
+  "start": 21.545,
+  "end": 21.986,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "Hardest",
+  "display": "Hardest",
+  "start": 22.091,
+  "end": 22.486,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "shot",
+  "display": "shot",
+  "start": 22.532,
+  "end": 22.729,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "ever:",
+  "display": "ever:",
+  "start": 22.776,
+  "end": 23.171,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "108.8",
+  "display": "108.8",
+  "start": 23.426,
+  "end": 24.726,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "miles",
+  "display": "miles",
+  "start": 24.784,
+  "end": 25.075,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "per",
+  "display": "per",
+  "start": 25.191,
+  "end": 25.318,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "hour",
+  "display": "hour",
+  "start": 25.376,
+  "end": 25.585,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "Zdeno",
+  "display": "Zdeno",
+  "start": 25.992,
+  "end": 26.317,
+  "segment": "p_game",
+  "keyword": true
+ },
+ {
+  "word": "Chara,",
+  "display": "Chara,",
+  "start": 26.375,
+  "end": 26.886,
+  "segment": "p_game",
+  "keyword": true
+ },
+ {
+  "word": "2012.",
+  "display": "2012.",
+  "start": 27.071,
+  "end": 27.896,
+  "segment": "p_game",
+  "keyword": true
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 28.441,
+  "end": 28.5,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "felt",
+  "display": "felt",
+  "start": 28.639,
+  "end": 28.836,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "that.",
+  "display": "that.",
+  "start": 28.883,
+  "end": 29.184,
+  "segment": "p_game",
+  "keyword": false
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 29.637,
+  "end": 29.753,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "then",
+  "display": "then",
+  "start": 29.799,
+  "end": 29.927,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 29.974,
+  "end": 30.066,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "hit",
+  "display": "hit",
+  "start": 30.136,
+  "end": 30.287,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 30.345,
+  "end": 30.461,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "mask.",
+  "display": "mask.",
+  "start": 30.542,
+  "end": 30.984,
+  "segment": "b_mask",
+  "keyword": true
+ },
+ {
+  "word": "Every.",
+  "display": "Every.",
+  "start": 31.146,
+  "end": 31.576,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "Single.",
+  "display": "Single.",
+  "start": 31.738,
+  "end": 32.319,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "Day.",
+  "display": "Day.",
+  "start": 32.481,
+  "end": 32.911,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "After",
+  "display": "After",
+  "start": 33.386,
+  "end": 33.618,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 33.676,
+  "end": 33.699,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "couple",
+  "display": "couple",
+  "start": 33.757,
+  "end": 34.036,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 34.071,
+  "end": 34.117,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "minutes",
+  "display": "minutes",
+  "start": 34.175,
+  "end": 34.489,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 34.547,
+  "end": 34.582,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "get",
+  "display": "get",
+  "start": 34.663,
+  "end": 34.791,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "too",
+  "display": "too",
+  "start": 34.837,
+  "end": 34.988,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "warm,",
+  "display": "warm,",
+  "start": 35.046,
+  "end": 35.487,
+  "segment": "p_swap",
+  "keyword": true
+ },
+ {
+  "word": "so",
+  "display": "so",
+  "start": 35.65,
+  "end": 35.766,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 35.824,
+  "end": 35.894,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "linesman",
+  "display": "linesman",
+  "start": 35.952,
+  "end": 36.37,
+  "segment": "p_swap",
+  "keyword": true
+ },
+ {
+  "word": "swaps",
+  "display": "swaps",
+  "start": 36.428,
+  "end": 36.706,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "me",
+  "display": "me",
+  "start": 36.753,
+  "end": 36.822,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 36.88,
+  "end": 37.008,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 37.043,
+  "end": 37.066,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "frozen",
+  "display": "frozen",
+  "start": 37.124,
+  "end": 37.449,
+  "segment": "p_swap",
+  "keyword": true
+ },
+ {
+  "word": "buddy.",
+  "display": "buddy.",
+  "start": 37.507,
+  "end": 37.937,
+  "segment": "p_swap",
+  "keyword": false
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 38.401,
+  "end": 38.506,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 38.564,
+  "end": 38.935,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "even",
+  "display": "even",
+  "start": 38.994,
+  "end": 39.179,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "tested",
+  "display": "tested",
+  "start": 39.226,
+  "end": 39.551,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "pucks",
+  "display": "pucks",
+  "start": 39.62,
+  "end": 39.922,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 39.969,
+  "end": 40.108,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "change",
+  "display": "change",
+  "start": 40.166,
+  "end": 40.654,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "colour",
+  "display": "colour",
+  "start": 40.712,
+  "end": 41.014,
+  "segment": "h_colour",
+  "keyword": true
+ },
+ {
+  "word": "when",
+  "display": "when",
+  "start": 41.06,
+  "end": 41.165,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "they",
+  "display": "they",
+  "start": 41.199,
+  "end": 41.292,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "warm",
+  "display": "warm",
+  "start": 41.339,
+  "end": 41.548,
+  "segment": "h_colour",
+  "keyword": true
+ },
+ {
+  "word": "up!",
+  "display": "up!",
+  "start": 41.606,
+  "end": 41.78,
+  "segment": "h_colour",
+  "keyword": false
+ },
+ {
+  "word": "Then",
+  "display": "Then",
+  "start": 42.336,
+  "end": 42.511,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "back",
+  "display": "back",
+  "start": 42.569,
+  "end": 42.731,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 42.778,
+  "end": 42.847,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 42.894,
+  "end": 42.963,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "freezer,",
+  "display": "freezer,",
+  "start": 43.021,
+  "end": 43.474,
+  "segment": "p_cool",
+  "keyword": true
+ },
+ {
+  "word": "ice-cold.",
+  "display": "ice-cold.",
+  "start": 43.532,
+  "end": 44.31,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "That's",
+  "display": "That's",
+  "start": 44.658,
+  "end": 44.925,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "why",
+  "display": "why",
+  "start": 44.972,
+  "end": 45.111,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 45.169,
+  "end": 45.285,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "so",
+  "display": "so",
+  "start": 45.343,
+  "end": 45.506,
+  "segment": "p_cool",
+  "keyword": false
+ },
+ {
+  "word": "cool!",
+  "display": "cool!",
+  "start": 45.564,
+  "end": 45.97,
+  "segment": "p_cool",
+  "keyword": true
+ }
+]

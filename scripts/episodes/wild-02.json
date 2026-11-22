@@ -1,0 +1,20 @@
+{
+  "id": "wild-02", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "Hockey's wildest moments, round two. Let's go!"},
+    {"id": "p_ovi", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Alex Ovechkin, 2006. Scores lying on his back!"},
+    {"id": "h_ovi", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sliding, one hand, past Brian Boucher – with Wayne Gretzky coaching the other team."},
+    {"id": "b_ovi", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "On his back?! I can't even stand up."},
+    {"id": "z_sittler", "tts": "Darryl Sittler, 1976. Ten points in one game!"},
+    {"id": "h_sittler", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Six goals, four assists. Still the NHL record."},
+    {"id": "b_sittler", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Boston's goalie? I feel you, buddy."},
+    {"id": "z_svech", "tts": "2019: Andrei Svechnikov scoops the puck lacrosse-style. First ever in the NHL!"},
+    {"id": "p_svech", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "I got scooped like ice cream!"},
+    {"id": "z_rat", "tts": "And 1995: Florida's Scott Mellanby smacks a rat in the locker room… then scores twice with that stick!"},
+    {"id": "c_rat", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Rat trick! Back in my day, we only had hat tricks."},
+    {"id": "p_rat", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Back in your day, the rat was the goalie."},
+    {"id": "b_end", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Hey! I'm a walrus."}
+  ],
+  "display_map": {"ten": "10", "six": "6", "four": "4"},
+  "keywords": ["wildest", "two", "ovechkin", "2006", "back", "boucher", "wayne", "gretzky", "darryl", "sittler", "1976", "ten", "six", "four", "record", "boston's", "2019", "andrei", "svechnikov", "lacrosse-style", "first", "ice", "cream", "1995", "florida's", "scott", "mellanby", "rat", "twice", "trick", "hat", "goalie", "walrus"]
+}

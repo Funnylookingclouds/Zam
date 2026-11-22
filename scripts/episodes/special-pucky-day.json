@@ -1,0 +1,17 @@
+{
+  "id": "special-pucky-day", "language": "en", "voice_id": "fBD19tfE58bkETeiwUoC", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_intro", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Ever wondered what a puck does all day? Today: a day at work with Pucky!"},
+    {"id": "p_wake", "tts": "5 a.m. – I wake up in the freezer. Minus ten Celsius. Cozy."},
+    {"id": "h_bounce", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fun fact: frozen pucks bounce less."},
+    {"id": "p_warm", "tts": "Then warm-ups. Clubby slaps me around. It's fine. We're friends."},
+    {"id": "c_partners", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Partners. Back in my day, pucks didn't complain."},
+    {"id": "p_game", "tts": "Game time! Hardest shot ever: 108.8 miles per hour – Zdeno Chara, 2012. I felt that."},
+    {"id": "b_mask", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "And then you hit my mask. Every. Single. Day."},
+    {"id": "p_swap", "tts": "After a couple of minutes I get too warm, so the linesman swaps me for a frozen buddy."},
+    {"id": "h_colour", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "The NHL even tested pucks that change colour when they warm up!"},
+    {"id": "p_cool", "tts": "Then back to the freezer, ice-cold. That's why I'm so cool!"}
+  ],
+  "display_map": {"ten": "10"},
+  "keywords": ["puck", "pucky", "freezer", "minus", "ten", "cozy", "frozen", "bounce", "warm-ups", "clubby", "friends", "partners", "game", "108.8", "zdeno", "chara", "2012", "mask", "warm", "linesman", "colour", "ice-cold", "cool"]
+}

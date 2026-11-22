@@ -199,7 +199,7 @@ export const Header: React.FC<{ title: string; sub: string; accent?: string }> =
 export type Key = [number, number, number, number?]; // [t, x, y, z]
 export type Band = { c1: string; c2: string; n: string | number };
 export type Track = { id: string; c1: string; c2: string; n: string | number; goalie?: boolean; s?: number; keys: Key[]; kind?: "chip" | "stick" | "mascot"; hideAfter?: number;
-  who?: Who; mood?: Mood; band?: Band; flip?: boolean; spin?: number; squash?: (t: number) => number; label?: string; dizzy?: (t: number) => boolean };
+  who?: Who; mood?: Mood; band?: Band; flip?: boolean; spin?: number; squash?: (t: number) => number; label?: string; dizzy?: (t: number) => boolean; rot?: (t: number) => number; z?: number };
 export const sample = (keys: Key[], t: number): { x: number; y: number; z: number } => {
   if (t <= keys[0][0]) return { x: keys[0][1], y: keys[0][2], z: keys[0][3] ?? 0 };
   for (let i = 1; i < keys.length; i++) {
@@ -225,7 +225,7 @@ const Actor: React.FC<{ tr: Track; t: number }> = ({ tr, t }) => {
   const sp = Math.hypot(vx, vy);
   const s = tr.s ?? 140;
   const lean = Math.max(-16, Math.min(16, vx / 40));
-  const rot = tr.spin ? t * tr.spin : lean;
+  const rot = tr.rot ? tr.rot(t) : tr.spin ? t * tr.spin : lean;
   const sq = tr.squash ? tr.squash(t) : 1;
   const moving = sp > 120;
   return (
