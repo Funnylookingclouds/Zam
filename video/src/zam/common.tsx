@@ -3,7 +3,7 @@ import React from "react";
 import { AbsoluteFill, interpolate, random, useCurrentFrame, Easing } from "remotion";
 import { P, HAND, clamp, onTwos, tornPath } from "../presenter/kit";
 import { FONT } from "../theme";
-import { GANG, Mascot, type Who } from "../mascots/Gang";
+import { GANG, Mascot, type Mood, type Who } from "../mascots/Gang";
 
 export type W = { word: string; display: string; start: number; end: number; segment: string; keyword: boolean };
 export type Seg = { id: string; who: Who; start: number; end: number; words: W[] };
@@ -197,7 +197,9 @@ export const Header: React.FC<{ title: string; sub: string; accent?: string }> =
 // Play engine – paper chips moving along timed paths (local seconds), puck with height + trail.
 // ---------------------------------------------------------------------------
 export type Key = [number, number, number, number?]; // [t, x, y, z]
-export type Track = { id: string; c1: string; c2: string; n: string | number; goalie?: boolean; s?: number; keys: Key[]; kind?: "chip" | "stick"; hideAfter?: number };
+export type Band = { c1: string; c2: string; n: string | number };
+export type Track = { id: string; c1: string; c2: string; n: string | number; goalie?: boolean; s?: number; keys: Key[]; kind?: "chip" | "stick" | "mascot"; hideAfter?: number;
+  who?: Who; mood?: Mood; band?: Band; flip?: boolean; spin?: number; squash?: (t: number) => number; label?: string; dizzy?: (t: number) => boolean };
 export const sample = (keys: Key[], t: number): { x: number; y: number; z: number } => {
   if (t <= keys[0][0]) return { x: keys[0][1], y: keys[0][2], z: keys[0][3] ?? 0 };
   for (let i = 1; i < keys.length; i++) {
@@ -208,7 +210,38 @@ export const sample = (keys: Key[], t: number): { x: number; y: number; z: numbe
   const k = keys[keys.length - 1];
   return { x: k[1], y: k[2], z: k[3] ?? 0 };
 };
-export const Play: React.FC<{ t: number; tracks: Track[]; puck?: Key[]; trailFrom?: number }> = ({ t, tracks, puck, trailFrom }) => {
+/** Little team armband under an actor: team colours + number (no logos). */
+export const BandTag: React.FC<{ b: Band; w: number }> = ({ b, w }) => (
+  <div style={{ width: w, height: w * 0.36, background: b.c1, border: `4px solid ${P.ink}`, borderRadius: 8, boxShadow: `inset 0 0 0 4px ${b.c2}`, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: FONT, fontWeight: 900, fontSize: w * 0.26, WebkitTextStroke: `1px ${P.ink}` }}>{b.n}</div>
+);
+const Stars: React.FC<{ r: number }> = ({ r }) => {
+  const f = onTwos(useCurrentFrame());
+  return <>{[0, 1, 2].map((i) => { const a = f / 9 + (i * Math.PI * 2) / 3; return <div key={i} style={{ position: "absolute", left: Math.cos(a) * r - 12, top: Math.sin(a) * r * 0.4 - r * 0.9, fontSize: 30, color: P.mustard, WebkitTextStroke: `2px ${P.ink}` }}>★</div>; })}</>;
+};
+/** A mascot skating: leans into its velocity, speed lines when fast, optional spin/squash/dizzy, armband + label. */
+const Actor: React.FC<{ tr: Track; t: number }> = ({ tr, t }) => {
+  const p = sample(tr.keys, t), q = sample(tr.keys, t - 0.08);
+  const vx = (p.x - q.x) / 0.08, vy = (p.y - q.y) / 0.08;
+  const sp = Math.hypot(vx, vy);
+  const s = tr.s ?? 140;
+  const lean = Math.max(-16, Math.min(16, vx / 40));
+  const rot = tr.spin ? t * tr.spin : lean;
+  const sq = tr.squash ? tr.squash(t) : 1;
+  const moving = sp > 120;
+  return (
+    <div style={{ position: "absolute", left: p.x - s / 2, top: p.y - s * 0.56 - p.z, width: s, zIndex: Math.round(p.y) }}>
+      {moving && <svg width={s} height={s} style={{ position: "absolute", left: -Math.sign(vx || 1) * s * 0.55, top: 0, overflow: "visible" }}>{[0.35, 0.55, 0.75].map((k) => <line key={k} x1={s * 0.2} y1={s * k} x2={s * 0.2 - Math.sign(vx || 1) * s * 0.4} y2={s * k} stroke="#9cc9e8" strokeWidth={6} strokeLinecap="round" />)}</svg>}
+      <div style={{ transform: `rotate(${rot}deg) scaleY(${sq})`, transformOrigin: "50% 90%" }}>
+        <Mascot who={tr.who!} size={s} mood={tr.mood ?? "talk"} flip={tr.flip ?? vx < -40} seed={tr.id} talking={moving} open={moving ? 0.5 : 0} />
+      </div>
+      {tr.dizzy && tr.dizzy(t) && <div style={{ position: "absolute", left: s / 2, top: s * 0.2 }}><Stars r={s * 0.5} /></div>}
+      {tr.band && <div style={{ position: "absolute", left: s * 0.25, top: s * 1.02 }}><BandTag b={tr.band} w={s * 0.5} /></div>}
+      {tr.label && <div style={{ position: "absolute", left: -60, right: -60, top: s * 1.24, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 26, color: P.ink }}>{tr.label}</div>}
+    </div>
+  );
+};
+
+export const Play: React.FC<{ t: number; tracks: Track[]; puck?: Key[]; trailFrom?: number; puckWho?: boolean; puckSize?: number }> = ({ t, tracks, puck, trailFrom, puckWho, puckSize = 64 }) => {
   const tt = onTwos(Math.round(t * 60)) / 60; // stop-motion on twos
   const pk = puck ? sample(puck, tt) : null;
   const trail = puck && trailFrom !== undefined && tt > trailFrom ? [...Array(24)].map((_, i) => sample(puck, trailFrom + ((tt - trailFrom) * i) / 23)) : [];
@@ -223,10 +256,20 @@ export const Play: React.FC<{ t: number; tracks: Track[]; puck?: Key[]; trailFro
         if (tr.hideAfter !== undefined && tt > tr.hideAfter) return null;
         const p = sample(tr.keys, tt);
         const s = tr.s ?? 54;
+        if (tr.kind === "mascot") return <Actor key={tr.id} tr={tr} t={tt} />;
         if (tr.kind === "stick") return <div key={tr.id} style={{ position: "absolute", left: p.x - 40, top: p.y - 5, width: 80, height: 10, background: "#a8733a", border: `3px solid ${P.ink}`, borderRadius: 4, transform: `rotate(${tt * 900}deg)` }} />;
         return <div key={tr.id} style={{ position: "absolute", left: p.x - s / 2, top: p.y - s / 2 - p.z }}><Chip c1={tr.c1} c2={tr.c2} n={tr.n} s={s} goalie={tr.goalie} /></div>;
       })}
-      {pk && (
+      {pk && puckWho && (() => {
+        const q = sample(puck!, tt - 0.06); const v = Math.hypot(pk.x - q.x, pk.y - q.y) / 0.06; const sz = puckSize * (1 + pk.z / 160);
+        return (
+          <div style={{ position: "absolute", left: pk.x - sz / 2, top: pk.y - sz * 0.56 - pk.z, zIndex: 999 }}>
+            {pk.z > 2 && <div style={{ position: "absolute", left: sz * 0.2, top: sz * 1.05 + pk.z, width: sz * 0.6, height: 10, borderRadius: "50%", background: "#0003" }} />}
+            <div style={{ transform: `rotate(${v > 150 ? tt * 1100 : 0}deg)` }}><Mascot who="pucky" size={sz} mood={v > 150 ? "laugh" : "smug"} seed="pk" talking={v > 150} open={v > 150 ? 0.8 : 0} /></div>
+          </div>
+        );
+      })()}
+      {pk && !puckWho && (
         <>
           {pk.z > 2 && <div style={{ position: "absolute", left: pk.x - 12, top: pk.y - 5, width: 24, height: 10, borderRadius: "50%", background: "#0003" }} />}
           <div style={{ position: "absolute", left: pk.x - 13 * (1 + pk.z / 90), top: pk.y - 8 * (1 + pk.z / 90) - pk.z, width: 26 * (1 + pk.z / 90), height: 16 * (1 + pk.z / 90), borderRadius: "50%", background: "#111", border: `3px solid ${P.ink}` }} />
@@ -250,3 +293,37 @@ export const HalfRink: React.FC<{ w?: number; h?: number; emptyNet?: boolean; ch
     {children}
   </div>
 );
+
+/** Horizontal half-rink stage, net on the right – the gang acts out plays on it. */
+export const HalfStage: React.FC<{ w?: number; h?: number; children?: React.ReactNode; light?: boolean }> = ({ w = 892, h = 400, children, light }) => (
+  <div style={{ position: "relative", width: w, height: h }}>
+    <svg width={w} height={h} style={{ position: "absolute" }}>
+      <path d={`M4 4 H${w - 110} Q${w - 4} 4 ${w - 4} 110 V${h - 110} Q${w - 4} ${h - 4} ${w - 110} ${h - 4} H4 Z`} fill="#f4fbff" stroke={P.ink} strokeWidth={6} />
+      <rect x={300} y={4} width={12} height={h - 8} fill="#3b82f6" opacity={0.8} />
+      <line x1={w - 80} y1={4} x2={w - 80} y2={h - 4} stroke="#d94b3b" strokeWidth={4} />
+      <path d={`M${w - 80} ${h / 2 - 50} a 50 50 0 0 0 0 100`} fill="#bfe3ff" stroke="#d94b3b" strokeWidth={3} />
+      {[0.27, 0.73].map((k) => <g key={k}><circle cx={w - 250} cy={h * k} r={70} fill="none" stroke="#d94b3b" strokeWidth={3} /><circle cx={w - 250} cy={h * k} r={6} fill="#d94b3b" /></g>)}
+      <rect x={w - 80} y={h / 2 - 34} width={32} height={68} fill="#fff" stroke="#d94b3b" strokeWidth={6} />
+      {[...Array(5)].map((_, i) => <line key={i} x1={w - 76} y1={h / 2 - 28 + i * 14} x2={w - 52} y2={h / 2 - 28 + i * 14} stroke={P.ink} strokeWidth={1.5} opacity={0.4} />)}
+    </svg>
+    {light && <div style={{ position: "absolute", left: w - 84, top: h / 2 - 96, width: 40, height: 30, borderRadius: 8, background: "#ff3b30", boxShadow: "0 0 44px 18px #ff3b3088", border: `4px solid ${P.ink}`, zIndex: 1000 }} />}
+    {children}
+  </div>
+);
+
+/** Cartoon fight cloud: paper dust ball with limbs, stars and POW/BAM. */
+export const FightCloud: React.FC<{ s?: number }> = ({ s = 340 }) => {
+  const f = onTwos(useCurrentFrame());
+  const words = ["POW!", "BAM!", "WHACK!", "OOF!"];
+  const wv = words[Math.floor(f / 20) % words.length];
+  return (
+    <div style={{ position: "relative", width: s, height: s * 0.8 }}>
+      <svg width={s} height={s * 0.8} viewBox="-170 -136 340 272" style={{ overflow: "visible" }}>
+        {[...Array(9)].map((_, i) => { const a = (i / 9) * Math.PI * 2 + f / 40; const r = 70 + random(`fc${i}${Math.floor(f / 5)}`) * 30; return <circle key={i} cx={Math.cos(a) * 80} cy={Math.sin(a) * 52} r={r * 0.75} fill={P.paper2} stroke={P.ink} strokeWidth={5} />; })}
+        {[...Array(5)].map((_, i) => { const a = random(`lb${i}${Math.floor(f / 5)}`) * Math.PI * 2; return <g key={`l${i}`}><line x1={Math.cos(a) * 90} y1={Math.sin(a) * 60} x2={Math.cos(a) * 160} y2={Math.sin(a) * 110} stroke={P.ink} strokeWidth={8} strokeLinecap="round" /><circle cx={Math.cos(a) * 165} cy={Math.sin(a) * 114} r={14} fill={i % 2 ? "#a16207" : P.teal} stroke={P.ink} strokeWidth={4} /></g>; })}
+        {[...Array(6)].map((_, i) => <text key={`s${i}`} x={(random(`sx${i}${Math.floor(f / 5)}`) - 0.5) * 260} y={(random(`sy${i}${Math.floor(f / 5)}`) - 0.5) * 170} fontSize={34} fill={P.mustard} stroke={P.ink} strokeWidth={2}>★</text>)}
+      </svg>
+      <div style={{ position: "absolute", left: s * 0.5, top: -20, transform: `translate(-50%,0) rotate(${(f % 40) - 20}deg)`, fontFamily: FONT, fontWeight: 900, fontStyle: "italic", fontSize: 64, color: "#fff", WebkitTextStroke: `5px ${P.ink}`, paintOrder: "stroke fill" }}>{wv}</div>
+    </div>
+  );
+};

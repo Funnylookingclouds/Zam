@@ -6,7 +6,7 @@ import { P, HAND, clamp, onTwos, PaperCard, Slap, Stamp } from "../presenter/kit
 import { ComicBurst, Scoreboard, VersusCard, ReplayOverlay } from "../presenter/banana";
 import { FONT } from "../theme";
 import { Mascot, mouthOpen, type Mood, type Who } from "../mascots/Gang";
-import { BoardFoot, Caption, Chip, Confetti, HalfRink, Header, Ice, IceWipe, Lineup, Logo, PaperGoalie, Play, RinkDiagram, buildSegs, type Key, type Track, type W } from "../zam/common";
+import { BoardFoot, Caption, Confetti, FightCloud, HalfStage, Header, Ice, IceWipe, Lineup, Logo, Play, RinkDiagram, buildSegs, sample, type Band, type Key, type Track, type W } from "../zam/common";
 
 export const FPS = 60;
 const WORDS = words as W[];
@@ -63,79 +63,65 @@ const NET = ({ s = 300 }: { s?: number }) => (
 );
 
 
-// Five mini-recreations, one per scoring type, timed to Helmy's list. Paths follow the recaps where known
-// (PP: shot from above the circle · SH: puck between Sauve's legs · PS: Terreri's stick thrown at the puck); others approximate.
-const PIT = { c1: "#111", c2: "#fcb514" }, NJD = { c1: "#c8102e", c2: "#1b5e20" };
-const LemieuxPlays: React.FC<{ t: number }> = ({ t }) => {
-  const t0 = S("h_lemieux").start - 0.1;
-  const ways = ["even", "power", "shorthanded", "penalty", "empty"].map((k) => at("h_lemieux", k) - t0);
-  const ends = [...ways.slice(1), S("h_lemieux").end - t0 + 0.4];
-  const i = Math.max(0, ways.filter((w) => t >= w - 0.05).length - 1);
-  const a = ways[i], d = ends[i] - ways[i];
-  const u = (x: number) => a + x * d;
-  const NET: [number, number] = [190, 46];
-  const G = (keys?: Key[]): Track => ({ id: "g", ...NJD, n: "", goalie: true, s: 46, keys: keys ?? [[0, 190, 74]] });
-  const L = (keys: Key[]): Track => ({ id: "l", ...PIT, n: 66, s: 52, keys });
-  let tracks: Track[] = []; let puck: Key[] = []; let label = ""; let empty = false;
-  if (i === 0) { label = "EVEN STRENGTH"; tracks = [G(), L([[u(0), 260, 310], [u(0.55), 222, 150]]), { id: "d", ...NJD, n: "", s: 44, keys: [[u(0), 150, 200], [u(0.6), 175, 170]] }]; puck = [[u(0), 250, 300], [u(0.55), 212, 142], [u(0.85), ...NET]]; }
-  if (i === 1) { label = "POWER PLAY"; tracks = [G(), { id: "m", ...PIT, n: "", s: 44, keys: [[u(0), 300, 250]] }, L([[u(0), 95, 240]])]; puck = [[u(0), 290, 245], [u(0.3), 104, 232], [u(0.42), 104, 232], [u(0.85), ...NET]]; }
-  if (i === 2) { label = "SHORTHANDED"; tracks = [G([[u(0), 190, 74], [u(0.6), 190, 80]]), L([[u(0), 200, 300], [u(0.55), 192, 128]])]; puck = [[u(0), 205, 292], [u(0.55), 196, 120], [u(0.9), ...NET]]; }
-  if (i === 3) { label = "PENALTY SHOT"; tracks = [G(), { id: "st", ...NJD, n: "", kind: "stick", keys: [[u(0), 200, 80], [u(0.28), 282, 160]], hideAfter: u(0.4) }, L([[u(0.3), 190, 300], [u(0.72), 192, 132]])]; puck = [[u(0), 285, 165], [u(0.3), 190, 292], [u(0.72), 196, 124], [u(0.9), ...NET]]; }
-  if (i === 4) { label = "EMPTY NET · 19:59"; empty = true; tracks = [L([[u(0), 190, 300], [u(0.2), 190, 285]])]; puck = [[u(0), 190, 292], [u(0.2), 190, 277], [u(0.7), ...NET]]; }
-  const scored = t >= puck[puck.length - 1][0];
+// The gang acts it out: Clubby (#66) shoots Pucky past Biscuit (NJ), one mini-play per scoring type, timed to Helmy's list.
+// Paths follow the recaps where known (PP: shot from above the circle · SH: between Sauve's legs · PS: Terreri's stick thrown at the puck).
+const PIT_B: Band = { c1: "#111", c2: "#fcb514", n: 66 }, PIT_M: Band = { c1: "#111", c2: "#fcb514", n: "PIT" }, NJD_B: Band = { c1: "#c8102e", c2: "#1b5e20", n: "NJ" };
+const LemieuxStage: React.FC<{ t: number }> = ({ t }) => {
+  const NET: [number, number] = [838, 200];
+  const hs = S("h_lemieux").start - 0.1, he = S("h_lemieux").end;
+  const bis = (keys: Key[], extra: Partial<Track> = {}): Track => ({ id: "bis", c1: "", c2: "", n: "", kind: "mascot", who: "biscuit", s: 150, mood: "grumpy", band: NJD_B, flip: true, keys, ...extra });
+  const clu = (keys: Key[]): Track => ({ id: "clu", c1: "", c2: "", n: "", kind: "mascot", who: "clubby", s: 150, mood: "wow", band: PIT_B, keys });
+  const G: Key[] = [[0, 762, 200]];
+  let tracks: Track[] = [], puck: Key[] = [], label = "", light = false, idx = -1;
+  if (t < hs) {
+    const a = S("p_lemieux").start - 0.2;
+    const k: Key[] = [[a, 90, 300], [a + 1.3, 420, 140], [a + 2.6, 560, 290], [a + 3.8, 360, 250], [a + 5.4, 250, 210]];
+    tracks = [bis(G), clu(k)]; puck = k.map(([tt, x, y]) => [tt + 0.05, x + 78, y + 46] as Key); label = "5 GOALS · 5 WAYS";
+  } else if (t < he + 0.35) {
+    const ways = ["even", "power", "shorthanded", "penalty", "empty"].map((w) => at("h_lemieux", w));
+    const ends = [...ways.slice(1), he + 0.35];
+    idx = Math.max(0, ways.filter((w) => t >= w - 0.05).length - 1);
+    const a = ways[idx], d = ends[idx] - a; const u = (x: number) => a + x * d;
+    if (idx === 0) { label = "1/5 · EVEN STRENGTH"; tracks = [bis(G), clu([[u(0), 240, 300], [u(0.55), 590, 230]])]; puck = [[u(0), 318, 346], [u(0.55), 668, 276], [u(0.85), ...NET]]; }
+    if (idx === 1) { label = "2/5 · POWER PLAY"; tracks = [bis(G), { id: "hel", c1: "", c2: "", n: "", kind: "mascot", who: "helmy", s: 120, band: PIT_M, keys: [[0, 540, 80]] }, clu([[u(0), 400, 300]])]; puck = [[u(0), 600, 110], [u(0.3), 478, 346], [u(0.42), 478, 346], [u(0.85), ...NET]]; }
+    if (idx === 2) { label = "3/5 · SHORTHANDED"; tracks = [bis(G, { squash: (tt) => (tt > u(0.55) && tt < u(1) ? 0.7 : 1) }), clu([[u(0), 200, 200], [u(0.55), 590, 200]])]; puck = [[u(0), 278, 246], [u(0.55), 668, 246], [u(0.9), ...NET]]; }
+    if (idx === 3) { label = "4/5 · PENALTY SHOT"; tracks = [bis(G), { id: "st", c1: "", c2: "", n: "", kind: "stick", keys: [[u(0), 740, 180], [u(0.3), 650, 300]], hideAfter: u(0.42) }, clu([[u(0.3), 140, 200], [u(0.72), 590, 200]])]; puck = [[u(0), 650, 300], [u(0.32), 218, 246], [u(0.72), 668, 246], [u(0.9), ...NET]]; }
+    if (idx === 4) { label = "5/5 · EMPTY NET · 19:59"; tracks = [bis([[u(0), 762, 200], [u(0.3), 960, -120]], { hideAfter: u(0.32) }), clu([[u(0), 200, 260], [u(0.2), 250, 250]])]; puck = [[u(0), 278, 300], [u(0.2), 328, 296], [u(0.7), ...NET]]; }
+    light = t >= puck[puck.length - 1][0] && t < puck[puck.length - 1][0] + 0.5;
+  } else {
+    // "That goalie needs a hug": Biscuit back in net, Zam skates in for a hug; Pucky dizzy in the net
+    const a = he + 0.35;
+    tracks = [bis([[a, 960, -120], [a + 0.3, 740, 200]], { dizzy: () => true }), { id: "zam", c1: "", c2: "", n: "", kind: "mascot", who: "zam", s: 160, mood: "laugh", keys: [[a + 0.2, 120, 230], [a + 1.0, 620, 220]] }];
+    puck = [[0, ...NET]]; label = "GROUP HUG";
+  }
   return (
-    <div style={{ position: "relative", width: 380, height: 430 }}>
-      <HalfRink emptyNet={empty}>
-        <Play t={t} tracks={tracks} puck={puck} trailFrom={puck[0][0]} />
-        {scored && <div style={{ position: "absolute", left: 166, top: 2, width: 48, height: 26, borderRadius: 6, background: "#ff3b30", boxShadow: "0 0 34px 14px #ff3b3088", border: `3px solid ${P.ink}` }} />}
-      </HalfRink>
-      <div style={{ position: "absolute", left: 14, top: 336, padding: "2px 12px", background: P.red, color: "#fff", fontSize: 26, fontWeight: 900, letterSpacing: 1 }}>{i + 1}/5 · {label}</div>
-      <div style={{ position: "absolute", left: 12, top: 404, fontFamily: HAND, fontSize: 26, color: P.muted }}>recreation · paths approx.</div>
-    </div>
+    <HalfStage light={light}>
+      <Play t={t} tracks={tracks} puck={puck} puckWho puckSize={74} trailFrom={idx >= 0 ? puck[0][0] : undefined} />
+      <div style={{ position: "absolute", left: 16, top: 14, padding: "2px 12px", background: P.red, color: "#fff", fontSize: 28, fontWeight: 900, letterSpacing: 1, zIndex: 1001 }}>{label}</div>
+      <div style={{ position: "absolute", left: 18, bottom: 8, fontFamily: HAND, fontSize: 26, color: P.muted, zIndex: 1001 }}>the gang's recreation · paths approx.</div>
+    </HalfStage>
   );
 };
 
 const LemieuxBoard: React.FC = () => {
   const f = useCurrentFrame();
   const from = SC[1].from;
-  const g0 = lf(from, at("p_lemieux", "goals"));
-  const pucks = [0, 1, 2, 3, 4].map((i) => g0 + i * 16);
-  const scored = pucks.filter((p) => f >= p + 10).length;
-  const ways: [string, string][] = [["Even strength", "even"], ["Power play", "power"], ["Shorthanded", "shorthanded"], ["Penalty shot", "penalty"], ["Empty net", "empty"]];
-  const flash = pucks.some((p) => f >= p + 10 && f < p + 18);
-  const hB = lf(from, S("h_lemieux").start - 0.1);
+  const t = from + f / FPS;
+  const ways: [string, string][] = [["EVEN", "even"], ["PP", "power"], ["SH", "shorthanded"], ["PS", "penalty"], ["EN", "empty"]];
+  const done = ways.filter(([, k]) => t >= at("h_lemieux", k)).length;
   return (
     <PaperCard w={960} h={740} seed="lem" tag={TAG}>
       <Header title="MARIO LEMIEUX" sub="Dec 31, 1988 · Penguins 8–6 Devils" />
-      {f >= hB && <div style={{ position: "absolute", left: 0, top: 140, opacity: interpolate(f, [hB, hB + 6], [0, 1], clamp) }}><LemieuxPlays t={(f - hB) / FPS} /></div>}
-      <div style={{ position: "absolute", left: 0, top: 150, width: 380, height: 380, opacity: f >= hB ? 0 : 1 }}>
-        <div style={{ position: "absolute", left: 30, top: 60 }}><NET s={320} /></div>
-        {flash && <div style={{ position: "absolute", left: 160, top: 10, width: 60, height: 40, borderRadius: 10, background: "#ff3b30", boxShadow: "0 0 50px 20px #ff3b3088", border: `4px solid ${P.ink}` }} />}
-        {pucks.map((p, i) => {
-          const k = interpolate(f, [p, p + 10], [0, 1], clamp);
-          if (f < p) return null;
-          const x = interpolate(k, [0, 1], [-300, 110 + (i % 3) * 70]);
-          const y = interpolate(k, [0, 1], [380, 130 + Math.floor(i / 3) * 70]) - Math.sin(k * Math.PI) * 120;
-          return <div key={i} style={{ position: "absolute", left: x, top: y, width: 56, height: 22, borderRadius: "50%", background: "#111", border: `3px solid ${P.ink}`, transform: `rotate(${-18 + i * 7}deg)` }} />;
+      <div style={{ position: "absolute", left: 0, top: 128 }}><LemieuxStage t={t} /></div>
+      <div style={{ position: "absolute", left: 0, top: 545, display: "flex", gap: 10, alignItems: "center" }}>
+        {ways.map(([lab, k], i) => {
+          const on = t >= at("h_lemieux", k);
+          const pop = interpolate(t - at("h_lemieux", k), [0, 0.15], [1.4, 1], clamp);
+          return <div key={k} style={{ width: 128, height: 62, border: `5px solid ${P.ink}`, borderRadius: 12, background: on ? "#d9f0d0" : P.paper2, opacity: on ? 1 : 0.4, display: "flex", alignItems: "center", justifyContent: "center", gap: 6, fontSize: 32, fontWeight: 900, transform: `scale(${on ? pop : 1})` }}>{on ? <span style={{ color: P.green }}>✓</span> : null}{lab}</div>;
         })}
-        <div style={{ position: "absolute", left: 120, top: 270, fontSize: 130, fontWeight: 900, color: P.ink, lineHeight: 1 }}>{scored}<span style={{ fontSize: 44, marginLeft: 8 }}>GOALS</span></div>
+        <div style={{ marginLeft: 10, fontSize: 56, fontWeight: 900 }}>{done}<span style={{ fontSize: 26 }}> GOALS</span></div>
       </div>
-      <div style={{ position: "absolute", left: 420, top: 160, right: 0 }}>
-        {ways.map(([label, key], i) => {
-          const tick = lf(from, at("h_lemieux", key));
-          const on = f >= tick;
-          const pop = interpolate(f, [tick, tick + 8], [1.6, 1], clamp);
-          return (
-            <div key={key} style={{ display: "flex", alignItems: "center", gap: 18, height: 78, opacity: on ? 1 : 0.35 }}>
-              <div style={{ width: 52, height: 52, border: `5px solid ${P.ink}`, borderRadius: 8, background: P.paper2, position: "relative" }}>
-                {on && <div style={{ position: "absolute", left: 4, top: -18, fontSize: 64, color: P.green, fontWeight: 900, transform: `scale(${pop})` }}>✓</div>}
-              </div>
-              <div style={{ fontSize: 42, fontWeight: 800 }}>{i + 1}. {label}</div>
-            </div>
-          );
-        })}
-      </div>
-      <div style={{ position: "absolute", left: 140, top: 530 }}><Stamp color={P.red} at={lf(from, at("h_lemieux", "never"))} rot={-4} size={44}>ONLY TIME IN NHL HISTORY</Stamp></div>
+      <div style={{ position: "absolute", left: 20, top: 425, zIndex: 1100 }}><Stamp color={P.red} at={lf(from, at("h_lemieux", "never"))} rot={-4} size={40}>ONLY TIME IN NHL HISTORY</Stamp></div>
       <BoardFoot source="NHL.com" />
     </PaperCard>
   );
@@ -161,32 +147,58 @@ const HoltBoard: React.FC = () => {
         </div>
         <div style={{ fontSize: 46, fontWeight: 900, lineHeight: 1.05 }}>PENALTY<br />MINUTES<div style={{ fontFamily: HAND, fontSize: 44, color: P.red, fontWeight: 700 }}>in ONE game</div></div>
       </div>
-      {/* penalty box filling with paper players (1 minor, 3 majors, 2 misconducts, 3 game misconducts = 9 penalties) */}
-      <div style={{ position: "absolute", left: 0, top: 370, width: 600, height: 150, border: `6px solid ${P.ink}`, borderRadius: 14, background: "#e9f3fa" }}>
-        <div style={{ position: "absolute", left: 14, top: -30, padding: "2px 14px", background: P.ink, color: "#fff", fontSize: 24, fontWeight: 900, letterSpacing: 2 }}>PENALTY BOX</div>
-        <div style={{ position: "absolute", left: 18, top: 26, display: "flex", gap: 2 }}>
-          {[...Array(chips)].map((_, i) => <Chip key={i} c1="#5b2c83" c2="#f2c230" n={i % 2 ? "!" : "?!"} s={62} />)}
+      {/* Clubby (as Holt, LA) keeps getting sent to the box by referee Helmy */}
+      <div style={{ position: "absolute", left: 0, top: 345, width: 892, height: 190, background: "#f4fbff", border: `6px solid ${P.ink}`, borderRadius: 18, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 250, height: 190, background: "#dde9f2", borderRight: `8px solid ${P.ink}` }}>
+          <div style={{ position: "absolute", left: 12, top: 8, padding: "2px 10px", background: P.ink, color: "#fff", fontSize: 22, fontWeight: 900, letterSpacing: 2 }}>PENALTY BOX</div>
         </div>
+        <Play t={from + f / FPS} tracks={[
+          { id: "ref", c1: "", c2: "", n: "", kind: "mascot", who: "helmy", s: 110, mood: "wow", band: { c1: "#ffffff", c2: "#111", n: "REF" }, flip: true, keys: [[0, 520, 70]] },
+          { id: "clu", c1: "", c2: "", n: "", kind: "mascot", who: "clubby", s: 120, mood: "grumpy", band: { c1: "#5b2c83", c2: "#f2c230", n: "LA" }, keys: [...Array(10)].flatMap((_, k) => [[from + 0.4 + k * 0.85, 760, 66], [from + 0.4 + k * 0.85 + 0.4, 130, 66]] as Key[]) },
+        ]} />
+        <div style={{ position: "absolute", left: 280, top: 148, fontFamily: HAND, fontSize: 30, color: P.red, fontWeight: 700 }}>tweeeet! · tweeeet! · tweeeet!</div>
       </div>
-      <div style={{ position: "absolute", left: 630, top: 370 }}><Stamp color={P.red} at={c0 + 52} rot={8} size={46}>NHL<br />RECORD</Stamp></div>
-      <div style={{ position: "absolute", left: 60, top: 540 }}><Stamp color={P.teal} at={lf(from, at("c_holt", "first"))} rot={-3} size={40}>ALL IN THE 1ST PERIOD</Stamp></div>
+      <div style={{ position: "absolute", left: 650, top: 150 }}><Stamp color={P.red} at={c0 + 52} rot={8} size={46}>NHL<br />RECORD</Stamp></div>
+      <div style={{ position: "absolute", left: 60, top: 552 }}><Stamp color={P.teal} at={lf(from, at("c_holt", "first"))} rot={-3} size={40}>ALL IN THE 1ST PERIOD</Stamp></div>
       <BoardFoot source="NHL.com · Guinness World Records" />
     </PaperCard>
   );
 };
 
 const FightBoard: React.FC = () => {
+  const f = useCurrentFrame();
   const from = SC[3].from;
+  const t = from + f / FPS;
+  const go = at("z_fight", "goalies"), masks = at("b_fight", "masks"), end = S("b_fight").end;
+  const DET: Band = { c1: "#ce1126", c2: "#ffffff", n: 29 }, COL: Band = { c1: "#6f263d", c2: "#236192", n: 33 };
+  const inCloud = t > go + 0.3 && t < end;
+  const bounce = (x: number, y: number): Key[] => [...Array(14)].map((_, k) => [from + k * 0.3, x, y + (k % 2 ? -10 : 0)] as Key);
+  const tracks: Track[] = inCloud ? [] : t <= go + 0.3 ? [
+    { id: "b", c1: "", c2: "", n: "", kind: "mascot", who: "biscuit", s: 160, mood: "grumpy", band: DET, label: "VERNON · DET", keys: t < go ? bounce(190, 190) : [[go, 190, 190], [go + 0.3, 380, 200]] },
+    { id: "h", c1: "", c2: "", n: "", kind: "mascot", who: "helmy", s: 160, mood: "grumpy", band: COL, label: "ROY · COL", flip: true, keys: t < go ? bounce(700, 190) : [[go, 700, 190], [go + 0.3, 510, 200]] },
+  ] : [
+    { id: "b", c1: "", c2: "", n: "", kind: "mascot", who: "biscuit", s: 160, mood: "grumpy", band: DET, dizzy: () => true, keys: [[end, 380, 200], [end + 0.3, 200, 190]] },
+    { id: "h", c1: "", c2: "", n: "", kind: "mascot", who: "helmy", s: 160, mood: "wow", band: COL, dizzy: () => true, flip: true, keys: [[end, 510, 200], [end + 0.3, 690, 190]] },
+  ];
+  const fly = (k: number, x1: number, y1: number, el: React.ReactNode) => {
+    const u = interpolate(t, [masks + k * 0.15, masks + k * 0.15 + 0.9], [0, 1], clamp);
+    if (t < masks + k * 0.15) return null;
+    return <div style={{ position: "absolute", left: 445 + (x1 - 445) * u, top: 200 + (y1 - 200) * u - Math.sin(u * Math.PI) * 140, transform: `rotate(${u * 720}deg)`, zIndex: 1100 }}>{el}</div>;
+  };
   return (
     <PaperCard w={960} h={740} seed="fight" tag={TAG}>
       <Header title="FIGHT NIGHT AT THE JOE" sub="Mar 26, 1997 · Detroit vs Colorado" />
-      <div style={{ position: "absolute", left: 6, top: 135 }}>
-        <Sequence from={lf(from, at("z_fight", "goalies")) - 10} layout="none">
-          <VersusCard w={880} h={375} leftLabel="VERNON · DET" rightLabel="ROY · COL" left={<PaperGoalie c1="#ce1126" c2="#ffffff" n={29} s={220} />} right={<PaperGoalie c1="#6f263d" c2="#236192" n={33} s={220} flip />} />
-        </Sequence>
+      <div style={{ position: "absolute", left: 0, top: 128, width: 892, height: 390, background: "#f4fbff", border: `6px solid ${P.ink}`, borderRadius: 26 }}>
+        <div style={{ position: "absolute", left: 443, top: 0, width: 10, height: 378, background: "#d94b3b", opacity: 0.7 }} />
+        <Play t={t} tracks={tracks} />
+        {inCloud && <div style={{ position: "absolute", left: 445 - 190, top: 40, zIndex: 900 }}><FightCloud s={380} /></div>}
+        {fly(0, 90, 40, <div style={{ width: 70, height: 60, background: "#f8fafc", border: `5px solid ${P.ink}`, borderRadius: "40% 40% 20% 20%" }} />)}
+        {fly(1, 820, 60, <div style={{ width: 60, height: 50, background: P.teal, border: `5px solid ${P.ink}`, borderRadius: "50% 50% 10% 10%" }} />)}
+        {fly(2, 150, 330, <div style={{ width: 54, height: 44, background: "#ce1126", border: `5px solid ${P.ink}`, borderRadius: 12 }} />)}
+        {fly(3, 760, 340, <div style={{ width: 54, height: 44, background: "#6f263d", border: `5px solid ${P.ink}`, borderRadius: 12 }} />)}
       </div>
-      <div style={{ position: "absolute", left: 120, top: 525 }}><Stamp color={P.red} at={lf(from, at("b_fight", "masks"))} rot={-3} size={40}>MASKS OFF · GLOVES OFF</Stamp></div>
-      <BoardFoot source="WDIV ClickOnDetroit · Wikipedia" />
+      <div style={{ position: "absolute", left: 120, top: 530 }}><Stamp color={P.red} at={lf(from, masks)} rot={-3} size={40}>MASKS OFF · GLOVES OFF</Stamp></div>
+      <BoardFoot source="WDIV ClickOnDetroit · Wikipedia (the gang's recreation)" />
     </PaperCard>
   );
 };
@@ -208,6 +220,7 @@ const RoastBoard: React.FC = () => {
 
 // Recreation per recaps: VAN goalie pulled, puck chipped into BOS zone but short of the corner, Ullmark leaves
 // his crease, lifts a high wrist shot over the traffic, it lands past the blue line in the slot and slides in (0:48 left).
+const DizzyStars: React.FC = () => { const f = onTwos(useCurrentFrame()); return <>{[0, 1, 2].map((i) => { const a = f / 9 + (i * Math.PI * 2) / 3; return <div key={i} style={{ position: "absolute", left: Math.cos(a) * 40 - 12, top: Math.sin(a) * 16 - 40, fontSize: 28, color: P.mustard, WebkitTextStroke: `2px ${P.ink}` }}>★</div>; })}</>; };
 const BOS = { c1: "#111", c2: "#fcb514" }, VAN = { c1: "#00205b", c2: "#00843d" };
 const UllmarkBoard: React.FC = () => {
   const f = useCurrentFrame();
@@ -218,7 +231,7 @@ const UllmarkBoard: React.FC = () => {
   const chip = fire - 1.1;
   const van: Track[] = [[300, 80], [250, 250], [200, 120], [330, 200], [380, 280], [420, 130]].map(([x, y], k) => ({ id: `v${k}`, ...VAN, n: "", s: 44, keys: [[0, x + 120, y], [chip, x, y], [fire, x - 20, y + (k % 2 ? 10 : -10)], [g, x + 90, y]] as Key[] }));
   const bos: Track[] = [[220, 180], [300, 240], [260, 100]].map(([x, y], k) => ({ id: `b${k}`, ...BOS, n: "", s: 44, keys: [[0, x, y], [fire, x - 30, y], [g, x + 60, y]] as Key[] }));
-  const ull: Track = { id: "u", ...BOS, n: 35, goalie: true, s: 62, keys: [[0, 92, 170], [chip + 0.3, 92, 170], [fire - 0.15, 138, 246], [g, 132, 236]] };
+  const ull: Track = { id: "u", c1: "", c2: "", n: "", kind: "mascot", who: "biscuit", s: 104, mood: t > g ? "laugh" : "grumpy", band: { c1: "#111", c2: "#fcb514", n: 35 }, keys: [[0, 92, 160], [chip + 0.3, 92, 160], [fire - 0.15, 140, 236], [g, 134, 226], [g + 0.25, 134, 196], [g + 0.5, 134, 226], [g + 0.75, 134, 196], [g + 1, 134, 226]] };
   const puck: Key[] = [[0, 520, 120], [chip, 480, 110], [chip + 0.75, 150, 258], [fire, 150, 254], [fire + (g - fire) * 0.45, 470, 205, 135], [fire + (g - fire) * 0.72, 690, 178, 0], [g, 826, 170, 0]];
   const lit = f >= F(g) && f < F(g) + 50 && Math.floor((f - F(g)) / 6) % 2 === 0;
   const scored = t >= g;
@@ -232,7 +245,9 @@ const UllmarkBoard: React.FC = () => {
       <div style={{ position: "absolute", left: 0, top: 150 }}>
         <RinkDiagram w={890} h={340}>
           <div style={{ position: "absolute", left: 798, top: 120, fontFamily: HAND, fontSize: 30, color: P.red, fontWeight: 700 }}>empty!</div>
-          <Play t={t} tracks={[...van, ...bos, ull]} puck={puck} trailFrom={fire} />
+          <Play t={t} tracks={[...van, ...bos, ull]} puck={puck} trailFrom={fire} puckWho puckSize={58} />
+          {t > fire && t < g && <div style={{ position: "absolute", left: sample(puck, t).x - 40, top: sample(puck, t).y - sample(puck, t).z - 90, fontFamily: HAND, fontSize: 40, fontWeight: 700, color: P.red, zIndex: 1000 }}>WHEEE!</div>}
+          {t > g + 0.2 && <div style={{ position: "absolute", left: 826, top: 150, zIndex: 1000 }}><DizzyStars /></div>}
           {lit && <div style={{ position: "absolute", left: 808, top: 76, width: 40, height: 30, borderRadius: 8, background: "#ff3b30", boxShadow: "0 0 44px 18px #ff3b3088", border: `4px solid ${P.ink}` }} />}
         </RinkDiagram>
       </div>
