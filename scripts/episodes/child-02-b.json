@@ -1,0 +1,9 @@
+{
+  "id": "child-02-b", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 0.8, "voice_gap": 1.4,
+  "segments": [
+    {"id": "p_goal", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Goal!"},
+    {"id": "b_again", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Again!"},
+    {"id": "z_bye", "tts": "Bye bye, playground."}
+  ],
+  "display_map": {}, "keywords": ["goal", "again", "playground"]
+}

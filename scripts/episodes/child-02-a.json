@@ -1,0 +1,12 @@
+{
+  "id": "child-02-a", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 0.8, "voice_gap": 1.1,
+  "segments": [
+    {"id": "z_out", "tts": "Outside… yay!"},
+    {"id": "p_swing", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Swing… swing… wheee!"},
+    {"id": "b_sand", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Sand… cake. Yum?"},
+    {"id": "h_slide", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Up… up… slide!"},
+    {"id": "c_up", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Up!"},
+    {"id": "a_down", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Down! …Again!"}
+  ],
+  "display_map": {}, "keywords": ["outside", "swing", "wheee", "sand", "cake", "slide", "up", "down", "again"]
+}

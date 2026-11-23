@@ -13,12 +13,12 @@ import { Big, SegCtx } from "../zam/toon";
 
 const WORDS = words as W[];
 const { SEGS, LAST } = timing(WORDS);
-const INTRO = 2.4, OUTRO = 3.9, XF = 0.6;
+export const INTRO = 2.4, OUTRO = 3.9, XF = 0.6;
 const F = (s: number) => Math.round(s * FPS);
 const OUT_AT = INTRO + LAST + 0.5;
 export const CHILD01_FRAMES = Math.ceil((OUT_AT + OUTRO) * FPS);
-const soft = { ...clamp, easing: Easing.inOut(Easing.sin) };
-const sway = (t: number, sp = 0.6, amp = 3, ph = 0) => Math.sin(t * sp * Math.PI * 2 + ph) * amp;
+export const soft = { ...clamp, easing: Easing.inOut(Easing.sin) };
+export const sway = (t: number, sp = 0.6, amp = 3, ph = 0) => Math.sin(t * sp * Math.PI * 2 + ph) * amp;
 
 // ------------------------------------------------------------------ song lyrics (song starts at news-time 20.65)
 const SONG = 20.65;
@@ -97,7 +97,7 @@ const Playroom: React.FC<{ night?: number; rug?: boolean }> = ({ night = 0, rug 
     {night > 0 && <AbsoluteFill style={{ background: "#1e1b4b", opacity: night * 0.55 }} />}
   </AbsoluteFill>
 );
-const Notes: React.FC<{ t: number; n?: number; x?: number; w?: number; top?: number }> = ({ t, n = 7, x = 80, w = 900, top = 1250 }) => (
+export const Notes: React.FC<{ t: number; n?: number; x?: number; w?: number; top?: number }> = ({ t, n = 7, x = 80, w = 900, top = 1250 }) => (
   <>
     {[...Array(n)].map((_, i) => {
       const life = ((t * 0.18 + random(`nt${i}`)) % 1);
@@ -105,17 +105,17 @@ const Notes: React.FC<{ t: number; n?: number; x?: number; w?: number; top?: num
     })}
   </>
 );
-const Zs: React.FC<{ t: number; x: number; y: number }> = ({ t, x, y }) => (
+export const Zs: React.FC<{ t: number; x: number; y: number }> = ({ t, x, y }) => (
   <>
     {[0, 1, 2].map((i) => { const life = (t * 0.25 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: x + life * 80 + sway(t, 0.4, 12, i), top: y - life * 180, fontFamily: FONT, fontWeight: 900, fontSize: 46 + life * 40, color: "#c7d2fe", opacity: interpolate(life, [0, 0.2, 0.8, 1], [0, 1, 1, 0]), zIndex: 6 }}>z</div>; })}
   </>
 );
 
 /** Baby actor: lip-syncs when it's their line, sways gently, optional song mouth. */
-const Baby: React.FC<{ who: Who; t: number; size: number; x: number; y: number; mood?: Mood; flip?: boolean; ph?: number; sing?: boolean; rot?: number; z?: number }> = ({ who, t, size, x, y, mood = "bliss", flip, ph = 0, sing, rot = 0, z }) => (
-  <Big who={who} t={t} size={size} x={x + sway(t, 0.25, 8, ph)} y={y} mood={mood} flip={flip} rot={rot + sway(t, 0.3, 2.5, ph)} baby z={z} open={sing ? singOpen(t, ph) : undefined} />
+export const Baby: React.FC<{ who: Who; t: number; size: number; x: number; y: number; mood?: Mood; flip?: boolean; ph?: number; sing?: boolean; singFn?: (t: number, ph: number) => number; rot?: number; z?: number }> = ({ who, t, size, x, y, mood = "bliss", flip, ph = 0, sing, singFn = singOpen, rot = 0, z }) => (
+  <Big who={who} t={t} size={size} x={x + sway(t, 0.25, 8, ph)} y={y} mood={mood} flip={flip} rot={rot + sway(t, 0.3, 2.5, ph)} baby z={z} open={sing ? singFn(t, ph) : undefined} />
 );
-const Pan: React.FC<{ lf: number; dur: number; from?: number; to?: number; x0?: number; x1?: number; children: React.ReactNode }> = ({ lf, dur, from = 1, to = 1.06, x0 = 0, x1 = 0, children }) => {
+export const Pan: React.FC<{ lf: number; dur: number; from?: number; to?: number; x0?: number; x1?: number; children: React.ReactNode }> = ({ lf, dur, from = 1, to = 1.06, x0 = 0, x1 = 0, children }) => {
   const k = interpolate(lf, [0, F(dur)], [0, 1], soft);
   return <AbsoluteFill style={{ transform: `scale(${from + (to - from) * k}) translateX(${x0 + (x1 - x0) * k}px)`, transformOrigin: "50% 60%" }}>{children}</AbsoluteFill>;
 };
@@ -227,7 +227,7 @@ const SHOTS: Shot[] = [
 const RANGES = SHOTS.map((s, i) => ({ ...s, to: SHOTS[i + 1]?.from ?? LAST + 0.5 }));
 
 // ------------------------------------------------------------------ soft intro / outro
-const BabyIntro: React.FC = () => {
+export const BabyIntro: React.FC = () => {
   const f = useCurrentFrame();
   const fade = interpolate(f, [F(INTRO) - 14, F(INTRO)], [1, 0], clamp);
   return (
@@ -240,7 +240,7 @@ const BabyIntro: React.FC = () => {
     </AbsoluteFill>
   );
 };
-const BabyOutro: React.FC = () => {
+export const BabyOutro: React.FC = () => {
   const f = useCurrentFrame();
   const gang: Who[] = ["helmy", "biscuit", "zam", "pucky", "clubby", "agenty"];
   return (
@@ -285,7 +285,7 @@ export const Child01: React.FC = () => {
     </SegCtx.Provider>
   );
 };
-const XFade: React.FC<{ first: boolean; dur: number; children: React.ReactNode }> = ({ first, dur, children }) => {
+export const XFade: React.FC<{ first: boolean; dur: number; children: React.ReactNode }> = ({ first, dur, children }) => {
   const f = useCurrentFrame();
   const o = first ? 1 : interpolate(f, [0, F(XF)], [0, 1], soft);
   void dur;

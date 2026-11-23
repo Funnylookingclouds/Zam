@@ -1,0 +1,154 @@
+[
+ {
+  "word": "Outside...",
+  "display": "Outside...",
+  "start": 0.058,
+  "end": 0.708,
+  "segment": "z_out",
+  "keyword": true
+ },
+ {
+  "word": "yay!",
+  "display": "yay!",
+  "start": 1.184,
+  "end": 1.509,
+  "segment": "z_out",
+  "keyword": false
+ },
+ {
+  "word": "Swing...",
+  "display": "Swing...",
+  "start": 2.923,
+  "end": 3.666,
+  "segment": "p_swing",
+  "keyword": true
+ },
+ {
+  "word": "swing...",
+  "display": "swing...",
+  "start": 3.968,
+  "end": 4.618,
+  "segment": "p_swing",
+  "keyword": true
+ },
+ {
+  "word": "wheee!",
+  "display": "wheee!",
+  "start": 5.024,
+  "end": 5.663,
+  "segment": "p_swing",
+  "keyword": true
+ },
+ {
+  "word": "Sand...",
+  "display": "Sand...",
+  "start": 7.076,
+  "end": 7.727,
+  "segment": "b_sand",
+  "keyword": true
+ },
+ {
+  "word": "cake.",
+  "display": "cake.",
+  "start": 7.843,
+  "end": 8.354,
+  "segment": "b_sand",
+  "keyword": true
+ },
+ {
+  "word": "Yum?",
+  "display": "Yum?",
+  "start": 8.493,
+  "end": 8.957,
+  "segment": "b_sand",
+  "keyword": false
+ },
+ {
+  "word": "Up...",
+  "display": "Up...",
+  "start": 10.544,
+  "end": 10.939,
+  "segment": "h_slide",
+  "keyword": true
+ },
+ {
+  "word": "up...",
+  "display": "up...",
+  "start": 11.195,
+  "end": 11.601,
+  "segment": "h_slide",
+  "keyword": true
+ },
+ {
+  "word": "slide!",
+  "display": "slide!",
+  "start": 11.694,
+  "end": 12.367,
+  "segment": "h_slide",
+  "keyword": true
+ },
+ {
+  "word": "Up!",
+  "display": "Up!",
+  "start": 13.827,
+  "end": 14.129,
+  "segment": "c_up",
+  "keyword": true
+ },
+ {
+  "word": "Down!",
+  "display": "Down!",
+  "start": 15.496,
+  "end": 16.053,
+  "segment": "a_down",
+  "keyword": true
+ },
+ {
+  "word": "...Again!",
+  "display": "...Again!",
+  "start": 16.309,
+  "end": 17.423,
+  "segment": "a_down",
+  "keyword": true
+ },
+ {
+  "word": "Goal!",
+  "display": "Goal!",
+  "start": 40.693,
+  "end": 41.366,
+  "segment": "p_goal",
+  "keyword": true
+ },
+ {
+  "word": "Again!",
+  "display": "Again!",
+  "start": 43.08,
+  "end": 43.73,
+  "segment": "b_again",
+  "keyword": true
+ },
+ {
+  "word": "Bye",
+  "display": "Bye",
+  "start": 45.501,
+  "end": 45.629,
+  "segment": "z_bye",
+  "keyword": false
+ },
+ {
+  "word": "bye,",
+  "display": "bye,",
+  "start": 45.652,
+  "end": 45.885,
+  "segment": "z_bye",
+  "keyword": false
+ },
+ {
+  "word": "playground.",
+  "display": "playground.",
+  "start": 45.908,
+  "end": 46.581,
+  "segment": "z_bye",
+  "keyword": true
+ }
+]
