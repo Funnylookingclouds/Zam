@@ -8,7 +8,7 @@ import { random, useCurrentFrame } from "remotion";
 import { P, onTwos } from "../presenter/kit";
 
 export type Who = "zam" | "pucky" | "biscuit" | "helmy" | "clubby";
-export type Mood = "talk" | "wow" | "laugh" | "grumpy" | "smug" | "bliss" | "sleep" | "scared" | "dizzy" | "sweat" | "determined";
+export type Mood = "talk" | "wow" | "laugh" | "grumpy" | "smug" | "bliss" | "sleep" | "scared" | "dizzy" | "sweat" | "determined" | "sad" | "tired" | "starry";
 export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood; shades?: boolean };
 
 export const GANG: Record<Who, { name: string; role: string; accent: string; voice: string }> = {
@@ -89,14 +89,19 @@ const Pucky: React.FC<{ p: Pose }> = ({ p }) => (
   </g>
 );
 
-/** Pucky's expression set for close-ups. */
-const PuckyEyes: React.FC<{ p: Pose }> = ({ p }) => {
+/** Expression set for close-ups (Pucky: white lines on black; Biscuit: ink lines on the white mask). Eyes centred at y. */
+const PuckyEyes: React.FC<{ p: Pose }> = ({ p }) => <FaceEyes p={p} />;
+const FaceEyes: React.FC<{ p: Pose; y?: number; line?: string }> = ({ p, y = -6, line = "#fff" }) => {
   const m = p.mood;
-  if (m === "sleep") return <>{[-30, 30].map((x) => <path key={x} d={`M${x - 16} -8 Q${x} 4 ${x + 16} -8`} stroke="#fff" strokeWidth={6} fill="none" strokeLinecap="round" />)}</>;
-  if (m === "bliss") return <>{[-30, 30].map((x) => <path key={x} d={`M${x - 17} -2 Q${x} -22 ${x + 17} -2`} stroke="#fff" strokeWidth={7} fill="none" strokeLinecap="round" />)}</>;
-  if (m === "dizzy") return <>{[-30, 30].map((x) => <g key={x}><circle cx={x} cy={-6} r={19} fill="#fff" stroke={INK} strokeWidth={4} /><path d={`M${x} -6 m-3 0 a3 3 0 1 1 6 0 a6 6 0 1 1 -12 0 a9 9 0 1 1 18 0 a12 12 0 1 1 -24 0`} stroke={INK} strokeWidth={3} fill="none" /></g>)}</>;
-  if (m === "scared") return <>{[-32, 32].map((x) => <g key={x}><ellipse cx={x} cy={-8} rx={22} ry={28} fill="#fff" stroke={INK} strokeWidth={5} /><circle cx={x} cy={-6} r={5} fill={INK} /><path d={`M${x - 16} -46 Q${x} ${x < 0 ? -56 : -56} ${x + 16} -46`} stroke="#fff" strokeWidth={5} fill="none" strokeLinecap="round" /></g>)}</>;
-  return <Eyes y={-6} p={p} brow={m === "smug" || m === "determined" ? "angry" : m === "sweat" ? "up" : "none"} />;
+  const X = [-30, 30];
+  if (m === "sleep") return <>{X.map((x) => <path key={x} d={`M${x - 16} ${y - 2} Q${x} ${y + 10} ${x + 16} ${y - 2}`} stroke={line} strokeWidth={6} fill="none" strokeLinecap="round" />)}</>;
+  if (m === "bliss") return <>{X.map((x) => <path key={x} d={`M${x - 17} ${y + 4} Q${x} ${y - 16} ${x + 17} ${y + 4}`} stroke={line} strokeWidth={7} fill="none" strokeLinecap="round" />)}</>;
+  if (m === "dizzy") return <>{X.map((x) => <g key={x}><circle cx={x} cy={y} r={19} fill="#fff" stroke={INK} strokeWidth={4} /><path d={`M${x} ${y} m-3 0 a3 3 0 1 1 6 0 a6 6 0 1 1 -12 0 a9 9 0 1 1 18 0 a12 12 0 1 1 -24 0`} stroke={INK} strokeWidth={3} fill="none" /></g>)}</>;
+  if (m === "scared") return <>{[-32, 32].map((x) => <g key={x}><ellipse cx={x} cy={y - 2} rx={22} ry={28} fill="#fff" stroke={INK} strokeWidth={5} /><circle cx={x} cy={y} r={5} fill={INK} /><path d={`M${x - 16} ${y - 40} Q${x} ${y - 50} ${x + 16} ${y - 40}`} stroke={line} strokeWidth={5} fill="none" strokeLinecap="round" /></g>)}</>;
+  if (m === "tired") return <>{X.map((x) => <g key={x}><ellipse cx={x} cy={y} rx={18} ry={22} fill="#fff" stroke={INK} strokeWidth={5} /><circle cx={x} cy={y + 8} r={8} fill={INK} /><path d={`M${x - 20} ${y - 2} Q${x} ${y - 30} ${x + 20} ${y - 2} Z`} fill="#c08a3e" stroke={INK} strokeWidth={4} /></g>)}</>;
+  if (m === "sad") return <><Eyes y={y} p={p} brow="up" />{X.map((x) => <path key={x} d={`M${x} ${y + 26} q-6 40 0 70 q6 -30 0 -70`} fill="#7dd3fc" stroke={INK} strokeWidth={3} />)}</>;
+  if (m === "starry") return <>{X.map((x) => <path key={x} d={`M${x} ${y - 24} L${x + 7} ${y - 7} L${x + 24} ${y - 6} L${x + 10} ${y + 5} L${x + 15} ${y + 22} L${x} ${y + 12} L${x - 15} ${y + 22} L${x - 10} ${y + 5} L${x - 24} ${y - 6} L${x - 7} ${y - 7} Z`} fill="#facc15" stroke={INK} strokeWidth={4} strokeLinejoin="round" />)}</>;
+  return <Eyes y={y} p={p} brow={m === "smug" || m === "determined" || m === "grumpy" ? "angry" : m === "sweat" || m === "wow" ? "up" : "none"} />;
 };
 const PuckyMouth: React.FC<{ p: Pose }> = ({ p }) => {
   const m = p.mood;
@@ -115,9 +120,10 @@ const Biscuit: React.FC<{ p: Pose }> = ({ p }) => (
     <circle r={112} fill="#a16207" stroke={INK} strokeWidth={5} />
     <path d="M-72 -92 Q0 -134 72 -92 L82 -12 Q0 8 -82 -12 Z" fill="#f8fafc" stroke={INK} strokeWidth={5} />
     {[-50, -20, 10, 40].map((x) => <line key={x} x1={x} y1={-98} x2={x + 6} y2={-14} stroke={INK} strokeWidth={3} />)}
-    <Eyes y={-48} p={p} brow={p.mood === "grumpy" ? "angry" : "none"} />
+    <FaceEyes p={p} y={-48} line={INK} />
     <ellipse cx={0} cy={30} rx={58} ry={36} fill="#d6a76a" stroke={INK} strokeWidth={5} />
     {[-30, -16, 16, 30].map((x) => <circle key={x} cx={x} cy={22 + Math.abs(x) * 0.2} r={3} fill={INK} />)}
+    {p.mood === "sad" && [-30, 30].map((x) => <path key={`t${x}`} d={`M${x * 1.25} -22 q-10 50 0 84 q10 -34 0 -84`} fill="#7dd3fc" stroke={INK} strokeWidth={3} />)}
     {/* mouth hides under the muzzle; tusks open apart when talking */}
     <ellipse cx={0} cy={58} rx={20} ry={4 + p.open * 16} fill="#5b1414" stroke={INK} strokeWidth={4} />
     {[-1, 1].map((s) => (

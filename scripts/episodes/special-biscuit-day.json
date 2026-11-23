@@ -1,0 +1,21 @@
+{
+  "id": "special-biscuit-day", "language": "en", "voice_id": "D38z5RcWu1voky8WS1ja", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_intro", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Today on ZAM: Biscuit's worst day ever!"},
+    {"id": "b_gear", "tts": "Six a.m. Pads, gloves, mask. I'm basically a sofa."},
+    {"id": "p_catch", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Warm-ups! Hey Biscuit – catch!"},
+    {"id": "b_ow", "tts": "Ow. Ow. OW!"},
+    {"id": "h_fifth", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "A hundred-mile-an-hour shot from thirty feet reaches the net in about a fifth of a second."},
+    {"id": "b_blink", "tts": "I blink slower than that!"},
+    {"id": "c_mask", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, goalies didn't wear masks – until Jacques Plante made it a thing in 1959."},
+    {"id": "z_game", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Game time! Biscuit makes save after save… and loses."},
+    {"id": "h_lopresti", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Like Sam LoPresti, 1941: eighty saves – and still lost, three-two."},
+    {"id": "b_worst", "tts": "Worst. Day. Ever."},
+    {"id": "h_mcauley", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Actually, the worst day ever: Ken McAuley, 1944. Fifteen goals against."},
+    {"id": "b_great", "tts": "Fifteen?! …I feel great now."},
+    {"id": "p_fourteen", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "See? Tomorrow I'll only hit you fourteen times."},
+    {"id": "b_progress", "tts": "That's… progress."}
+  ],
+  "display_map": {"eighty": "80", "fifteen": "15", "fourteen": "14", "thirty": "30"},
+  "keywords": ["worst", "sofa", "catch", "ow", "hundred-mile-an-hour", "thirty", "fifth", "blink", "masks", "jacques", "plante", "1959", "game", "loses", "sam", "lopresti", "1941", "eighty", "lost", "ever", "ken", "mcauley", "1944", "fifteen", "great", "fourteen", "progress"]
+}
