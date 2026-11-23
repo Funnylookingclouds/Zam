@@ -1,0 +1,770 @@
+[
+ {
+  "word": "Welcome",
+  "display": "Welcome",
+  "start": 0.058,
+  "end": 0.372,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 0.406,
+  "end": 0.464,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Helmy's",
+  "display": "Helmy's",
+  "start": 0.522,
+  "end": 0.848,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "lab.",
+  "display": "lab.",
+  "start": 0.906,
+  "end": 1.184,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "Don't",
+  "display": "Don't",
+  "start": 1.207,
+  "end": 1.382,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "touch",
+  "display": "touch",
+  "start": 1.428,
+  "end": 1.66,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "anything!",
+  "display": "anything!",
+  "start": 1.718,
+  "end": 2.299,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Number",
+  "display": "Number",
+  "start": 2.82,
+  "end": 3.111,
+  "segment": "h_one",
+  "keyword": false
+ },
+ {
+  "word": "one:",
+  "display": "one:",
+  "start": 3.18,
+  "end": 3.471,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "twenty-one",
+  "display": "twenty-one",
+  "start": 3.761,
+  "end": 4.272,
+  "segment": "h_one",
+  "keyword": false
+ },
+ {
+  "word": "seconds.",
+  "display": "seconds.",
+  "start": 4.33,
+  "end": 4.817,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "Bill",
+  "display": "Bill",
+  "start": 5.224,
+  "end": 5.502,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "Mosienko,",
+  "display": "Mosienko,",
+  "start": 5.584,
+  "end": 6.35,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "1952",
+  "display": "1952",
+  "start": 6.756,
+  "end": 7.581,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "fastest",
+  "display": "fastest",
+  "start": 8.068,
+  "end": 8.544,
+  "segment": "h_one",
+  "keyword": true
+ },
+ {
+  "word": "hat",
+  "display": "hat",
+  "start": 8.602,
+  "end": 8.776,
+  "segment": "h_one",
+  "keyword": false
+ },
+ {
+  "word": "trick",
+  "display": "trick",
+  "start": 8.834,
+  "end": 9.078,
+  "segment": "h_one",
+  "keyword": false
+ },
+ {
+  "word": "ever.",
+  "display": "ever.",
+  "start": 9.136,
+  "end": 9.415,
+  "segment": "h_one",
+  "keyword": false
+ },
+ {
+  "word": "Twenty-one",
+  "display": "Twenty-one",
+  "start": 9.925,
+  "end": 10.506,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "seconds?",
+  "display": "seconds?",
+  "start": 10.564,
+  "end": 11.202,
+  "segment": "p_awake",
+  "keyword": true
+ },
+ {
+  "word": "That's",
+  "display": "That's",
+  "start": 11.748,
+  "end": 12.015,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "how",
+  "display": "how",
+  "start": 12.05,
+  "end": 12.166,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "long",
+  "display": "long",
+  "start": 12.224,
+  "end": 12.41,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "Biscuit",
+  "display": "Biscuit",
+  "start": 12.468,
+  "end": 12.793,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "stays",
+  "display": "stays",
+  "start": 12.828,
+  "end": 13.083,
+  "segment": "p_awake",
+  "keyword": false
+ },
+ {
+  "word": "awake.",
+  "display": "awake.",
+  "start": 13.118,
+  "end": 13.489,
+  "segment": "p_awake",
+  "keyword": true
+ },
+ {
+  "word": "Hey!",
+  "display": "Hey!",
+  "start": 13.941,
+  "end": 14.441,
+  "segment": "b_hey",
+  "keyword": true
+ },
+ {
+  "word": "Number",
+  "display": "Number",
+  "start": 14.904,
+  "end": 15.183,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "two:",
+  "display": "two:",
+  "start": 15.241,
+  "end": 15.647,
+  "segment": "h_two",
+  "keyword": true
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 15.938,
+  "end": 16.158,
+  "segment": "h_two",
+  "keyword": true
+ },
+ {
+  "word": "thousand",
+  "display": "thousand",
+  "start": 16.205,
+  "end": 16.623,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "nine",
+  "display": "nine",
+  "start": 16.727,
+  "end": 16.936,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "hundred",
+  "display": "hundred",
+  "start": 16.983,
+  "end": 17.284,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "sixty-three.",
+  "display": "sixty-three.",
+  "start": 17.401,
+  "end": 18.12,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "Wayne",
+  "display": "Wayne",
+  "start": 18.411,
+  "end": 18.713,
+  "segment": "h_two",
+  "keyword": true
+ },
+ {
+  "word": "Gretzky's",
+  "display": "Gretzky's",
+  "start": 18.771,
+  "end": 19.351,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "assists",
+  "display": "assists",
+  "start": 19.409,
+  "end": 19.862,
+  "segment": "h_two",
+  "keyword": true
+ },
+ {
+  "word": "more",
+  "display": "more",
+  "start": 20.187,
+  "end": 20.396,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "than",
+  "display": "than",
+  "start": 20.442,
+  "end": 20.64,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "anyone",
+  "display": "anyone",
+  "start": 20.698,
+  "end": 21.023,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "else's",
+  "display": "else's",
+  "start": 21.058,
+  "end": 21.336,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "total",
+  "display": "total",
+  "start": 21.406,
+  "end": 21.708,
+  "segment": "h_two",
+  "keyword": false
+ },
+ {
+  "word": "points!",
+  "display": "points!",
+  "start": 21.766,
+  "end": 22.254,
+  "segment": "h_two",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 22.73,
+  "end": 22.927,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 22.974,
+  "end": 23.032,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 23.09,
+  "end": 23.194,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 23.264,
+  "end": 23.519,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "we",
+  "display": "we",
+  "start": 23.554,
+  "end": 23.659,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "called",
+  "display": "called",
+  "start": 23.717,
+  "end": 23.96,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 23.995,
+  "end": 24.181,
+  "segment": "c_share",
+  "keyword": false
+ },
+ {
+  "word": "\"sharing.\"",
+  "display": "\"sharing.\"",
+  "start": 24.262,
+  "end": 25.063,
+  "segment": "c_share",
+  "keyword": true
+ },
+ {
+  "word": "Number",
+  "display": "Number",
+  "start": 25.515,
+  "end": 25.794,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "three:",
+  "display": "three:",
+  "start": 25.852,
+  "end": 26.27,
+  "segment": "h_three",
+  "keyword": true
+ },
+ {
+  "word": "eight",
+  "display": "eight",
+  "start": 26.526,
+  "end": 26.723,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "hundred",
+  "display": "hundred",
+  "start": 26.758,
+  "end": 27.06,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "ninety-five.",
+  "display": "ninety-five.",
+  "start": 27.199,
+  "end": 28.035,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "Alex",
+  "display": "Alex",
+  "start": 28.383,
+  "end": 28.697,
+  "segment": "h_three",
+  "keyword": true
+ },
+ {
+  "word": "Ovechkin,",
+  "display": "Ovechkin,",
+  "start": 28.755,
+  "end": 29.312,
+  "segment": "h_three",
+  "keyword": true
+ },
+ {
+  "word": "2025",
+  "display": "2025",
+  "start": 29.474,
+  "end": 30.31,
+  "segment": "h_three",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 30.926,
+  "end": 31.146,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 31.309,
+  "end": 31.541,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "all-time",
+  "display": "all-time",
+  "start": 31.599,
+  "end": 32.145,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "goals",
+  "display": "goals",
+  "start": 32.203,
+  "end": 32.516,
+  "segment": "h_three",
+  "keyword": false
+ },
+ {
+  "word": "king.",
+  "display": "king.",
+  "start": 32.574,
+  "end": 32.992,
+  "segment": "h_three",
+  "keyword": true
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 33.433,
+  "end": 33.584,
+  "segment": "z_cup",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 33.642,
+  "end": 33.723,
+  "segment": "z_cup",
+  "keyword": false
+ },
+ {
+  "word": "Stanley",
+  "display": "Stanley",
+  "start": 33.77,
+  "end": 34.129,
+  "segment": "z_cup",
+  "keyword": true
+ },
+ {
+  "word": "Cup?",
+  "display": "Cup?",
+  "start": 34.187,
+  "end": 34.536,
+  "segment": "z_cup",
+  "keyword": true
+ },
+ {
+  "word": "Thirty-four",
+  "display": "Thirty-four",
+  "start": 35.0,
+  "end": 35.604,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 35.662,
+  "end": 35.754,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 35.801,
+  "end": 35.836,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "half",
+  "display": "half",
+  "start": 35.894,
+  "end": 36.068,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "pounds.",
+  "display": "pounds.",
+  "start": 36.138,
+  "end": 36.602,
+  "segment": "h_cup",
+  "keyword": true
+ },
+ {
+  "word": "About",
+  "display": "About",
+  "start": 36.741,
+  "end": 36.985,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "fifteen",
+  "display": "fifteen",
+  "start": 37.055,
+  "end": 37.426,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 37.473,
+  "end": 37.554,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 37.6,
+  "end": 37.624,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "half",
+  "display": "half",
+  "start": 37.682,
+  "end": 37.844,
+  "segment": "h_cup",
+  "keyword": false
+ },
+ {
+  "word": "kilos.",
+  "display": "kilos.",
+  "start": 37.902,
+  "end": 38.448,
+  "segment": "h_cup",
+  "keyword": true
+ },
+ {
+  "word": "Lighter",
+  "display": "Lighter",
+  "start": 38.888,
+  "end": 39.178,
+  "segment": "p_lunch",
+  "keyword": false
+ },
+ {
+  "word": "than",
+  "display": "than",
+  "start": 39.213,
+  "end": 39.317,
+  "segment": "p_lunch",
+  "keyword": false
+ },
+ {
+  "word": "Biscuit's",
+  "display": "Biscuit's",
+  "start": 39.375,
+  "end": 39.782,
+  "segment": "p_lunch",
+  "keyword": false
+ },
+ {
+  "word": "lunch.",
+  "display": "lunch.",
+  "start": 39.84,
+  "end": 40.223,
+  "segment": "p_lunch",
+  "keyword": true
+ },
+ {
+  "word": "...That's",
+  "display": "...That's",
+  "start": 40.49,
+  "end": 40.827,
+  "segment": "b_fair",
+  "keyword": false
+ },
+ {
+  "word": "fair.",
+  "display": "fair.",
+  "start": 40.885,
+  "end": 41.315,
+  "segment": "b_fair",
+  "keyword": true
+ },
+ {
+  "word": "Helmy,",
+  "display": "Helmy,",
+  "start": 41.766,
+  "end": 42.091,
+  "segment": "z_fav",
+  "keyword": false
+ },
+ {
+  "word": "your",
+  "display": "your",
+  "start": 42.126,
+  "end": 42.242,
+  "segment": "z_fav",
+  "keyword": false
+ },
+ {
+  "word": "favourite",
+  "display": "favourite",
+  "start": 42.277,
+  "end": 42.556,
+  "segment": "z_fav",
+  "keyword": true
+ },
+ {
+  "word": "number?",
+  "display": "number?",
+  "start": 42.579,
+  "end": 42.857,
+  "segment": "z_fav",
+  "keyword": false
+ },
+ {
+  "word": "One.",
+  "display": "One.",
+  "start": 43.356,
+  "end": 43.565,
+  "segment": "h_wear",
+  "keyword": true
+ },
+ {
+  "word": "One",
+  "display": "One",
+  "start": 43.623,
+  "end": 43.809,
+  "segment": "h_wear",
+  "keyword": true
+ },
+ {
+  "word": "helmet.",
+  "display": "helmet.",
+  "start": 43.867,
+  "end": 44.238,
+  "segment": "h_wear",
+  "keyword": true
+ },
+ {
+  "word": "Every",
+  "display": "Every",
+  "start": 44.296,
+  "end": 44.505,
+  "segment": "h_wear",
+  "keyword": false
+ },
+ {
+  "word": "game.",
+  "display": "game.",
+  "start": 44.563,
+  "end": 44.865,
+  "segment": "h_wear",
+  "keyword": false
+ },
+ {
+  "word": "Wear",
+  "display": "Wear",
+  "start": 44.912,
+  "end": 45.167,
+  "segment": "h_wear",
+  "keyword": true
+ },
+ {
+  "word": "it!",
+  "display": "it!",
+  "start": 45.225,
+  "end": 45.411,
+  "segment": "h_wear",
+  "keyword": false
+ }
+]

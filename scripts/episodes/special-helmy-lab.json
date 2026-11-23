@@ -1,0 +1,20 @@
+{
+  "id": "special-helmy-lab", "language": "en", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_intro", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Welcome to Helmy's lab. Don't touch anything!"},
+    {"id": "h_one", "tts": "Number one: twenty-one seconds. Bill Mosienko, 1952 – fastest hat trick ever."},
+    {"id": "p_awake", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Twenty-one seconds? That's how long Biscuit stays awake."},
+    {"id": "b_hey", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Hey!"},
+    {"id": "h_two", "tts": "Number two: one thousand nine hundred sixty-three. Wayne Gretzky's assists – more than anyone else's total points!"},
+    {"id": "c_share", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, we called that \"sharing.\""},
+    {"id": "h_three", "tts": "Number three: eight hundred ninety-five. Alex Ovechkin, 2025 – the new all-time goals king."},
+    {"id": "z_cup", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "And the Stanley Cup?"},
+    {"id": "h_cup", "tts": "Thirty-four and a half pounds. About fifteen and a half kilos."},
+    {"id": "p_lunch", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Lighter than Biscuit's lunch."},
+    {"id": "b_fair", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "…That's fair."},
+    {"id": "z_fav", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Helmy, your favourite number?"},
+    {"id": "h_wear", "tts": "One. One helmet. Every game. Wear it!"}
+  ],
+  "display_map": {"twenty-one": "21", "twentyone": "21"},
+  "keywords": ["lab", "touch", "one", "twenty-one", "seconds", "bill", "mosienko", "1952", "fastest", "awake", "hey", "two", "wayne", "gretzky's", "assists", "points", "sharing", "three", "alex", "ovechkin", "2025", "king", "stanley", "cup", "pounds", "kilos", "lunch", "fair", "favourite", "helmet", "wear"]
+}

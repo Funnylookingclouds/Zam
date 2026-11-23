@@ -145,7 +145,7 @@ const Helmy: React.FC<{ p: Pose }> = ({ p }) => (
     </g>
     <circle cx={0} cy={58} r={62} fill="#fbf6ea" stroke={INK} strokeWidth={5} />
     <path d="M-92 -40 Q0 -62 92 -40 L86 28 Q0 46 -86 28 Z" fill="#d6f3f6" fillOpacity={0.85} stroke={INK} strokeWidth={5} />
-    <Eyes y={-6} p={p} brow={p.mood === "wow" ? "up" : "none"} />
+    <FaceEyes p={p} y={-6} line={INK} lid="#2a9d8f" />
     <path d="M-70 -34 L-40 -42" stroke="#fff" strokeWidth={7} strokeLinecap="round" opacity={0.9} />
     <Mouth y={64} w={24} open={p.open} smile={0.8} />
     <path d={`M-80 46 Q-62 ${116 + p.open * 8} 0 ${114 + p.open * 8} Q62 ${116 + p.open * 8} 80 46`} stroke={INK} strokeWidth={7} fill="none" />
