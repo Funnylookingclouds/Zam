@@ -1,0 +1,554 @@
+[
+ {
+  "word": "Game",
+  "display": "Game",
+  "start": 0.058,
+  "end": 0.313,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "over!",
+  "display": "over!",
+  "start": 0.348,
+  "end": 0.673,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "Time",
+  "display": "Time",
+  "start": 0.894,
+  "end": 1.149,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 1.173,
+  "end": 1.231,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "clean",
+  "display": "clean",
+  "start": 1.277,
+  "end": 1.498,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 1.544,
+  "end": 1.614,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "ice.",
+  "display": "ice.",
+  "start": 1.672,
+  "end": 1.927,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Fun",
+  "display": "Fun",
+  "start": 1.962,
+  "end": 2.148,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "fact:",
+  "display": "fact:",
+  "start": 2.206,
+  "end": 2.485,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 2.531,
+  "end": 2.647,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "blade",
+  "display": "blade",
+  "start": 2.705,
+  "end": 2.984,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "shaves",
+  "display": "shaves",
+  "start": 3.019,
+  "end": 3.332,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 3.379,
+  "end": 3.448,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 3.506,
+  "end": 3.738,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 3.959,
+  "end": 4.11,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "all",
+  "display": "all",
+  "start": 4.156,
+  "end": 4.261,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 4.319,
+  "end": 4.447,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "snow",
+  "display": "snow",
+  "start": 4.505,
+  "end": 4.725,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "goes",
+  "display": "goes",
+  "start": 4.783,
+  "end": 4.969,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "into",
+  "display": "into",
+  "start": 5.016,
+  "end": 5.178,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 5.236,
+  "end": 5.329,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "snow",
+  "display": "snow",
+  "start": 5.387,
+  "end": 5.619,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "tank!",
+  "display": "tank!",
+  "start": 5.677,
+  "end": 6.049,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "Snow?",
+  "display": "Snow?",
+  "start": 6.524,
+  "end": 6.895,
+  "segment": "p_fight",
+  "keyword": true
+ },
+ {
+  "word": "SNOWBALL",
+  "display": "SNOWBALL",
+  "start": 6.953,
+  "end": 7.453,
+  "segment": "p_fight",
+  "keyword": true
+ },
+ {
+  "word": "FIGHT!",
+  "display": "FIGHT!",
+  "start": 7.511,
+  "end": 7.824,
+  "segment": "p_fight",
+  "keyword": true
+ },
+ {
+  "word": "Hey!",
+  "display": "Hey!",
+  "start": 8.346,
+  "end": 8.59,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "Right",
+  "display": "Right",
+  "start": 8.648,
+  "end": 8.857,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 8.892,
+  "end": 8.95,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 8.997,
+  "end": 9.066,
+  "segment": "b_mask",
+  "keyword": false
+ },
+ {
+  "word": "mask!",
+  "display": "mask!",
+  "start": 9.113,
+  "end": 9.6,
+  "segment": "b_mask",
+  "keyword": true
+ },
+ {
+  "word": "Safety",
+  "display": "Safety",
+  "start": 10.145,
+  "end": 10.47,
+  "segment": "h_safety",
+  "keyword": true
+ },
+ {
+  "word": "first!",
+  "display": "first!",
+  "start": 10.528,
+  "end": 10.865,
+  "segment": "h_safety",
+  "keyword": false
+ },
+ {
+  "word": "...Okay,",
+  "display": "...Okay,",
+  "start": 10.911,
+  "end": 11.306,
+  "segment": "h_safety",
+  "keyword": false
+ },
+ {
+  "word": "fine.",
+  "display": "fine.",
+  "start": 11.352,
+  "end": 11.747,
+  "segment": "h_safety",
+  "keyword": false
+ },
+ {
+  "word": "Incoming!",
+  "display": "Incoming!",
+  "start": 11.794,
+  "end": 12.351,
+  "segment": "h_safety",
+  "keyword": true
+ },
+ {
+  "word": "Kids,",
+  "display": "Kids,",
+  "start": 12.815,
+  "end": 13.164,
+  "segment": "a_lunch",
+  "keyword": false
+ },
+ {
+  "word": "kids",
+  "display": "kids",
+  "start": 13.268,
+  "end": 13.558,
+  "segment": "a_lunch",
+  "keyword": false
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 13.837,
+  "end": 13.988,
+  "segment": "a_lunch",
+  "keyword": false
+ },
+ {
+  "word": "on",
+  "display": "on",
+  "start": 14.046,
+  "end": 14.127,
+  "segment": "a_lunch",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 14.185,
+  "end": 14.267,
+  "segment": "a_lunch",
+  "keyword": false
+ },
+ {
+  "word": "lunch",
+  "display": "lunch",
+  "start": 14.325,
+  "end": 14.534,
+  "segment": "a_lunch",
+  "keyword": true
+ },
+ {
+  "word": "break.",
+  "display": "break.",
+  "start": 14.569,
+  "end": 14.87,
+  "segment": "a_lunch",
+  "keyword": true
+ },
+ {
+  "word": "Pucky",
+  "display": "Pucky",
+  "start": 15.346,
+  "end": 15.729,
+  "segment": "c_trick",
+  "keyword": false
+ },
+ {
+  "word": "trick",
+  "display": "trick",
+  "start": 15.845,
+  "end": 16.089,
+  "segment": "c_trick",
+  "keyword": true
+ },
+ {
+  "word": "shot!",
+  "display": "shot!",
+  "start": 16.147,
+  "end": 16.484,
+  "segment": "c_trick",
+  "keyword": true
+ },
+ {
+  "word": "WHEEEE!",
+  "display": "WHEEEE!",
+  "start": 17.11,
+  "end": 17.574,
+  "segment": "p_wheee",
+  "keyword": true
+ },
+ {
+  "word": "My",
+  "display": "My",
+  "start": 17.945,
+  "end": 18.108,
+  "segment": "a_hotdog",
+  "keyword": false
+ },
+ {
+  "word": "hot",
+  "display": "hot",
+  "start": 18.166,
+  "end": 18.421,
+  "segment": "a_hotdog",
+  "keyword": true
+ },
+ {
+  "word": "dog!",
+  "display": "dog!",
+  "start": 18.479,
+  "end": 18.781,
+  "segment": "a_hotdog",
+  "keyword": true
+ },
+ {
+  "word": "...My",
+  "display": "...My",
+  "start": 18.804,
+  "end": 19.141,
+  "segment": "a_hotdog",
+  "keyword": false
+ },
+ {
+  "word": "head!",
+  "display": "head!",
+  "start": 19.211,
+  "end": 19.536,
+  "segment": "a_hotdog",
+  "keyword": true
+ },
+ {
+  "word": "...And",
+  "display": "...And",
+  "start": 20.046,
+  "end": 20.324,
+  "segment": "b_goal",
+  "keyword": false
+ },
+ {
+  "word": "that's",
+  "display": "that's",
+  "start": 20.371,
+  "end": 20.638,
+  "segment": "b_goal",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 20.684,
+  "end": 20.719,
+  "segment": "b_goal",
+  "keyword": false
+ },
+ {
+  "word": "goal.",
+  "display": "goal.",
+  "start": 20.777,
+  "end": 21.207,
+  "segment": "b_goal",
+  "keyword": true
+ },
+ {
+  "word": "Assist:",
+  "display": "Assist:",
+  "start": 21.659,
+  "end": 22.146,
+  "segment": "h_assist",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 22.309,
+  "end": 22.425,
+  "segment": "h_assist",
+  "keyword": false
+ },
+ {
+  "word": "hot",
+  "display": "hot",
+  "start": 22.483,
+  "end": 22.692,
+  "segment": "h_assist",
+  "keyword": true
+ },
+ {
+  "word": "dog.",
+  "display": "dog.",
+  "start": 22.75,
+  "end": 23.11,
+  "segment": "h_assist",
+  "keyword": true
+ },
+ {
+  "word": "Okay...",
+  "display": "Okay...",
+  "start": 23.412,
+  "end": 23.807,
+  "segment": "z_clean",
+  "keyword": false
+ },
+ {
+  "word": "who's",
+  "display": "who's",
+  "start": 23.865,
+  "end": 24.074,
+  "segment": "z_clean",
+  "keyword": false
+ },
+ {
+  "word": "cleaning",
+  "display": "cleaning",
+  "start": 24.097,
+  "end": 24.375,
+  "segment": "z_clean",
+  "keyword": false
+ },
+ {
+  "word": "THIS",
+  "display": "THIS",
+  "start": 24.399,
+  "end": 24.526,
+  "segment": "z_clean",
+  "keyword": true
+ },
+ {
+  "word": "up?",
+  "display": "up?",
+  "start": 24.584,
+  "end": 24.805,
+  "segment": "z_clean",
+  "keyword": false
+ },
+ {
+  "word": "Not",
+  "display": "Not",
+  "start": 25.303,
+  "end": 25.581,
+  "segment": "p_notit",
+  "keyword": true
+ },
+ {
+  "word": "it!",
+  "display": "it!",
+  "start": 25.64,
+  "end": 25.86,
+  "segment": "p_notit",
+  "keyword": false
+ },
+ {
+  "word": "...Me",
+  "display": "...Me",
+  "start": 26.313,
+  "end": 26.615,
+  "segment": "z_again",
+  "keyword": false
+ },
+ {
+  "word": "again.",
+  "display": "again.",
+  "start": 26.65,
+  "end": 26.963,
+  "segment": "z_again",
+  "keyword": true
+ }
+]

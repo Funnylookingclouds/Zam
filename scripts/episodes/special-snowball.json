@@ -1,0 +1,20 @@
+{
+  "id": "special-snowball", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_intro", "tts": "Game over! Time to clean the ice. Fun fact: my blade shaves the ice – and all that snow goes into my snow tank!"},
+    {"id": "p_fight", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Snow? SNOWBALL FIGHT!"},
+    {"id": "b_mask", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Hey! Right in the mask!"},
+    {"id": "h_safety", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Safety first! …Okay, fine. Incoming!"},
+    {"id": "a_lunch", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Kids, kids – I'm on my lunch break."},
+    {"id": "c_trick", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Pucky – trick shot!"},
+    {"id": "p_wheee", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "WHEEEE!"},
+    {"id": "a_hotdog", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "My hot dog! …My head!"},
+    {"id": "b_goal", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "…And that's a goal."},
+    {"id": "h_assist", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Assist: the hot dog."},
+    {"id": "z_clean", "tts": "Okay… who's cleaning THIS up?"},
+    {"id": "p_notit", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Not it!"},
+    {"id": "z_again", "tts": "…Me again."}
+  ],
+  "display_map": {},
+  "keywords": ["game", "over", "clean", "blade", "shaves", "snow", "tank", "snowball", "fight", "mask", "safety", "incoming", "lunch", "break", "trick", "shot", "wheeee", "hot", "dog", "head", "goal", "assist", "this", "not", "again"]
+}
