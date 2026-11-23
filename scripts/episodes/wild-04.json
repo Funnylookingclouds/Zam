@@ -1,0 +1,20 @@
+{
+  "id": "wild-04", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "Hockey's wildest moments, round four. Let's go!"},
+    {"id": "h_long", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "1936: Detroit versus the Montreal Maroons. Six overtimes!"},
+    {"id": "p_long", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Mud Bruneteau finally scored – at 2:25 in the morning!"},
+    {"id": "b_long", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "2:25?! I'd be asleep in my crease."},
+    {"id": "z_smith", "tts": "1986, Game 7: Steve Smith's pass bounces off his own goalie – and in."},
+    {"id": "p_smith", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "On his birthday!"},
+    {"id": "b_smith", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Worst birthday present ever."},
+    {"id": "c_howe", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Gordie Howe, 1980. Fifty-one years old – and he played all eighty games!"},
+    {"id": "h_howe", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "He even shared a shift with his two sons."},
+    {"id": "c_myday", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day… that WAS my day."},
+    {"id": "a_fast", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Fastest goal ever? Five seconds after the opening faceoff!"},
+    {"id": "p_skates", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Five seconds? Biscuit's still tying his skates."},
+    {"id": "b_end", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Hey! …They're double-knotted."}
+  ],
+  "display_map": {},
+  "keywords": ["wildest", "four", "1936", "detroit", "montreal", "maroons", "six", "overtimes", "mud", "bruneteau", "morning", "asleep", "1986", "steve", "smith's", "goalie", "birthday", "worst", "gordie", "howe", "1980", "fifty-one", "eighty", "two", "sons", "was", "fastest", "five", "seconds", "faceoff", "skates", "double-knotted"]
+}

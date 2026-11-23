@@ -1,0 +1,794 @@
+[
+ {
+  "word": "Hockey's",
+  "display": "Hockey's",
+  "start": 0.058,
+  "end": 0.395,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "wildest",
+  "display": "wildest",
+  "start": 0.453,
+  "end": 0.859,
+  "segment": "z_hook",
+  "keyword": true
+ },
+ {
+  "word": "moments,",
+  "display": "moments,",
+  "start": 0.917,
+  "end": 1.289,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "round",
+  "display": "round",
+  "start": 1.324,
+  "end": 1.544,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "four.",
+  "display": "four.",
+  "start": 1.602,
+  "end": 1.927,
+  "segment": "z_hook",
+  "keyword": true
+ },
+ {
+  "word": "Let's",
+  "display": "Let's",
+  "start": 1.974,
+  "end": 2.171,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "go!",
+  "display": "go!",
+  "start": 2.218,
+  "end": 2.659,
+  "segment": "z_hook",
+  "keyword": false
+ },
+ {
+  "word": "1936:",
+  "display": "1936:",
+  "start": 3.204,
+  "end": 4.179,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "Detroit",
+  "display": "Detroit",
+  "start": 4.342,
+  "end": 4.771,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "versus",
+  "display": "versus",
+  "start": 4.841,
+  "end": 5.224,
+  "segment": "h_long",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 5.305,
+  "end": 5.503,
+  "segment": "h_long",
+  "keyword": false
+ },
+ {
+  "word": "Montreal",
+  "display": "Montreal",
+  "start": 5.607,
+  "end": 6.095,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "Maroons.",
+  "display": "Maroons.",
+  "start": 6.153,
+  "end": 6.687,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "Six",
+  "display": "Six",
+  "start": 7.035,
+  "end": 7.349,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "overtimes!",
+  "display": "overtimes!",
+  "start": 7.418,
+  "end": 8.069,
+  "segment": "h_long",
+  "keyword": true
+ },
+ {
+  "word": "Mud",
+  "display": "Mud",
+  "start": 8.556,
+  "end": 8.742,
+  "segment": "p_long",
+  "keyword": true
+ },
+ {
+  "word": "Bruneteau",
+  "display": "Bruneteau",
+  "start": 8.8,
+  "end": 9.276,
+  "segment": "p_long",
+  "keyword": true
+ },
+ {
+  "word": "finally",
+  "display": "finally",
+  "start": 9.357,
+  "end": 9.763,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "scored",
+  "display": "scored",
+  "start": 9.833,
+  "end": 10.262,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "at",
+  "display": "at",
+  "start": 10.773,
+  "end": 10.936,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "2:25",
+  "display": "2:25",
+  "start": 11.006,
+  "end": 12.05,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 12.108,
+  "end": 12.167,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 12.201,
+  "end": 12.271,
+  "segment": "p_long",
+  "keyword": false
+ },
+ {
+  "word": "morning!",
+  "display": "morning!",
+  "start": 12.306,
+  "end": 12.735,
+  "segment": "p_long",
+  "keyword": true
+ },
+ {
+  "word": "2:25?!",
+  "display": "2:25?!",
+  "start": 13.28,
+  "end": 14.128,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "I'd",
+  "display": "I'd",
+  "start": 14.163,
+  "end": 14.29,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "be",
+  "display": "be",
+  "start": 14.325,
+  "end": 14.418,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "asleep",
+  "display": "asleep",
+  "start": 14.453,
+  "end": 14.778,
+  "segment": "b_long",
+  "keyword": true
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 14.824,
+  "end": 14.882,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 14.94,
+  "end": 15.045,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "crease.",
+  "display": "crease.",
+  "start": 15.103,
+  "end": 15.498,
+  "segment": "b_long",
+  "keyword": false
+ },
+ {
+  "word": "1986,",
+  "display": "1986,",
+  "start": 16.054,
+  "end": 17.227,
+  "segment": "z_smith",
+  "keyword": true
+ },
+ {
+  "word": "Game",
+  "display": "Game",
+  "start": 17.297,
+  "end": 17.575,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "7:",
+  "display": "7:",
+  "start": 17.633,
+  "end": 18.086,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "Steve",
+  "display": "Steve",
+  "start": 18.307,
+  "end": 18.597,
+  "segment": "z_smith",
+  "keyword": true
+ },
+ {
+  "word": "Smith's",
+  "display": "Smith's",
+  "start": 18.62,
+  "end": 18.957,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "pass",
+  "display": "pass",
+  "start": 19.015,
+  "end": 19.386,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "bounces",
+  "display": "bounces",
+  "start": 19.456,
+  "end": 19.816,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "off",
+  "display": "off",
+  "start": 19.874,
+  "end": 20.013,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "his",
+  "display": "his",
+  "start": 20.06,
+  "end": 20.153,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "own",
+  "display": "own",
+  "start": 20.211,
+  "end": 20.35,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 20.408,
+  "end": 20.745,
+  "segment": "z_smith",
+  "keyword": true
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 21.232,
+  "end": 21.453,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "in.",
+  "display": "in.",
+  "start": 21.534,
+  "end": 21.871,
+  "segment": "z_smith",
+  "keyword": false
+ },
+ {
+  "word": "On",
+  "display": "On",
+  "start": 22.312,
+  "end": 22.428,
+  "segment": "p_smith",
+  "keyword": false
+ },
+ {
+  "word": "his",
+  "display": "his",
+  "start": 22.463,
+  "end": 22.567,
+  "segment": "p_smith",
+  "keyword": false
+ },
+ {
+  "word": "birthday!",
+  "display": "birthday!",
+  "start": 22.625,
+  "end": 23.241,
+  "segment": "p_smith",
+  "keyword": true
+ },
+ {
+  "word": "Worst",
+  "display": "Worst",
+  "start": 23.693,
+  "end": 23.971,
+  "segment": "b_smith",
+  "keyword": true
+ },
+ {
+  "word": "birthday",
+  "display": "birthday",
+  "start": 24.018,
+  "end": 24.389,
+  "segment": "b_smith",
+  "keyword": true
+ },
+ {
+  "word": "present",
+  "display": "present",
+  "start": 24.436,
+  "end": 24.749,
+  "segment": "b_smith",
+  "keyword": false
+ },
+ {
+  "word": "ever.",
+  "display": "ever.",
+  "start": 24.807,
+  "end": 25.109,
+  "segment": "b_smith",
+  "keyword": false
+ },
+ {
+  "word": "Gordie",
+  "display": "Gordie",
+  "start": 25.607,
+  "end": 25.862,
+  "segment": "c_howe",
+  "keyword": true
+ },
+ {
+  "word": "Howe,",
+  "display": "Howe,",
+  "start": 25.909,
+  "end": 26.246,
+  "segment": "c_howe",
+  "keyword": true
+ },
+ {
+  "word": "1980.",
+  "display": "1980.",
+  "start": 26.28,
+  "end": 26.977,
+  "segment": "c_howe",
+  "keyword": true
+ },
+ {
+  "word": "Fifty-one",
+  "display": "Fifty-one",
+  "start": 27.116,
+  "end": 27.604,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "years",
+  "display": "years",
+  "start": 27.639,
+  "end": 27.813,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "old",
+  "display": "old",
+  "start": 27.871,
+  "end": 28.115,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 28.533,
+  "end": 28.649,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "he",
+  "display": "he",
+  "start": 28.695,
+  "end": 28.765,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "played",
+  "display": "played",
+  "start": 28.823,
+  "end": 29.136,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "all",
+  "display": "all",
+  "start": 29.206,
+  "end": 29.462,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "eighty",
+  "display": "eighty",
+  "start": 29.543,
+  "end": 29.81,
+  "segment": "c_howe",
+  "keyword": true
+ },
+ {
+  "word": "games!",
+  "display": "games!",
+  "start": 29.868,
+  "end": 30.483,
+  "segment": "c_howe",
+  "keyword": false
+ },
+ {
+  "word": "He",
+  "display": "He",
+  "start": 30.982,
+  "end": 31.075,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "even",
+  "display": "even",
+  "start": 31.133,
+  "end": 31.33,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "shared",
+  "display": "shared",
+  "start": 31.388,
+  "end": 31.679,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 31.713,
+  "end": 31.76,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "shift",
+  "display": "shift",
+  "start": 31.864,
+  "end": 32.166,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "with",
+  "display": "with",
+  "start": 32.224,
+  "end": 32.41,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "his",
+  "display": "his",
+  "start": 32.457,
+  "end": 32.573,
+  "segment": "h_howe",
+  "keyword": false
+ },
+ {
+  "word": "two",
+  "display": "two",
+  "start": 32.631,
+  "end": 32.805,
+  "segment": "h_howe",
+  "keyword": true
+ },
+ {
+  "word": "sons.",
+  "display": "sons.",
+  "start": 32.874,
+  "end": 33.304,
+  "segment": "h_howe",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 33.803,
+  "end": 33.989,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 34.047,
+  "end": 34.105,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 34.163,
+  "end": 34.279,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "day...",
+  "display": "day...",
+  "start": 34.349,
+  "end": 34.651,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 34.674,
+  "end": 34.836,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "WAS",
+  "display": "WAS",
+  "start": 34.894,
+  "end": 35.173,
+  "segment": "c_myday",
+  "keyword": true
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 35.254,
+  "end": 35.394,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "day.",
+  "display": "day.",
+  "start": 35.463,
+  "end": 35.788,
+  "segment": "c_myday",
+  "keyword": false
+ },
+ {
+  "word": "Fastest",
+  "display": "Fastest",
+  "start": 36.286,
+  "end": 36.681,
+  "segment": "a_fast",
+  "keyword": true
+ },
+ {
+  "word": "goal",
+  "display": "goal",
+  "start": 36.716,
+  "end": 36.902,
+  "segment": "a_fast",
+  "keyword": false
+ },
+ {
+  "word": "ever?",
+  "display": "ever?",
+  "start": 36.971,
+  "end": 37.227,
+  "segment": "a_fast",
+  "keyword": false
+ },
+ {
+  "word": "Five",
+  "display": "Five",
+  "start": 37.285,
+  "end": 37.552,
+  "segment": "a_fast",
+  "keyword": true
+ },
+ {
+  "word": "seconds",
+  "display": "seconds",
+  "start": 37.598,
+  "end": 37.947,
+  "segment": "a_fast",
+  "keyword": true
+ },
+ {
+  "word": "after",
+  "display": "after",
+  "start": 37.993,
+  "end": 38.19,
+  "segment": "a_fast",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 38.237,
+  "end": 38.307,
+  "segment": "a_fast",
+  "keyword": false
+ },
+ {
+  "word": "opening",
+  "display": "opening",
+  "start": 38.365,
+  "end": 38.666,
+  "segment": "a_fast",
+  "keyword": false
+ },
+ {
+  "word": "faceoff!",
+  "display": "faceoff!",
+  "start": 38.725,
+  "end": 39.328,
+  "segment": "a_fast",
+  "keyword": true
+ },
+ {
+  "word": "Five",
+  "display": "Five",
+  "start": 39.793,
+  "end": 40.141,
+  "segment": "p_skates",
+  "keyword": true
+ },
+ {
+  "word": "seconds?",
+  "display": "seconds?",
+  "start": 40.199,
+  "end": 40.873,
+  "segment": "p_skates",
+  "keyword": true
+ },
+ {
+  "word": "Biscuit's",
+  "display": "Biscuit's",
+  "start": 41.337,
+  "end": 41.755,
+  "segment": "p_skates",
+  "keyword": false
+ },
+ {
+  "word": "still",
+  "display": "still",
+  "start": 41.79,
+  "end": 42.034,
+  "segment": "p_skates",
+  "keyword": false
+ },
+ {
+  "word": "tying",
+  "display": "tying",
+  "start": 42.092,
+  "end": 42.37,
+  "segment": "p_skates",
+  "keyword": false
+ },
+ {
+  "word": "his",
+  "display": "his",
+  "start": 42.417,
+  "end": 42.51,
+  "segment": "p_skates",
+  "keyword": false
+ },
+ {
+  "word": "skates.",
+  "display": "skates.",
+  "start": 42.533,
+  "end": 43.078,
+  "segment": "p_skates",
+  "keyword": true
+ },
+ {
+  "word": "Hey!",
+  "display": "Hey!",
+  "start": 43.565,
+  "end": 43.971,
+  "segment": "b_end",
+  "keyword": false
+ },
+ {
+  "word": "...They're",
+  "display": "...They're",
+  "start": 43.995,
+  "end": 44.378,
+  "segment": "b_end",
+  "keyword": false
+ },
+ {
+  "word": "double-knotted.",
+  "display": "double-knotted.",
+  "start": 44.413,
+  "end": 45.214,
+  "segment": "b_end",
+  "keyword": false
+ }
+]
