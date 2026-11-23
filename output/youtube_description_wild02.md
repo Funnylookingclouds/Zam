@@ -27,7 +27,7 @@ Acted out by Zam, Pucky, Biscuit, Helmy & Clubby – cartoon recreations, no bro
 
 Every week: the NHL's best moments in under a minute.
 
-🔔 Subscribe to @HelmyandBisquit for more hockey chaos → https://www.youtube.com/@HelmyandBisquit
+🔔 Subscribe to @ZamHockey for more hockey chaos → https://www.youtube.com/@ZamHockey
 
 #Shorts #ZAM #NHL #Hockey #Ovechkin
 

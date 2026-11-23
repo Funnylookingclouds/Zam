@@ -28,7 +28,7 @@ A ZAM Special Edition – starring Agenty, with Zam, Pucky, Biscuit, Helmy & Clu
 
 Every week: the NHL's best moments in under a minute.
 
-🔔 Subscribe to @HelmyandBisquit for more hockey chaos → https://www.youtube.com/@HelmyandBisquit
+🔔 Subscribe to @ZamHockey for more hockey chaos → https://www.youtube.com/@ZamHockey
 
 #Shorts #ZAM #NHL #Hockey #NHLProspects
 
