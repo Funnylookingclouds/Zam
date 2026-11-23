@@ -7,7 +7,7 @@ import React from "react";
 import { random, useCurrentFrame } from "remotion";
 import { P, onTwos } from "../presenter/kit";
 
-export type Who = "zam" | "pucky" | "biscuit" | "helmy" | "clubby";
+export type Who = "zam" | "pucky" | "biscuit" | "helmy" | "clubby" | "agenty";
 export type Mood = "talk" | "wow" | "laugh" | "grumpy" | "smug" | "bliss" | "sleep" | "scared" | "dizzy" | "sweat" | "determined" | "sad" | "tired" | "starry";
 export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood; shades?: boolean };
 
@@ -17,6 +17,7 @@ export const GANG: Record<Who, { name: string; role: string; accent: string; voi
   biscuit: { name: "Biscuit", role: "walrus goalie", accent: "#e0a526", voice: "D38z5RcWu1voky8WS1ja" },
   helmy: { name: "Helmy", role: "the stats nerd", accent: "#2a9d8f", voice: "RDSy0QN68yhrjuOgqzQ4" },
   clubby: { name: "Clubby", role: "old-school stick", accent: "#5a8f3e", voice: "Q4oILuo4P8VeXtE6FMLI" },
+  agenty: { name: "Agenty", role: "the prospect hunter", accent: "#8b5cf6", voice: "" },
 };
 
 const INK = P.ink;
@@ -170,7 +171,38 @@ const Clubby: React.FC<{ p: Pose }> = ({ p }) => (
   </g>
 );
 
-const DRAW: Record<Who, React.FC<{ p: Pose }>> = { zam: Zam, pucky: Pucky, biscuit: Biscuit, helmy: Helmy, clubby: Clubby };
+/** Agenty – smooth-talking scout clipboard: shiny clip "hairdo" with shades pushed up, purple tie, gold pen, stopwatch. */
+const Agenty: React.FC<{ p: Pose }> = ({ p }) => (
+  <g>
+    {/* arms: one with gold pen, one doing "finger guns" */}
+    <path d={`M-104 0 Q-150 ${-20 - p.arm} -146 ${-62 - p.arm}`} stroke={INK} strokeWidth={9} fill="none" strokeLinecap="round" />
+    <path d={`M-146 ${-62 - p.arm} l-6 -34`} stroke="#d4a017" strokeWidth={10} strokeLinecap="round" />
+    <path d={`M-146 ${-62 - p.arm} l-6 -34`} stroke={INK} strokeWidth={2.5} fill="none" />
+    <path d={`M104 0 Q150 ${-10 + p.arm * 0.6} 150 ${-46 + p.arm * 0.6}`} stroke={INK} strokeWidth={9} fill="none" strokeLinecap="round" />
+    {/* board */}
+    <rect x={-104} y={-118} width={208} height={262} rx={18} fill="#b07a45" stroke={INK} strokeWidth={6} />
+    <rect x={-88} y={-96} width={176} height={226} rx={6} fill="#fffdf7" stroke={INK} strokeWidth={4} />
+    {[0, 1, 2].map((i) => <g key={i}><rect x={-72} y={66 + i * 20} width={12} height={12} fill="#fff" stroke={INK} strokeWidth={3} /><path d={`M-70 ${72 + i * 20} l4 4 l8 -10`} stroke={P.green} strokeWidth={3} fill="none" /><line x1={-52} y1={72 + i * 20} x2={20 + (i % 2) * 30} y2={72 + i * 20} stroke="#94a3b8" strokeWidth={4} /></g>)}
+    {/* clip = slick hairdo */}
+    <path d="M-60 -112 Q-58 -150 0 -152 Q58 -150 60 -112 Z" fill="#cbd5e1" stroke={INK} strokeWidth={6} />
+    <path d="M-36 -136 Q0 -146 30 -138" stroke="#fff" strokeWidth={7} strokeLinecap="round" opacity={0.9} />
+    <rect x={-30} y={-122} width={60} height={20} rx={6} fill="#94a3b8" stroke={INK} strokeWidth={4} />
+    {/* shades pushed up */}
+    <path d="M-70 -128 H70" stroke={INK} strokeWidth={5} />
+    {[-34, 34].map((x) => <path key={x} d={`M${x - 26} -132 H${x + 26} Q${x + 24} -108 ${x} -106 Q${x - 24} -108 ${x - 26} -132 Z`} fill="#111" stroke={INK} strokeWidth={4} />)}
+    <FaceEyes p={p} y={-56} line={INK} lid="#b07a45" />
+    {p.mood !== "scared" && <path d="M-54 -88 Q-30 -98 -10 -88 M10 -88 Q30 -98 54 -88" stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" opacity={p.mood === "smug" ? 1 : 0.6} />}
+    <Mouth y={-16} w={34} open={p.open} smile={1.5} />
+    {/* tie */}
+    <path d="M-12 34 L12 34 L8 44 L18 78 L0 92 L-18 78 L-8 44 Z" fill="#8b5cf6" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+    {/* stopwatch on a string */}
+    <path d="M60 -96 Q74 -20 70 40" stroke={INK} strokeWidth={3} fill="none" />
+    <circle cx={70} cy={56} r={18} fill="#e2e8f0" stroke={INK} strokeWidth={4} />
+    <path d="M70 56 L70 44 M70 56 L78 60" stroke={P.red} strokeWidth={3} strokeLinecap="round" />
+  </g>
+);
+
+const DRAW: Record<Who, React.FC<{ p: Pose }>> = { zam: Zam, pucky: Pucky, biscuit: Biscuit, helmy: Helmy, clubby: Clubby, agenty: Agenty };
 
 /** 0..1 mouth opening from word timings (syllable-ish flapping inside each word). */
 export const mouthOpen = (words: { start: number; end: number; word: string }[], t: number) => {

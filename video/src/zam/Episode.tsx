@@ -12,7 +12,7 @@ export const OUTRO = 3.2;
 const F = (s: number) => Math.round(s * FPS);
 
 export const timing = (words: W[]) => {
-  const WHO = (id: string): Who => ({ z: "zam", p: "pucky", b: "biscuit", h: "helmy", c: "clubby" } as Record<string, Who>)[id[0]];
+  const WHO = (id: string): Who => ({ z: "zam", p: "pucky", b: "biscuit", h: "helmy", c: "clubby", a: "agenty" } as Record<string, Who>)[id[0]];
   const SEGS = buildSegs(words, WHO);
   const S = (id: string) => SEGS.find((s) => s.id === id)!;
   const at = (seg: string, prefix: string, nth = 0) => {
