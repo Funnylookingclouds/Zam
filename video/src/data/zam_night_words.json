@@ -1,0 +1,890 @@
+[
+ {
+  "word": "The",
+  "display": "The",
+  "start": 0.07,
+  "end": 0.163,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "arena's",
+  "display": "arena's",
+  "start": 0.197,
+  "end": 0.534,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "empty.",
+  "display": "empty.",
+  "start": 0.604,
+  "end": 0.94,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "Now",
+  "display": "Now",
+  "start": 0.987,
+  "end": 1.126,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "it's",
+  "display": "it's",
+  "start": 1.173,
+  "end": 1.289,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 1.335,
+  "end": 1.451,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "time",
+  "display": "time",
+  "start": 1.521,
+  "end": 1.834,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Zam's",
+  "display": "Zam's",
+  "start": 1.962,
+  "end": 2.345,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "night",
+  "display": "night",
+  "start": 2.415,
+  "end": 2.647,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "shift!",
+  "display": "shift!",
+  "start": 2.705,
+  "end": 3.146,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "Fun",
+  "display": "Fun",
+  "start": 3.665,
+  "end": 3.851,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "fact:",
+  "display": "fact:",
+  "start": 3.92,
+  "end": 4.292,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 4.594,
+  "end": 4.977,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 5.058,
+  "end": 5.244,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "is",
+  "display": "is",
+  "start": 5.279,
+  "end": 5.371,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "only",
+  "display": "only",
+  "start": 5.441,
+  "end": 5.662,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "about",
+  "display": "about",
+  "start": 5.72,
+  "end": 5.964,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "an",
+  "display": "an",
+  "start": 6.01,
+  "end": 6.068,
+  "segment": "h_inch",
+  "keyword": false
+ },
+ {
+  "word": "inch",
+  "display": "inch",
+  "start": 6.126,
+  "end": 6.289,
+  "segment": "h_inch",
+  "keyword": true
+ },
+ {
+  "word": "thick.",
+  "display": "thick.",
+  "start": 6.335,
+  "end": 6.683,
+  "segment": "h_inch",
+  "keyword": true
+ },
+ {
+  "word": "An",
+  "display": "An",
+  "start": 7.249,
+  "end": 7.353,
+  "segment": "p_inch",
+  "keyword": false
+ },
+ {
+  "word": "inch?",
+  "display": "inch?",
+  "start": 7.435,
+  "end": 7.841,
+  "segment": "p_inch",
+  "keyword": true
+ },
+ {
+  "word": "That's",
+  "display": "That's",
+  "start": 8.143,
+  "end": 8.421,
+  "segment": "p_inch",
+  "keyword": false
+ },
+ {
+  "word": "as",
+  "display": "as",
+  "start": 8.468,
+  "end": 8.549,
+  "segment": "p_inch",
+  "keyword": false
+ },
+ {
+  "word": "thick",
+  "display": "thick",
+  "start": 8.63,
+  "end": 8.874,
+  "segment": "p_inch",
+  "keyword": true
+ },
+ {
+  "word": "as",
+  "display": "as",
+  "start": 8.932,
+  "end": 9.014,
+  "segment": "p_inch",
+  "keyword": false
+ },
+ {
+  "word": "me!",
+  "display": "me!",
+  "start": 9.095,
+  "end": 9.524,
+  "segment": "p_inch",
+  "keyword": true
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 9.997,
+  "end": 10.125,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "it's",
+  "display": "it's",
+  "start": 10.183,
+  "end": 10.322,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "not",
+  "display": "not",
+  "start": 10.368,
+  "end": 10.519,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "white",
+  "display": "white",
+  "start": 10.566,
+  "end": 10.821,
+  "segment": "z_paint",
+  "keyword": true
+ },
+ {
+  "word": "it's",
+  "display": "it's",
+  "start": 11.32,
+  "end": 11.506,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "painted",
+  "display": "painted",
+  "start": 11.564,
+  "end": 11.924,
+  "segment": "z_paint",
+  "keyword": true
+ },
+ {
+  "word": "white.",
+  "display": "white.",
+  "start": 11.971,
+  "end": 12.319,
+  "segment": "z_paint",
+  "keyword": true
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 12.458,
+  "end": 12.586,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "lines",
+  "display": "lines",
+  "start": 12.656,
+  "end": 12.957,
+  "segment": "z_paint",
+  "keyword": true
+ },
+ {
+  "word": "too,",
+  "display": "too,",
+  "start": 13.027,
+  "end": 13.341,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "under",
+  "display": "under",
+  "start": 13.48,
+  "end": 13.747,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 13.805,
+  "end": 13.886,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "ice!",
+  "display": "ice!",
+  "start": 13.956,
+  "end": 14.339,
+  "segment": "z_paint",
+  "keyword": false
+ },
+ {
+  "word": "I've",
+  "display": "I've",
+  "start": 14.845,
+  "end": 15.008,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "been",
+  "display": "been",
+  "start": 15.031,
+  "end": 15.171,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "standing",
+  "display": "standing",
+  "start": 15.229,
+  "end": 15.635,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "on",
+  "display": "on",
+  "start": 15.693,
+  "end": 15.763,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "paint",
+  "display": "paint",
+  "start": 15.832,
+  "end": 16.099,
+  "segment": "b_paint",
+  "keyword": true
+ },
+ {
+  "word": "this",
+  "display": "this",
+  "start": 16.146,
+  "end": 16.285,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "whole",
+  "display": "whole",
+  "start": 16.332,
+  "end": 16.564,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "time?!",
+  "display": "time?!",
+  "start": 16.61,
+  "end": 17.109,
+  "segment": "b_paint",
+  "keyword": false
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 17.628,
+  "end": 17.837,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 17.883,
+  "end": 17.941,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 18.011,
+  "end": 18.139,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 18.208,
+  "end": 18.58,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 18.661,
+  "end": 18.905,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "came",
+  "display": "came",
+  "start": 18.94,
+  "end": 19.137,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "from",
+  "display": "from",
+  "start": 19.172,
+  "end": 19.311,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 19.369,
+  "end": 19.393,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "pond.",
+  "display": "pond.",
+  "start": 19.451,
+  "end": 19.927,
+  "segment": "c_pond",
+  "keyword": true
+ },
+ {
+  "word": "With",
+  "display": "With",
+  "start": 20.089,
+  "end": 20.252,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 20.287,
+  "end": 20.31,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "duck",
+  "display": "duck",
+  "start": 20.379,
+  "end": 20.612,
+  "segment": "c_pond",
+  "keyword": true
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 20.681,
+  "end": 20.763,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "it.",
+  "display": "it.",
+  "start": 20.832,
+  "end": 21.018,
+  "segment": "c_pond",
+  "keyword": false
+ },
+ {
+  "word": "A",
+  "display": "A",
+  "start": 21.548,
+  "end": 21.606,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 21.688,
+  "end": 21.839,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 21.908,
+  "end": 22.268,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "rink",
+  "display": "rink",
+  "start": 22.326,
+  "end": 22.524,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "takes",
+  "display": "takes",
+  "start": 22.57,
+  "end": 22.791,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "almost",
+  "display": "almost",
+  "start": 22.837,
+  "end": 23.104,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "two",
+  "display": "two",
+  "start": 23.151,
+  "end": 23.36,
+  "segment": "z_build",
+  "keyword": true
+ },
+ {
+  "word": "days,",
+  "display": "days,",
+  "start": 23.429,
+  "end": 23.731,
+  "segment": "z_build",
+  "keyword": true
+ },
+ {
+  "word": "layer",
+  "display": "layer",
+  "start": 23.801,
+  "end": 24.056,
+  "segment": "z_build",
+  "keyword": true
+ },
+ {
+  "word": "by",
+  "display": "by",
+  "start": 24.114,
+  "end": 24.23,
+  "segment": "z_build",
+  "keyword": false
+ },
+ {
+  "word": "layer.",
+  "display": "layer.",
+  "start": 24.3,
+  "end": 24.683,
+  "segment": "z_build",
+  "keyword": true
+ },
+ {
+  "word": "Then",
+  "display": "Then",
+  "start": 24.764,
+  "end": 24.927,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 24.973,
+  "end": 24.997,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "flood",
+  "display": "flood",
+  "start": 25.101,
+  "end": 25.368,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "it",
+  "display": "it",
+  "start": 25.403,
+  "end": 25.473,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "with",
+  "display": "with",
+  "start": 25.507,
+  "end": 25.647,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "hot",
+  "display": "hot",
+  "start": 25.705,
+  "end": 25.879,
+  "segment": "z_flood",
+  "keyword": true
+ },
+ {
+  "word": "water",
+  "display": "water",
+  "start": 25.925,
+  "end": 26.25,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "about",
+  "display": "about",
+  "start": 26.518,
+  "end": 26.843,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "sixty",
+  "display": "60",
+  "start": 26.947,
+  "end": 27.284,
+  "segment": "z_flood",
+  "keyword": true
+ },
+ {
+  "word": "degrees",
+  "display": "degrees",
+  "start": 27.342,
+  "end": 27.644,
+  "segment": "z_flood",
+  "keyword": false
+ },
+ {
+  "word": "Celsius.",
+  "display": "Celsius.",
+  "start": 27.679,
+  "end": 28.375,
+  "segment": "z_flood",
+  "keyword": true
+ },
+ {
+  "word": "Hot",
+  "display": "Hot",
+  "start": 28.882,
+  "end": 29.068,
+  "segment": "h_science",
+  "keyword": true
+ },
+ {
+  "word": "water",
+  "display": "water",
+  "start": 29.126,
+  "end": 29.416,
+  "segment": "h_science",
+  "keyword": false
+ },
+ {
+  "word": "melts",
+  "display": "melts",
+  "start": 29.486,
+  "end": 29.764,
+  "segment": "h_science",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 29.822,
+  "end": 29.927,
+  "segment": "h_science",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 29.996,
+  "end": 30.171,
+  "segment": "h_science",
+  "keyword": false
+ },
+ {
+  "word": "freezes",
+  "display": "freezes",
+  "start": 30.24,
+  "end": 30.623,
+  "segment": "h_science",
+  "keyword": false
+ },
+ {
+  "word": "smoother.",
+  "display": "smoother.",
+  "start": 30.658,
+  "end": 31.227,
+  "segment": "h_science",
+  "keyword": true
+ },
+ {
+  "word": "Science!",
+  "display": "Science!",
+  "start": 31.703,
+  "end": 32.295,
+  "segment": "h_science",
+  "keyword": true
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 32.814,
+  "end": 32.919,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "first",
+  "display": "first",
+  "start": 32.977,
+  "end": 33.267,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "ice",
+  "display": "ice",
+  "start": 33.336,
+  "end": 33.557,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "resurfacer?",
+  "display": "resurfacer?",
+  "start": 33.615,
+  "end": 34.358,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "Built",
+  "display": "Built",
+  "start": 34.521,
+  "end": 34.788,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 34.834,
+  "end": 34.892,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "1949,",
+  "display": "1949,",
+  "start": 34.927,
+  "end": 35.833,
+  "segment": "z_1949",
+  "keyword": true
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 35.856,
+  "end": 35.914,
+  "segment": "z_1949",
+  "keyword": false
+ },
+ {
+  "word": "California.",
+  "display": "California.",
+  "start": 35.972,
+  "end": 36.622,
+  "segment": "z_1949",
+  "keyword": true
+ },
+ {
+  "word": "So",
+  "display": "So",
+  "start": 37.129,
+  "end": 37.257,
+  "segment": "b_classic",
+  "keyword": false
+ },
+ {
+  "word": "you're",
+  "display": "you're",
+  "start": 37.304,
+  "end": 37.513,
+  "segment": "b_classic",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 37.547,
+  "end": 37.571,
+  "segment": "b_classic",
+  "keyword": false
+ },
+ {
+  "word": "classic.",
+  "display": "classic.",
+  "start": 37.64,
+  "end": 38.256,
+  "segment": "b_classic",
+  "keyword": true
+ },
+ {
+  "word": "Wheeee!",
+  "display": "Wheeee!",
+  "start": 38.751,
+  "end": 39.366,
+  "segment": "p_wheee",
+  "keyword": true
+ },
+ {
+  "word": "Pucky...",
+  "display": "Pucky...",
+  "start": 39.873,
+  "end": 40.198,
+  "segment": "z_end",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 40.268,
+  "end": 40.326,
+  "segment": "z_end",
+  "keyword": false
+ },
+ {
+  "word": "just",
+  "display": "just",
+  "start": 40.431,
+  "end": 40.558,
+  "segment": "z_end",
+  "keyword": false
+ },
+ {
+  "word": "cleaned",
+  "display": "cleaned",
+  "start": 40.593,
+  "end": 40.895,
+  "segment": "z_end",
+  "keyword": true
+ },
+ {
+  "word": "that.",
+  "display": "that.",
+  "start": 40.93,
+  "end": 41.197,
+  "segment": "z_end",
+  "keyword": false
+ }
+]

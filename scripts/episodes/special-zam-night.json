@@ -1,0 +1,20 @@
+{
+  "id": "special-zam-night", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.08, "voice_gap": 0.24,
+  "segments": [
+    {"id": "z_intro", "tts": "The arena's empty. Now it's my time – Zam's night shift!"},
+    {"id": "h_inch", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fun fact: NHL ice is only about an inch thick."},
+    {"id": "p_inch", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "An inch? That's as thick as me!"},
+    {"id": "z_paint", "tts": "And it's not white – it's painted white. The lines too, under the ice!"},
+    {"id": "b_paint", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I've been standing on paint this whole time?!"},
+    {"id": "c_pond", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, ice came from a pond. With a duck in it."},
+    {"id": "z_build", "tts": "A new NHL rink takes almost two days, layer by layer."},
+    {"id": "z_flood", "tts": "Then I flood it with hot water – about sixty degrees Celsius."},
+    {"id": "h_science", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Hot water melts in and freezes smoother. Science!"},
+    {"id": "z_1949", "tts": "The first ice resurfacer? Built in 1949, in California."},
+    {"id": "b_classic", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "So you're a classic."},
+    {"id": "p_wheee", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Wheeee!"},
+    {"id": "z_end", "tts": "Pucky… I just cleaned that."}
+  ],
+  "display_map": {"sixty": "60"},
+  "keywords": ["empty", "night", "shift", "inch", "thick", "me", "painted", "white", "lines", "paint", "pond", "duck", "two", "days", "layer", "hot", "sixty", "celsius", "smoother", "science", "1949", "california", "classic", "wheeee", "cleaned"]
+}

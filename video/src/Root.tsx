@@ -8,6 +8,7 @@ import { PuckyDay, PUCKYDAY_FRAMES } from "./episodes/pucky_day";
 import { PuckyDayToon, TOON_FRAMES } from "./episodes/pucky_day_toon";
 import { BiscuitDay, BISCUITDAY_FRAMES } from "./episodes/biscuit_day_toon";
 import { ClubbyDay, CLUBBYDAY_FRAMES } from "./episodes/clubby_day_toon";
+import { ZamNight, ZAMNIGHT_FRAMES } from "./episodes/zam_night_toon";
 
 export const Root: React.FC = () => (
   <>
@@ -18,6 +19,7 @@ export const Root: React.FC = () => (
     <Composition id="PuckyDayToon" component={PuckyDayToon} durationInFrames={TOON_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="BiscuitDay" component={BiscuitDay} durationInFrames={BISCUITDAY_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="ClubbyDay" component={ClubbyDay} durationInFrames={CLUBBYDAY_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="ZamNight" component={ZamNight} durationInFrames={ZAMNIGHT_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
 );
