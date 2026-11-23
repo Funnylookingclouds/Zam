@@ -1,0 +1,21 @@
+{
+  "id": "special-summer-camp", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_intro", "tts": "Summer camp! Let's get fit for next season!"},
+    {"id": "p_race", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Race you around the track! Last one there is a Biscuit!"},
+    {"id": "b_behind", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I'm… right… behind… you."},
+    {"id": "h_larkin", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fun fact: Dylan Larkin skated the fastest All-Star lap ever – thirteen point one seven two seconds, in 2016."},
+    {"id": "a_2030", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Biscuit, kid – at this speed, you'll finish in 2030."},
+    {"id": "z_gym", "tts": "Weight room!"},
+    {"id": "c_back", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Watch and learn. Hnnngh… my back! I'm a stick!"},
+    {"id": "p_feather", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "I can lift… a feather!"},
+    {"id": "b_power", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Move. WALRUS POWER!"},
+    {"id": "a_sign", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Sign HIM!"},
+    {"id": "h_lake", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Last drill: everybody jump in the lake!"},
+    {"id": "z_froze", "tts": "Wait – I just froze it."},
+    {"id": "p_bonk", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "BONK!"},
+    {"id": "z_oops", "tts": "…Oops."}
+  ],
+  "display_map": {},
+  "keywords": ["summer", "camp", "fit", "race", "track", "biscuit", "behind", "dylan", "larkin", "fastest", "thirteen", "seconds", "2016", "speed", "2030", "weight", "back", "stick", "feather", "walrus", "power", "sign", "lake", "froze", "bonk", "oops"]
+}
