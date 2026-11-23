@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 ID=$1; OUT=$2
-(cd video && npx remotion render src/index.ts "$ID" "../temp/${OUT}_raw.mp4" --codec=h264 --video-bitrate=5.5M --audio-bitrate=256k --browser-executable=/opt/pw-browsers/chromium --log=error)
+(cd video && npx remotion render src/index.ts "$ID" "../temp/${OUT}_raw.mp4" --codec=h264 --video-bitrate=${BITRATE:-5.5M} --audio-bitrate=256k --browser-executable=/opt/pw-browsers/chromium --log=error)
 J=$(ffmpeg -hide_banner -i "temp/${OUT}_raw.mp4" -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g() { echo "$J" | python3 -c "import json,sys;print(json.load(sys.stdin)['$1'])"; }
 ffmpeg -y -loglevel error -i "temp/${OUT}_raw.mp4" -c:v copy \

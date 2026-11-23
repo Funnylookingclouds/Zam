@@ -1,0 +1,27 @@
+{
+ "id": "child-03-z_morning",
+ "language": "en",
+ "voice_id": "wGkprrTXgBM5EC3Znt6U",
+ "model_id": "eleven_multilingual_v2",
+ "speed": 0.8,
+ "voice_gap": 0.5,
+ "segments": [
+  {
+   "id": "z_morning",
+   "tts": "Good morning\u2026 sunshine."
+  }
+ ],
+ "display_map": {},
+ "keywords": [
+  "sunshine",
+  "wheee",
+  "castle",
+  "stars",
+  "pop",
+  "goal",
+  "again",
+  "apple",
+  "cloud",
+  "higher"
+ ]
+}

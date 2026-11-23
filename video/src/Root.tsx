@@ -22,6 +22,7 @@ import { SummerCamp, SUMMERCAMP_FRAMES } from "./episodes/summer_camp_toon";
 import { SnowballFight, SNOWBALL_FRAMES } from "./episodes/snowball_toon";
 import { Child01, CHILD01_FRAMES } from "./episodes/child01_toon";
 import { Child02, CHILD02_FRAMES } from "./episodes/child02_toon";
+import { Child03Long, CHILD03_FRAMES, FPS30 } from "./episodes/child03_long";
 
 export const Root: React.FC = () => (
   <>
@@ -49,6 +50,7 @@ export const Root: React.FC = () => (
     <Composition id="SnowballFight" component={SnowballFight} durationInFrames={SNOWBALL_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="Child01" component={Child01} durationInFrames={CHILD01_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="Child02" component={Child02} durationInFrames={CHILD02_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="Child03Long" component={Child03Long} durationInFrames={CHILD03_FRAMES} fps={FPS30} width={1920} height={1080} />
     <Still id="BabyCard" component={BabyCard} width={1080} height={1920} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />

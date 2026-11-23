@@ -1,0 +1,27 @@
+{
+ "id": "child-03-p_count",
+ "language": "en",
+ "voice_id": "fBD19tfE58bkETeiwUoC",
+ "model_id": "eleven_multilingual_v2",
+ "speed": 0.8,
+ "voice_gap": 0.5,
+ "segments": [
+  {
+   "id": "p_count",
+   "tts": "One\u2026 two\u2026 three\u2026 wheee!"
+  }
+ ],
+ "display_map": {},
+ "keywords": [
+  "sunshine",
+  "wheee",
+  "castle",
+  "stars",
+  "pop",
+  "goal",
+  "again",
+  "apple",
+  "cloud",
+  "higher"
+ ]
+}

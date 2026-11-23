@@ -42,7 +42,7 @@ const LyricCard: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ------------------------------------------------------------------ playground set
-const SunFace: React.FC<{ t: number; x?: number; y?: number; set?: number }> = ({ t, x = 790, y = 250, set = 0 }) => (
+export const SunFace: React.FC<{ t: number; x?: number; y?: number; set?: number }> = ({ t, x = 790, y = 250, set = 0 }) => (
   <div style={{ position: "absolute", left: x, top: y + set * 520, width: 200, height: 200 }}>
     <svg width={200} height={200} viewBox="-100 -100 200 200" style={{ position: "absolute", transform: `rotate(${t * 6}deg)` }}>{[...Array(12)].map((_, i) => <path key={i} d="M0 -98 L10 -72 L-10 -72 Z" fill={set > 0.3 ? "#fb923c" : "#fcd34d"} transform={`rotate(${i * 30})`} />)}</svg>
     <div style={{ position: "absolute", left: 32, top: 32, width: 136, height: 136, borderRadius: 68, background: set > 0.3 ? "#fdba74" : "#fde68a", border: `5px solid ${P.ink}` }}>
@@ -52,7 +52,7 @@ const SunFace: React.FC<{ t: number; x?: number; y?: number; set?: number }> = (
     </div>
   </div>
 );
-const Cloud: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
+export const Cloud: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
   <div style={{ position: "absolute", left: x, top: y, transform: `scale(${s})` }}>
     <div style={{ position: "absolute", left: 0, top: 30, width: 200, height: 70, borderRadius: 40, background: "#fff" }} />
     <div style={{ position: "absolute", left: 40, top: 0, width: 90, height: 90, borderRadius: 45, background: "#fff" }} />
@@ -74,7 +74,7 @@ const Yard: React.FC<{ t: number; sunset?: number; fence?: boolean }> = ({ t, su
     {sunset > 0 && <AbsoluteFill style={{ background: "#fb7185", opacity: sunset * 0.18 }} />}
   </AbsoluteFill>
 );
-const SwingSet: React.FC<{ x: number; y: number; t: number; who?: Who; ang?: number; size?: number; sing?: boolean }> = ({ x, y, t, who, ang, size = 330, sing }) => {
+export const SwingSet: React.FC<{ x: number; y: number; t: number; who?: Who; ang?: number; size?: number; sing?: boolean }> = ({ x, y, t, who, ang, size = 330, sing }) => {
   const a = ang ?? Math.sin(t * 1.4) * 22;
   return (
     <div style={{ position: "absolute", left: x, top: y, width: 600, height: 700 }}>
@@ -91,7 +91,7 @@ const SwingSet: React.FC<{ x: number; y: number; t: number; who?: Who; ang?: num
     </div>
   );
 };
-const Slide: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
+export const Slide: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
   <svg width={620 * s} height={720 * s} viewBox="0 0 620 720" style={{ position: "absolute", left: x, top: y }}>
     <path d="M60 710 L60 140 M170 710 L170 140" stroke="#3b82f6" strokeWidth={20} />
     {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M60 ${640 - i * 110} L170 ${640 - i * 110}`} stroke="#3b82f6" strokeWidth={14} />)}
@@ -99,25 +99,25 @@ const Slide: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) 
     <path d="M190 130 Q330 160 420 470 Q470 650 610 690 L610 720 Q450 690 390 500 Q310 200 190 170 Z" fill="#fde047" stroke={P.ink} strokeWidth={6} />
   </svg>
 );
-const slidePos = (k: number) => { // k 0..1 along the slide surface (unscaled coords)
+export const slidePos = (k: number) => { // k 0..1 along the slide surface (unscaled coords)
   const x = interpolate(k, [0, 0.4, 0.8, 1], [190, 360, 460, 600]);
   const y = interpolate(k, [0, 0.4, 0.8, 1], [130, 300, 600, 690]);
   return [x, y];
 };
-const Sandbox: React.FC<{ x: number; y: number; w?: number }> = ({ x, y, w = 760 }) => (
+export const Sandbox: React.FC<{ x: number; y: number; w?: number }> = ({ x, y, w = 760 }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: w * 0.42 }}>
     <div style={{ position: "absolute", inset: 0, background: "#fde68a", border: `22px solid #c2410c`, borderRadius: 18, boxShadow: `0 0 0 5px ${P.ink}` }} />
     {[...Array(10)].map((_, i) => <div key={i} style={{ position: "absolute", left: 40 + random(`sb${i}`) * (w - 120), top: 40 + random(`sby${i}`) * (w * 0.42 - 100), width: 18, height: 10, borderRadius: 9, background: "#f59e0b", opacity: 0.6 }} />)}
   </div>
 );
-const SandCake: React.FC<{ x: number; y: number; pop: number }> = ({ x, y, pop }) => (
+export const SandCake: React.FC<{ x: number; y: number; pop: number }> = ({ x, y, pop }) => (
   <div style={{ position: "absolute", left: x, top: y, transform: `scale(${pop})`, transformOrigin: "50% 100%", zIndex: 4 }}>
     <div style={{ position: "absolute", left: 0, top: 50, width: 200, height: 110, background: "#fbbf24", border: `5px solid ${P.ink}`, borderRadius: "20px 20px 10px 10px" }} />
     <div style={{ position: "absolute", left: 30, top: 0, width: 140, height: 60, background: "#fcd34d", border: `5px solid ${P.ink}`, borderRadius: "20px 20px 6px 6px" }} />
     {[60, 100, 140].map((l, i) => <div key={l} style={{ position: "absolute", left: l - 10, top: -30, fontSize: 30 }}>{i === 1 ? "🐚" : "✿"}</div>)}
   </div>
 );
-const Seesaw: React.FC<{ x: number; y: number; t: number; ang: number; left: Who; right: Who; size?: number; sing?: boolean }> = ({ x, y, t, ang, left, right, size = 300, sing }) => (
+export const Seesaw: React.FC<{ x: number; y: number; t: number; ang: number; left: Who; right: Who; size?: number; sing?: boolean }> = ({ x, y, t, ang, left, right, size = 300, sing }) => (
   <div style={{ position: "absolute", left: x, top: y, width: 900, height: 400 }}>
     <svg width={900} height={400} style={{ position: "absolute" }}><path d="M390 380 L450 230 L510 380 Z" fill="#a78bfa" stroke={P.ink} strokeWidth={6} /></svg>
     <div style={{ position: "absolute", left: 450, top: 225, width: 0, height: 0, transform: `rotate(${ang}deg)` }}>
@@ -127,10 +127,10 @@ const Seesaw: React.FC<{ x: number; y: number; t: number; ang: number; left: Who
     </div>
   </div>
 );
-const Goal: React.FC<{ x: number; y: number; s?: number; shake?: number }> = ({ x, y, s = 1, shake = 0 }) => (
+export const Goal: React.FC<{ x: number; y: number; s?: number; shake?: number }> = ({ x, y, s = 1, shake = 0 }) => (
   <div style={{ position: "absolute", left: x + shake, top: y, width: 260 * s, height: 180 * s, border: `${10 * s}px solid #ef4444`, borderBottom: "none", borderRadius: `${12 * s}px ${12 * s}px 0 0`, background: "repeating-linear-gradient(45deg,#fff0 0 16px,#ffffffaa 16px 20px),repeating-linear-gradient(-45deg,#fff0 0 16px,#ffffffaa 16px 20px)" }} />
 );
-const Ball: React.FC<{ x: number; y: number; r?: number; spin?: number }> = ({ x, y, r = 60, spin = 0 }) => (
+export const Ball: React.FC<{ x: number; y: number; r?: number; spin?: number }> = ({ x, y, r = 60, spin = 0 }) => (
   <div style={{ position: "absolute", left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: r, background: "conic-gradient(#f9a8d4 0 25%,#93c5fd 0 50%,#fde68a 0 75%,#86efac 0)", border: `5px solid ${P.ink}`, transform: `rotate(${spin}deg)`, zIndex: 5 }} />
 );
 const Hearts: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => (

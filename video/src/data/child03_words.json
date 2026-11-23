@@ -1,0 +1,274 @@
+[
+ {
+  "word": "Good",
+  "display": "Good",
+  "start": 6.058,
+  "end": 6.244,
+  "segment": "z_morning",
+  "keyword": false
+ },
+ {
+  "word": "morning...",
+  "display": "morning...",
+  "start": 6.29,
+  "end": 6.743,
+  "segment": "z_morning",
+  "keyword": false
+ },
+ {
+  "word": "sunshine.",
+  "display": "sunshine.",
+  "start": 7.149,
+  "end": 7.916,
+  "segment": "z_morning",
+  "keyword": true
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 12.546,
+  "end": 13.011,
+  "segment": "p_hi",
+  "keyword": false
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 16.57,
+  "end": 17.092,
+  "segment": "b_hi",
+  "keyword": false
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 20.604,
+  "end": 21.092,
+  "segment": "h_hi",
+  "keyword": false
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 24.57,
+  "end": 25.011,
+  "segment": "c_hi",
+  "keyword": false
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 28.546,
+  "end": 28.999,
+  "segment": "a_hi",
+  "keyword": false
+ },
+ {
+  "word": "One...",
+  "display": "One...",
+  "start": 45.046,
+  "end": 45.522,
+  "segment": "p_count",
+  "keyword": false
+ },
+ {
+  "word": "two...",
+  "display": "two...",
+  "start": 45.569,
+  "end": 46.219,
+  "segment": "p_count",
+  "keyword": false
+ },
+ {
+  "word": "three...",
+  "display": "three...",
+  "start": 46.289,
+  "end": 46.985,
+  "segment": "p_count",
+  "keyword": false
+ },
+ {
+  "word": "wheee!",
+  "display": "wheee!",
+  "start": 47.287,
+  "end": 47.984,
+  "segment": "p_count",
+  "keyword": true
+ },
+ {
+  "word": "Higher...",
+  "display": "Higher...",
+  "start": 61.07,
+  "end": 61.592,
+  "segment": "b_higher",
+  "keyword": true
+ },
+ {
+  "word": "please.",
+  "display": "please.",
+  "start": 61.755,
+  "end": 62.37,
+  "segment": "b_higher",
+  "keyword": false
+ },
+ {
+  "word": "Pat...",
+  "display": "Pat...",
+  "start": 86.07,
+  "end": 86.557,
+  "segment": "b_pat",
+  "keyword": false
+ },
+ {
+  "word": "pat...",
+  "display": "pat...",
+  "start": 86.72,
+  "end": 87.242,
+  "segment": "b_pat",
+  "keyword": false
+ },
+ {
+  "word": "castle!",
+  "display": "castle!",
+  "start": 87.463,
+  "end": 88.194,
+  "segment": "b_pat",
+  "keyword": true
+ },
+ {
+  "word": "Big",
+  "display": "Big",
+  "start": 102.07,
+  "end": 102.313,
+  "segment": "a_stars",
+  "keyword": false
+ },
+ {
+  "word": "castle.",
+  "display": "castle.",
+  "start": 102.372,
+  "end": 102.998,
+  "segment": "a_stars",
+  "keyword": true
+ },
+ {
+  "word": "Five",
+  "display": "Five",
+  "start": 103.3,
+  "end": 103.846,
+  "segment": "a_stars",
+  "keyword": false
+ },
+ {
+  "word": "stars!",
+  "display": "stars!",
+  "start": 103.916,
+  "end": 104.786,
+  "segment": "a_stars",
+  "keyword": true
+ },
+ {
+  "word": "Up...",
+  "display": "Up...",
+  "start": 170.046,
+  "end": 170.348,
+  "segment": "c_updown",
+  "keyword": false
+ },
+ {
+  "word": "down...",
+  "display": "down...",
+  "start": 170.488,
+  "end": 171.242,
+  "segment": "c_updown",
+  "keyword": false
+ },
+ {
+  "word": "Pink...",
+  "display": "Pink...",
+  "start": 186.058,
+  "end": 186.639,
+  "segment": "h_bubbles",
+  "keyword": false
+ },
+ {
+  "word": "blue...",
+  "display": "blue...",
+  "start": 186.94,
+  "end": 187.556,
+  "segment": "h_bubbles",
+  "keyword": false
+ },
+ {
+  "word": "pop!",
+  "display": "pop!",
+  "start": 187.672,
+  "end": 188.206,
+  "segment": "h_bubbles",
+  "keyword": true
+ },
+ {
+  "word": "Goal!",
+  "display": "Goal!",
+  "start": 217.139,
+  "end": 217.755,
+  "segment": "p_goal",
+  "keyword": true
+ },
+ {
+  "word": "Again!",
+  "display": "Again!",
+  "start": 223.058,
+  "end": 223.871,
+  "segment": "b_again",
+  "keyword": true
+ },
+ {
+  "word": "Yum...",
+  "display": "Yum...",
+  "start": 240.046,
+  "end": 240.418,
+  "segment": "z_apple",
+  "keyword": false
+ },
+ {
+  "word": "apple.",
+  "display": "apple.",
+  "start": 240.72,
+  "end": 241.242,
+  "segment": "z_apple",
+  "keyword": true
+ },
+ {
+  "word": "Look...",
+  "display": "Look...",
+  "start": 252.046,
+  "end": 252.511,
+  "segment": "h_cloud",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 252.58,
+  "end": 252.65,
+  "segment": "h_cloud",
+  "keyword": false
+ },
+ {
+  "word": "puck",
+  "display": "puck",
+  "start": 252.743,
+  "end": 253.022,
+  "segment": "h_cloud",
+  "keyword": false
+ },
+ {
+  "word": "cloud!",
+  "display": "cloud!",
+  "start": 253.091,
+  "end": 253.683,
+  "segment": "h_cloud",
+  "keyword": true
+ }
+]

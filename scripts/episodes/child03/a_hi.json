@@ -1,0 +1,27 @@
+{
+ "id": "child-03-a_hi",
+ "language": "en",
+ "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+ "model_id": "eleven_multilingual_v2",
+ "speed": 0.8,
+ "voice_gap": 0.5,
+ "segments": [
+  {
+   "id": "a_hi",
+   "tts": "Hi!"
+  }
+ ],
+ "display_map": {},
+ "keywords": [
+  "sunshine",
+  "wheee",
+  "castle",
+  "stars",
+  "pop",
+  "goal",
+  "again",
+  "apple",
+  "cloud",
+  "higher"
+ ]
+}

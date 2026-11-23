@@ -1,0 +1,27 @@
+{
+ "id": "child-03-b_higher",
+ "language": "en",
+ "voice_id": "D38z5RcWu1voky8WS1ja",
+ "model_id": "eleven_multilingual_v2",
+ "speed": 0.8,
+ "voice_gap": 0.5,
+ "segments": [
+  {
+   "id": "b_higher",
+   "tts": "Higher\u2026 please."
+  }
+ ],
+ "display_map": {},
+ "keywords": [
+  "sunshine",
+  "wheee",
+  "castle",
+  "stars",
+  "pop",
+  "goal",
+  "again",
+  "apple",
+  "cloud",
+  "higher"
+ ]
+}
