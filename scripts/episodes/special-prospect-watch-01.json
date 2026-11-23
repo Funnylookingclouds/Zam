@@ -1,0 +1,18 @@
+{
+  "id": "special-prospect-watch-01", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.15, "voice_gap": 0.18,
+  "segments": [
+    {"id": "a_intro", "tts": "Agenty's Prospect Watch! Who's next? I've got the list."},
+    {"id": "a_mckenna", "tts": "Gavin McKenna. Toronto won the 2026 lottery with just eight and a half percent odds – and took him first overall!"},
+    {"id": "p_lucky", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Luckier than Biscuit making a save!"},
+    {"id": "b_hey", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Hey!"},
+    {"id": "a_stenberg", "tts": "Number two pick: Ivar Stenberg, from Sweden. Thirty-three points at eighteen – the most in the Swedish league since the Sedin twins."},
+    {"id": "c_sedins", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "The Sedins? Back in my day, THEY were the prospects."},
+    {"id": "a_schaefer", "tts": "Matthew Schaefer: youngest Calder Trophy winner ever – and unanimous!"},
+    {"id": "h_schaefer", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Twenty-three goals. Tied Brian Leetch's rookie record for a defenseman."},
+    {"id": "a_celebrini", "tts": "And Macklin Celebrini: one hundred fifteen points at nineteen. A Sharks record!"},
+    {"id": "z_ask", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Agenty, who's your top prospect?"},
+    {"id": "a_me", "tts": "Me. I'm still improving."}
+  ],
+  "display_map": {},
+  "keywords": ["prospect", "watch", "list", "gavin", "mckenna", "toronto", "2026", "lottery", "eight", "percent", "first", "luckier", "save", "hey", "ivar", "stenberg", "sweden", "thirty-three", "eighteen", "sedin", "sedins", "prospects", "matthew", "schaefer", "youngest", "calder", "unanimous", "twenty-three", "brian", "leetch's", "record", "macklin", "celebrini", "fifteen", "nineteen", "sharks", "me", "improving"]
+}

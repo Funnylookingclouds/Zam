@@ -15,7 +15,7 @@ const WORDS = words as W[];
 const { S, at } = timing(WORDS);
 const fr = (from: number, news: number) => Math.round((news - from) * 60);
 
-const BgCarpet: React.FC = () => {
+export const BgCarpet: React.FC = () => {
   const f = onTwos(useCurrentFrame());
   return (
     <AbsoluteFill style={{ background: "linear-gradient(180deg,#1e1b4b 0%,#312e81 55%,#4c1d95 100%)" }}>
@@ -26,14 +26,14 @@ const BgCarpet: React.FC = () => {
     </AbsoluteFill>
   );
 };
-const BgOffice: React.FC = () => (
+export const BgOffice: React.FC = () => (
   <AbsoluteFill style={{ background: "linear-gradient(180deg,#ede9fe 0%,#ddd6fe 62%,#6b4f2e 62.5%,#5b3f22 100%)" }}>
     <div style={{ position: "absolute", left: 120, top: 120, padding: "10px 30px", background: "#4c1d95", color: "#fde68a", fontFamily: FONT, fontWeight: 900, fontSize: 40, letterSpacing: 3, border: `6px solid ${P.ink}`, borderRadius: 10, opacity: 0 }}>AGENTY & ASSOCIATES</div>
     {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 80 + i * 330, top: 300, width: 240, height: 300, background: "#fef3c7", border: `8px solid ${P.ink}`, transform: `rotate(${[-4, 3, -2][i]}deg)` }}><div style={{ margin: 30, height: 160, background: "#c4b5fd" }} /><div style={{ textAlign: "center", fontFamily: HAND, fontSize: 36 }}>⭐ client ⭐</div></div>)}
     <Grain />
   </AbsoluteFill>
 );
-const ProspectFile: React.FC<{ n: number; name: string; sub: string; children?: React.ReactNode }> = ({ n, name, sub, children }) => (
+export const ProspectFile: React.FC<{ n: number; name: string; sub: string; children?: React.ReactNode }> = ({ n, name, sub, children }) => (
   <div style={{ position: "absolute", left: 60, top: 250, width: 960, height: 980, zIndex: 3 }}>
     <div style={{ position: "absolute", left: 420, top: 0, width: 320, height: 80, background: "#e5c07b", border: `8px solid ${P.ink}`, borderBottom: "none", borderRadius: "20px 20px 0 0", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 36 }}>PROSPECT FILE</div>
     <div style={{ position: "absolute", left: 0, top: 72, right: 0, bottom: 0, background: "#e5c07b", border: `8px solid ${P.ink}`, borderRadius: 24 }}>
@@ -45,7 +45,7 @@ const ProspectFile: React.FC<{ n: number; name: string; sub: string; children?: 
     </div>
   </div>
 );
-const Counter: React.FC<{ v: number; label: string; color?: string }> = ({ v, label, color = "#7c3aed" }) => (
+export const Counter: React.FC<{ v: number; label: string; color?: string }> = ({ v, label, color = "#7c3aed" }) => (
   <div style={{ textAlign: "center" }}><div style={{ fontSize: 260, fontWeight: 900, color, lineHeight: 1 }}>{v}</div><div style={{ fontSize: 56, fontWeight: 900 }}>{label}</div></div>
 );
 const BusinessCards: React.FC = () => {

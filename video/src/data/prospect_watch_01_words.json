@@ -1,0 +1,858 @@
+[
+ {
+  "word": "Agenty's",
+  "display": "Agenty's",
+  "start": 0.035,
+  "end": 0.395,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "Prospect",
+  "display": "Prospect",
+  "start": 0.43,
+  "end": 0.778,
+  "segment": "a_intro",
+  "keyword": true
+ },
+ {
+  "word": "Watch!",
+  "display": "Watch!",
+  "start": 0.813,
+  "end": 1.138,
+  "segment": "a_intro",
+  "keyword": true
+ },
+ {
+  "word": "Who's",
+  "display": "Who's",
+  "start": 1.173,
+  "end": 1.37,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "next?",
+  "display": "next?",
+  "start": 1.405,
+  "end": 1.741,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "I've",
+  "display": "I've",
+  "start": 1.927,
+  "end": 2.078,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "got",
+  "display": "got",
+  "start": 2.101,
+  "end": 2.194,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 2.229,
+  "end": 2.299,
+  "segment": "a_intro",
+  "keyword": false
+ },
+ {
+  "word": "list.",
+  "display": "list.",
+  "start": 2.334,
+  "end": 2.624,
+  "segment": "a_intro",
+  "keyword": true
+ },
+ {
+  "word": "Gavin",
+  "display": "Gavin",
+  "start": 2.705,
+  "end": 2.984,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "McKenna.",
+  "display": "McKenna.",
+  "start": 3.019,
+  "end": 3.437,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "Toronto",
+  "display": "Toronto",
+  "start": 3.646,
+  "end": 3.947,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "won",
+  "display": "won",
+  "start": 3.982,
+  "end": 4.063,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 4.098,
+  "end": 4.168,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "2026",
+  "display": "2026",
+  "start": 4.203,
+  "end": 4.876,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "lottery",
+  "display": "lottery",
+  "start": 4.934,
+  "end": 5.213,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "with",
+  "display": "with",
+  "start": 5.259,
+  "end": 5.399,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "just",
+  "display": "just",
+  "start": 5.433,
+  "end": 5.596,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "eight",
+  "display": "eight",
+  "start": 5.712,
+  "end": 5.921,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 5.968,
+  "end": 6.06,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 6.107,
+  "end": 6.13,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "half",
+  "display": "half",
+  "start": 6.188,
+  "end": 6.327,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "percent",
+  "display": "percent",
+  "start": 6.362,
+  "end": 6.618,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "odds",
+  "display": "odds",
+  "start": 6.664,
+  "end": 6.943,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 7.221,
+  "end": 7.361,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "took",
+  "display": "took",
+  "start": 7.407,
+  "end": 7.558,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "him",
+  "display": "him",
+  "start": 7.593,
+  "end": 7.697,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "first",
+  "display": "first",
+  "start": 7.802,
+  "end": 8.231,
+  "segment": "a_mckenna",
+  "keyword": true
+ },
+ {
+  "word": "overall!",
+  "display": "overall!",
+  "start": 8.359,
+  "end": 8.905,
+  "segment": "a_mckenna",
+  "keyword": false
+ },
+ {
+  "word": "Luckier",
+  "display": "Luckier",
+  "start": 9.364,
+  "end": 9.712,
+  "segment": "p_lucky",
+  "keyword": true
+ },
+ {
+  "word": "than",
+  "display": "than",
+  "start": 9.747,
+  "end": 9.886,
+  "segment": "p_lucky",
+  "keyword": false
+ },
+ {
+  "word": "Biscuit",
+  "display": "Biscuit",
+  "start": 9.944,
+  "end": 10.223,
+  "segment": "p_lucky",
+  "keyword": false
+ },
+ {
+  "word": "making",
+  "display": "making",
+  "start": 10.269,
+  "end": 10.548,
+  "segment": "p_lucky",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 10.583,
+  "end": 10.618,
+  "segment": "p_lucky",
+  "keyword": false
+ },
+ {
+  "word": "save!",
+  "display": "save!",
+  "start": 10.664,
+  "end": 11.117,
+  "segment": "p_lucky",
+  "keyword": true
+ },
+ {
+  "word": "Hey!",
+  "display": "Hey!",
+  "start": 11.541,
+  "end": 11.924,
+  "segment": "b_hey",
+  "keyword": true
+ },
+ {
+  "word": "Number",
+  "display": "Number",
+  "start": 12.324,
+  "end": 12.533,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "two",
+  "display": "two",
+  "start": 12.568,
+  "end": 12.672,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "pick:",
+  "display": "pick:",
+  "start": 12.719,
+  "end": 13.078,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "Ivar",
+  "display": "Ivar",
+  "start": 13.52,
+  "end": 13.926,
+  "segment": "a_stenberg",
+  "keyword": true
+ },
+ {
+  "word": "Stenberg,",
+  "display": "Stenberg,",
+  "start": 14.263,
+  "end": 14.983,
+  "segment": "a_stenberg",
+  "keyword": true
+ },
+ {
+  "word": "from",
+  "display": "from",
+  "start": 15.319,
+  "end": 15.54,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "Sweden.",
+  "display": "Sweden.",
+  "start": 15.923,
+  "end": 16.445,
+  "segment": "a_stenberg",
+  "keyword": true
+ },
+ {
+  "word": "Thirty-three",
+  "display": "Thirty-three",
+  "start": 17.154,
+  "end": 17.572,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "points",
+  "display": "points",
+  "start": 17.606,
+  "end": 17.827,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "at",
+  "display": "at",
+  "start": 17.862,
+  "end": 17.92,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "eighteen",
+  "display": "eighteen",
+  "start": 17.955,
+  "end": 18.21,
+  "segment": "a_stenberg",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 18.419,
+  "end": 18.616,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "most",
+  "display": "most",
+  "start": 18.686,
+  "end": 18.942,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 18.988,
+  "end": 19.046,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 19.081,
+  "end": 19.15,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "Swedish",
+  "display": "Swedish",
+  "start": 19.174,
+  "end": 19.464,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "league",
+  "display": "league",
+  "start": 19.51,
+  "end": 19.719,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "since",
+  "display": "since",
+  "start": 19.754,
+  "end": 19.94,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 19.975,
+  "end": 20.044,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "Sedin",
+  "display": "Sedin",
+  "start": 20.091,
+  "end": 20.335,
+  "segment": "a_stenberg",
+  "keyword": true
+ },
+ {
+  "word": "twins.",
+  "display": "twins.",
+  "start": 20.393,
+  "end": 20.904,
+  "segment": "a_stenberg",
+  "keyword": false
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 21.292,
+  "end": 21.385,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "Sedins?",
+  "display": "Sedins?",
+  "start": 21.443,
+  "end": 22.001,
+  "segment": "c_sedins",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 22.337,
+  "end": 22.546,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 22.593,
+  "end": 22.651,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 22.709,
+  "end": 22.825,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 22.906,
+  "end": 23.196,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "THEY",
+  "display": "THEY",
+  "start": 23.231,
+  "end": 23.371,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "were",
+  "display": "were",
+  "start": 23.405,
+  "end": 23.545,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 23.58,
+  "end": 23.649,
+  "segment": "c_sedins",
+  "keyword": false
+ },
+ {
+  "word": "prospects.",
+  "display": "prospects.",
+  "start": 23.684,
+  "end": 24.311,
+  "segment": "c_sedins",
+  "keyword": true
+ },
+ {
+  "word": "Matthew",
+  "display": "Matthew",
+  "start": 24.77,
+  "end": 25.049,
+  "segment": "a_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "Schaefer:",
+  "display": "Schaefer:",
+  "start": 25.084,
+  "end": 25.455,
+  "segment": "a_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "youngest",
+  "display": "youngest",
+  "start": 25.513,
+  "end": 25.804,
+  "segment": "a_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "Calder",
+  "display": "Calder",
+  "start": 25.85,
+  "end": 26.094,
+  "segment": "a_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "Trophy",
+  "display": "Trophy",
+  "start": 26.14,
+  "end": 26.361,
+  "segment": "a_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "winner",
+  "display": "winner",
+  "start": 26.396,
+  "end": 26.593,
+  "segment": "a_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "ever",
+  "display": "ever",
+  "start": 26.709,
+  "end": 26.965,
+  "segment": "a_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 27.301,
+  "end": 27.603,
+  "segment": "a_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "unanimous!",
+  "display": "unanimous!",
+  "start": 27.94,
+  "end": 28.637,
+  "segment": "a_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "Twenty-three",
+  "display": "Twenty-three",
+  "start": 29.036,
+  "end": 29.501,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "goals.",
+  "display": "goals.",
+  "start": 29.559,
+  "end": 30.035,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "Tied",
+  "display": "Tied",
+  "start": 30.186,
+  "end": 30.441,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "Brian",
+  "display": "Brian",
+  "start": 30.476,
+  "end": 30.79,
+  "segment": "h_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "Leetch's",
+  "display": "Leetch's",
+  "start": 30.848,
+  "end": 31.161,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "rookie",
+  "display": "rookie",
+  "start": 31.242,
+  "end": 31.498,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "record",
+  "display": "record",
+  "start": 31.544,
+  "end": 31.823,
+  "segment": "h_schaefer",
+  "keyword": true
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 31.858,
+  "end": 31.962,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 31.997,
+  "end": 32.02,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "defenseman.",
+  "display": "defenseman.",
+  "start": 32.055,
+  "end": 32.636,
+  "segment": "h_schaefer",
+  "keyword": false
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 33.06,
+  "end": 33.176,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "Macklin",
+  "display": "Macklin",
+  "start": 33.246,
+  "end": 33.722,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "Celebrini:",
+  "display": "Celebrini:",
+  "start": 33.826,
+  "end": 34.627,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 35.01,
+  "end": 35.266,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "hundred",
+  "display": "hundred",
+  "start": 35.324,
+  "end": 35.649,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "fifteen",
+  "display": "fifteen",
+  "start": 35.753,
+  "end": 36.241,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "points",
+  "display": "points",
+  "start": 36.345,
+  "end": 36.705,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "at",
+  "display": "at",
+  "start": 36.752,
+  "end": 36.833,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "nineteen.",
+  "display": "nineteen.",
+  "start": 36.88,
+  "end": 37.448,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "A",
+  "display": "A",
+  "start": 37.785,
+  "end": 37.913,
+  "segment": "a_celebrini",
+  "keyword": false
+ },
+ {
+  "word": "Sharks",
+  "display": "Sharks",
+  "start": 38.064,
+  "end": 38.586,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "record!",
+  "display": "record!",
+  "start": 39.109,
+  "end": 39.538,
+  "segment": "a_celebrini",
+  "keyword": true
+ },
+ {
+  "word": "Agenty,",
+  "display": "Agenty,",
+  "start": 39.974,
+  "end": 40.403,
+  "segment": "z_ask",
+  "keyword": false
+ },
+ {
+  "word": "who's",
+  "display": "who's",
+  "start": 40.427,
+  "end": 40.589,
+  "segment": "z_ask",
+  "keyword": false
+ },
+ {
+  "word": "your",
+  "display": "your",
+  "start": 40.624,
+  "end": 40.74,
+  "segment": "z_ask",
+  "keyword": false
+ },
+ {
+  "word": "top",
+  "display": "top",
+  "start": 40.775,
+  "end": 40.961,
+  "segment": "z_ask",
+  "keyword": false
+ },
+ {
+  "word": "prospect?",
+  "display": "prospect?",
+  "start": 41.007,
+  "end": 41.553,
+  "segment": "z_ask",
+  "keyword": true
+ },
+ {
+  "word": "Me.",
+  "display": "Me.",
+  "start": 42.022,
+  "end": 42.313,
+  "segment": "a_me",
+  "keyword": true
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 42.649,
+  "end": 42.765,
+  "segment": "a_me",
+  "keyword": false
+ },
+ {
+  "word": "still",
+  "display": "still",
+  "start": 42.8,
+  "end": 42.974,
+  "segment": "a_me",
+  "keyword": false
+ },
+ {
+  "word": "improving.",
+  "display": "improving.",
+  "start": 43.009,
+  "end": 43.439,
+  "segment": "a_me",
+  "keyword": true
+ }
+]
