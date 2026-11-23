@@ -1,0 +1,22 @@
+{
+  "id": "special-clubby-day", "language": "en", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "model_id": "eleven_multilingual_v2", "speed": 1.08, "voice_gap": 0.24,
+  "segments": [
+    {"id": "z_intro", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Story time with Clubby!"},
+    {"id": "c_1875", "tts": "Back in my day… 1875, Montreal. The first indoor hockey game!"},
+    {"id": "h_check", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fact check: true. March 3rd. McGill won, two-one."},
+    {"id": "p_there", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Clubby, you were THERE?!"},
+    {"id": "c_fall", "tts": "Rude. Goalies couldn't even fall down until 1918."},
+    {"id": "b_box", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "No falling?! I'd live in the penalty box."},
+    {"id": "c_pass", "tts": "No forward passes in the attacking zone until 1929!"},
+    {"id": "h_double", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "After that, scoring more than doubled."},
+    {"id": "c_curve", "tts": "Then Stan Mikita bent his blade by accident – hello, curved stick!"},
+    {"id": "p_crooked", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "So you're old AND crooked."},
+    {"id": "c_helmet", "tts": "Helmets? Craig MacTavish played without one until 1997!"},
+    {"id": "h_wear", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Please. Wear. A. Helmet."},
+    {"id": "z_last", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Any last words, Clubby?"},
+    {"id": "c_off", "tts": "Get off my ice."},
+    {"id": "z_mine", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "…It's MY ice."}
+  ],
+  "display_map": {},
+  "keywords": ["story", "clubby", "1875", "montreal", "first", "indoor", "true", "march", "mcgill", "there", "rude", "goalies", "1918", "falling", "penalty", "forward", "1929", "doubled", "stan", "mikita", "accident", "curved", "crooked", "helmets", "craig", "mactavish", "1997", "helmet", "ice", "my"]
+}
