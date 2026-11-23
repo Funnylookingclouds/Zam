@@ -3,6 +3,7 @@ import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
 import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
+import { IconWildest, IconDailyFacts, IconSpecial } from "./brand/SeriesIcons";
 import { MeetGang, MEET_FRAMES, FPS } from "./MeetGang";
 import { Wild01, WILD01_FRAMES } from "./episodes/wild01";
 import { Wild02, WILD02_FRAMES } from "./episodes/wild02";
@@ -38,6 +39,9 @@ export const Root: React.FC = () => (
     <Composition id="ChannelBanner" component={ChannelBanner} durationInFrames={60} fps={FPS} width={2560} height={1440} />
     <Composition id="ChannelBannerGuides" component={() => <ChannelBanner guides />} durationInFrames={60} fps={FPS} width={2560} height={1440} />
     <Composition id="Wild04" component={Wild04} durationInFrames={WILD04_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Still id="IconWildest" component={IconWildest} width={1080} height={1080} />
+    <Still id="IconDailyFacts" component={IconDailyFacts} width={1080} height={1080} />
+    <Still id="IconSpecial" component={IconSpecial} width={1080} height={1080} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
