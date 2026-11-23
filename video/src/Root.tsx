@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
+import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
 import { MeetGang, MEET_FRAMES, FPS } from "./MeetGang";
 import { Wild01, WILD01_FRAMES } from "./episodes/wild01";
 import { Wild02, WILD02_FRAMES } from "./episodes/wild02";
@@ -31,6 +32,10 @@ export const Root: React.FC = () => (
     <Composition id="AgentyTop5" component={AgentyTop5} durationInFrames={AGENTYTOP5_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="ProspectWatch01" component={ProspectWatch01} durationInFrames={PROSPECTWATCH01_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="SummerCamp" component={SummerCamp} durationInFrames={SUMMERCAMP_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="ChannelAvatarA" component={ChannelAvatarA} durationInFrames={60} fps={FPS} width={800} height={800} />
+    <Composition id="ChannelAvatarB" component={ChannelAvatarB} durationInFrames={60} fps={FPS} width={800} height={800} />
+    <Composition id="ChannelBanner" component={ChannelBanner} durationInFrames={60} fps={FPS} width={2560} height={1440} />
+    <Composition id="ChannelBannerGuides" component={() => <ChannelBanner guides />} durationInFrames={60} fps={FPS} width={2560} height={1440} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
