@@ -9,7 +9,7 @@ import { P, onTwos } from "../presenter/kit";
 
 export type Who = "zam" | "pucky" | "biscuit" | "helmy" | "clubby" | "agenty";
 export type Mood = "talk" | "wow" | "laugh" | "grumpy" | "smug" | "bliss" | "sleep" | "scared" | "dizzy" | "sweat" | "determined" | "sad" | "tired" | "starry";
-export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood; shades?: boolean };
+export type Pose = { open: number; blink: boolean; look: number; arm: number; mood: Mood; shades?: boolean; baby?: boolean };
 
 export const GANG: Record<Who, { name: string; role: string; accent: string; voice: string }> = {
   zam: { name: "Zam", role: "the host · ice machine", accent: "#3b82f6", voice: "wGkprrTXgBM5EC3Znt6U" },
@@ -24,8 +24,11 @@ const INK = P.ink;
 const tornCircle = (r: number, seed: string, n = 46, amp = 7) =>
   "M" + [...Array(n)].map((_, i) => { const a = (i / n) * Math.PI * 2; const rr = r - random(`${seed}${i}`) * amp; return `${(Math.cos(a) * rr).toFixed(1)} ${(Math.sin(a) * rr).toFixed(1)}`; }).join(" L") + " Z";
 
-const Eyes: React.FC<{ y: number; gap?: number; r?: number; p: Pose; brow?: "angry" | "up" | "none" }> = ({ y, gap = 30, r = 18, p, brow = "none" }) => (
+const Eyes: React.FC<{ y: number; gap?: number; r?: number; p: Pose; brow?: "angry" | "up" | "none" }> = ({ y, gap = 30, r: r0 = 18, p, brow = "none" }) => {
+  const r = p.baby ? r0 * 1.38 : r0;
+  return (
   <>
+    {p.baby && [-1, 1].map((sgn) => <ellipse key={`ck${sgn}`} cx={sgn * (gap + r * 0.9)} cy={y + r * 1.75} rx={r * 0.7} ry={r * 0.42} fill="#f9a8d4" opacity={0.85} />)}
     {[-gap, gap].map((x, i) => (
       <g key={x}>
         <ellipse cx={x} cy={y} rx={r} ry={p.blink ? 3 : r * 1.22} fill="#fff" stroke={INK} strokeWidth={5} />
@@ -33,10 +36,12 @@ const Eyes: React.FC<{ y: number; gap?: number; r?: number; p: Pose; brow?: "ang
         {!p.blink && <circle cx={x + p.look - 4} cy={y - 2} r={3} fill="#fff" />}
         {brow === "angry" && <path d={i === 0 ? `M${x - 20} ${y - 34} L${x + 16} ${y - 24}` : `M${x + 20} ${y - 34} L${x - 16} ${y - 24}`} stroke={INK} strokeWidth={8} strokeLinecap="round" />}
         {brow === "up" && <path d={`M${x - 16} ${y - 34} Q${x} ${y - 44} ${x + 16} ${y - 34}`} stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" />}
+        {p.baby && !p.blink && <circle cx={x + p.look + 6} cy={y - 6} r={r * 0.18} fill="#fff" />}
       </g>
     ))}
   </>
-);
+  );
+};
 
 /** D-shaped mouth that opens with speech; closed = smile/frown line. */
 const Mouth: React.FC<{ y: number; w: number; open: number; smile?: number; tooth?: boolean; fill?: string }> = ({ y, w, open, smile = 1, tooth, fill = "#7f1d1d" }) => {
@@ -213,26 +218,51 @@ export const mouthOpen = (words: { start: number; end: number; word: string }[],
   return 0.3 + 0.7 * Math.abs(Math.sin(ph * Math.PI * syll));
 };
 
+/** Baby accessories for the Child Edition: Pucky's pacifier, knitted caps with pompoms, Agenty's bow and crayon. */
+const BabyBits: React.FC<{ who: Who; open: number }> = ({ who, open }) => {
+  const Cap: React.FC<{ y: number; w: number; c: string }> = ({ y, w, c }) => (
+    <g>
+      <path d={`M${-w} ${y + 20} Q0 ${y - w * 0.9} ${w} ${y + 20} Z`} fill={c} stroke={INK} strokeWidth={5} />
+      <rect x={-w - 4} y={y + 12} width={w * 2 + 8} height={20} rx={10} fill="#fff" stroke={INK} strokeWidth={4} />
+      <circle cx={0} cy={y - w * 0.62} r={16} fill="#fff" stroke={INK} strokeWidth={4} />
+    </g>
+  );
+  if (who === "pucky") return (
+    <g transform={`translate(0 ${34 + open * 4})`}>
+      <ellipse cx={0} cy={0} rx={34} ry={18} fill="#f9a8d4" stroke={INK} strokeWidth={5} />
+      <circle cx={0} cy={0} r={8} fill="#fde68a" stroke={INK} strokeWidth={3} />
+      <circle cx={0} cy={22} r={13} fill="none" stroke="#f472b6" strokeWidth={7} />
+    </g>
+  );
+  if (who === "biscuit") return <Cap y={-150} w={80} c="#93c5fd" />;
+  if (who === "clubby") return <Cap y={-176} w={46} c="#86efac" />;
+  if (who === "zam") return <g><circle cx={96} cy={-30} r={16} fill="#fde68a" stroke={INK} strokeWidth={4} /><path d="M96 -46 l4 10 l11 1 l-8 7 l3 11 l-10 -6 l-10 6 l3 -11 l-8 -7 l11 -1 Z" fill="#f59e0b" /></g>;
+  if (who === "helmy") return <g><path d="M-18 -126 Q0 -150 18 -126" stroke="#f472b6" strokeWidth={10} fill="none" strokeLinecap="round" /><circle cx={0} cy={-128} r={9} fill="#f472b6" stroke={INK} strokeWidth={3} /></g>;
+  if (who === "agenty") return <g><path d="M-26 20 L0 34 L-26 48 Z M26 20 L0 34 L26 48 Z" fill="#f9a8d4" stroke={INK} strokeWidth={4} strokeLinejoin="round" /><rect x={128} y={-110} width={14} height={60} rx={4} fill="#60a5fa" stroke={INK} strokeWidth={3} transform="rotate(20 135 -80)" /></g>;
+  return null;
+};
+
 export const Mascot: React.FC<{
-  who: Who; size?: number; open?: number; mood?: Mood; talking?: boolean; hop?: number; flip?: boolean; seed?: string; dim?: boolean; shades?: boolean; noSticker?: boolean;
-}> = ({ who, size = 300, open = 0, mood = "talk", talking = false, hop = 0, flip = false, seed = "", dim = false, shades = false, noSticker = false }) => {
+  who: Who; size?: number; open?: number; mood?: Mood; talking?: boolean; hop?: number; flip?: boolean; seed?: string; dim?: boolean; shades?: boolean; noSticker?: boolean; baby?: boolean;
+}> = ({ who, size = 300, open = 0, mood = "talk", talking = false, hop = 0, flip = false, seed = "", dim = false, shades = false, noSticker = false, baby = false }) => {
   const f = useCurrentFrame();
   const g = onTwos(f);
   const ph = random(who + seed) * 100;
   const blink = (g + Math.floor(ph) * 5) % 170 < 6;
   const look = Math.sin((g + ph * 10) / 45) * 6;
-  const arm = talking ? Math.sin(g / 6 + ph) * 22 : Math.sin(g / 30 + ph) * 6;
+  const arm = baby ? Math.sin(f / 40 + ph) * 10 : talking ? Math.sin(g / 6 + ph) * 22 : Math.sin(g / 30 + ph) * 6;
   const laugh = mood === "laugh" ? Math.sin(f / 1.7) * 5 : 0;
   // squash on each syllable when talking + idle breathing
-  const sq = talking ? open * 0.06 : Math.sin((f + ph * 20) / 24) * 0.015;
+  const sq = baby ? Math.sin((f + ph * 20) / 45) * 0.025 + (talking ? open * 0.03 : 0) : talking ? open * 0.06 : Math.sin((f + ph * 20) / 24) * 0.015;
   const Draw = DRAW[who];
   return (
-    <div style={{ width: size, height: size * 1.12, transform: `translateY(${-hop}px) translateX(${laugh}px)`, filter: dim ? "saturate(0.55) brightness(0.8)" : undefined }}>
+    <div style={{ width: size, height: size * 1.12, transform: `translateY(${-hop}px) translateX(${laugh}px)`, filter: dim ? "saturate(0.55) brightness(0.8)" : baby ? "saturate(0.8) brightness(1.07)" : undefined }}>
       <svg width={size} height={size * 1.12} viewBox="-160 -170 320 360" style={{ overflow: "visible" }}>
         {!noSticker && <ellipse cx={0} cy={172} rx={110 - hop * 0.3} ry={12} fill="#0004" />}
-        <g transform={`translate(0 ${sq * 120}) scale(${(flip ? -1 : 1) * (1 + sq)}, ${1 - sq})`}>
+        <g transform={`translate(0 ${sq * 120 + (baby ? 14 : 0)}) scale(${(flip ? -1 : 1) * (1 + sq) * (baby ? 1.06 : 1)}, ${(1 - sq) * (baby ? (who === "clubby" ? 0.78 : 0.92) : 1)})`}>
           {!noSticker && <path d={tornCircle(158, who + "st")} fill={P.paper2} stroke="#0002" strokeWidth={2} />}
-          <Draw p={{ open, blink, look, arm, mood, shades }} />
+          <Draw p={{ open, blink, look, arm, mood, shades, baby }} />
+          {baby && <BabyBits who={who} open={open} />}
         </g>
       </svg>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
+import { BabyCard } from "./mascots/BabyCard";
 import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
 import { IconWildest, IconDailyFacts, IconSpecial } from "./brand/SeriesIcons";
 import { MeetGang, MEET_FRAMES, FPS } from "./MeetGang";
@@ -44,6 +45,7 @@ export const Root: React.FC = () => (
     <Still id="IconDailyFacts" component={IconDailyFacts} width={1080} height={1080} />
     <Still id="IconSpecial" component={IconSpecial} width={1080} height={1080} />
     <Composition id="SnowballFight" component={SnowballFight} durationInFrames={SNOWBALL_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Still id="BabyCard" component={BabyCard} width={1080} height={1920} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
