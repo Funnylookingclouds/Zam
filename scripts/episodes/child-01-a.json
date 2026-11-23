@@ -1,0 +1,12 @@
+{
+  "id": "child-01-a", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 0.8, "voice_gap": 1.1,
+  "segments": [
+    {"id": "z_hi", "tts": "Hi hi… play time!"},
+    {"id": "p_puck", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Mm-puck… puck puck!"},
+    {"id": "b_block", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Big… block. Mmm."},
+    {"id": "h_count", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "One… two… three!"},
+    {"id": "c_horsey", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Wheee… horsey!"},
+    {"id": "a_star", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "You… star! Sticker!"}
+  ],
+  "display_map": {}, "keywords": ["play", "puck", "block", "one", "two", "three", "horsey", "star", "sticker"]
+}

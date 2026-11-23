@@ -20,6 +20,7 @@ import { AgentyTop5, AGENTYTOP5_FRAMES } from "./episodes/agenty_top5_toon";
 import { ProspectWatch01, PROSPECTWATCH01_FRAMES } from "./episodes/prospect_watch_01_toon";
 import { SummerCamp, SUMMERCAMP_FRAMES } from "./episodes/summer_camp_toon";
 import { SnowballFight, SNOWBALL_FRAMES } from "./episodes/snowball_toon";
+import { Child01, CHILD01_FRAMES } from "./episodes/child01_toon";
 
 export const Root: React.FC = () => (
   <>
@@ -45,6 +46,7 @@ export const Root: React.FC = () => (
     <Still id="IconDailyFacts" component={IconDailyFacts} width={1080} height={1080} />
     <Still id="IconSpecial" component={IconSpecial} width={1080} height={1080} />
     <Composition id="SnowballFight" component={SnowballFight} durationInFrames={SNOWBALL_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="Child01" component={Child01} durationInFrames={CHILD01_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="BabyCard" component={BabyCard} width={1080} height={1920} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />

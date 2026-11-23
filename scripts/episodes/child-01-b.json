@@ -1,0 +1,9 @@
+{
+  "id": "child-01-b", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 0.75, "voice_gap": 1.6,
+  "segments": [
+    {"id": "z_sleepy", "tts": "Sleepy…"},
+    {"id": "p_goal", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "…goal."},
+    {"id": "z_dreams", "tts": "Sweet dreams."}
+  ],
+  "display_map": {}, "keywords": ["sleepy", "goal", "dreams"]
+}

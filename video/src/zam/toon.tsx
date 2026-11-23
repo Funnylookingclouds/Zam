@@ -8,7 +8,7 @@ import { Mascot, mouthOpen, type Mood, type Who } from "../mascots/Gang";
 import { Caption, IceWipe, type Seg, type W } from "./common";
 import { FPS, INTRO, OUTRO, Intro, Outro, timing } from "./Episode";
 
-const SegCtx = createContext<Seg[]>([]);
+export const SegCtx = createContext<Seg[]>([]);
 const talkOf = (segs: Seg[], who: Who, t: number) => {
   const s = segs.find((x, k) => t >= x.start - 0.05 && t < (segs[k + 1]?.start ?? 999));
   return s && s.who === who ? mouthOpen(s.words, t) : 0;
@@ -106,12 +106,12 @@ export const Pow: React.FC<{ text: string; x: number; y: number; size?: number; 
   <div style={{ position: "absolute", left: x, top: y, fontFamily: FONT, fontWeight: 900, fontStyle: "italic", fontSize: size, color: "#fff", WebkitTextStroke: `${Math.round(size / 18)}px ${color}`, paintOrder: "stroke fill", transform: `rotate(${rot}deg)`, zIndex: z, whiteSpace: "nowrap" }}>{text}</div>
 );
 /** A big, borderless character; lip-syncs automatically when it is the speaker. */
-export const Big: React.FC<{ who: Who; t: number; size: number; x: number; y: number; mood: Mood; shades?: boolean; flip?: boolean; rot?: number; sx?: number; sy?: number; hop?: number; z?: number; filter?: string; open?: number }> = ({ who, t, size, x, y, mood, shades, flip, rot = 0, sx = 1, sy = 1, hop, z = 2, filter, open }) => {
+export const Big: React.FC<{ who: Who; t: number; size: number; x: number; y: number; mood: Mood; shades?: boolean; flip?: boolean; rot?: number; sx?: number; sy?: number; hop?: number; z?: number; filter?: string; open?: number; baby?: boolean }> = ({ who, t, size, x, y, mood, shades, flip, rot = 0, sx = 1, sy = 1, hop, z = 2, filter, open, baby }) => {
   const segs = useContext(SegCtx);
   const o = open ?? talkOf(segs, who, t);
   return (
-    <div style={{ position: "absolute", left: x, top: y - (hop ?? hopOf(segs, who, t)), transform: `rotate(${rot}deg) scale(${sx}, ${sy})`, transformOrigin: "50% 80%", zIndex: z, filter }}>
-      <Mascot who={who} size={size} mood={mood} open={o} talking={o > 0} shades={shades} flip={flip} noSticker seed={`${who}big`} />
+    <div style={{ position: "absolute", left: x, top: y - (hop ?? hopOf(segs, who, t) * (baby ? 0.3 : 1)), transform: `rotate(${rot}deg) scale(${sx}, ${sy})`, transformOrigin: "50% 80%", zIndex: z, filter }}>
+      <Mascot who={who} size={size} mood={mood} open={o} talking={o > 0} shades={shades} flip={flip} noSticker baby={baby} seed={`${who}big`} />
     </div>
   );
 };
