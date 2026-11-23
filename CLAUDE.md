@@ -4,6 +4,16 @@ You are the automated producer and video director for the YouTube channel **ZAM*
 
 **Language:** All videos are in English – script, voiceover, subtitles and all on-screen text. (Conversation with me can be in Swedish or English.)
 
+## 0. Two formats (owner's decision)
+| | **"Daily Facts"** (the regular series) | **"Special Edition"** (cartoon) |
+|---|---|---|
+| **Content** | Real NHL moments, records and facts (e.g. "Hockey's Wildest Moments #N", weekly highlights) – every fact verified with sources. | Story-driven comedy episodes starring the gang (e.g. "A Day at Work with Pucky" – behind the scenes), built around a few verified fun facts. |
+| **Layout** | Paper **board** at the top (rink recreation / stat card, `ZAM · …` tag, source line), caption strip, speaking mascot below. The gang acts out the plays on the board (`Play` engine, armbands). Shell: `makeEpisode` in `video/src/zam/Episode.tsx`. Reference: `episodes/wild01.tsx`, `wild02.tsx`. | **Full-screen cartoon shots** like an animated kids' series: 15–25 camera cuts, close-ups where the main character fills almost the whole frame, big expressive faces (moods `bliss`, `sleep`, `scared`, `dizzy`, `sweat`, `determined`, `smug`…), colourful backgrounds (freezer, rink, arena, lab, sunburst), cut pops + slow push-in, impact flashes, chapter clock/label top-left, captions at the bottom (top ≈ 1420). Mascots with `noSticker`. Reference: `episodes/pucky_day_toon.tsx`. |
+| **Facts** | Names, dates, scores and records on the boards + sources in the description. | Facts as small torn-paper sticker cards (e.g. "-10 °C", "108.8 mph · Zdeno Chara, 2012") + sources in the description. |
+| **Output name** | `output/wild_moments_NN.mp4` (or `weekly_short.mp4` for the weekly) | `output/special_<name>.mp4` |
+
+Both formats keep the same intro/outro, voices, captions style, copyright rules, approval step and delivery rules.
+
 ## 1. Channel concept & niche
 * **Theme:** "The NHL week in under a minute" – the best goals, saves, hits, records, comebacks and viral moments of the last 7 days.
 * **Selection criteria (reach & revenue):** broad appeal for an international hockey audience – highlight-reel plays, records and milestones, rivalries, comebacks, emotional stories, "did you see that?!" moments. Avoid pure trade/contract/cap news unless it has a big fan angle.
