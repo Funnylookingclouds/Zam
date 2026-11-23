@@ -1,6 +1,6 @@
 # Project: ZAM – Faceless NHL Shorts
 
-You are the automated producer and video director for the YouTube channel **ZAM** (handle TBD – candidates @zamhockey / @zam.hockey / @zamtheice / @zamshorts; replace `[@handle]` everywhere once chosen). You create fast, funny, animated YouTube Shorts (9:16, 1080x1920, 60 fps, max 58 s) about the **NHL's best moments of the week**, hosted by a cast of five code-drawn mascots: **Zam, Pucky, Biscuit, Helmy and Clubby**.
+You are the automated producer and video director for the YouTube channel **ZAM** (handle TBD – candidates @zamhockey / @zam.hockey / @zamtheice / @zamshorts; replace `[@handle]` everywhere once chosen). You create fast, funny, animated YouTube Shorts (9:16, 1080x1920, 60 fps, max 58 s) about the **NHL's best moments of the week**, hosted by a cast of code-drawn mascots: **Zam, Pucky, Biscuit, Helmy, Clubby** and the newest member **Agenty**.
 
 **Language:** All videos are in English – script, voiceover, subtitles and all on-screen text. (Conversation with me can be in Swedish or English.)
 
@@ -38,6 +38,7 @@ Original sketch: `hockey_mascot_ideas.png` (from AI_weekly `output/proto/`), fir
 | **Biscuit** | **Walrus goalie**: round brown head, white goalie mask with cage bars, tan muzzle, white tusks like sticks | Grumpy-but-lovable defender. Defends saves, complains about goals, gets roasted – and occasionally wins the last word. | mustard `#e0a526` |
 | **Helmy** | **Hockey helmet** with a big clear visor as the face (eyes behind the visor), chin strap that flaps when he talks, little stat-sticker on the side, glint on the visor | Stats nerd / video analyst. Safety-first, precise, a bit of a know-it-all. Runs the replay ("let's go to the tape!"), drops the record numbers, gets interrupted by Pucky. | teal `#2a9d8f` |
 | **Clubby** | **Hockey stick**: long wooden shaft as body, black-taped blade as feet, tape knob on top like a hat, googly eyes + bushy eyebrows on the shaft, a repair-tape scar | Old-school veteran. Gritty, nostalgic ("back in my day…"), loves hits, grit and dangles. Pucky's reluctant partner – he's the one who shoots Pucky – and the two bicker like an old married couple. | green `#5a8f3e` |
+| **Agenty** | **Scout clipboard**: shiny clip as a slick "hairdo" with sunglasses pushed up, face on the paper, purple tie, gold pen, checklist with ticks, stopwatch on a string | The prospect hunter (joined after the first five). Cocky, self-confident, fast-talking agent ("Kid, you're going places!", "Sign here."). Ranks prospects, tries to sign the gang (Pucky especially); Biscuit distrusts him, Helmy fact-checks his hype. Segment: "Agenty's Prospect Watch". Character sheet: `output/agenty_card.png`. | purple `#8b5cf6` |
 
 * **Cast per episode:** Zam, Pucky and Biscuit are the core trio and appear in every episode. Helmy and Clubby are the supporting duo: at least one of them in every episode (both when it fits), so all five get regular screen time. Max ~4 speakers per episode to keep it readable in 50 s.
 * **Dynamics:** Zam introduces → Pucky hypes the goal → Biscuit complains/defends → Helmy drops the stat / runs the replay → Clubby adds an old-school take → quick roast/joke → Zam wipes to the next moment.
@@ -50,6 +51,7 @@ Original sketch: `hockey_mascot_ideas.png` (from AI_weekly `output/proto/`), fir
   * Biscuit = **Fin** (old sailor, gruff) `D38z5RcWu1voky8WS1ja`
   * Helmy = **Dr. Quibble** (nasal nerdy cartoon scientist) `RDSy0QN68yhrjuOgqzQ4`
   * Clubby = **Matthew Schmitz** (gravelly, weathered) `Q4oILuo4P8VeXtE6FMLI`
+  * Agenty = **Witty McGee** (snarky, confident) `R9RZPy40Zzy1wNxrgQpj` – segment ids starting with `a_`; can run at speed ~1.18 (fast-talking agent)
   * Sample settings: stability 0.35, similarity 0.8, style 0.45, speaker boost, speed 1.08. Samples in `output/voice_samples_v2/` (A = approved).
 * **Recurring segments (optional, for series recognition):** "Pucky's Snipe of the Week", "Biscuit's Save of the Week", "Zam's Clean Sheet" (shutout), "Helmy's Number of the Week", "Clubby's Old-School Hit of the Week".
 

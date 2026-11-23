@@ -1,0 +1,21 @@
+{
+  "id": "special-agenty-top5", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.18, "voice_gap": 0.16,
+  "segments": [
+    {"id": "z_intro", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Everyone, meet our newest member…"},
+    {"id": "a_hello", "tts": "Agenty. Top agent. Best eye in hockey. You're welcome."},
+    {"id": "a_five", "tts": "My top five prospects of all time. Number five: Eric Lindros. Drafted first, 1991 – and refused to sign with Quebec!"},
+    {"id": "h_paid", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "The Flyers paid six players, two first-rounders and fifteen million dollars."},
+    {"id": "a_leverage", "tts": "Now THAT's leverage."},
+    {"id": "a_four", "tts": "Number four: Connor McDavid. Allowed into junior hockey a year early – at fifteen."},
+    {"id": "a_three", "tts": "Number three: Sidney Crosby. The 2005 draft lottery was called the Sidney Crosby Sweepstakes!"},
+    {"id": "a_two", "tts": "Number two: Mario Lemieux. One hundred thirty-three goals in one junior season!"},
+    {"id": "c_career", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, that was a career."},
+    {"id": "a_one", "tts": "Number one: Wayne Gretzky. Three hundred seventy-eight goals… at age ten."},
+    {"id": "b_skates", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "At ten I couldn't tie my skates."},
+    {"id": "p_still", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "You still can't."},
+    {"id": "a_sign", "tts": "Pucky, kid – you've got star power. Sign here."},
+    {"id": "b_run", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Run."}
+  ],
+  "display_map": {},
+  "keywords": ["newest", "agenty", "top", "agent", "welcome", "five", "eric", "lindros", "1991", "refused", "quebec", "flyers", "six", "fifteen", "leverage", "four", "connor", "mcdavid", "early", "three", "sidney", "crosby", "2005", "sweepstakes", "two", "mario", "lemieux", "career", "one", "wayne", "gretzky", "ten", "skates", "still", "star", "sign", "run"]
+}

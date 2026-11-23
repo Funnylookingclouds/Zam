@@ -17,7 +17,7 @@ export const GANG: Record<Who, { name: string; role: string; accent: string; voi
   biscuit: { name: "Biscuit", role: "walrus goalie", accent: "#e0a526", voice: "D38z5RcWu1voky8WS1ja" },
   helmy: { name: "Helmy", role: "the stats nerd", accent: "#2a9d8f", voice: "RDSy0QN68yhrjuOgqzQ4" },
   clubby: { name: "Clubby", role: "old-school stick", accent: "#5a8f3e", voice: "Q4oILuo4P8VeXtE6FMLI" },
-  agenty: { name: "Agenty", role: "the prospect hunter", accent: "#8b5cf6", voice: "" },
+  agenty: { name: "Agenty", role: "the prospect hunter", accent: "#8b5cf6", voice: "R9RZPy40Zzy1wNxrgQpj" },
 };
 
 const INK = P.ink;

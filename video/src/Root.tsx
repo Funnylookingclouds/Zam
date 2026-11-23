@@ -12,6 +12,7 @@ import { BiscuitDay, BISCUITDAY_FRAMES } from "./episodes/biscuit_day_toon";
 import { ClubbyDay, CLUBBYDAY_FRAMES } from "./episodes/clubby_day_toon";
 import { ZamNight, ZAMNIGHT_FRAMES } from "./episodes/zam_night_toon";
 import { HelmyLab, HELMYLAB_FRAMES } from "./episodes/helmy_lab_toon";
+import { AgentyTop5, AGENTYTOP5_FRAMES } from "./episodes/agenty_top5_toon";
 
 export const Root: React.FC = () => (
   <>
@@ -25,6 +26,7 @@ export const Root: React.FC = () => (
     <Composition id="ZamNight" component={ZamNight} durationInFrames={ZAMNIGHT_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="HelmyLab" component={HelmyLab} durationInFrames={HELMYLAB_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="Wild03" component={Wild03} durationInFrames={WILD03_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="AgentyTop5" component={AgentyTop5} durationInFrames={AGENTYTOP5_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
   </>
