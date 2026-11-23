@@ -1,0 +1,21 @@
+{
+  "id": "wild-03", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "Hockey's wildest moments, round three. Let's go!"},
+    {"id": "p_orr", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Bobby Orr, 1970. Overtime. Scores the Cup winner – then FLIES!"},
+    {"id": "h_orr", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Forty seconds into overtime – Boston's first Cup since 1941."},
+    {"id": "b_orr", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "He flew. I can't even jump."},
+    {"id": "z_wayne", "tts": "Wayne Gretzky, 1981. Fifty goals in thirty-nine games!"},
+    {"id": "h_wayne", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Five that night – the last one into an empty net."},
+    {"id": "c_wayne", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, fifty took fifty."},
+    {"id": "z_octo", "tts": "1952: Detroit fans throw an octopus. Eight arms – eight wins for the Cup!"},
+    {"id": "b_octo", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "And who has to pick it up?"},
+    {"id": "z_me", "tts": "…Me."},
+    {"id": "p_selanne", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "1993: Teemu Selänne breaks the rookie record – and shoots his own glove!"},
+    {"id": "h_selanne", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Seventy-six goals. Still the rookie record."},
+    {"id": "p_toss", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Biscuit! Toss me your glove!"},
+    {"id": "b_end", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Nope. It's the only save I make all day."}
+  ],
+  "display_map": {},
+  "keywords": ["wildest", "three", "bobby", "orr", "1970", "overtime", "flies", "forty", "boston's", "1941", "flew", "jump", "wayne", "gretzky", "1981", "fifty", "thirty-nine", "five", "empty", "1952", "detroit", "octopus", "eight", "me", "1993", "teemu", "selänne", "rookie", "glove", "seventy-six", "record", "toss", "nope", "save"]
+}
