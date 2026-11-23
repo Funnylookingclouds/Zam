@@ -191,7 +191,7 @@ const SHOTS: Shot[] = [
     </Pan>); } },
   { from: 116, title: "♪ Up the Ladder", Comp: ({ t, lf, dur }) => { // song: everyone takes turns on the slide
     const order: Who[] = ["helmy", "pucky", "zam", "clubby"];
-    const cyc = (t - 116) / 4.2, i = Math.floor(cyc) % order.length, k = cyc - Math.floor(cyc);
+    const cyc = Math.max(0, (t - 116) / 4.2), i = Math.floor(cyc) % order.length, k = cyc - Math.floor(cyc);
     const s = 1.05, ox = 700, oy = 60;
     const climb = Math.min(1, k / 0.45), down = Math.max(0, (k - 0.5) / 0.5);
     const [sx, sy] = slidePos(interpolate(down, [0, 1], [0, 1], soft));
