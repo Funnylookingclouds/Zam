@@ -44,7 +44,7 @@ const Speaker: React.FC<{ t: number; segs: Seg[]; mood: Record<string, Mood>; sh
   );
 };
 
-const Intro: React.FC<{ tagline: string }> = ({ tagline }) => {
+export const Intro: React.FC<{ tagline: string }> = ({ tagline }) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill>
@@ -61,7 +61,7 @@ const Intro: React.FC<{ tagline: string }> = ({ tagline }) => {
   );
 };
 
-const Outro: React.FC = () => {
+export const Outro: React.FC = () => {
   const f = useCurrentFrame();
   const pulse = 1 + Math.sin(f / 6) * 0.04;
   return (
