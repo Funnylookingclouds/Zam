@@ -31,7 +31,7 @@ const shots: ToonShot[] = [
   { from: 0, chapter: ["SCOUTING", "PROSPECT WATCH"], Comp: ({ t, lf }) => (<><BgRink crowd />
       <Big who="agenty" t={t} size={1150} x={-35} y={480} mood="smug" />
       <Binoculars x={300} y={interpolate(lf, [0, 15], [1300, 760], { ...clamp, easing: Easing.out(Easing.back(1.5)) })} s={1.4} />
-      <StickerCard x={110} y={300} rot={-3} w={860} h={230}><div style={{ fontSize: 34, fontWeight: 900, color: P.red, letterSpacing: 4 }}>ZAM SPECIAL EDITION</div><div style={{ fontSize: 78, fontWeight: 900, lineHeight: 1, color: "#6d28d9" }}>AGENTY'S PROSPECT<br />WATCH #1</div></StickerCard></>) },
+      <StickerCard x={110} y={350} rot={-3} w={860} h={230}><div style={{ fontSize: 34, fontWeight: 900, color: P.red, letterSpacing: 4 }}>ZAM SPECIAL EDITION</div><div style={{ fontSize: 78, fontWeight: 900, lineHeight: 1, color: "#6d28d9" }}>AGENTY'S PROSPECT<br />WATCH #1</div></StickerCard></>) },
   { from: S("a_mckenna").start - 0.15, chapter: ["#1", "2026 #1 PICK"], Comp: ({ t, lf }) => {
       const ball = t >= at("a_mckenna", "eight") - 0.1;
       return (<><BgOffice />
@@ -81,7 +81,7 @@ const shots: ToonShot[] = [
         <ProspectFile n={4} name="MACKLIN CELEBRINI" sub="Sharks · 2025–26 season">
           <div style={{ position: "absolute", left: 20, top: -10 }}><Counter v={n} label="POINTS · AGE 19" color="#0d9488" /></div>
           <div style={{ position: "absolute", left: 40, top: 380, fontFamily: HAND, fontSize: 44, color: P.muted }}>45 goals · 70 assists</div>
-          {t >= at("a_celebrini", "sharks") - 0.15 && <div style={{ position: "absolute", left: 300, top: 420, whiteSpace: "nowrap" }}><Stamp color={P.teal} at={fr(S("a_celebrini").start - 0.15, at("a_celebrini", "sharks"))} rot={6} size={56}>SHARKS RECORD</Stamp></div>}
+          {t >= at("a_celebrini", "sharks") - 0.15 && <div style={{ position: "absolute", left: 20, top: 470, whiteSpace: "nowrap" }}><Stamp color={P.teal} at={fr(S("a_celebrini").start - 0.15, at("a_celebrini", "sharks"))} rot={6} size={56}>SHARKS RECORD</Stamp></div>}
         </ProspectFile>
         <Big who="agenty" t={t} size={520} x={600} y={1060} mood="laugh" z={4} /></>);
     } },
