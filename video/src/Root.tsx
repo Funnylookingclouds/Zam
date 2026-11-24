@@ -12,6 +12,7 @@ import { Wild06HL, WILD06_FRAMES } from "./episodes/wild06_hl";
 import { HockeyLife01_25D, HL01_25D_FRAMES } from "./episodes/hockey_life_01_25d";
 import { HockeyLifePhoto, PHOTO_FRAMES } from "./episodes/hockey_life_photo";
 import { HockeyLifeMascot, MASCOT_FRAMES } from "./episodes/hockey_life_mascot";
+import { PuckyBTS25D, PBTS_FRAMES } from "./episodes/pucky_bts_25d";
 import { BabyCard } from "./mascots/BabyCard";
 import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
 import { IconWildest, IconDailyFacts, IconSpecial } from "./brand/SeriesIcons";
@@ -75,6 +76,7 @@ export const Root: React.FC = () => (
     <Still id="GangCard2" component={GangCard2} width={1080} height={1920} />
     <Still id="GangScene2" component={GangScene2} width={1080} height={1920} />
     <Composition id="HockeyLifeMascot" component={HockeyLifeMascot} durationInFrames={MASCOT_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="PuckyBTS25D" component={PuckyBTS25D} durationInFrames={PBTS_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />

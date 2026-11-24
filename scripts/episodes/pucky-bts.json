@@ -1,0 +1,22 @@
+{
+  "id": "pucky-bts", "language": "en", "voice_id": "fBD19tfE58bkETeiwUoC", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "p_intro", "tts": "Everyone sees me on TV. Nobody sees the grind."},
+    {"id": "p_freezer", "tts": "Six a.m. The freezer. Every. Single. Day."},
+    {"id": "h_fact1", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fact: game pucks are frozen so they don't bounce."},
+    {"id": "p_bounce", "tts": "I only bounce emotionally."},
+    {"id": "a_shine", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Kid, a shiny puck is a rich puck."},
+    {"id": "h_fact2", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "And when he's cold enough, his coating turns purple."},
+    {"id": "p_tan", "tts": "It's called a TAN."},
+    {"id": "c_back", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, pucks didn't complain!"},
+    {"id": "p_chara", "tts": "Chara hit me at a hundred and eight point eight miles an hour. I still hear birds."},
+    {"id": "z_scored", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Pucky! You scored!"},
+    {"id": "p_get", "tts": "Zam. I don't score. I GET scored."},
+    {"id": "b_nothing", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Nothing personal."},
+    {"id": "p_personal", "tts": "It's ALWAYS personal."},
+    {"id": "z_tomorrow", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Same time tomorrow?"},
+    {"id": "p_cool", "tts": "That's why I'm so cool."},
+    {"id": "b_frozen", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "That's why you're frozen."}
+  ],
+  "display_map": {}, "keywords": ["grind", "freezer", "frozen", "bounce", "emotionally", "rich", "purple", "tan", "complain", "chara", "birds", "scored", "personal", "cool"]
+}
