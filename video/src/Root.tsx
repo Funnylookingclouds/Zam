@@ -4,6 +4,7 @@ import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
 import { HockeyLifeCast, HockeyLifeFrame } from "./mascots/HockeyLifeCard";
 import { Proto25DLow, Proto25DOTS, Proto25DWide } from "./hl3d/Proto25D";
+import { GangCard2, GangScene2 } from "./mascots/GangCard2";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -70,6 +71,8 @@ export const Root: React.FC = () => (
     <Still id="Proto25DLow" component={Proto25DLow} width={1080} height={1920} />
     <Composition id="HockeyLife01-25D" component={HockeyLife01_25D} durationInFrames={HL01_25D_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="HockeyLifePhoto" component={HockeyLifePhoto} durationInFrames={PHOTO_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Still id="GangCard2" component={GangCard2} width={1080} height={1920} />
+    <Still id="GangScene2" component={GangScene2} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
