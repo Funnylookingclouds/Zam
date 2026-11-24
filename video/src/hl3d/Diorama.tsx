@@ -17,14 +17,14 @@ const grain = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/
 const cardboard = "repeating-linear-gradient(90deg,#c08a4f 0 6px,#b47d44 6px 12px)";
 
 /** Paper cut-out billboard: sticker edge, cardboard thickness, neon rim (magenta left / cyan right), projected hard shadow. */
-export const Cut: React.FC<{ x: number; z: number; y?: number; cam: DCam; size: number; children: React.ReactNode; rim?: boolean; shadow?: boolean; tilt?: number }> = ({ x, z, y = 0, cam, size, children, rim = true, shadow = true, tilt = 0 }) => {
+export const Cut: React.FC<{ x: number; z: number; y?: number; cam: DCam; size: number; children: React.ReactNode; rim?: boolean; shadow?: boolean; tilt?: number; toon?: boolean }> = ({ x, z, y = 0, cam, size, children, rim = true, shadow = true, tilt = 0, toon = false }) => {
   const dz = Math.abs(z - (cam.focus ?? 0));
   const blur = Math.min(10, Math.max(0, (dz - 350) / 90));
   const h = size * 1.12;
   return (
     <div style={{ ...P3, transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${-(cam.ry ?? 0)}deg)` }}>
       {shadow && <div style={{ position: "absolute", left: -size * 0.2, top: -size * 0.12, width: size * 0.9, height: size * 0.22, borderRadius: "50%", background: "radial-gradient(#000b, #0000 70%)", transform: "rotateX(90deg) skewX(-30deg)", transformOrigin: "50% 50%" }} />}
-      <div style={{ position: "absolute", left: -size / 2, top: -h, width: size, height: h, transform: `rotate(${tilt}deg)`, transformOrigin: "50% 100%", filter: `${rim ? "drop-shadow(6px 6px 0 #6b4423) drop-shadow(-5px 0 0 #ff2bd6) drop-shadow(5px -2px 0 #22e3ff)" : "drop-shadow(6px 6px 0 #6b4423)"}${blur > 0.5 ? ` blur(${blur}px)` : ""}` }}>{children}</div>
+      <div style={{ position: "absolute", left: -size / 2, top: -h, width: size, height: h, transform: `rotate(${tilt}deg)`, transformOrigin: "50% 100%", filter: `${toon ? "drop-shadow(-8px 0 14px #ff2bd677) drop-shadow(8px -4px 14px #22e3ff77)" : rim ? "drop-shadow(6px 6px 0 #6b4423) drop-shadow(-5px 0 0 #ff2bd6) drop-shadow(5px -2px 0 #22e3ff)" : "drop-shadow(6px 6px 0 #6b4423)"}${blur > 0.5 ? ` blur(${blur}px)` : ""}` }}>{children}</div>
     </div>
   );
 };
