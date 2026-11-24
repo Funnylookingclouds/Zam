@@ -25,7 +25,7 @@ const talk = (who: string, t: number) => { const ws = WORDS.filter((w) => WHO[w.
 const bump = (who: string, t: number) => { const w = WORDS.find((x) => t >= x.start && t <= x.end && WHO[x.segment[0]] === who); return w ? Math.max(0, 1 - (t - w.start) * 5) : 0; };
 
 /** Keyframed numeric arrays with overshoot between keys. */
-const kf = (t: number, keys: [number, number[]][], ease = back): number[] => {
+export const kf = (t: number, keys: [number, number[]][], ease = back): number[] => {
   if (t <= keys[0][0]) return keys[0][1];
   for (let i = 0; i < keys.length - 1; i++) {
     const [a, va] = keys[i], [b, vb] = keys[i + 1];
@@ -33,8 +33,8 @@ const kf = (t: number, keys: [number, number[]][], ease = back): number[] => {
   }
   return keys[keys.length - 1][1];
 };
-type A4 = [number, number, number, number];
-const ARM: Record<string, A4> = { idle: [-78, -30, 78, -30], flail1: [-150, -230, 130, -60], flail2: [-120, -60, 150, -240], up: [-120, -260, 120, -260], two: [-78, -30, 110, -280], whistle: [-78, -30, 22, -200], fist: [-60, -120, 150, -200], point: [-78, -30, 175, -150], rest: [-70, -10, 70, -10], wave: [-78, -30, 120, -250] };
+export type A4 = [number, number, number, number];
+export const ARM: Record<string, A4> = { idle: [-78, -30, 78, -30], flail1: [-150, -230, 130, -60], flail2: [-120, -60, 150, -240], up: [-120, -260, 120, -260], two: [-78, -30, 110, -280], whistle: [-78, -30, 22, -200], fist: [-60, -120, 150, -200], point: [-78, -30, 175, -150], rest: [-70, -10, 70, -10], wave: [-78, -30, 120, -250] };
 
 const Actor: React.FC<{ who: StickWho; t: number; size: number; x: number; y: number; mood: StickMood; pose?: StickPose; arms?: A4; skate?: number; lean?: number; headTurn?: number; headTilt?: number; flip?: boolean; sitting?: boolean; hold?: React.ReactNode; rot?: number }> = (p) => {
   const b = bump(p.who, p.t);
@@ -45,7 +45,7 @@ const Actor: React.FC<{ who: StickWho; t: number; size: number; x: number; y: nu
   );
 };
 /** Camera: keyframes [t, scale, x, y, rot] around the frame centre. */
-const Cam: React.FC<{ t: number; keys: [number, number, number, number, number][]; shake?: number; children: React.ReactNode }> = ({ t, keys, shake = 0, children }) => {
+export const Cam: React.FC<{ t: number; keys: [number, number, number, number, number][]; shake?: number; children: React.ReactNode }> = ({ t, keys, shake = 0, children }) => {
   const [s, x, y, r] = kf(t, keys.map(([a, ...v]) => [a, v] as [number, number[]]), soft);
   const sx = shake ? Math.sin(t * 53) * shake : 0, sy = shake ? Math.cos(t * 47) * shake : 0;
   return <AbsoluteFill style={{ transform: `translate(${x + sx}px, ${y + sy}px) rotate(${r}deg) scale(${s})`, transformOrigin: "540px 960px" }}>{children}</AbsoluteFill>;
@@ -53,17 +53,17 @@ const Cam: React.FC<{ t: number; keys: [number, number, number, number, number][
 const Whistle = <g transform="translate(-10 -10)"><rect x={0} y={-8} width={34} height={20} rx={8} fill="#cbd5e1" stroke="#2b2622" strokeWidth={4} /><circle cx={30} cy={2} r={10} fill="#cbd5e1" stroke="#2b2622" strokeWidth={4} /></g>;
 
 // ------------------------------------------------------------------ arena set (painted, with depth layers)
-const Crowd: React.FC<{ t: number; top: number; rows?: number; dark?: number; cheer?: number }> = ({ t, top, rows = 4, dark = 0.6, cheer = 0 }) => (
+export const Crowd: React.FC<{ t: number; top: number; rows?: number; dark?: number; cheer?: number }> = ({ t, top, rows = 4, dark = 0.6, cheer = 0 }) => (
   <>{[...Array(rows * 16)].map((_, i) => {
     const r = Math.floor(i / 16), c = i % 16, ph = random(`cr${i}`) * 6;
     const hop = Math.max(0, Math.sin(t * (3 + cheer * 6) + ph)) * (4 + cheer * 22);
     return <div key={i} style={{ position: "absolute", left: c * 70 + (r % 2) * 35 - 30, top: top + r * 70 - hop, width: 50, height: 74, borderRadius: "25px 25px 8px 8px", background: ["#475569", "#64748b", "#334155", "#7c3aed", "#b91c1c"][Math.floor(random(`cc${i}`) * 5)], opacity: dark }}>{cheer > 0.5 && i % 3 === 0 && <div style={{ position: "absolute", left: 16, top: -30, width: 14, height: 32, borderRadius: 7, background: "inherit" }} />}</div>;
   })}</>
 );
-const Jumbo: React.FC<{ text: string; x?: number; y?: number }> = ({ text, x = 240, y = 190 }) => (
+export const Jumbo: React.FC<{ text: string; x?: number; y?: number }> = ({ text, x = 240, y = 190 }) => (
   <div style={{ position: "absolute", left: x, top: y, width: 600, height: 170, background: "#0f172a", border: "10px solid #1e293b", borderRadius: 12, boxShadow: "0 0 50px #38bdf855", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONT, fontWeight: 900, fontSize: 60, whiteSpace: "nowrap", color: "#fde047", textShadow: "0 0 18px #facc15" }}>{text}</div>
 );
-const Arena: React.FC<{ t: number; jumbo?: string; cheer?: number; spot?: [number, number] }> = ({ t, jumbo = "HOME 1 – 1 AWAY", cheer = 0, spot }) => (
+export const Arena: React.FC<{ t: number; jumbo?: string; cheer?: number; spot?: [number, number] }> = ({ t, jumbo = "HOME 1 – 1 AWAY", cheer = 0, spot }) => (
   <AbsoluteFill style={{ background: "linear-gradient(180deg,#0b1220 0%,#1e293b 38%,#e2e8f0 38.2%,#eaf6ff 52%,#d4eaf8 100%)" }}>
     <Crowd t={t} top={300} rows={6} cheer={cheer} />
     <Jumbo text={jumbo} />
@@ -77,14 +77,14 @@ const Arena: React.FC<{ t: number; jumbo?: string; cheer?: number; spot?: [numbe
   </AbsoluteFill>
 );
 /** Blurred foreground layer (glass edge + crowd heads) for depth. */
-const Foreground: React.FC<{ t: number; heads?: boolean; glass?: boolean; px?: number }> = ({ t, heads = true, glass = false, px = 0 }) => (
+export const Foreground: React.FC<{ t: number; heads?: boolean; glass?: boolean; px?: number }> = ({ t, heads = true, glass = false, px = 0 }) => (
   <AbsoluteFill style={{ pointerEvents: "none", zIndex: 6, transform: `translateX(${px}px)` }}>
     {heads && [...Array(6)].map((_, i) => <div key={i} style={{ position: "absolute", left: -60 + i * 220, top: 1700 - Math.max(0, Math.sin(t * 3 + i)) * 20, width: 240, height: 300, borderRadius: "120px 120px 30px 30px", background: "#0b1220", filter: "blur(10px)", opacity: 0.85 }} />)}
     {glass && <div style={{ position: "absolute", left: 960, top: 0, width: 40, height: 1920, background: "linear-gradient(90deg,#94a3b855,#e2e8f0aa,#94a3b855)", filter: "blur(4px)" }} />}
   </AbsoluteFill>
 );
-const Vignette: React.FC = () => <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, transparent 55%, #000a 100%)", zIndex: 7, pointerEvents: "none" }} />;
-const PenaltyBox: React.FC<{ t: number; warm?: boolean }> = ({ warm }) => (
+export const Vignette: React.FC = () => <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, transparent 55%, #000a 100%)", zIndex: 7, pointerEvents: "none" }} />;
+export const PenaltyBox: React.FC<{ t: number; warm?: boolean }> = ({ warm }) => (
   <AbsoluteFill style={{ background: "linear-gradient(180deg,#0b1220 0%,#1e293b 40%,#475569 40.2%,#334155 100%)" }}>
     <div style={{ position: "absolute", left: 120, top: 240, width: 840, height: 120, background: "#111", border: "8px solid #b91c1c", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONT, fontWeight: 900, fontSize: 80, color: "#f87171", textShadow: "0 0 20px #ef4444", letterSpacing: 8 }}>PENALTY</div>
     <div style={{ position: "absolute", left: 60, top: 420, width: 960, height: 760, background: "linear-gradient(135deg,#ffffff22,#ffffff08 40%,#ffffff22)", border: "10px solid #94a3b8", borderRadius: 10 }} />
@@ -195,7 +195,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
     </div>
   );
 };
-const IntroHL: React.FC = () => {
+export const IntroHL: React.FC<{ title?: string }> = ({ title = "SPECIAL · THE REF WHO COULDN'T STOP APOLOGISING" }) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{ background: "#0b1220" }}>
@@ -203,7 +203,7 @@ const IntroHL: React.FC = () => {
       <AbsoluteFill style={{ background: "#0b1220aa" }} />
       <div style={{ position: "absolute", top: 560, left: 0, right: 0, opacity: interpolate(f, [14, 22], [0, 1], clamp) }}><Logo scale={0.8} delay={14} /></div>
       <div style={{ position: "absolute", top: 830, left: 0, right: 0, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontStyle: "italic", fontSize: 110, color: "#fde047", WebkitTextStroke: "9px #111", paintOrder: "stroke fill", transform: `scale(${interpolate(f, [24, 34], [2, 1], back)})`, opacity: interpolate(f, [24, 28], [0, 1], clamp) }}>HOCKEY LIFE</div>
-      <div style={{ position: "absolute", top: 1000, left: 0, right: 0, textAlign: "center", opacity: interpolate(f, [52, 60], [0, 1], clamp) }}><span style={{ display: "inline-block", background: "#fde047", color: "#111", fontFamily: FONT, fontWeight: 900, fontSize: 44, padding: "8px 22px", transform: `rotate(-2deg) translateX(${interpolate(f, [52, 62], [600, 0], back)}px)` }}>SPECIAL · THE REF WHO COULDN'T STOP APOLOGISING</span></div>
+      <div style={{ position: "absolute", top: 1000, left: 0, right: 0, textAlign: "center", opacity: interpolate(f, [52, 60], [0, 1], clamp) }}><span style={{ display: "inline-block", background: "#fde047", color: "#111", fontFamily: FONT, fontWeight: 900, fontSize: 44, padding: "8px 22px", transform: `rotate(-2deg) translateX(${interpolate(f, [52, 62], [600, 0], back)}px)` }}>{title}</span></div>
       <Sequence from={0} durationInFrames={40}><IceWipe dur={40} y={1000} /><Audio src={staticFile("sfx/scrape.wav")} volume={0.5} /></Sequence>
       <Sequence from={24}><Audio src={staticFile("pop.wav")} volume={0.6} /></Sequence>
     </AbsoluteFill>

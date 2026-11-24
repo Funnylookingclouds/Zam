@@ -1,0 +1,954 @@
+[
+ {
+  "word": "Three",
+  "display": "Three",
+  "start": 0.058,
+  "end": 0.267,
+  "segment": "r_hook",
+  "keyword": true
+ },
+ {
+  "word": "goals",
+  "display": "goals",
+  "start": 0.302,
+  "end": 0.546,
+  "segment": "r_hook",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 0.592,
+  "end": 0.662,
+  "segment": "r_hook",
+  "keyword": false
+ },
+ {
+  "word": "twenty-one",
+  "display": "21",
+  "start": 0.697,
+  "end": 1.115,
+  "segment": "r_hook",
+  "keyword": false
+ },
+ {
+  "word": "seconds?!",
+  "display": "seconds?!",
+  "start": 1.161,
+  "end": 1.579,
+  "segment": "r_hook",
+  "keyword": false
+ },
+ {
+  "word": "Impossible!",
+  "display": "Impossible!",
+  "start": 1.683,
+  "end": 2.357,
+  "segment": "r_hook",
+  "keyword": true
+ },
+ {
+  "word": "Kid,",
+  "display": "Kid,",
+  "start": 2.879,
+  "end": 3.146,
+  "segment": "g_hook",
+  "keyword": false
+ },
+ {
+  "word": "it",
+  "display": "it",
+  "start": 3.169,
+  "end": 3.239,
+  "segment": "g_hook",
+  "keyword": false
+ },
+ {
+  "word": "happened.",
+  "display": "happened.",
+  "start": 3.297,
+  "end": 3.796,
+  "segment": "g_hook",
+  "keyword": false
+ },
+ {
+  "word": "March",
+  "display": "March",
+  "start": 4.353,
+  "end": 4.55,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "twenty-third,",
+  "display": "23rd,",
+  "start": 4.585,
+  "end": 4.992,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "1952.",
+  "display": "1952.",
+  "start": 5.015,
+  "end": 5.735,
+  "segment": "n_mos",
+  "keyword": true
+ },
+ {
+  "word": "Chicago's",
+  "display": "Chicago's",
+  "start": 5.769,
+  "end": 6.245,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "Bill",
+  "display": "Bill",
+  "start": 6.292,
+  "end": 6.443,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "Mosienko",
+  "display": "Mosienko",
+  "start": 6.501,
+  "end": 6.896,
+  "segment": "n_mos",
+  "keyword": true
+ },
+ {
+  "word": "scores",
+  "display": "scores",
+  "start": 6.954,
+  "end": 7.232,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "three",
+  "display": "three",
+  "start": 7.279,
+  "end": 7.488,
+  "segment": "n_mos",
+  "keyword": true
+ },
+ {
+  "word": "goals",
+  "display": "goals",
+  "start": 7.523,
+  "end": 7.766,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 7.801,
+  "end": 7.848,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "just",
+  "display": "just",
+  "start": 7.894,
+  "end": 8.045,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "twenty-one",
+  "display": "21",
+  "start": 8.08,
+  "end": 8.451,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "seconds",
+  "display": "seconds",
+  "start": 8.486,
+  "end": 8.765,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "against",
+  "display": "against",
+  "start": 8.8,
+  "end": 9.032,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 9.067,
+  "end": 9.136,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "Rangers.",
+  "display": "Rangers.",
+  "start": 9.194,
+  "end": 9.717,
+  "segment": "n_mos",
+  "keyword": false
+ },
+ {
+  "word": "Still",
+  "display": "Still",
+  "start": 10.238,
+  "end": 10.505,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 10.552,
+  "end": 10.621,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "fastest",
+  "display": "fastest",
+  "start": 10.679,
+  "end": 11.132,
+  "segment": "g_mos",
+  "keyword": true
+ },
+ {
+  "word": "hat",
+  "display": "hat",
+  "start": 11.19,
+  "end": 11.364,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "trick",
+  "display": "trick",
+  "start": 11.411,
+  "end": 11.666,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 11.713,
+  "end": 11.782,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 11.829,
+  "end": 12.281,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "history.",
+  "display": "history.",
+  "start": 12.351,
+  "end": 12.839,
+  "segment": "g_mos",
+  "keyword": false
+ },
+ {
+  "word": "It",
+  "display": "It",
+  "start": 13.325,
+  "end": 13.43,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "takes",
+  "display": "takes",
+  "start": 13.465,
+  "end": 13.662,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "me",
+  "display": "me",
+  "start": 13.697,
+  "end": 13.778,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "twenty-one",
+  "display": "21",
+  "start": 13.813,
+  "end": 14.219,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "seconds",
+  "display": "seconds",
+  "start": 14.254,
+  "end": 14.579,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 14.637,
+  "end": 14.719,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "tie",
+  "display": "tie",
+  "start": 14.777,
+  "end": 14.951,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 14.997,
+  "end": 15.079,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "skates.",
+  "display": "skates.",
+  "start": 15.137,
+  "end": 15.636,
+  "segment": "r_skates",
+  "keyword": false
+ },
+ {
+  "word": "December",
+  "display": "December",
+  "start": 16.6,
+  "end": 17.029,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "eighth,",
+  "display": "8th,",
+  "start": 17.099,
+  "end": 17.47,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "1987.",
+  "display": "1987.",
+  "start": 17.54,
+  "end": 18.515,
+  "segment": "n_hex",
+  "keyword": true
+ },
+ {
+  "word": "Flyers",
+  "display": "Flyers",
+  "start": 18.864,
+  "end": 19.305,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 19.363,
+  "end": 19.665,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "Ron",
+  "display": "Ron",
+  "start": 19.723,
+  "end": 19.932,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "Hextall",
+  "display": "Hextall",
+  "start": 19.99,
+  "end": 20.408,
+  "segment": "n_hex",
+  "keyword": true
+ },
+ {
+  "word": "shoots",
+  "display": "shoots",
+  "start": 20.477,
+  "end": 20.768,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 20.814,
+  "end": 20.884,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "puck",
+  "display": "puck",
+  "start": 20.93,
+  "end": 21.139,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 21.209,
+  "end": 21.302,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "length",
+  "display": "length",
+  "start": 21.36,
+  "end": 21.557,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 21.592,
+  "end": 21.65,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 21.685,
+  "end": 21.754,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "ice...",
+  "display": "ice...",
+  "start": 21.813,
+  "end": 22.242,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "into",
+  "display": "into",
+  "start": 22.498,
+  "end": 22.718,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "an",
+  "display": "an",
+  "start": 22.799,
+  "end": 22.869,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "empty",
+  "display": "empty",
+  "start": 22.927,
+  "end": 23.183,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "net.",
+  "display": "net.",
+  "start": 23.252,
+  "end": 23.624,
+  "segment": "n_hex",
+  "keyword": false
+ },
+ {
+  "word": "First",
+  "display": "First",
+  "start": 24.087,
+  "end": 24.331,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 24.377,
+  "end": 24.668,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "ever",
+  "display": "ever",
+  "start": 24.691,
+  "end": 24.865,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 24.9,
+  "end": 24.958,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "shoot",
+  "display": "shoot",
+  "start": 25.004,
+  "end": 25.236,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 25.283,
+  "end": 25.364,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "score.",
+  "display": "score.",
+  "start": 25.411,
+  "end": 25.898,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "My",
+  "display": "My",
+  "start": 26.119,
+  "end": 26.247,
+  "segment": "w_hero",
+  "keyword": false
+ },
+ {
+  "word": "hero.",
+  "display": "hero.",
+  "start": 26.316,
+  "end": 26.711,
+  "segment": "w_hero",
+  "keyword": true
+ },
+ {
+  "word": "Walt,",
+  "display": "Walt,",
+  "start": 27.279,
+  "end": 27.476,
+  "segment": "r_crease",
+  "keyword": false
+ },
+ {
+  "word": "you've",
+  "display": "you've",
+  "start": 27.511,
+  "end": 27.72,
+  "segment": "r_crease",
+  "keyword": false
+ },
+ {
+  "word": "never",
+  "display": "never",
+  "start": 27.767,
+  "end": 27.964,
+  "segment": "r_crease",
+  "keyword": false
+ },
+ {
+  "word": "left",
+  "display": "left",
+  "start": 28.022,
+  "end": 28.243,
+  "segment": "r_crease",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 28.278,
+  "end": 28.347,
+  "segment": "r_crease",
+  "keyword": false
+ },
+ {
+  "word": "crease.",
+  "display": "crease.",
+  "start": 28.394,
+  "end": 28.893,
+  "segment": "r_crease",
+  "keyword": true
+ },
+ {
+  "word": "Respect",
+  "display": "Respect",
+  "start": 29.369,
+  "end": 29.775,
+  "segment": "w_respect",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 29.81,
+  "end": 29.879,
+  "segment": "w_respect",
+  "keyword": false
+ },
+ {
+  "word": "crease.",
+  "display": "crease.",
+  "start": 29.938,
+  "end": 30.39,
+  "segment": "w_respect",
+  "keyword": true
+ },
+ {
+  "word": "March",
+  "display": "March",
+  "start": 31.109,
+  "end": 31.365,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "twenty-fourth,",
+  "display": "24th,",
+  "start": 31.399,
+  "end": 31.899,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "1936.",
+  "display": "1936.",
+  "start": 31.922,
+  "end": 32.769,
+  "segment": "n_ot",
+  "keyword": true
+ },
+ {
+  "word": "Detroit",
+  "display": "Detroit",
+  "start": 32.804,
+  "end": 33.141,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 33.164,
+  "end": 33.234,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 33.257,
+  "end": 33.327,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "Montreal",
+  "display": "Montreal",
+  "start": 33.362,
+  "end": 33.745,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "Maroons",
+  "display": "Maroons",
+  "start": 33.803,
+  "end": 34.139,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "play",
+  "display": "play",
+  "start": 34.198,
+  "end": 34.372,
+  "segment": "n_ot",
+  "keyword": false
+ },
+ {
+  "word": "six",
+  "display": "six",
+  "start": 34.441,
+  "end": 34.639,
+  "segment": "n_ot",
+  "keyword": true
+ },
+ {
+  "word": "overtimes.",
+  "display": "overtimes.",
+  "start": 34.743,
+  "end": 35.451,
+  "segment": "n_ot",
+  "keyword": true
+ },
+ {
+  "word": "Sorry...",
+  "display": "Sorry...",
+  "start": 35.927,
+  "end": 36.357,
+  "segment": "f_hours",
+  "keyword": false
+ },
+ {
+  "word": "almost",
+  "display": "almost",
+  "start": 36.577,
+  "end": 36.914,
+  "segment": "f_hours",
+  "keyword": false
+ },
+ {
+  "word": "three",
+  "display": "three",
+  "start": 36.96,
+  "end": 37.204,
+  "segment": "f_hours",
+  "keyword": true
+ },
+ {
+  "word": "hours",
+  "display": "hours",
+  "start": 37.239,
+  "end": 37.494,
+  "segment": "f_hours",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 37.541,
+  "end": 37.587,
+  "segment": "f_hours",
+  "keyword": false
+ },
+ {
+  "word": "hockey!",
+  "display": "hockey!",
+  "start": 37.645,
+  "end": 38.063,
+  "segment": "f_hours",
+  "keyword": false
+ },
+ {
+  "word": "Mud",
+  "display": "Mud",
+  "start": 39.05,
+  "end": 39.293,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "Bruneteau",
+  "display": "Bruneteau",
+  "start": 39.363,
+  "end": 39.862,
+  "segment": "n_mud",
+  "keyword": true
+ },
+ {
+  "word": "finally",
+  "display": "finally",
+  "start": 40.118,
+  "end": 40.478,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "scores",
+  "display": "scores",
+  "start": 40.524,
+  "end": 40.861,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "at",
+  "display": "at",
+  "start": 40.907,
+  "end": 40.977,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "two",
+  "display": "2:25",
+  "start": 41.0,
+  "end": 41.639,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 41.685,
+  "end": 41.732,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 41.766,
+  "end": 41.836,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "morning.",
+  "display": "morning.",
+  "start": 41.871,
+  "end": 42.289,
+  "segment": "n_mud",
+  "keyword": false
+ },
+ {
+  "word": "In",
+  "display": "In",
+  "start": 42.753,
+  "end": 42.857,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 42.915,
+  "end": 43.031,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 43.101,
+  "end": 43.31,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "we",
+  "display": "we",
+  "start": 43.345,
+  "end": 43.438,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "called",
+  "display": "called",
+  "start": 43.496,
+  "end": 43.716,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 43.74,
+  "end": 43.867,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 43.902,
+  "end": 43.925,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "warm-up.",
+  "display": "warm-up.",
+  "start": 43.983,
+  "end": 44.576,
+  "segment": "g_warm",
+  "keyword": false
+ },
+ {
+  "word": "Wake",
+  "display": "Wake",
+  "start": 45.085,
+  "end": 45.34,
+  "segment": "w_wake",
+  "keyword": false
+ },
+ {
+  "word": "me",
+  "display": "me",
+  "start": 45.387,
+  "end": 45.468,
+  "segment": "w_wake",
+  "keyword": false
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 45.526,
+  "end": 45.631,
+  "segment": "w_wake",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 45.666,
+  "end": 45.735,
+  "segment": "w_wake",
+  "keyword": false
+ },
+ {
+  "word": "seventh",
+  "display": "seventh",
+  "start": 45.793,
+  "end": 46.153,
+  "segment": "w_wake",
+  "keyword": true
+ },
+ {
+  "word": "overtime.",
+  "display": "overtime.",
+  "start": 46.211,
+  "end": 46.803,
+  "segment": "w_wake",
+  "keyword": false
+ }
+]

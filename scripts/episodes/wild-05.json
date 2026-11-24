@@ -1,0 +1,21 @@
+{
+  "id": "wild-05", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "r_hook", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Three goals in twenty-one seconds?! Impossible!"},
+    {"id": "g_hook", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Kid, it happened."},
+    {"id": "n_mos", "tts": "March twenty-third, 1952. Chicago's Bill Mosienko scores three goals in just twenty-one seconds against the Rangers."},
+    {"id": "g_mos", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Still the fastest hat trick in NHL history."},
+    {"id": "r_skates", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "It takes me twenty-one seconds to tie my skates."},
+    {"id": "n_hex", "tts": "December eighth, 1987. Flyers goalie Ron Hextall shoots the puck the length of the ice... into an empty net."},
+    {"id": "w_hero", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "First goalie ever to shoot and score. My hero."},
+    {"id": "r_crease", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Walt, you've never left the crease."},
+    {"id": "w_respect", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Respect the crease."},
+    {"id": "n_ot", "tts": "March twenty-fourth, 1936. Detroit and the Montreal Maroons play six overtimes."},
+    {"id": "f_hours", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry... almost three hours of hockey!"},
+    {"id": "n_mud", "tts": "Mud Bruneteau finally scores at two twenty-five in the morning."},
+    {"id": "g_warm", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "In my day, we called that a warm-up."},
+    {"id": "w_wake", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Wake me for the seventh overtime."}
+  ],
+  "display_map": {"twenty-one": "21", "twenty-third,": "23,", "eighth,": "8,", "twenty-fourth,": "24,", "two": "2:25", "twenty-five": ""},
+  "keywords": ["three", "21", "impossible", "mosienko", "fastest", "1952", "hextall", "1987", "hero", "crease", "1936", "six", "overtimes", "bruneteau", "warm-up", "seventh"]
+}

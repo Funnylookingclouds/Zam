@@ -57,7 +57,7 @@ const Rink: React.FC = () => (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 30%, #ffffff33, #00000022 85%)" }} />
   </AbsoluteFill>
 );
-const Net: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+export const Net: React.FC<{ x: number; y: number }> = ({ x, y }) => (
   <div style={{ position: "absolute", left: x, top: y, width: 560, height: 360 }}>
     <svg width={560} height={360} style={{ position: "absolute" }}>
       <path d="M40 350 L40 40 L520 40 L520 350" stroke="#ef4444" strokeWidth={22} fill="none" strokeLinejoin="round" />

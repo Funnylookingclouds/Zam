@@ -5,6 +5,7 @@ import { AgentyCard } from "./mascots/AgentyCard";
 import { HockeyLifeCast, HockeyLifeFrame } from "./mascots/HockeyLifeCard";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
+import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
 import { BabyCard } from "./mascots/BabyCard";
 import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
 import { IconWildest, IconDailyFacts, IconSpecial } from "./brand/SeriesIcons";
@@ -58,6 +59,7 @@ export const Root: React.FC = () => (
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
     <Composition id="HockeyLife01" component={HockeyLife01} durationInFrames={HL01_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="HockeyLifeRef" component={HockeyLifeRef} durationInFrames={HLREF_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="Wild05HL" component={Wild05HL} durationInFrames={WILD05_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
