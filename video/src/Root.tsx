@@ -5,6 +5,7 @@ import { AgentyCard } from "./mascots/AgentyCard";
 import { HockeyLifeCast, HockeyLifeFrame } from "./mascots/HockeyLifeCard";
 import { Proto25DLow, Proto25DOTS, Proto25DWide } from "./hl3d/Proto25D";
 import { GangCard2, GangScene2 } from "./mascots/GangCard2";
+import { DioramaCrowd, DioramaFaceoff, DioramaHero, DioramaTest } from "./hl3d/Diorama";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -77,6 +78,10 @@ export const Root: React.FC = () => (
     <Still id="GangScene2" component={GangScene2} width={1080} height={1920} />
     <Composition id="HockeyLifeMascot" component={HockeyLifeMascot} durationInFrames={MASCOT_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="PuckyBTS25D" component={PuckyBTS25D} durationInFrames={PBTS_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Still id="DioramaHero" component={DioramaHero} width={1080} height={1920} />
+    <Still id="DioramaFaceoff" component={DioramaFaceoff} width={1080} height={1920} />
+    <Still id="DioramaCrowd" component={DioramaCrowd} width={1080} height={1920} />
+    <Composition id="DioramaTest" component={DioramaTest} durationInFrames={480} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
