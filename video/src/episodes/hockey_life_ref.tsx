@@ -107,7 +107,7 @@ const SHOTS: Shot[] = [
     </Cam><Foreground t={t} /><Vignette /></>) },
   { from: 2.9, Comp: ({ t }) => { // slow-mo trip: Walt hooks the Rookie, freeze on PENALTY!
     const k = interpolate(t, [2.9, 4.2], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-    return (<><Cam t={t} keys={[[2.9, 1.05, 0, 0, -4], [5.4, 1.18, -40, 40, -7]]}>
+    return (<><Cam t={t} keys={[[2.9, 1.15, 0, 0, -4], [5.4, 1.22, -40, 40, -7]]}>
       <Arena t={t} cheer={t > 3.3 ? 1 : 0} jumbo="HOOK?!" />
       <Actor who="walt" t={t} size={480} x={120} y={830} mood="smug" arms={kf(t, [[2.9, ARM.idle], [3.2, [-78, -30, 190, 40]]]) as A4} lean={12} skate={2} />
       <Actor who="rookie" t={t} size={400} x={360 + k * 40} y={820 - Math.sin(k * Math.PI) * 300} rot={k * 130} mood="shock" arms={ARM.up} skate={k * 4} />
@@ -137,14 +137,14 @@ const SHOTS: Shot[] = [
   { from: 13.9, Comp: ({ t }) => { // Coach Gus slams into the glass – dutch angle
     const x = interpolate(t, [13.9, 14.25], [900, 300], { ...clamp, easing: Easing.in(Easing.quad) });
     const hit = t > 14.25 && t < 14.7;
-    return (<><Cam t={t} keys={[[13.9, 1.0, 0, 0, -8], [17.7, 1.12, 0, -40, -10]]} shake={hit ? 18 : 0}>
+    return (<><Cam t={t} keys={[[13.9, 1.22, 0, 0, -8], [17.7, 1.3, 0, -40, -10]]} shake={hit ? 18 : 0}>
       <Arena t={t} cheer={0.6} />
       <Actor who="gus" t={t} size={560} x={x} y={700} mood="grumpy" arms={kf(t, [[13.9, ARM.flail1], [14.3, [-150, -150, 150, -150]], [15.2, ARM.fist], [16.4, ARM.up], [17.0, ARM.fist]]) as A4} lean={t < 14.25 ? -14 : 4} />
       <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, background: "linear-gradient(115deg,#ffffff00 30%,#ffffff33 45%,#ffffff00 55%)", border: "14px solid #cbd5e199" }} />
       {hit && <Pow text="THUD!" x={560} y={420} size={130} rot={10} />}
     </Cam><Vignette /></>); } },
   { from: 17.7, Comp: ({ t }) => <><Cam t={t} keys={[[17.7, 1.0, 0, 0, 3], [19.1, 1.1, 0, 0, 3]]}><Arena t={t} spot={[540, 800]} /><Close who="ref" t={t} mood="sad" arms={[-100, -100, 100, -100]} headTilt={8} /></Cam><Vignette /></> },
-  { from: 19.1, Comp: ({ t }) => <><Cam t={t} keys={[[19.1, 1.05, 0, 0, -6], [20.7, 1.25, 0, 60, -9]]} shake={8}><Arena t={t} cheer={1} /><Close who="gus" t={t} mood="grumpy" arms={kf(t, [[19.1, ARM.fist], [19.6, ARM.up], [20.1, ARM.fist]]) as A4} lean={-6} /></Cam><Vignette /></> },
+  { from: 19.1, Comp: ({ t }) => <><Cam t={t} keys={[[19.1, 1.2, 0, 0, -6], [20.7, 1.3, 0, 60, -9]]} shake={8}><Arena t={t} cheer={1} /><Close who="gus" t={t} mood="grumpy" arms={kf(t, [[19.1, ARM.fist], [19.6, ARM.up], [20.1, ARM.fist]]) as A4} lean={-6} /></Cam><Vignette /></> },
   { from: 20.7, Comp: ({ t }) => <><Cam t={t} keys={[[20.7, 1.25, 0, 0, 0], [21.8, 1.4, 0, 0, 0]]}><Arena t={t} spot={[540, 800]} /><Close who="ref" t={t} mood="shock" arms={[-40, -150, 40, -150]} size={1000} cy={700} /></Cam><Vignette /></> },
   { from: 21.8, Comp: ({ t }) => ( // "That's it. Two minutes for YOU!" – snap zoom on the point
     <><Cam t={t} keys={[[21.8, 1.0, 0, 0, 0], [22.85, 1.0, 0, 0, 0], [23.05, 1.35, -160, 80, 0]]}>
@@ -165,7 +165,7 @@ const SHOTS: Shot[] = [
       <div style={{ position: "absolute", left: 650, top: 930 }}><Mascot who="pucky" size={280} mood="smug" noSticker seed="refp" open={talk("pucky", t)} talking={talk("pucky", t) > 0} /></div>
     </Cam><Vignette /></>) },
   { from: 28.9, Comp: ({ t }) => ( // chaos: Walt & Rookie scrap, Zam drives through, popcorn rain
-    <><Cam t={t} keys={[[28.9, 1.0, 0, 0, 7], [31.85, 1.1, 0, 0, 10]]} shake={6}>
+    <><Cam t={t} keys={[[28.9, 1.2, 0, 0, 7], [31.85, 1.28, 0, 0, 10]]} shake={6}>
       <Arena t={t} cheer={1} jumbo="NO REF?!" />
       <div style={{ position: "absolute", left: 200, top: 860 }}><FightCloud s={520} /></div>
       <div style={{ position: "absolute", left: interpolate(t, [29.6, 31.4], [-500, 1300]), top: 1080 }}><Mascot who="zam" size={460} mood="wow" noSticker seed="refz" /></div>
