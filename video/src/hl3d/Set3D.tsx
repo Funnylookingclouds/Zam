@@ -90,3 +90,41 @@ export const Bill: React.FC<{ x: number; z: number; y?: number; cam: Camera; w: 
     </div>
   );
 };
+
+/** The arena seen from the ice: ice surface with markings, boards with ads, glass, raked stands with a crowd, roof lights. */
+export const Rink3D: React.FC<{ cam: Camera; t: number; children?: React.ReactNode; cheer?: number }> = ({ cam, t, children, cheer = 0 }) => {
+  const fov = cam.fov ?? 1300;
+  const RW = 3400, RD = 3600;
+  return (
+    <AbsoluteFill style={{ background: "linear-gradient(180deg,#05080f,#111827)", perspective: fov, perspectiveOrigin: "540px 900px", overflow: "hidden" }}>
+      <div style={{ ...P3, left: 540, top: 900, transform: `rotateX(${cam.rx ?? 0}deg) rotateY(${cam.ry ?? 0}deg) translate3d(${-cam.x}px, ${-cam.y}px, ${-cam.z}px)` }}>
+        {[...Array(6)].map((_, i) => <div key={`ice${i}`} style={plane(RW, RD / 6, `translate3d(0px, 0px, ${-RD / 2 + (i + 0.5) * (RD / 6)}px) rotateX(90deg)`, { background: "radial-gradient(ellipse 1400px 900px at 50% 50%, #f8fdff, #dbeefa 80%)", backfaceVisibility: "visible" })}>
+          {i === 2 && <div style={{ position: "absolute", left: 0, right: 0, top: 260, height: 26, background: "#3b82f6aa" }} />}
+          {i === 3 && <><div style={{ position: "absolute", left: 0, right: 0, top: 120, height: 24, background: "#ef4444aa" }} /><div style={{ position: "absolute", left: 1450, top: -100, width: 500, height: 500, borderRadius: "50%", border: "14px solid #3b82f6aa" }} /></>}
+          {i === 1 && <div style={{ position: "absolute", left: 600, top: 200, width: 360, height: 360, borderRadius: "50%", border: "12px solid #ef4444aa" }} />}
+        </div>)}
+        {/* boards + glass, back side */}
+        <div style={plane(RW, 160, `translate3d(0px, -80px, ${-RD / 2}px)`, { background: "#fff", borderTop: "10px solid #1f2937", borderBottom: "18px solid #f59e0b", display: "flex", gap: 120, alignItems: "center", justifyContent: "center", fontFamily: FONT, fontWeight: 900, fontSize: 64, color: "#1e3a8a" })}><span>ZAM ICE</span><span style={{ color: "#b91c1c" }}>PUCKY'S</span><span>HOCKEY LIFE</span><span style={{ color: "#b91c1c" }}>BIG WALT'S NET CO.</span></div>
+        <div style={plane(RW, 340, `translate3d(0px, -330px, ${-RD / 2}px)`, { background: "linear-gradient(180deg,#ffffff18,#ffffff30)", borderTop: "6px solid #cbd5e1" })} />
+        {/* raked stands with crowd */}
+        <div style={{ ...plane(RW + 800, 1500, `translate3d(0px, -900px, ${-RD / 2 - 600}px) rotateX(-35deg)`, { background: "linear-gradient(180deg,#0b1220,#1e293b)" }), overflow: "hidden" }}>
+          {[...Array(150)].map((_, i) => { const r = Math.floor(i / 25), c = i % 25; const hop = Math.max(0, Math.sin(t * (3 + cheer * 5) + i)) * (4 + cheer * 20); return <div key={i} style={{ position: "absolute", left: 40 + c * 168 + (r % 2) * 84, top: 1300 - r * 210 - hop, width: 90, height: 130, borderRadius: "45px 45px 12px 12px", background: ["#475569", "#7c3aed", "#b91c1c", "#334155", "#0f766e"][(i * 7) % 5], opacity: 0.85 }} />; })}
+        </div>
+        {/* side boards */}
+        {[-1, 1].map((sd) => <div key={sd} style={plane(RD, 160, `translate3d(${sd * RW / 2}px, -80px, 0px) rotateY(${-sd * 90}deg)`, { background: "#fff", borderTop: "10px solid #1f2937", borderBottom: "18px solid #f59e0b" })} />)}
+        {/* roof spotlights */}
+        {[-1100, 0, 1100].map((x) => <div key={x} style={{ ...P3, transform: `translate3d(${x}px, -2000px, -800px)` }}><div style={plane(120, 120, "", { borderRadius: 60, background: "#fff", boxShadow: "0 0 160px 60px #e0f2fe" })} /></div>)}
+        {children}
+      </div>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, transparent 55%, #000a 100%)", pointerEvents: "none" }} />
+      <AbsoluteFill style={{ backgroundImage: grainUrl, opacity: 0.3, mixBlendMode: "multiply", pointerEvents: "none" }} />
+    </AbsoluteFill>
+  );
+};
+
+/** Frame a world point: subject (x, y, z) appears at screen (540, sy) seen from `dist` px away. */
+export const frame = (x: number, y: number, z: number, dist: number, sy = 760, extra: Partial<Camera> = {}): Camera => {
+  const s = 1300 / dist;
+  return { x, y: y - (sy - 900) / s, z: z + dist - 1300, focus: z, ...extra };
+};
+export const lerpCam = (a: Camera, b: Camera, k: number): Camera => ({ x: a.x + (b.x - a.x) * k, y: a.y + (b.y - a.y) * k, z: a.z + (b.z - a.z) * k, ry: (a.ry ?? 0) + ((b.ry ?? 0) - (a.ry ?? 0)) * k, rx: (a.rx ?? 0) + ((b.rx ?? 0) - (a.rx ?? 0)) * k, focus: (a.focus ?? 0) + ((b.focus ?? 0) - (a.focus ?? 0)) * k });

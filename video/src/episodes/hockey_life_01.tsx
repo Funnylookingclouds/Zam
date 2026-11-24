@@ -41,10 +41,10 @@ const Close: React.FC<{ who: StickWho; t: number; mood: StickMood; cx?: number; 
 };
 
 // ------------------------------------------------------------------ props (SVG, drawn at the right hand)
-const Cake = <g transform="translate(-60 -110)"><rect x={0} y={60} width={130} height={60} rx={10} fill="#f9a8d4" stroke="#2b2622" strokeWidth={5} /><rect x={10} y={20} width={110} height={44} rx={10} fill="#fff" stroke="#2b2622" strokeWidth={5} /><rect x={60} y={-10} width={8} height={30} fill="#60a5fa" /><path d="M64 -24 Q72 -14 64 -8 Q56 -14 64 -24 Z" fill="#f59e0b" /><rect x={-10} y={118} width={150} height={10} rx={5} fill="#cbd5e1" stroke="#2b2622" strokeWidth={3} /></g>;
-const Pillow = <g transform="translate(-70 -60)"><rect x={0} y={0} width={150} height={90} rx={34} fill="#e0e7ff" stroke="#2b2622" strokeWidth={5} /><path d="M40 45 L60 45 M90 45 L110 45" stroke="#94a3b8" strokeWidth={5} /><text x={75} y={30} textAnchor="middle" fontFamily="Caveat" fontSize={30} fill="#6366f1">zzz</text></g>;
-const Globe = <g><circle cx={0} cy={-60} r={62} fill="#7dd3fc" stroke="#2b2622" strokeWidth={5} /><path d="M-40 -90 Q-10 -110 10 -80 Q-10 -60 -30 -70 Z M10 -40 Q40 -60 45 -20 Q20 -10 10 -40 Z" fill="#4ade80" stroke="#2b2622" strokeWidth={3} /><rect x={-6} y={0} width={12} height={30} fill="#b45309" /></g>;
-const Juice = <g transform="translate(-20 -60)"><rect x={0} y={0} width={40} height={60} rx={6} fill="#fdba74" stroke="#2b2622" strokeWidth={4} /><rect x={22} y={-24} width={6} height={28} fill="#f472b6" /></g>;
+export const Cake = <g transform="translate(-60 -110)"><rect x={0} y={60} width={130} height={60} rx={10} fill="#f9a8d4" stroke="#2b2622" strokeWidth={5} /><rect x={10} y={20} width={110} height={44} rx={10} fill="#fff" stroke="#2b2622" strokeWidth={5} /><rect x={60} y={-10} width={8} height={30} fill="#60a5fa" /><path d="M64 -24 Q72 -14 64 -8 Q56 -14 64 -24 Z" fill="#f59e0b" /><rect x={-10} y={118} width={150} height={10} rx={5} fill="#cbd5e1" stroke="#2b2622" strokeWidth={3} /></g>;
+export const Pillow = <g transform="translate(-70 -60)"><rect x={0} y={0} width={150} height={90} rx={34} fill="#e0e7ff" stroke="#2b2622" strokeWidth={5} /><path d="M40 45 L60 45 M90 45 L110 45" stroke="#94a3b8" strokeWidth={5} /><text x={75} y={30} textAnchor="middle" fontFamily="Caveat" fontSize={30} fill="#6366f1">zzz</text></g>;
+export const Globe = <g><circle cx={0} cy={-60} r={62} fill="#7dd3fc" stroke="#2b2622" strokeWidth={5} /><path d="M-40 -90 Q-10 -110 10 -80 Q-10 -60 -30 -70 Z M10 -40 Q40 -60 45 -20 Q20 -10 10 -40 Z" fill="#4ade80" stroke="#2b2622" strokeWidth={3} /><rect x={-6} y={0} width={12} height={30} fill="#b45309" /></g>;
+export const Juice = <g transform="translate(-20 -60)"><rect x={0} y={0} width={40} height={60} rx={6} fill="#fdba74" stroke="#2b2622" strokeWidth={4} /><rect x={22} y={-24} width={6} height={28} fill="#f472b6" /></g>;
 
 // ------------------------------------------------------------------ rink set
 const Rink: React.FC = () => (
@@ -67,7 +67,7 @@ export const Net: React.FC<{ x: number; y: number }> = ({ x, y }) => (
     </svg>
   </div>
 );
-const BeachChair: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+export const BeachChair: React.FC<{ x: number; y: number }> = ({ x, y }) => (
   <svg width={520} height={360} style={{ position: "absolute", left: x, top: y }}>
     <path d="M40 340 L180 120 M300 340 L170 130" stroke="#92400e" strokeWidth={14} strokeLinecap="round" />
     <path d="M60 230 L420 230 L470 60" stroke="#92400e" strokeWidth={14} fill="none" strokeLinecap="round" />

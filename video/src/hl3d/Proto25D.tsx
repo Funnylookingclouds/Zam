@@ -7,7 +7,7 @@ import { StickPerson } from "../mascots/Stick";
 import { Bill, LockerRoom3D, type Camera } from "./Set3D";
 
 /** Back of a head for over-the-shoulder shots. */
-const BackHead: React.FC<{ who: "walt" | "rookie"; size: number }> = ({ who, size }) => (
+export const BackHead: React.FC<{ who: "walt" | "rookie"; size: number }> = ({ who, size }) => (
   <svg width={size} height={size * 1.25} viewBox="-120 -150 240 300">
     <path d="M-110 150 Q-110 60 -60 40 L60 40 Q110 60 110 150 Z" fill={who === "walt" ? "#e0a526" : "#2a9d8f"} stroke="#2b2622" strokeWidth={9} />
     {[...Array(14)].map((_, i) => <rect key={i} x={-100 + i * 15} y={50} width={5} height={100} fill="#00000018" />)}
