@@ -1,0 +1,658 @@
+[
+ {
+  "word": "Tonight,",
+  "display": "Tonight,",
+  "start": 0.058,
+  "end": 0.372,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 0.395,
+  "end": 0.464,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "arena",
+  "display": "arena",
+  "start": 0.511,
+  "end": 0.755,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "hired",
+  "display": "hired",
+  "start": 0.813,
+  "end": 1.115,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 1.277,
+  "end": 1.44,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "mascots.",
+  "display": "mascots.",
+  "start": 1.498,
+  "end": 2.183,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "Nobody",
+  "display": "Nobody",
+  "start": 2.589,
+  "end": 2.926,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "checked",
+  "display": "checked",
+  "start": 2.984,
+  "end": 3.274,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "who",
+  "display": "who",
+  "start": 3.297,
+  "end": 3.402,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "they",
+  "display": "they",
+  "start": 3.46,
+  "end": 3.576,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "were.",
+  "display": "were.",
+  "start": 3.622,
+  "end": 3.947,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "Hi!",
+  "display": "Hi!",
+  "start": 4.458,
+  "end": 4.713,
+  "segment": "z_hi",
+  "keyword": false
+ },
+ {
+  "word": "I'm",
+  "display": "I'm",
+  "start": 4.737,
+  "end": 4.853,
+  "segment": "z_hi",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 4.899,
+  "end": 4.969,
+  "segment": "z_hi",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 5.004,
+  "end": 5.131,
+  "segment": "z_hi",
+  "keyword": false
+ },
+ {
+  "word": "mascot!",
+  "display": "mascot!",
+  "start": 5.189,
+  "end": 5.782,
+  "segment": "z_hi",
+  "keyword": true
+ },
+ {
+  "word": "Wait...",
+  "display": "Wait...",
+  "start": 6.272,
+  "end": 6.597,
+  "segment": "r_why",
+  "keyword": false
+ },
+ {
+  "word": "why",
+  "display": "why",
+  "start": 7.143,
+  "end": 7.294,
+  "segment": "r_why",
+  "keyword": false
+ },
+ {
+  "word": "do",
+  "display": "do",
+  "start": 7.352,
+  "end": 7.398,
+  "segment": "r_why",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 7.444,
+  "end": 7.514,
+  "segment": "r_why",
+  "keyword": false
+ },
+ {
+  "word": "sound",
+  "display": "sound",
+  "start": 7.561,
+  "end": 7.735,
+  "segment": "r_why",
+  "keyword": false
+ },
+ {
+  "word": "like",
+  "display": "like",
+  "start": 7.781,
+  "end": 7.944,
+  "segment": "r_why",
+  "keyword": true
+ },
+ {
+  "word": "me?",
+  "display": "me?",
+  "start": 7.99,
+  "end": 8.211,
+  "segment": "r_why",
+  "keyword": true
+ },
+ {
+  "word": "Why",
+  "display": "Why",
+  "start": 8.596,
+  "end": 8.77,
+  "segment": "z_why",
+  "keyword": false
+ },
+ {
+  "word": "do",
+  "display": "do",
+  "start": 8.828,
+  "end": 8.909,
+  "segment": "z_why",
+  "keyword": false
+ },
+ {
+  "word": "YOU",
+  "display": "YOU",
+  "start": 8.967,
+  "end": 9.048,
+  "segment": "z_why",
+  "keyword": false
+ },
+ {
+  "word": "sound",
+  "display": "sound",
+  "start": 9.106,
+  "end": 9.304,
+  "segment": "z_why",
+  "keyword": false
+ },
+ {
+  "word": "like",
+  "display": "like",
+  "start": 9.35,
+  "end": 9.501,
+  "segment": "z_why",
+  "keyword": true
+ },
+ {
+  "word": "ME?",
+  "display": "ME?",
+  "start": 9.548,
+  "end": 9.803,
+  "segment": "z_why",
+  "keyword": true
+ },
+ {
+  "word": "You're",
+  "display": "You're",
+  "start": 10.336,
+  "end": 10.568,
+  "segment": "w_spot",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 10.603,
+  "end": 10.661,
+  "segment": "w_spot",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 10.719,
+  "end": 10.835,
+  "segment": "w_spot",
+  "keyword": false
+ },
+ {
+  "word": "spot.",
+  "display": "spot.",
+  "start": 10.905,
+  "end": 11.335,
+  "segment": "w_spot",
+  "keyword": true
+ },
+ {
+  "word": "You're",
+  "display": "You're",
+  "start": 11.789,
+  "end": 12.033,
+  "segment": "b_spot",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 12.068,
+  "end": 12.126,
+  "segment": "b_spot",
+  "keyword": false
+ },
+ {
+  "word": "MY",
+  "display": "MY",
+  "start": 12.184,
+  "end": 12.335,
+  "segment": "b_spot",
+  "keyword": false
+ },
+ {
+  "word": "spot.",
+  "display": "spot.",
+  "start": 12.393,
+  "end": 12.787,
+  "segment": "b_spot",
+  "keyword": true
+ },
+ {
+  "word": "...I",
+  "display": "...I",
+  "start": 13.822,
+  "end": 14.031,
+  "segment": "w_like",
+  "keyword": false
+ },
+ {
+  "word": "like",
+  "display": "like",
+  "start": 14.147,
+  "end": 14.391,
+  "segment": "w_like",
+  "keyword": true
+ },
+ {
+  "word": "him.",
+  "display": "him.",
+  "start": 14.438,
+  "end": 14.658,
+  "segment": "w_like",
+  "keyword": false
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 15.157,
+  "end": 15.366,
+  "segment": "g_day",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 15.412,
+  "end": 15.471,
+  "segment": "g_day",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 15.529,
+  "end": 15.645,
+  "segment": "g_day",
+  "keyword": false
+ },
+ {
+  "word": "day...",
+  "display": "day...",
+  "start": 15.714,
+  "end": 16.086,
+  "segment": "g_day",
+  "keyword": false
+ },
+ {
+  "word": "we",
+  "display": "we",
+  "start": 16.306,
+  "end": 16.446,
+  "segment": "c_uphill",
+  "keyword": false
+ },
+ {
+  "word": "skated",
+  "display": "skated",
+  "start": 16.504,
+  "end": 16.84,
+  "segment": "c_uphill",
+  "keyword": false
+ },
+ {
+  "word": "uphill!",
+  "display": "uphill!",
+  "start": 16.899,
+  "end": 17.351,
+  "segment": "c_uphill",
+  "keyword": true
+ },
+ {
+  "word": "BOTH",
+  "display": "BOTH",
+  "start": 17.559,
+  "end": 17.815,
+  "segment": "c_both",
+  "keyword": true
+ },
+ {
+  "word": "WAYS!",
+  "display": "WAYS!",
+  "start": 17.884,
+  "end": 18.477,
+  "segment": "c_both",
+  "keyword": true
+ },
+ {
+  "word": "Sorry...",
+  "display": "Sorry...",
+  "start": 19.033,
+  "end": 19.44,
+  "segment": "f_sorry",
+  "keyword": true
+ },
+ {
+  "word": "Statistically,",
+  "display": "Statistically,",
+  "start": 19.985,
+  "end": 20.682,
+  "segment": "h_stat",
+  "keyword": false
+ },
+ {
+  "word": "that's",
+  "display": "that's",
+  "start": 20.705,
+  "end": 20.879,
+  "segment": "h_stat",
+  "keyword": false
+ },
+ {
+  "word": "your",
+  "display": "your",
+  "start": 20.914,
+  "end": 21.042,
+  "segment": "h_stat",
+  "keyword": false
+ },
+ {
+  "word": "fourth",
+  "display": "fourth",
+  "start": 21.123,
+  "end": 21.437,
+  "segment": "h_stat",
+  "keyword": true
+ },
+ {
+  "word": "sorry",
+  "display": "sorry",
+  "start": 21.495,
+  "end": 21.796,
+  "segment": "h_stat",
+  "keyword": true
+ },
+ {
+  "word": "today.",
+  "display": "today.",
+  "start": 21.843,
+  "end": 22.156,
+  "segment": "h_stat",
+  "keyword": false
+ },
+ {
+  "word": "Sorry.",
+  "display": "Sorry.",
+  "start": 22.588,
+  "end": 23.075,
+  "segment": "f_sorry2",
+  "keyword": true
+ },
+ {
+  "word": "Five.",
+  "display": "Five.",
+  "start": 24.14,
+  "end": 24.662,
+  "segment": "h_five",
+  "keyword": true
+ },
+ {
+  "word": "Relax.",
+  "display": "Relax.",
+  "start": 25.195,
+  "end": 25.659,
+  "segment": "p_one",
+  "keyword": false
+ },
+ {
+  "word": "There's",
+  "display": "There's",
+  "start": 25.706,
+  "end": 25.961,
+  "segment": "p_one",
+  "keyword": false
+ },
+ {
+  "word": "only",
+  "display": "only",
+  "start": 25.996,
+  "end": 26.17,
+  "segment": "p_one",
+  "keyword": false
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 26.228,
+  "end": 26.344,
+  "segment": "p_one",
+  "keyword": true
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 26.368,
+  "end": 26.414,
+  "segment": "p_one",
+  "keyword": false
+ },
+ {
+  "word": "me.",
+  "display": "me.",
+  "start": 26.449,
+  "end": 26.739,
+  "segment": "p_one",
+  "keyword": true
+ },
+ {
+  "word": "Says",
+  "display": "Says",
+  "start": 27.687,
+  "end": 27.92,
+  "segment": "q_who",
+  "keyword": false
+ },
+ {
+  "word": "who?",
+  "display": "who?",
+  "start": 27.955,
+  "end": 28.326,
+  "segment": "q_who",
+  "keyword": true
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 29.402,
+  "end": 29.495,
+  "segment": "n_fired",
+  "keyword": false
+ },
+ {
+  "word": "mascots",
+  "display": "mascots",
+  "start": 29.541,
+  "end": 29.89,
+  "segment": "n_fired",
+  "keyword": true
+ },
+ {
+  "word": "were",
+  "display": "were",
+  "start": 29.913,
+  "end": 30.029,
+  "segment": "n_fired",
+  "keyword": false
+ },
+ {
+  "word": "fired",
+  "display": "fired",
+  "start": 30.052,
+  "end": 30.331,
+  "segment": "n_fired",
+  "keyword": true
+ },
+ {
+  "word": "after",
+  "display": "after",
+  "start": 30.354,
+  "end": 30.54,
+  "segment": "n_fired",
+  "keyword": false
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 30.598,
+  "end": 30.726,
+  "segment": "n_fired",
+  "keyword": true
+ },
+ {
+  "word": "night.",
+  "display": "night.",
+  "start": 30.76,
+  "end": 31.027,
+  "segment": "n_fired",
+  "keyword": false
+ },
+ {
+  "word": "Best",
+  "display": "Best",
+  "start": 31.572,
+  "end": 31.816,
+  "segment": "w_best",
+  "keyword": true
+ },
+ {
+  "word": "night",
+  "display": "night",
+  "start": 31.874,
+  "end": 32.06,
+  "segment": "w_best",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 32.083,
+  "end": 32.129,
+  "segment": "w_best",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 32.176,
+  "end": 32.257,
+  "segment": "w_best",
+  "keyword": false
+ },
+ {
+  "word": "life.",
+  "display": "life.",
+  "start": 32.315,
+  "end": 32.582,
+  "segment": "w_best",
+  "keyword": false
+ },
+ {
+  "word": "Don't",
+  "display": "Don't",
+  "start": 33.005,
+  "end": 33.203,
+  "segment": "b_weird",
+  "keyword": false
+ },
+ {
+  "word": "make",
+  "display": "make",
+  "start": 33.249,
+  "end": 33.435,
+  "segment": "b_weird",
+  "keyword": false
+ },
+ {
+  "word": "it",
+  "display": "it",
+  "start": 33.481,
+  "end": 33.551,
+  "segment": "b_weird",
+  "keyword": false
+ },
+ {
+  "word": "weird.",
+  "display": "weird.",
+  "start": 33.609,
+  "end": 34.004,
+  "segment": "b_weird",
+  "keyword": true
+ }
+]

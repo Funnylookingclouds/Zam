@@ -1,0 +1,25 @@
+{
+  "id": "hockey-life-mascot", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "n_hook", "tts": "Tonight, the arena hired new mascots. Nobody checked who they were."},
+    {"id": "z_hi", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Hi! I'm the new mascot!"},
+    {"id": "r_why", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Wait... why do you sound like me?"},
+    {"id": "z_why", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Why do YOU sound like ME?"},
+    {"id": "w_spot", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "You're in my spot."},
+    {"id": "b_spot", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "You're in MY spot."},
+    {"id": "w_like", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "...I like him."},
+    {"id": "g_day", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day..."},
+    {"id": "c_uphill", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "we skated uphill!"},
+    {"id": "c_both", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "BOTH WAYS!"},
+    {"id": "f_sorry", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry..."},
+    {"id": "h_stat", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Statistically, that's your fourth sorry today."},
+    {"id": "f_sorry2", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry."},
+    {"id": "h_five", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Five."},
+    {"id": "p_one", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Relax. There's only one of me."},
+    {"id": "q_who", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Says who?"},
+    {"id": "n_fired", "tts": "The mascots were fired after one night."},
+    {"id": "w_best", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Best night of my life."},
+    {"id": "b_weird", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Don't make it weird."}
+  ],
+  "display_map": {}, "keywords": ["mascots", "nobody", "mascot", "me", "spot", "like", "uphill", "both", "ways", "fourth", "sorry", "five", "one", "who", "fired", "best", "weird"]
+}
