@@ -228,7 +228,7 @@ export const HockeyLifeRef: React.FC = () => {
   return (
     <AbsoluteFill style={{ fontFamily: FONT, background: "#0b1220", overflow: "hidden" }}>
       <Sequence from={F(INTRO)}><Audio src={staticFile("ep/hlref.mp3")} /></Sequence>
-      <Audio src={staticFile("music.wav")} volume={(fr) => (fr < F(INTRO + END) ? 0.16 : 0.3)} />
+      <Audio src={staticFile("music_happy.mp3")} volume={(fr) => (fr < F(INTRO + END) ? 0.3 : 0.45)} />
       <Sequence from={F(INTRO + 5.45)} durationInFrames={50}><Audio src={staticFile("sfx/peep.mp3")} volume={0.8} /></Sequence>
       {RANGES.map((s) => { const C = s.Comp; return <Sequence key={s.from} from={F(INTRO + s.from)} durationInFrames={F(INTRO + s.to) - F(INTRO + s.from)}><AbsoluteFill style={{ overflow: "hidden" }}><C t={t} /></AbsoluteFill></Sequence>; })}
       {RANGES.slice(1).map((s) => <Sequence key={`w${s.from}`} from={F(INTRO + s.from)} durationInFrames={20}><Audio src={staticFile([8.55, 13.9, 23.6, 28.9].includes(s.from) ? "whoosh.wav" : "pop.wav")} volume={0.22} /></Sequence>)}
