@@ -17,7 +17,7 @@ export const CAST: Record<StickWho, { name: string; trait: string; line: string;
   ref: { name: "The Ref", trait: "painfully polite, hates conflict", line: "\"Sorry… penalty? If that's okay?\"", color: "#334155" },
 };
 
-const Eyes: React.FC<{ mood: StickMood; blink: boolean; big?: boolean }> = ({ mood, blink, big }) => {
+export const Eyes: React.FC<{ mood: StickMood; blink: boolean; big?: boolean }> = ({ mood, blink, big }) => {
   const ex = 32, ey = -252, r = big ? 11 : 9;
   if (blink && mood !== "shock") return <>{[-1, 1].map((s) => <path key={s} d={`M${s * ex - 12} ${ey} L${s * ex + 12} ${ey}`} stroke={INK} strokeWidth={6} strokeLinecap="round" />)}</>;
   if (mood === "happy") return <>{[-1, 1].map((s) => <path key={s} d={`M${s * ex - 14} ${ey + 4} Q${s * ex} ${ey - 14} ${s * ex + 14} ${ey + 4}`} stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" />)}</>;
@@ -25,13 +25,13 @@ const Eyes: React.FC<{ mood: StickMood; blink: boolean; big?: boolean }> = ({ mo
   if (mood === "smug") return <>{[-1, 1].map((s) => <g key={s}><circle cx={s * ex} cy={ey + 2} r={r} fill={INK} /><rect x={s * ex - 15} y={ey - 16} width={30} height={14} fill={SKIN} /><path d={`M${s * ex - 14} ${ey - 2} L${s * ex + 14} ${ey - 2}`} stroke={INK} strokeWidth={5} strokeLinecap="round" /></g>)}</>;
   return <>{[-1, 1].map((s) => <g key={s}><circle cx={s * ex} cy={ey} r={r} fill={INK} />{big && <circle cx={s * ex + 3} cy={ey - 4} r={3.5} fill="#fff" />}</g>)}</>;
 };
-const Brows: React.FC<{ mood: StickMood; color?: string; bushy?: boolean }> = ({ mood, color = INK, bushy }) => {
+export const Brows: React.FC<{ mood: StickMood; color?: string; bushy?: boolean }> = ({ mood, color = INK, bushy }) => {
   const w = bushy ? 11 : 6, y = -278;
   const tilt = mood === "grumpy" ? 9 : mood === "sad" ? -8 : mood === "shock" ? 0 : mood === "smug" ? 0 : 0;
   const lift = mood === "shock" ? -14 : 0;
   return <>{[-1, 1].map((s) => <path key={s} d={`M${s * 18} ${y + lift + tilt} L${s * 48} ${y + lift - tilt + (mood === "smug" && s > 0 ? -10 : 0)}`} stroke={color} strokeWidth={w} strokeLinecap="round" />)}</>;
 };
-const Mouth: React.FC<{ mood: StickMood; open: number }> = ({ mood, open }) => {
+export const Mouth: React.FC<{ mood: StickMood; open: number }> = ({ mood, open }) => {
   const y = -208;
   if (open > 0.05) return <ellipse cx={0} cy={y + 4} rx={18 + open * 6} ry={6 + open * 18} fill="#7f1d1d" stroke={INK} strokeWidth={5} />;
   if (mood === "happy") return <path d={`M-26 ${y - 4} Q0 ${y + 24} 26 ${y - 4} Z`} fill="#7f1d1d" stroke={INK} strokeWidth={5} strokeLinejoin="round" />;
@@ -40,7 +40,7 @@ const Mouth: React.FC<{ mood: StickMood; open: number }> = ({ mood, open }) => {
   if (mood === "smug") return <path d={`M-18 ${y + 2} Q8 ${y + 10} 24 ${y - 8}`} stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" />;
   return <path d={`M-16 ${y} Q0 ${y + 10} 16 ${y}`} stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" />;
 };
-const ARMS: Record<StickPose, [number, number, number, number]> = { // [lx, ly, rx, ry] hand positions (shoulders at ±w, -140)
+export const ARMS: Record<StickPose, [number, number, number, number]> = { // [lx, ly, rx, ry] hand positions (shoulders at ±w, -140)
   idle: [-78, -30, 78, -30], wave: [-78, -30, 120, -250], point: [-78, -30, 175, -150], crossed: [40, -95, -40, -95], up: [-120, -260, 120, -260], shrug: [-130, -170, 130, -170],
 };
 
