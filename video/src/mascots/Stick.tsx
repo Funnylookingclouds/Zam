@@ -44,27 +44,27 @@ const ARMS: Record<StickPose, [number, number, number, number]> = { // [lx, ly, 
   idle: [-78, -30, 78, -30], wave: [-78, -30, 120, -250], point: [-78, -30, 175, -150], crossed: [40, -95, -40, -95], up: [-120, -260, 120, -260], shrug: [-130, -170, 130, -170],
 };
 
-export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickMood; pose?: StickPose; open?: number; flip?: boolean; seed?: number; sitting?: boolean; shades?: boolean; hold?: React.ReactNode }> = ({ who, size = 300, mood = "talk", pose = "idle", open = 0, flip, seed = 0, sitting, shades, hold }) => {
+export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickMood; pose?: StickPose; open?: number; flip?: boolean; seed?: number; sitting?: boolean; shades?: boolean; hold?: React.ReactNode; arms?: [number, number, number, number]; skate?: number; lean?: number; headTurn?: number; headTilt?: number }> = ({ who, size = 300, mood = "talk", pose = "idle", open = 0, flip, seed = 0, sitting, shades, hold, arms, skate, lean = 0, headTurn = 0, headTilt = 0 }) => {
   const f = useCurrentFrame();
   const breathe = Math.sin((f + seed * 17) / 22) * 3;
   const blink = (f + seed * 31) % 170 < 5;
   const c = CAST[who].color;
   const tw = who === "walt" ? 92 : 58; // half torso width
-  const [lx, ly, rx, ry] = ARMS[pose];
+  const [lx, ly, rx, ry] = arms ?? ARMS[pose];
   const wave = pose === "wave" ? Math.sin(f / 5) * 18 : 0;
   const legY = sitting ? 40 : 150;
   return (
     <svg width={size} height={size * 1.3} viewBox="-200 -400 400 520" style={{ overflow: "visible", transform: flip ? "scaleX(-1)" : undefined }}>
-      <g transform={`translate(0 ${breathe * 0.3})`}>
+      <g transform={`translate(0 ${breathe * 0.3}) rotate(${lean} 0 150)`}>
         {/* legs + skates */}
-        {[-1, 1].map((s) => (
+        {[-1, 1].map((s) => { const ph = skate === undefined ? 0 : Math.sin(skate + (s > 0 ? Math.PI : 0)); const FX = s * 42 + ph * 46; const FY = legY - (skate === undefined ? 0 : Math.max(0, ph) * 26); return (
           <g key={s}>
-            {sitting ? <path d={`M${s * 26} 0 L${s * 70} 30 L${s * 74} 130`} stroke={INK} strokeWidth={10} fill="none" strokeLinecap="round" strokeLinejoin="round" /> : <path d={`M${s * 26} 0 L${s * 42} ${legY}`} stroke={INK} strokeWidth={10} strokeLinecap="round" />}
-            {who === "walt" && <rect x={(sitting ? s * 74 : s * 40) - 26} y={sitting ? 40 : 30} width={52} height={sitting ? 96 : 116} rx={14} fill="#f8fafc" stroke={INK} strokeWidth={5} />}
-            <path d={`M${(sitting ? s * 74 : s * 42) - 22} ${sitting ? 140 : legY + 8} L${(sitting ? s * 74 : s * 42) + 26} ${sitting ? 140 : legY + 8}`} stroke="#94a3b8" strokeWidth={6} strokeLinecap="round" />
-            <rect x={(sitting ? s * 74 : s * 42) - 20} y={sitting ? 122 : legY - 12} width={42} height={16} rx={6} fill={INK} />
+            {sitting ? <path d={`M${s * 26} 0 L${s * 70} 30 L${s * 74} 130`} stroke={INK} strokeWidth={10} fill="none" strokeLinecap="round" strokeLinejoin="round" /> : <path d={`M${s * 26} 0 L${FX} ${FY}`} stroke={INK} strokeWidth={10} strokeLinecap="round" />}
+            {who === "walt" && <rect x={(sitting ? s * 74 : FX) - 26} y={sitting ? 40 : FY - 120} width={52} height={sitting ? 96 : 116} rx={14} fill="#f8fafc" stroke={INK} strokeWidth={5} />}
+            <path d={`M${(sitting ? s * 74 : FX) - 22} ${sitting ? 140 : FY + 8} L${(sitting ? s * 74 : FX) + 26} ${sitting ? 140 : FY + 8}`} stroke="#94a3b8" strokeWidth={6} strokeLinecap="round" />
+            <rect x={(sitting ? s * 74 : FX) - 20} y={sitting ? 122 : FY - 12} width={42} height={16} rx={6} fill={INK} />
           </g>
-        ))}
+        ); })}
         {/* arms (behind torso when crossed is drawn after) */}
         {pose !== "crossed" && <>
           <path d={`M${-tw + 6} -135 L${lx} ${ly}`} stroke={INK} strokeWidth={10} strokeLinecap="round" />
@@ -91,18 +91,18 @@ export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickM
           <path d={`M${tw - 6} -135 L10 -80 L${rx} ${ry}`} stroke={INK} strokeWidth={10} fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </>}
         {/* head */}
-        <g transform={`rotate(${mood === "smug" ? -4 : mood === "sad" ? 5 : 0} 0 -170)`}>
+        <g transform={`rotate(${(mood === "smug" ? -4 : mood === "sad" ? 5 : 0) + headTilt} 0 -170)`}>
           {who === "rookie" && <path d="M-70 -300 L-55 -345 L-30 -318 L-10 -360 L12 -320 L38 -352 L48 -312 L74 -330 L68 -290 Z" fill="#7c4a1e" stroke={INK} strokeWidth={5} strokeLinejoin="round" />}
           <circle cx={0} cy={-245} r={86} fill={SKIN} stroke={INK} strokeWidth={7} />
           {who === "rookie" && <path d="M-78 -270 Q-40 -330 0 -318 Q40 -330 78 -270 Q40 -300 0 -296 Q-40 -300 -78 -270 Z" fill="#7c4a1e" />}
           {who === "gus" && <><path d="M-86 -250 Q-96 -210 -74 -196 M86 -250 Q96 -210 74 -196" stroke="#cbd5e1" strokeWidth={18} strokeLinecap="round" fill="none" /><path d="M-90 -282 Q0 -372 90 -282 Z" fill="#1e3a8a" stroke={INK} strokeWidth={6} strokeLinejoin="round" /><path d="M10 -284 Q80 -292 130 -270 L90 -268 Z" fill="#1e3a8a" stroke={INK} strokeWidth={5} /><text x={0} y={-300} textAnchor="middle" fontFamily="Inter" fontWeight={900} fontSize={30} fill="#fde047">C</text></>}
           {who === "ref" && <path d="M-80 -268 Q-60 -340 10 -334 Q70 -330 84 -270 Q50 -310 -10 -300 Z" fill={INK} />}
           {who === "walt" && <><g transform="translate(0 -352) rotate(-8)"><rect x={-72} y={-46} width={144} height={92} rx={40} fill="#f8fafc" stroke={INK} strokeWidth={6} />{[-36, 0, 36].map((x) => <path key={x} d={`M${x} -30 L${x} 30`} stroke="#94a3b8" strokeWidth={6} />)}<path d="M-60 0 L60 0" stroke="#94a3b8" strokeWidth={6} /></g>{[...Array(10)].map((_, i) => <circle key={i} cx={-48 + (i % 5) * 24} cy={-182 + Math.floor(i / 5) * 12} r={2.5} fill="#94a3b8" />)}</>}
-          <Eyes mood={mood} blink={blink} big={who === "rookie"} />
+          <g transform={`translate(${headTurn} 0)`}><Eyes mood={mood} blink={blink} big={who === "rookie"} />
           <Brows mood={mood} color={who === "walt" || who === "gus" ? "#94a3b8" : INK} bushy={who === "walt" || who === "gus"} />
           {who === "gus" && <ellipse cx={0} cy={-226} rx={13} ry={10} fill="#fca5a5" stroke={INK} strokeWidth={4} />}
           {shades && <g><rect x={-62} y={-272} width={52} height={36} rx={12} fill="#111" /><rect x={10} y={-272} width={52} height={36} rx={12} fill="#111" /><path d="M-10 -258 L10 -258" stroke="#111" strokeWidth={6} /><path d="M-52 -264 L-30 -264" stroke="#ffffff88" strokeWidth={4} /></g>}
-          <Mouth mood={mood} open={open} />
+          <Mouth mood={mood} open={open} /></g>
           {who === "walt" && <path d="M-46 -222 Q-24 -240 0 -226 Q24 -240 46 -222 Q30 -206 0 -214 Q-30 -206 -46 -222 Z" fill="#cbd5e1" stroke={INK} strokeWidth={4} />}
           {who === "ref" && mood !== "smug" && <path d="M70 -300 Q82 -282 72 -270 Q60 -282 70 -300 Z" fill="#7dd3fc" stroke={INK} strokeWidth={3} />}
           {(mood === "happy" || who === "rookie") && [-1, 1].map((s) => <ellipse key={s} cx={s * 52} cy={-222} rx={14} ry={8} fill="#fca5a5" opacity={0.75} />)}

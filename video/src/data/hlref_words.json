@@ -1,0 +1,570 @@
+[
+ {
+  "word": "The",
+  "display": "The",
+  "start": 0.081,
+  "end": 0.174,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "Ref",
+  "display": "Ref",
+  "start": 0.221,
+  "end": 0.36,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "has",
+  "display": "has",
+  "start": 0.406,
+  "end": 0.488,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "never",
+  "display": "never",
+  "start": 0.534,
+  "end": 0.708,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "called",
+  "display": "called",
+  "start": 0.766,
+  "end": 0.998,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 1.022,
+  "end": 1.057,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "penalty.",
+  "display": "penalty.",
+  "start": 1.091,
+  "end": 1.509,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "Tonight...",
+  "display": "Tonight...",
+  "start": 1.533,
+  "end": 1.985,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "he",
+  "display": "he",
+  "start": 2.09,
+  "end": 2.183,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "has",
+  "display": "has",
+  "start": 2.241,
+  "end": 2.415,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "to.",
+  "display": "to.",
+  "start": 2.473,
+  "end": 2.763,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "Um...",
+  "display": "Um...",
+  "start": 5.761,
+  "end": 6.121,
+  "segment": "f_maybe",
+  "keyword": false
+ },
+ {
+  "word": "sorry...",
+  "display": "sorry...",
+  "start": 6.585,
+  "end": 7.084,
+  "segment": "f_maybe",
+  "keyword": true
+ },
+ {
+  "word": "is",
+  "display": "is",
+  "start": 7.131,
+  "end": 7.247,
+  "segment": "f_maybe",
+  "keyword": false
+ },
+ {
+  "word": "that",
+  "display": "that",
+  "start": 7.282,
+  "end": 7.386,
+  "segment": "f_maybe",
+  "keyword": false
+ },
+ {
+  "word": "maybe",
+  "display": "maybe",
+  "start": 7.444,
+  "end": 7.665,
+  "segment": "f_maybe",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 7.7,
+  "end": 7.735,
+  "segment": "f_maybe",
+  "keyword": false
+ },
+ {
+  "word": "penalty?",
+  "display": "penalty?",
+  "start": 7.793,
+  "end": 8.269,
+  "segment": "f_maybe",
+  "keyword": true
+ },
+ {
+  "word": "Are",
+  "display": "Are",
+  "start": 8.701,
+  "end": 8.829,
+  "segment": "w_asking",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 8.863,
+  "end": 8.956,
+  "segment": "w_asking",
+  "keyword": true
+ },
+ {
+  "word": "asking",
+  "display": "asking",
+  "start": 9.038,
+  "end": 9.339,
+  "segment": "w_asking",
+  "keyword": true
+ },
+ {
+  "word": "me?",
+  "display": "me?",
+  "start": 9.397,
+  "end": 9.653,
+  "segment": "w_asking",
+  "keyword": false
+ },
+ {
+  "word": "Sorry!",
+  "display": "Sorry!",
+  "start": 10.131,
+  "end": 10.468,
+  "segment": "f_two",
+  "keyword": true
+ },
+ {
+  "word": "No!",
+  "display": "No!",
+  "start": 10.526,
+  "end": 10.781,
+  "segment": "f_two",
+  "keyword": false
+ },
+ {
+  "word": "Yes!",
+  "display": "Yes!",
+  "start": 11.071,
+  "end": 11.455,
+  "segment": "f_two",
+  "keyword": false
+ },
+ {
+  "word": "Two",
+  "display": "Two",
+  "start": 12.0,
+  "end": 12.198,
+  "segment": "f_two",
+  "keyword": true
+ },
+ {
+  "word": "minutes...",
+  "display": "minutes...",
+  "start": 12.256,
+  "end": 12.662,
+  "segment": "f_two",
+  "keyword": true
+ },
+ {
+  "word": "if",
+  "display": "if",
+  "start": 12.685,
+  "end": 12.79,
+  "segment": "f_two",
+  "keyword": false
+ },
+ {
+  "word": "that's",
+  "display": "that's",
+  "start": 12.825,
+  "end": 13.01,
+  "segment": "f_two",
+  "keyword": false
+ },
+ {
+  "word": "convenient?",
+  "display": "convenient?",
+  "start": 13.057,
+  "end": 13.602,
+  "segment": "f_two",
+  "keyword": true
+ },
+ {
+  "word": "Convenient?!",
+  "display": "Convenient?!",
+  "start": 14.046,
+  "end": 14.836,
+  "segment": "g_conv",
+  "keyword": true
+ },
+ {
+  "word": "In",
+  "display": "In",
+  "start": 15.3,
+  "end": 15.439,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "MY",
+  "display": "MY",
+  "start": 15.497,
+  "end": 15.66,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 15.718,
+  "end": 15.973,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "refs",
+  "display": "refs",
+  "start": 16.031,
+  "end": 16.24,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "didn't",
+  "display": "didn't",
+  "start": 16.275,
+  "end": 16.531,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "say",
+  "display": "say",
+  "start": 16.577,
+  "end": 16.786,
+  "segment": "g_conv",
+  "keyword": false
+ },
+ {
+  "word": "sorry!",
+  "display": "sorry!",
+  "start": 16.89,
+  "end": 17.39,
+  "segment": "g_conv",
+  "keyword": true
+ },
+ {
+  "word": "Sorry",
+  "display": "Sorry",
+  "start": 17.869,
+  "end": 18.124,
+  "segment": "f_sorry1",
+  "keyword": true
+ },
+ {
+  "word": "about",
+  "display": "about",
+  "start": 18.159,
+  "end": 18.357,
+  "segment": "f_sorry1",
+  "keyword": false
+ },
+ {
+  "word": "that.",
+  "display": "that.",
+  "start": 18.403,
+  "end": 18.751,
+  "segment": "f_sorry1",
+  "keyword": false
+ },
+ {
+  "word": "STOP",
+  "display": "STOP",
+  "start": 19.218,
+  "end": 19.474,
+  "segment": "g_stop",
+  "keyword": true
+ },
+ {
+  "word": "SAYING",
+  "display": "SAYING",
+  "start": 19.544,
+  "end": 19.857,
+  "segment": "g_stop",
+  "keyword": false
+ },
+ {
+  "word": "SORRY!",
+  "display": "SORRY!",
+  "start": 19.915,
+  "end": 20.368,
+  "segment": "g_stop",
+  "keyword": true
+ },
+ {
+  "word": "So",
+  "display": "So",
+  "start": 20.823,
+  "end": 20.962,
+  "segment": "f_sorry2",
+  "keyword": false
+ },
+ {
+  "word": "sorry!",
+  "display": "sorry!",
+  "start": 21.02,
+  "end": 21.427,
+  "segment": "f_sorry2",
+  "keyword": true
+ },
+ {
+  "word": "That's",
+  "display": "That's",
+  "start": 21.905,
+  "end": 22.126,
+  "segment": "g_you",
+  "keyword": false
+ },
+ {
+  "word": "it.",
+  "display": "it.",
+  "start": 22.184,
+  "end": 22.311,
+  "segment": "g_you",
+  "keyword": false
+ },
+ {
+  "word": "Two",
+  "display": "Two",
+  "start": 22.335,
+  "end": 22.486,
+  "segment": "g_you",
+  "keyword": true
+ },
+ {
+  "word": "minutes",
+  "display": "minutes",
+  "start": 22.544,
+  "end": 22.822,
+  "segment": "g_you",
+  "keyword": true
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 22.869,
+  "end": 22.985,
+  "segment": "g_you",
+  "keyword": false
+ },
+ {
+  "word": "YOU!",
+  "display": "YOU!",
+  "start": 23.043,
+  "end": 23.449,
+  "segment": "g_you",
+  "keyword": true
+ },
+ {
+  "word": "Ahh...",
+  "display": "Ahh...",
+  "start": 25.24,
+  "end": 25.553,
+  "segment": "f_peace",
+  "keyword": false
+ },
+ {
+  "word": "peace",
+  "display": "peace",
+  "start": 25.774,
+  "end": 26.029,
+  "segment": "f_peace",
+  "keyword": true
+ },
+ {
+  "word": "and",
+  "display": "and",
+  "start": 26.064,
+  "end": 26.134,
+  "segment": "f_peace",
+  "keyword": false
+ },
+ {
+  "word": "quiet.",
+  "display": "quiet.",
+  "start": 26.192,
+  "end": 26.668,
+  "segment": "f_peace",
+  "keyword": false
+ },
+ {
+  "word": "Psst.",
+  "display": "Psst.",
+  "start": 27.112,
+  "end": 27.483,
+  "segment": "p_who",
+  "keyword": false
+ },
+ {
+  "word": "Who's",
+  "display": "Who's",
+  "start": 27.518,
+  "end": 27.762,
+  "segment": "p_who",
+  "keyword": false
+ },
+ {
+  "word": "reffing",
+  "display": "reffing",
+  "start": 27.82,
+  "end": 28.087,
+  "segment": "p_who",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 28.122,
+  "end": 28.192,
+  "segment": "p_who",
+  "keyword": false
+ },
+ {
+  "word": "game?",
+  "display": "game?",
+  "start": 28.226,
+  "end": 28.563,
+  "segment": "p_who",
+  "keyword": false
+ },
+ {
+  "word": "...Sorry.",
+  "display": "...Sorry.",
+  "start": 31.983,
+  "end": 32.737,
+  "segment": "f_sorry3",
+  "keyword": true
+ },
+ {
+  "word": "Tonight,",
+  "display": "Tonight,",
+  "start": 33.682,
+  "end": 34.054,
+  "segment": "n_end",
+  "keyword": true
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 34.088,
+  "end": 34.193,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "Ref",
+  "display": "Ref",
+  "start": 34.251,
+  "end": 34.437,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "finally",
+  "display": "finally",
+  "start": 34.657,
+  "end": 35.064,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "made",
+  "display": "made",
+  "start": 35.11,
+  "end": 35.249,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 35.273,
+  "end": 35.296,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "call.",
+  "display": "call.",
+  "start": 35.342,
+  "end": 35.749,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "On",
+  "display": "On",
+  "start": 36.097,
+  "end": 36.259,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "himself.",
+  "display": "himself.",
+  "start": 36.306,
+  "end": 36.863,
+  "segment": "n_end",
+  "keyword": true
+ }
+]

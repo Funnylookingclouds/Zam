@@ -1,0 +1,19 @@
+{
+  "id": "hockey-life-ref", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.2,
+  "segments": [
+    {"id": "n_hook", "tts": "The Ref has never called a penalty. Tonight... he has to."},
+    {"id": "f_maybe", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Um... sorry... is that maybe a penalty?"},
+    {"id": "w_asking", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Are you asking me?"},
+    {"id": "f_two", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry! No! Yes! Two minutes... if that's convenient?"},
+    {"id": "g_conv", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Convenient?! In MY day, refs didn't say sorry!"},
+    {"id": "f_sorry1", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry about that."},
+    {"id": "g_stop", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "STOP SAYING SORRY!"},
+    {"id": "f_sorry2", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "So sorry!"},
+    {"id": "g_you", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "That's it. Two minutes for YOU!"},
+    {"id": "f_peace", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Ahh... peace and quiet."},
+    {"id": "p_who", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Psst. Who's reffing the game?"},
+    {"id": "f_sorry3", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "...Sorry."},
+    {"id": "n_end", "tts": "Tonight, the Ref finally made a call. On himself."}
+  ],
+  "display_map": {}, "keywords": ["penalty", "tonight", "asking", "two", "minutes", "convenient", "sorry", "stop", "you", "peace", "reffing", "himself"]
+}
