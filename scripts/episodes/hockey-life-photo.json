@@ -1,0 +1,18 @@
+{
+  "id": "hockey-life-photo", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "n_hook", "tts": "Team photo day. One picture. Ten-second timer. What could go wrong?"},
+    {"id": "g_smile", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Ten seconds! Everybody smile!"},
+    {"id": "r_like", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Like this?!"},
+    {"id": "w_kidnap", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Perfect. If we're kidnapping someone."},
+    {"id": "g_mask", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Walt! Mask off!"},
+    {"id": "w_face", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "This IS my face."},
+    {"id": "f_can", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry... can I be in it? I've never been in a team photo."},
+    {"id": "w_team", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "You've never been on a team."},
+    {"id": "p_puck", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Say PUCK!"},
+    {"id": "g_wait", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Wait for meeee!"},
+    {"id": "n_only", "tts": "It's the only team photo they ever took."},
+    {"id": "w_frame", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Frame it. The day I almost smiled."}
+  ],
+  "display_map": {}, "keywords": ["photo", "ten-second", "wrong", "smile", "kidnapping", "mask", "face", "team", "puck", "meeee", "only", "almost", "smiled"]
+}
