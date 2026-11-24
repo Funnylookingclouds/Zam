@@ -27,7 +27,7 @@ export const ExpressionSheet: React.FC = () => (
 /** 7 s silent reel: Pucky taunts, Biscuit fumes, the puck flies by, Biscuit melts down, Pucky in love with himself. */
 export const ExpressionReel: React.FC = () => {
   const f = useCurrentFrame(); const t = f / 60;
-  const cam = dlerp(dframe(0, -330, -800, 1150, 800, { rx: -2, ry: 6 }), dframe(0, -320, -800, 900, 790, { rx: -2, ry: -4 }), interpolate(t, [0, 7], [0, 1], { ...clamp, easing: Easing.inOut(Easing.sin) }));
+  const cam = dlerp(dframe(0, -260, -800, 1150, 860, { rx: -2, ry: 6 }), dframe(0, -250, -800, 950, 840, { rx: -2, ry: -4 }), interpolate(t, [0, 7], [0, 1], { ...clamp, easing: Easing.inOut(Easing.sin) }));
   const pm: Mood = t < 1.6 ? "smug" : t < 3.0 ? "laugh" : t < 4.4 ? "shock" : t < 5.8 ? "proud" : "love";
   const bm: Mood = t < 1.6 ? "grumpy" : t < 3.0 ? "angry" : t < 4.4 ? "wow" : t < 5.8 ? "sad" : "scared";
   const talkP = t > 0.3 && t < 1.4; const talkB = t > 1.8 && t < 2.8;
@@ -38,8 +38,8 @@ export const ExpressionReel: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <Diorama cam={cam} t={t} cheer={t > 3 && t < 4.4 ? 1 : 0.3} jumbo={<div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONT, fontWeight: 900, fontSize: 64, color: "#fde047", textShadow: "0 0 16px #facc15" }}>{t > 3 && t < 4.4 ? "GOAL?!" : "ZAM"}</div>}>
-        <Cut x={-280} z={-800} cam={cam} size={470} toon><Mascot who="pucky" size={470} mood={pm} open={openP} talking={talkP} noSticker seed="rp" /></Cut>
-        <Cut x={300} z={-820} cam={cam} size={470} toon><Mascot who="biscuit" size={470} mood={bm} open={openB} talking={talkB} noSticker flip seed="rb" lookAt={t > 3 && t < 4.4 ? -8 : undefined} /></Cut>
+        <Cut x={-230} z={-800} cam={cam} size={360} toon><Mascot who="pucky" size={360} mood={pm} open={openP} talking={talkP} noSticker seed="rp" /></Cut>
+        <Cut x={240} z={-820} cam={cam} size={360} toon><Mascot who="biscuit" size={360} mood={bm} open={openB} talking={talkB} noSticker flip seed="rb" lookAt={t > 3 && t < 4.4 ? -8 : undefined} /></Cut>
         {k > 0 && k < 1 && <Cut x={-600 + k * 1300} z={-760} y={-200 - Math.sin(k * Math.PI) * 120} cam={cam} size={90} shadow={false} toon><div style={{ width: 90, height: 40, borderRadius: "50%", background: "#111", marginTop: 50 }} /></Cut>}
       </Diorama>
       <div style={{ position: "absolute", left: 0, right: 0, top: 1440, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #111", paintOrder: "stroke fill" }}>{cur[1]}</div>
