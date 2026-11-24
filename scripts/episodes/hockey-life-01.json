@@ -1,0 +1,22 @@
+{
+  "id": "hockey-life-01", "language": "en", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "model_id": "eleven_multilingual_v2", "speed": 0.95, "voice_gap": 0.6,
+  "segments": [
+    {"id": "n_hook", "tts": "Big Walt has played goalie for thirty years. Today, he retires."},
+    {"id": "w_no", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "No."},
+    {"id": "r_cake", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Walt! Your party's ready! There's cake!"},
+    {"id": "w_cake", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Bring the cake to the net."},
+    {"id": "r_sleep", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "You can finally sleep in!"},
+    {"id": "w_sleep", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I sleep in the net."},
+    {"id": "r_world", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "You could travel the world!"},
+    {"id": "w_world", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Is the world... a net?"},
+    {"id": "r_coach", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Coach needs the net for the new goalie."},
+    {"id": "w_who", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Who's the new goalie?"},
+    {"id": "r_me", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "...Me."},
+    {"id": "w_fine", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Fine, kid. The net is yours."},
+    {"id": "p_incoming", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Psst. Rookie. Incoming!"},
+    {"id": "r_walt", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Walt? WALT?!"},
+    {"id": "w_retired", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Retired."},
+    {"id": "n_end", "tts": "He retired. He just never left the building."}
+  ],
+  "display_map": {}, "keywords": ["walt", "thirty", "years", "retires", "no", "cake", "net", "sleep", "world", "goalie", "me", "yours", "incoming", "retired", "building"]
+}

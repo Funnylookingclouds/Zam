@@ -1,0 +1,618 @@
+[
+ {
+  "word": "Big",
+  "display": "Big",
+  "start": 0.058,
+  "end": 0.267,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "Walt",
+  "display": "Walt",
+  "start": 0.325,
+  "end": 0.557,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "has",
+  "display": "has",
+  "start": 0.604,
+  "end": 0.685,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "played",
+  "display": "played",
+  "start": 0.731,
+  "end": 0.964,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "goalie",
+  "display": "goalie",
+  "start": 1.022,
+  "end": 1.312,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 1.358,
+  "end": 1.474,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "thirty",
+  "display": "thirty",
+  "start": 1.533,
+  "end": 1.846,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "years.",
+  "display": "years.",
+  "start": 1.916,
+  "end": 2.45,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "Today,",
+  "display": "Today,",
+  "start": 2.786,
+  "end": 3.506,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "he",
+  "display": "he",
+  "start": 3.727,
+  "end": 3.855,
+  "segment": "n_hook",
+  "keyword": false
+ },
+ {
+  "word": "retires.",
+  "display": "retires.",
+  "start": 3.947,
+  "end": 4.737,
+  "segment": "n_hook",
+  "keyword": true
+ },
+ {
+  "word": "No.",
+  "display": "No.",
+  "start": 6.015,
+  "end": 6.457,
+  "segment": "w_no",
+  "keyword": true
+ },
+ {
+  "word": "Walt!",
+  "display": "Walt!",
+  "start": 7.336,
+  "end": 7.591,
+  "segment": "r_cake",
+  "keyword": true
+ },
+ {
+  "word": "Your",
+  "display": "Your",
+  "start": 7.626,
+  "end": 7.777,
+  "segment": "r_cake",
+  "keyword": false
+ },
+ {
+  "word": "party's",
+  "display": "party's",
+  "start": 7.835,
+  "end": 8.16,
+  "segment": "r_cake",
+  "keyword": false
+ },
+ {
+  "word": "ready!",
+  "display": "ready!",
+  "start": 8.23,
+  "end": 8.624,
+  "segment": "r_cake",
+  "keyword": false
+ },
+ {
+  "word": "There's",
+  "display": "There's",
+  "start": 8.752,
+  "end": 9.031,
+  "segment": "r_cake",
+  "keyword": false
+ },
+ {
+  "word": "cake!",
+  "display": "cake!",
+  "start": 9.077,
+  "end": 9.588,
+  "segment": "r_cake",
+  "keyword": true
+ },
+ {
+  "word": "Bring",
+  "display": "Bring",
+  "start": 10.524,
+  "end": 10.733,
+  "segment": "w_cake",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 10.779,
+  "end": 10.849,
+  "segment": "w_cake",
+  "keyword": false
+ },
+ {
+  "word": "cake",
+  "display": "cake",
+  "start": 10.896,
+  "end": 11.128,
+  "segment": "w_cake",
+  "keyword": true
+ },
+ {
+  "word": "to",
+  "display": "to",
+  "start": 11.163,
+  "end": 11.221,
+  "segment": "w_cake",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 11.279,
+  "end": 11.348,
+  "segment": "w_cake",
+  "keyword": false
+ },
+ {
+  "word": "net.",
+  "display": "net.",
+  "start": 11.418,
+  "end": 11.79,
+  "segment": "w_cake",
+  "keyword": true
+ },
+ {
+  "word": "You",
+  "display": "You",
+  "start": 12.715,
+  "end": 12.796,
+  "segment": "r_sleep",
+  "keyword": false
+ },
+ {
+  "word": "can",
+  "display": "can",
+  "start": 12.831,
+  "end": 12.935,
+  "segment": "r_sleep",
+  "keyword": false
+ },
+ {
+  "word": "finally",
+  "display": "finally",
+  "start": 12.982,
+  "end": 13.295,
+  "segment": "r_sleep",
+  "keyword": false
+ },
+ {
+  "word": "sleep",
+  "display": "sleep",
+  "start": 13.33,
+  "end": 13.574,
+  "segment": "r_sleep",
+  "keyword": true
+ },
+ {
+  "word": "in!",
+  "display": "in!",
+  "start": 13.655,
+  "end": 13.91,
+  "segment": "r_sleep",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 14.777,
+  "end": 14.824,
+  "segment": "w_sleep",
+  "keyword": false
+ },
+ {
+  "word": "sleep",
+  "display": "sleep",
+  "start": 14.917,
+  "end": 15.207,
+  "segment": "w_sleep",
+  "keyword": true
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 15.265,
+  "end": 15.323,
+  "segment": "w_sleep",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 15.37,
+  "end": 15.439,
+  "segment": "w_sleep",
+  "keyword": false
+ },
+ {
+  "word": "net.",
+  "display": "net.",
+  "start": 15.497,
+  "end": 15.904,
+  "segment": "w_sleep",
+  "keyword": true
+ },
+ {
+  "word": "You",
+  "display": "You",
+  "start": 16.783,
+  "end": 16.876,
+  "segment": "r_world",
+  "keyword": false
+ },
+ {
+  "word": "could",
+  "display": "could",
+  "start": 16.911,
+  "end": 17.05,
+  "segment": "r_world",
+  "keyword": false
+ },
+ {
+  "word": "travel",
+  "display": "travel",
+  "start": 17.073,
+  "end": 17.375,
+  "segment": "r_world",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 17.445,
+  "end": 17.514,
+  "segment": "r_world",
+  "keyword": false
+ },
+ {
+  "word": "world!",
+  "display": "world!",
+  "start": 17.561,
+  "end": 18.014,
+  "segment": "r_world",
+  "keyword": true
+ },
+ {
+  "word": "Is",
+  "display": "Is",
+  "start": 18.939,
+  "end": 19.125,
+  "segment": "w_world",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 19.194,
+  "end": 19.276,
+  "segment": "w_world",
+  "keyword": false
+ },
+ {
+  "word": "world...",
+  "display": "world...",
+  "start": 19.345,
+  "end": 19.879,
+  "segment": "w_world",
+  "keyword": true
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 19.937,
+  "end": 20.007,
+  "segment": "w_world",
+  "keyword": false
+ },
+ {
+  "word": "net?",
+  "display": "net?",
+  "start": 20.146,
+  "end": 20.564,
+  "segment": "w_world",
+  "keyword": true
+ },
+ {
+  "word": "Coach",
+  "display": "Coach",
+  "start": 21.361,
+  "end": 21.605,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "needs",
+  "display": "needs",
+  "start": 21.663,
+  "end": 21.883,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 21.941,
+  "end": 22.011,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "net",
+  "display": "net",
+  "start": 22.069,
+  "end": 22.243,
+  "segment": "r_coach",
+  "keyword": true
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 22.29,
+  "end": 22.394,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 22.441,
+  "end": 22.51,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 22.557,
+  "end": 22.684,
+  "segment": "r_coach",
+  "keyword": false
+ },
+ {
+  "word": "goalie.",
+  "display": "goalie.",
+  "start": 22.742,
+  "end": 23.172,
+  "segment": "r_coach",
+  "keyword": true
+ },
+ {
+  "word": "Who's",
+  "display": "Who's",
+  "start": 24.063,
+  "end": 24.307,
+  "segment": "w_who",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 24.353,
+  "end": 24.423,
+  "segment": "w_who",
+  "keyword": false
+ },
+ {
+  "word": "new",
+  "display": "new",
+  "start": 24.481,
+  "end": 24.632,
+  "segment": "w_who",
+  "keyword": false
+ },
+ {
+  "word": "goalie?",
+  "display": "goalie?",
+  "start": 24.69,
+  "end": 25.166,
+  "segment": "w_who",
+  "keyword": true
+ },
+ {
+  "word": "...Me.",
+  "display": "...Me.",
+  "start": 27.179,
+  "end": 27.701,
+  "segment": "r_me",
+  "keyword": true
+ },
+ {
+  "word": "Fine,",
+  "display": "Fine,",
+  "start": 29.492,
+  "end": 29.898,
+  "segment": "w_fine",
+  "keyword": false
+ },
+ {
+  "word": "kid.",
+  "display": "kid.",
+  "start": 29.945,
+  "end": 30.235,
+  "segment": "w_fine",
+  "keyword": false
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 30.258,
+  "end": 30.34,
+  "segment": "w_fine",
+  "keyword": false
+ },
+ {
+  "word": "net",
+  "display": "net",
+  "start": 30.409,
+  "end": 30.572,
+  "segment": "w_fine",
+  "keyword": true
+ },
+ {
+  "word": "is",
+  "display": "is",
+  "start": 30.63,
+  "end": 30.699,
+  "segment": "w_fine",
+  "keyword": false
+ },
+ {
+  "word": "yours.",
+  "display": "yours.",
+  "start": 30.758,
+  "end": 31.199,
+  "segment": "w_fine",
+  "keyword": true
+ },
+ {
+  "word": "Psst.",
+  "display": "Psst.",
+  "start": 32.24,
+  "end": 32.681,
+  "segment": "p_incoming",
+  "keyword": false
+ },
+ {
+  "word": "Rookie.",
+  "display": "Rookie.",
+  "start": 32.843,
+  "end": 33.226,
+  "segment": "p_incoming",
+  "keyword": false
+ },
+ {
+  "word": "Incoming!",
+  "display": "Incoming!",
+  "start": 33.25,
+  "end": 33.935,
+  "segment": "p_incoming",
+  "keyword": true
+ },
+ {
+  "word": "Walt?",
+  "display": "Walt?",
+  "start": 35.183,
+  "end": 35.508,
+  "segment": "r_walt",
+  "keyword": true
+ },
+ {
+  "word": "WALT?!",
+  "display": "WALT?!",
+  "start": 35.763,
+  "end": 36.228,
+  "segment": "r_walt",
+  "keyword": true
+ },
+ {
+  "word": "Retired.",
+  "display": "Retired.",
+  "start": 38.152,
+  "end": 38.791,
+  "segment": "w_retired",
+  "keyword": true
+ },
+ {
+  "word": "He",
+  "display": "He",
+  "start": 40.428,
+  "end": 40.51,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "retired.",
+  "display": "retired.",
+  "start": 40.579,
+  "end": 41.183,
+  "segment": "n_end",
+  "keyword": true
+ },
+ {
+  "word": "He",
+  "display": "He",
+  "start": 41.52,
+  "end": 41.624,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "just",
+  "display": "just",
+  "start": 41.682,
+  "end": 41.833,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "never",
+  "display": "never",
+  "start": 41.891,
+  "end": 42.112,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "left",
+  "display": "left",
+  "start": 42.182,
+  "end": 42.391,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 42.425,
+  "end": 42.495,
+  "segment": "n_end",
+  "keyword": false
+ },
+ {
+  "word": "building.",
+  "display": "building.",
+  "start": 42.541,
+  "end": 43.076,
+  "segment": "n_end",
+  "keyword": true
+ }
+]

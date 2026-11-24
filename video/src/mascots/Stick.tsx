@@ -44,7 +44,7 @@ const ARMS: Record<StickPose, [number, number, number, number]> = { // [lx, ly, 
   idle: [-78, -30, 78, -30], wave: [-78, -30, 120, -250], point: [-78, -30, 175, -150], crossed: [40, -95, -40, -95], up: [-120, -260, 120, -260], shrug: [-130, -170, 130, -170],
 };
 
-export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickMood; pose?: StickPose; open?: number; flip?: boolean; seed?: number; sitting?: boolean }> = ({ who, size = 300, mood = "talk", pose = "idle", open = 0, flip, seed = 0, sitting }) => {
+export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickMood; pose?: StickPose; open?: number; flip?: boolean; seed?: number; sitting?: boolean; shades?: boolean; hold?: React.ReactNode }> = ({ who, size = 300, mood = "talk", pose = "idle", open = 0, flip, seed = 0, sitting, shades, hold }) => {
   const f = useCurrentFrame();
   const breathe = Math.sin((f + seed * 17) / 22) * 3;
   const blink = (f + seed * 31) % 170 < 5;
@@ -72,6 +72,7 @@ export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickM
           <circle cx={lx} cy={ly} r={13} fill={SKIN} stroke={INK} strokeWidth={5} />
           <circle cx={rx + wave} cy={ry} r={13} fill={SKIN} stroke={INK} strokeWidth={5} />
         </>}
+        {hold && pose !== "crossed" && <g transform={`translate(${rx + wave} ${ry})`}>{hold}</g>}
         {/* torso */}
         <defs><clipPath id={`tc${who}${seed}`}><path d={`M${-tw} -150 Q0 -165 ${tw} -150 L${tw - 8} 10 L${-tw + 8} 10 Z`} /></clipPath></defs>
         <path d={`M${-tw} -150 Q0 -165 ${tw} -150 L${tw - 8} 10 L${-tw + 8} 10 Z`} fill={c} />
@@ -100,6 +101,7 @@ export const StickPerson: React.FC<{ who: StickWho; size?: number; mood?: StickM
           <Eyes mood={mood} blink={blink} big={who === "rookie"} />
           <Brows mood={mood} color={who === "walt" || who === "gus" ? "#94a3b8" : INK} bushy={who === "walt" || who === "gus"} />
           {who === "gus" && <ellipse cx={0} cy={-226} rx={13} ry={10} fill="#fca5a5" stroke={INK} strokeWidth={4} />}
+          {shades && <g><rect x={-62} y={-272} width={52} height={36} rx={12} fill="#111" /><rect x={10} y={-272} width={52} height={36} rx={12} fill="#111" /><path d="M-10 -258 L10 -258" stroke="#111" strokeWidth={6} /><path d="M-52 -264 L-30 -264" stroke="#ffffff88" strokeWidth={4} /></g>}
           <Mouth mood={mood} open={open} />
           {who === "walt" && <path d="M-46 -222 Q-24 -240 0 -226 Q24 -240 46 -222 Q30 -206 0 -214 Q-30 -206 -46 -222 Z" fill="#cbd5e1" stroke={INK} strokeWidth={4} />}
           {who === "ref" && mood !== "smug" && <path d="M70 -300 Q82 -282 72 -270 Q60 -282 70 -300 Z" fill="#7dd3fc" stroke={INK} strokeWidth={3} />}

@@ -3,6 +3,7 @@ import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
 import { HockeyLifeCast, HockeyLifeFrame } from "./mascots/HockeyLifeCard";
+import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { BabyCard } from "./mascots/BabyCard";
 import { ChannelAvatarA, ChannelAvatarB, ChannelBanner } from "./brand/Channel";
 import { IconWildest, IconDailyFacts, IconSpecial } from "./brand/SeriesIcons";
@@ -54,6 +55,7 @@ export const Root: React.FC = () => (
     <Composition id="Child03Long" component={Child03Long} durationInFrames={CHILD03_FRAMES} fps={FPS30} width={1920} height={1080} />
     <Still id="BabyCard" component={BabyCard} width={1080} height={1920} />
     <Still id="AgentyCard" component={AgentyCard} width={1080} height={1920} />
+    <Composition id="HockeyLife01" component={HockeyLife01} durationInFrames={HL01_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
