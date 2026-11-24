@@ -1,0 +1,19 @@
+{
+  "id": "wild-06", "language": "en", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "r_hook", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "One guy scored five goals, five different ways?!"},
+    {"id": "w_hook", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Cute. I've let in goals six different ways. Before lunch."},
+    {"id": "n_lem", "tts": "December thirty-first, 1988. Mario Lemieux scores five goals against the Devils. Even strength, power play, shorthanded, penalty shot, and empty net."},
+    {"id": "r_every", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "That's every way to score!"},
+    {"id": "w_face", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Not every way. Nobody's scored off my face. Yet."},
+    {"id": "n_sit", "tts": "February seventh, 1976. Darryl Sittler gets ten points in one game. Six goals, four assists. Still the NHL record."},
+    {"id": "r_record", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Ten points! What's my record?"},
+    {"id": "w_two", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Two. Minutes. For tripping over the blue line."},
+    {"id": "n_oct", "tts": "April fifteenth, 1952. Two Detroit fans throw an octopus on the ice. Eight legs, for the eight wins needed to take the Cup."},
+    {"id": "f_whose", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Sorry... whose octopus is this?"},
+    {"id": "r_fish", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "I'll throw a fish for every goal I score!"},
+    {"id": "w_clean", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Great. The ice stays clean forever."},
+    {"id": "w_mate", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Finally. A teammate who never leaves the crease."}
+  ],
+  "display_map": {}, "keywords": ["five", "six", "lunch", "lemieux", "1988", "every", "face", "yet", "ten", "sittler", "record", "two", "minutes", "octopus", "1952", "eight", "fish", "forever", "crease"]
+}
