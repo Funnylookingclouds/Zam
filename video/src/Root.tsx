@@ -3,6 +3,7 @@ import { Composition, Still } from "remotion";
 import { HockeyMascots } from "./mascots/Sketch";
 import { AgentyCard } from "./mascots/AgentyCard";
 import { HockeyLifeCast, HockeyLifeFrame } from "./mascots/HockeyLifeCard";
+import { Proto25DLow, Proto25DOTS, Proto25DWide } from "./hl3d/Proto25D";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -62,6 +63,9 @@ export const Root: React.FC = () => (
     <Composition id="HockeyLifeRef" component={HockeyLifeRef} durationInFrames={HLREF_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="Wild05HL" component={Wild05HL} durationInFrames={WILD05_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="Wild06HL" component={Wild06HL} durationInFrames={WILD06_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Still id="Proto25DWide" component={Proto25DWide} width={1080} height={1920} />
+    <Still id="Proto25DOTS" component={Proto25DOTS} width={1080} height={1920} />
+    <Still id="Proto25DLow" component={Proto25DLow} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
