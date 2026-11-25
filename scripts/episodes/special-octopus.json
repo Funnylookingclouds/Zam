@@ -1,0 +1,24 @@
+{
+  "id": "special-octopus", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "p_why", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Okay. WHY is there an octopus in every episode?"},
+    {"id": "b_rent", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I assumed it pays rent."},
+    {"id": "h_shop", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "April 1952. Detroit. Two brothers run a fish shop."},
+    {"id": "p_uhoh", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Uh oh."},
+    {"id": "h_throw", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "In the playoffs, they throw an octopus on the ice."},
+    {"id": "b_rom", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Romantic."},
+    {"id": "h_arms", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Legend says: eight arms, for the eight wins you needed."},
+    {"id": "z_work", "tts": "Did it work?"},
+    {"id": "h_eight", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Detroit won all eight. Not one loss."},
+    {"id": "p_fish", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "I'm throwing fish at every game now!"},
+    {"id": "b_eat", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Please don't. I'm a walrus. I'll eat it."},
+    {"id": "h_swing", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Later, Detroit's ice machine driver swung them over his head."},
+    {"id": "z_hero", "tts": "An ice machine HERO!"},
+    {"id": "h_ban", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "2008: the NHL banned it. Ten thousand dollar fine."},
+    {"id": "z_no", "tts": "Noooo!"},
+    {"id": "h_gate", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Weeks later? Allowed again. Only at the ice machine gate."},
+    {"id": "p_lucky", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "So our octopus is lucky!"},
+    {"id": "b_wins", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Great. Even the octopus has more wins than me."}
+  ],
+  "display_map": {}, "keywords": ["why", "octopus", "rent", "1952", "fish", "uh", "throw", "romantic", "eight", "work", "loss", "eat", "swung", "hero", "banned", "fine", "noooo", "gate", "lucky", "wins"]
+}

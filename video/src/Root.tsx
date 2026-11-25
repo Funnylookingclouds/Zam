@@ -11,6 +11,7 @@ import { CupPilot25D, CUP_FRAMES } from "./episodes/cup_pilot_25d";
 import { SummerCamp25D, CAMP25_FRAMES } from "./episodes/summer_camp_25d";
 import { ZamGoalie25D, ZGOAL_FRAMES } from "./episodes/zam_goalie_25d";
 import { BiscuitMask25D, BMASK_FRAMES } from "./episodes/biscuit_mask_25d";
+import { SpecialOctopus25D, OCTO_FRAMES } from "./episodes/special_octopus_25d";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -93,6 +94,7 @@ export const Root: React.FC = () => (
     <Composition id="SummerCamp25D" component={SummerCamp25D} durationInFrames={CAMP25_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="ZamGoalie25D" component={ZamGoalie25D} durationInFrames={ZGOAL_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="BiscuitMask25D" component={BiscuitMask25D} durationInFrames={BMASK_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="SpecialOctopus25D" component={SpecialOctopus25D} durationInFrames={OCTO_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />
