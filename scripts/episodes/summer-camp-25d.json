@@ -1,0 +1,24 @@
+{
+  "id": "summer-camp-25d", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "Summer camp! Fresh air! Nature!"},
+    {"id": "b_enemy", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I'm a walrus. Nature is my ENEMY."},
+    {"id": "p_race", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Race you! Last one there is a Biscuit!"},
+    {"id": "b_already", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "I'm... already... a Biscuit."},
+    {"id": "h_larkin", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Fun fact: Dylan Larkin skated the fastest All-Star lap ever. Thirteen point one seven two seconds, in 2016."},
+    {"id": "c_gartner", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, Mike Gartner did thirteen point three eight six!"},
+    {"id": "h_slower", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "...That's slower."},
+    {"id": "c_uphill", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "It was UPHILL."},
+    {"id": "a_2030", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Biscuit, kid. At this pace, you'll finish in 2030."},
+    {"id": "c_watch", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Watch and learn."},
+    {"id": "c_stick", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "...I'm a stick."},
+    {"id": "p_gains", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Gains!"},
+    {"id": "b_power", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Walrus power."},
+    {"id": "a_sign", "voice_id": "R9RZPy40Zzy1wNxrgQpj", "tts": "Sign HIM!"},
+    {"id": "h_lake", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Last drill: everybody jump in the lake!"},
+    {"id": "z_froze", "tts": "Wait. I just froze it!"},
+    {"id": "p_ow", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "...Ow."},
+    {"id": "b_best", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Best camp ever."}
+  ],
+  "display_map": {}, "keywords": ["nature", "enemy", "biscuit", "larkin", "fastest", "gartner", "slower", "uphill", "2030", "stick", "gains", "power", "him", "lake", "froze", "ow", "best"]
+}

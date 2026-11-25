@@ -8,12 +8,12 @@ import { FONT } from "../theme";
 import { Mascot, type Mood, type Who } from "../mascots/Gang";
 
 export type DCam = { x: number; y: number; z: number; ry?: number; rx?: number; focus?: number };
-const FOV = 1300;
-const P3: React.CSSProperties = { position: "absolute", transformStyle: "preserve-3d" };
-const pl = (w: number, h: number, tr: string, st: React.CSSProperties): React.CSSProperties => ({ position: "absolute", left: -w / 2, top: -h / 2, width: w, height: h, transform: tr, ...st });
+export const FOV = 1300;
+export const P3: React.CSSProperties = { position: "absolute", transformStyle: "preserve-3d" };
+export const pl = (w: number, h: number, tr: string, st: React.CSSProperties): React.CSSProperties => ({ position: "absolute", left: -w / 2, top: -h / 2, width: w, height: h, transform: tr, ...st });
 export const dframe = (x: number, y: number, z: number, dist: number, sy = 800, extra: Partial<DCam> = {}): DCam => { const s = FOV / dist; return { x, y: y - (sy - 900) / s, z: z + dist - FOV, focus: z, ...extra }; };
 export const dlerp = (a: DCam, b: DCam, k: number): DCam => ({ x: a.x + (b.x - a.x) * k, y: a.y + (b.y - a.y) * k, z: a.z + (b.z - a.z) * k, ry: (a.ry ?? 0) + ((b.ry ?? 0) - (a.ry ?? 0)) * k, rx: (a.rx ?? 0) + ((b.rx ?? 0) - (a.rx ?? 0)) * k, focus: (a.focus ?? 0) + ((b.focus ?? 0) - (a.focus ?? 0)) * k });
-const grain = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/><feColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0.5 0'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>\")";
+export const grain = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/><feColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0.5 0'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>\")";
 const cardboard = "repeating-linear-gradient(90deg,#c08a4f 0 6px,#b47d44 6px 12px)";
 
 /** Paper cut-out billboard: sticker edge, cardboard thickness, neon rim (magenta left / cyan right), projected hard shadow. */

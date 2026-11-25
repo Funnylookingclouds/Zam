@@ -183,7 +183,7 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 /** New 2.5D intro with the jingle: camera whips into the arena, gang pops on the beat, logo + "ZAM!" on the final hit. */
-const Intro2: React.FC = () => {
+export const Intro2: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS;
   const cam = dlerp(dframe(0, -900, -1600, 2600, 1100, { rx: -14, ry: -25 }), dframe(0, -320, -800, 1300, 860, { rx: -3 }), interpolate(t, [0, 1.4], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) }));
   const hit = t > 1.48;
@@ -199,7 +199,7 @@ const Intro2: React.FC = () => {
     </AbsoluteFill>
   );
 };
-const Outro2: React.FC = () => {
+export const Outro2: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS;
   const cam = dframe(0, -320, -800, 1500, 860, { rx: -3, ry: Math.sin(t) * 3 });
   const gang: Who[] = ["clubby", "helmy", "pucky", "biscuit", "zam"];
