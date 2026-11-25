@@ -39,10 +39,10 @@ const Jumbo: React.FC<{ text: string; small?: string }> = ({ text, small }) => (
 );
 
 // ------------------------------------------------------------------ props
-const Flashback: React.FC<{ t: number; at: number; year: string; src: string; sepia?: boolean; children: React.ReactNode }> = ({ t, at, year, src, sepia = true, children }) => {
+const Flashback: React.FC<{ t: number; at: number; year: string; src: string; sepia?: boolean; z?: number; children: React.ReactNode }> = ({ t, at, year, src, sepia = true, z = 7, children }) => {
   const k = interpolate(t, [at, at + 0.35], [0, 1], back);
   return (
-    <div style={{ position: "absolute", left: 100, top: 380, width: 880, height: 760, transform: `rotate(${-3 + (1 - k) * 20}deg) scale(${k})`, zIndex: 7, background: "#f3e7c9", padding: 24, boxSizing: "border-box", boxShadow: "0 30px 60px #000a", border: "4px solid #2b2622" }}>
+    <div style={{ position: "absolute", left: 100, top: 380, width: 880, height: 760, transform: `rotate(${-3 + (1 - k) * 20}deg) scale(${k})`, zIndex: z, background: "#f3e7c9", padding: 24, boxSizing: "border-box", boxShadow: "0 30px 60px #000a", border: "4px solid #2b2622" }}>
       <div style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden", filter: sepia ? "sepia(0.6)" : undefined, border: "4px solid #2b2622", background: "#e2e8f0" }}>{children}</div>
       <div style={{ position: "absolute", right: -30, top: -40, background: "#ef4444", color: "#fff", fontFamily: FONT, fontWeight: 900, fontSize: 64, padding: "4px 22px", transform: "rotate(8deg)", border: "5px solid #2b2622" }}>{year}</div>
       <div style={{ position: "absolute", left: 24, bottom: -4, fontFamily: HAND, fontSize: 32, color: "#5b4636" }}>true story · source: {src}</div>
@@ -146,9 +146,9 @@ const SHOTS: Shot[] = [
     return <Diorama cam={cam} t={t} cheer={k} jumbo={<Jumbo text="10%" small="EVEN MAMA" />}><G who="agenty" t={t} cam={cam} x={-60} z={-800} size={400} mood="proud" baby /><Cut x={240} z={-760} y={-170} cam={cam} size={200} shadow={false} toon><Receipt k={k} /></Cut></Diorama>; } },
   { from: cut(S.hull), Comp: ({ t }) => { // SPLIT DEPTH #1 – the million-dollar cheque breaks out of the frame
     const cam = dframe(0, -300, -800, 1300, 860); const k = interpolate(t, [milT, milT + 0.5], [0, 1], back);
-    return <SplitDepth over={k > 0 ? <div style={{ position: "absolute", left: 160, top: 1080 + (1 - k) * 300, transform: `rotate(${-6 + (1 - k) * 20}deg) scale(${0.6 + k * 0.5})`, opacity: k }}><Cheque w={640} /></div> : null}>
+    return <SplitDepth over={k > 0 ? <div style={{ position: "absolute", left: 110, top: 360 - k * 100, transform: `rotate(${-5 - (1 - k) * 20}deg) scale(${0.5 + k * 0.5})`, transformOrigin: "50% 50%", opacity: k }}><Cheque w={560} /></div> : null}>
       <Diorama cam={cam} t={t} jumbo={<Jumbo text="MY HERO" small="1972" />}><G who="agenty" t={t} cam={cam} x={-320} z={-800} size={330} mood="starry" baby /></Diorama><AbsoluteFill style={{ background: "#0007" }} />
-      <Flashback t={t} at={wordAt("a_hull", 3) - 0.2} year="1972" src="CBC / The Hockey News"><Scene1972 /></Flashback>
+      <Flashback t={t} at={wordAt("a_hull", 3) - 0.2} z={4} year="1972" src="CBC / The Hockey News"><Scene1972 /></Flashback>
     </SplitDepth>; } },
   { from: cut(S.mil), Comp: ({ t }) => { const cam = camAt(t, cut(S.mil), cut(S.fish), dframe(0, -280, -800, 700, 790, { ry: 5 }), dframe(0, -280, -800, 560, 780, { ry: 5 }));
     return <Diorama cam={cam} t={t} cheer={1} jumbo={<Jumbo text="$1,000,000" small="FOR ONE GUY" />}><G who="pucky" t={t} cam={cam} x={0} z={-800} size={420} mood="shock" /></Diorama>; } },
