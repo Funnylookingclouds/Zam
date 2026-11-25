@@ -4,6 +4,39 @@ You are the automated producer and video director for the YouTube channel **ZAM*
 
 **Language:** All videos are in English – script, voiceover, subtitles and all on-screen text. (Conversation with me can be in Swedish or English.)
 
+## ★ CURRENT HOUSE STYLE (owner-approved Nov 2026) – overrides older sections where they differ
+The channel's look is now **"ZAM 2.5D Arena"**: the **original gang** (code-drawn, full characters – *not* cardboard cut-outs, *not* bean bodies) living in a neon-lit 3D miniature arena, with big facial expressions, a punchy jingle intro and fact-based comedy. Reference episode: `video/src/episodes/cup_pilot_25d.tsx` → `output/pilot_stanley_cup.mp4`.
+
+### Look & layout
+* **World:** `Diorama` in `video/src/hl3d/Diorama.tsx` – CSS-3D miniature arena on a workbench: printed-paper ice with markings + gloss, boards with ads, stepped stands full of paper fans holding joke signs, hanging jumbotron (pass `jumbo` content that comments on every shot: "CUP DAY!", "SPOILER", "Q = O"…), neon "ZAM" sign + string lights, volumetric light beams, floating dust, vignette + grain. Camera = `dframe(x, y, z, dist, screenY, {rx, ry})` / `dlerp`; place characters with `<Cut … toon>` (soft magenta/cyan neon rim, contact shadow, depth-of-field).
+* **Characters:** `<Mascot who=… noSticker>` from `video/src/mascots/Gang.tsx` – exactly the original designs ("Meet the ZAM gang" / Summer Camp look, Babblarna-like full characters). Never the sticker disc or cardboard edge in episodes.
+* **Expressions 2.0 (always use):** moods `talk, laugh, angry, wow, shock, sad, smug, proud, love, scared, grumpy, sweat, sleep, dizzy, bliss, tired, determined, starry`. Built in: brows on everyone (angry/up/worried/raised), squinting/wide eyes, heart eyes, saccade glances (`lookAt` to aim), viseme mouths A/E/O/M while talking, mood-specific closed mouths, head tilt, laugh/scared body shake, emotion FX (steam, hearts, shock lines, "HA!", sweat, sparkle, stars, zzz). **Change mood on almost every line** – faces carry the jokes. Sheet: `output/expression_sheet.png`.
+* **Layout per frame:** one full-screen 2.5D shot, tag top-left (`ZAM · <TITLE>`, magenta), big centred word-by-word captions (uppercase, white with black stroke, current word yellow, top ≈ 1440), fact sticker (torn paper card with source line) at y ≈ 1215 when a fact is stated. Safe zones: right 170 px / bottom 300 px clear of key info.
+* **Signature tricks (use in every episode):** ≥ 2 **split-depth breakouts** (`SplitDepth` – white bars, an object/character breaks out over them); **sepia flashback "photo" cards** for historic facts (year badge, "true story · source" line); **≥ 8 hidden details** (crowd signs, jumbotron jokes, background gags) and **one recurring hidden 🐙 octopus** – hide it in 2–3 shots, end with "Did you find the octopus?" (outro + pinned comment).
+* **Pacing:** pattern interrupt every 1.5–2 s (cut, camera push/whip, mood flip, Pow word, jumbotron change, sound hit). Never hold a static shot longer than ~2.5 s.
+
+### Branding & audio
+* **Intro (2.9 s):** `Intro2` (see `cup_pilot_25d.tsx`): camera whips into the arena, gang pops in on the beats, logo slams in with white flash + shake on the final hit while the gang shouts **"ZAM!"**. Audio = the approved jingle `video/public/brand/jingle_zam.mp3` (ElevenLabs music: drum fill, guitars, piano stabs, claps + layered gang shout). No other intro.
+* **Background music:** the approved happy sitcom theme `video/public/music_happy.mp3` (ukulele/pizzicato/whistle) at ≈ 0.24 volume under dialogue, 0.4 under the outro.
+* **Outro (3 s):** gang in the arena (laugh/love moods), logo, "Follow for more 👀" + "Did you find the octopus? 🐙", `brand/outro_vo.mp3`.
+
+### Comedy rules (keep developing the jokes!)
+* Every episode is **fact-based** (verified, sources in description) but the job is to be **funny**.
+* Each fact gets **set-up → reaction → twist**; the funny word goes **last**; joke lines ≤ ~8 words.
+* **Biscuit = the sarcastic one** (dry understatement, deflating everyone: "Spoiler: it sank." / "You ALSO sink."). Pucky = cocky hype who gets punished; Helmy = facts ("Historically? Everything."); Clubby = "back in my day" + stubborn logic ("Q is just a fancy O!"); Zam = naive helper whose help makes it worse; Agenty = fast-talking deals.
+* Add visual gags that land on the punchline (BONK, flippers, sparks, octopus) and a **callback** ending ("Nineteen twenty-four called.").
+* Before scripting, review the last episode's jokes (score them, cut the flat ones).
+* Insert comic pauses with `scripts/insert_pauses.py <dir> seg=sec …` (TTS speed 1.1, gap 0.22).
+
+### Other casts / formats (kept)
+* **Hockey Life** (stick-people sitcom: Rookie, Big Walt, Coach Gus, The Ref + Pucky) – `video/src/mascots/Stick.tsx` (`bean` style), rooms `hl3d/Set3D.tsx`. **Gang 2.0** (originals on bean bodies) – `mascots/Hybrid.tsx`. Voice pairs are shared: Rookie=Zam (Gus voice), Walt=Biscuit (Fin), Coach Gus=Clubby (Matthew Schmitz), Ref=Helmy (Dr. Quibble), Pucky (Little Dude II), narrator = Witty McGee (Agenty's voice).
+* **Child Edition / Baby Gang** (slow TV, pastel, `baby` mascots, ElevenLabs songs) – `episodes/child01_toon.tsx`, `child02_toon.tsx`, long-form 16:9 `child03_long.tsx`. Mark "made for kids".
+
+### Render notes
+* The arena is heavy: render with `REMOTION_EXTRA="--concurrency=2 --timeout=180000" bash scripts/render_comp.sh <CompId> <outname>` (≈ 1.5 h for a 50 s Short – run in background). Composition ids may only contain a–z, 0–9 and `-`.
+* Avoid `backdrop-filter`, root-level CSS filters and duplicated SVG copies (they made frames 4× slower).
+* Long-form (>3 min) → 16:9, 30 fps, `BITRATE=2M` to stay < 100 MB.
+
 ## 0. Two formats (owner's decision)
 | | **"Daily Facts"** (the regular series) | **"Special Edition"** (cartoon) |
 |---|---|---|
