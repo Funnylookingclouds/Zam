@@ -1,0 +1,23 @@
+{
+  "id": "biscuit-mask", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "p_hook", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Wait. Goalies played with NO masks?!"},
+    {"id": "b_cheap", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Faces were cheaper back then."},
+    {"id": "h_date", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "November first, 1959. Montreal's Jacques Plante, at the Rangers."},
+    {"id": "h_shot", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Andy Bathgate's shot hits him right in the face."},
+    {"id": "p_me", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Tell me that was me. Please."},
+    {"id": "b_spa", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Seven stitches. Goalie spa day."},
+    {"id": "h_backup", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "No backup goalie. Plante says: mask, or I'm not going back."},
+    {"id": "z_me", "tts": "I could've gone in!"},
+    {"id": "c_face", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, we stopped pucks with our FACE."},
+    {"id": "b_shows", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "It shows."},
+    {"id": "h_blake", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Coach Toe Blake hated it. Montreal didn't lose for eleven games."},
+    {"id": "p_lucky", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "Okay. Lucky mask."},
+    {"id": "h_off", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "March 1960, Blake makes him take it off. One game."},
+    {"id": "z_and", "tts": "And?"},
+    {"id": "h_lost", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Lost three-nothing. Mask came back the next night."},
+    {"id": "p_win", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "So YOUR mask makes you win?"},
+    {"id": "b_lose", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "No. It hides my face when I lose."}
+  ],
+  "display_map": {}, "keywords": ["no", "masks", "cheaper", "1959", "face", "me", "seven", "spa", "mask", "gone", "face", "shows", "hated", "eleven", "lucky", "off", "three-nothing", "win", "lose"]
+}
