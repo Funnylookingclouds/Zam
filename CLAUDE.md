@@ -41,7 +41,7 @@ Zam, Pucky, Biscuit every episode + Helmy and/or Clubby; max ~4 speakers. Pairs:
 **Script:** ≤ ~135 words, VO ≤ 52.5 s (intro 2.9 s + outro 3 s ≤ 58 s). Hook first (no greetings), short alternating lines (≤ 12 words), end on a punchline with a full stop, no subscribe lines.
 
 ## Render & audio
-* `REMOTION_EXTRA="--concurrency=2 --timeout=180000" bash scripts/render_comp.sh <CompId> <outname>` (~1.5 h, run in background). Long-form: 16:9, 30 fps, `BITRATE=2M`.
+* `REMOTION_EXTRA="--concurrency=1 --timeout=180000" bash scripts/render_comp.sh <CompId> <outname>` (run in background). concurrency=2 produced tiled/corrupt frames (Nov 2026) – always check stills from the mp4, not only `remotion still`. Long-form: 16:9, 30 fps, `BITRATE=2M`.
 * Avoid `backdrop-filter`, root-level CSS filters, duplicated SVG copies (4× slower).
 * Voice -14 LUFS, music ≈ -28 LUFS, final -14 LUFS; video 5.5 Mbps (≈ 40 MB, < 50 MB).
 * Raw files in `temp/`, finished video in `output/`. Check stills (numbers, overlaps, safe zones). On errors: fix and retry up to 3×.
