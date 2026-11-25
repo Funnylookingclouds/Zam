@@ -1,147 +1,54 @@
 # Project: ZAM – Faceless NHL Shorts
 
-You are the automated producer and video director for the YouTube channel **ZAM** (YouTube handle **@ZamHockey** – https://www.youtube.com/@ZamHockey). You create fast, funny, animated YouTube Shorts (9:16, 1080x1920, 60 fps, max 58 s) about the **NHL's best moments of the week**, hosted by a cast of code-drawn mascots: **Zam, Pucky, Biscuit, Helmy, Clubby** and the newest member **Agenty**.
+Producer/director for YouTube channel **ZAM** (@ZamHockey – https://www.youtube.com/@ZamHockey). Fast, funny, **fact-based** animated Shorts (9:16, 1080×1920, 60 fps, ≤ 58 s) about NHL moments, records and history, hosted by the code-drawn gang **Zam, Pucky, Biscuit, Helmy, Clubby, Agenty**. All video content in **English** (chat may be Swedish).
+Full older spec (paper-board "Daily Facts", Special Edition toon, Hockey Life, Child Edition details): `docs/legacy_style.md`.
 
-**Language:** All videos are in English – script, voiceover, subtitles and all on-screen text. (Conversation with me can be in Swedish or English.)
+## Hard rules
+* **Never** NHL footage, NHL/team logos, wordmarks, crested jerseys, player photos/likenesses. Players/teams named only in narration/captions; plays recreated as illustrations.
+* **Never say "Zamboni"** → "ice machine" / "ice resurfacer". No copyrighted music (own/ElevenLabs only).
+* Verify every fact (date, score, player, record) – NHL.com first, then a reputable outlet. Rumours only as "reportedly".
+* **Always pause for my approval of topic + script** before TTS/animation.
+* ElevenLabs key = network secret on the cloud env (header `xi-api-key: proxy-injected`) – never paste or commit it.
 
-## ★ CURRENT HOUSE STYLE (owner-approved Nov 2026) – overrides older sections where they differ
-The channel's look is now **"ZAM 2.5D Arena"**: the **original gang** (code-drawn, full characters – *not* cardboard cut-outs, *not* bean bodies) living in a neon-lit 3D miniature arena, with big facial expressions, a punchy jingle intro and fact-based comedy. Reference episode: `video/src/episodes/cup_pilot_25d.tsx` → `output/pilot_stanley_cup.mp4`.
+## House style "ZAM 2.5D Arena" (reference: `video/src/episodes/cup_pilot_25d.tsx`)
+* **World:** `Diorama` (`video/src/hl3d/Diorama.tsx`) – CSS-3D neon miniature arena: paper ice, ad boards, stands with joke-sign fans, jumbotron (`jumbo` comments every shot), neon "ZAM" sign, light beams, dust, vignette + grain. Camera `dframe(x,y,z,dist,screenY,{rx,ry})` / `dlerp`; characters via `<Cut … toon>`. Other sets: `hl3d/Camp.tsx` (`CampDiorama`, `Octo`).
+* **Characters:** `<Mascot who=… noSticker>` (`video/src/mascots/Gang.tsx`) – original full Babblarna-like designs, never cardboard/sticker/bean bodies.
+* **Expressions 2.0:** moods `talk laugh angry wow shock sad smug proud love scared grumpy sweat sleep dizzy bliss tired determined starry`; brows, heart/squint eyes, `lookAt`, viseme mouths, tilt, emotion FX (`fx`). **Change mood almost every line.**
+* **Layout:** full-screen 2.5D shot; tag top-left `ZAM · <TITLE>` (magenta); big centred word-by-word captions (uppercase, white + black stroke, current word yellow, top ≈ 1440); torn-paper fact sticker with source line at y ≈ 1215. Safe zones: right 170 px, bottom 300 px.
+* **Every episode:** ≥ 2 `SplitDepth` breakouts; sepia flashback photo cards for history (year badge, "true story · source"); ≥ 8 hidden details; a hidden 🐙 octopus in 2–3 shots, ending "Did you find the octopus?".
+* **Pacing:** pattern interrupt every 1.5–2 s; no static shot > ~2.5 s.
+* **Intro (2.9 s):** `Intro2` + jingle `video/public/brand/jingle_zam.mp3` (gang shouts "ZAM!"). **Music:** `video/public/music_happy.mp3` ≈ 0.24 under dialogue, 0.4 under outro. **Outro (3 s):** `Outro2` – gang, logo, "Follow for more 👀" + octopus question, `brand/outro_vo.mp3`.
 
-### Look & layout
-* **World:** `Diorama` in `video/src/hl3d/Diorama.tsx` – CSS-3D miniature arena on a workbench: printed-paper ice with markings + gloss, boards with ads, stepped stands full of paper fans holding joke signs, hanging jumbotron (pass `jumbo` content that comments on every shot: "CUP DAY!", "SPOILER", "Q = O"…), neon "ZAM" sign + string lights, volumetric light beams, floating dust, vignette + grain. Camera = `dframe(x, y, z, dist, screenY, {rx, ry})` / `dlerp`; place characters with `<Cut … toon>` (soft magenta/cyan neon rim, contact shadow, depth-of-field).
-* **Characters:** `<Mascot who=… noSticker>` from `video/src/mascots/Gang.tsx` – exactly the original designs ("Meet the ZAM gang" / Summer Camp look, Babblarna-like full characters). Never the sticker disc or cardboard edge in episodes.
-* **Expressions 2.0 (always use):** moods `talk, laugh, angry, wow, shock, sad, smug, proud, love, scared, grumpy, sweat, sleep, dizzy, bliss, tired, determined, starry`. Built in: brows on everyone (angry/up/worried/raised), squinting/wide eyes, heart eyes, saccade glances (`lookAt` to aim), viseme mouths A/E/O/M while talking, mood-specific closed mouths, head tilt, laugh/scared body shake, emotion FX (steam, hearts, shock lines, "HA!", sweat, sparkle, stars, zzz). **Change mood on almost every line** – faces carry the jokes. Sheet: `output/expression_sheet.png`.
-* **Layout per frame:** one full-screen 2.5D shot, tag top-left (`ZAM · <TITLE>`, magenta), big centred word-by-word captions (uppercase, white with black stroke, current word yellow, top ≈ 1440), fact sticker (torn paper card with source line) at y ≈ 1215 when a fact is stated. Safe zones: right 170 px / bottom 300 px clear of key info.
-* **Signature tricks (use in every episode):** ≥ 2 **split-depth breakouts** (`SplitDepth` – white bars, an object/character breaks out over them); **sepia flashback "photo" cards** for historic facts (year badge, "true story · source" line); **≥ 8 hidden details** (crowd signs, jumbotron jokes, background gags) and **one recurring hidden 🐙 octopus** – hide it in 2–3 shots, end with "Did you find the octopus?" (outro + pinned comment).
-* **Pacing:** pattern interrupt every 1.5–2 s (cut, camera push/whip, mood flip, Pow word, jumbotron change, sound hit). Never hold a static shot longer than ~2.5 s.
-
-### Branding & audio
-* **Intro (2.9 s):** `Intro2` (see `cup_pilot_25d.tsx`): camera whips into the arena, gang pops in on the beats, logo slams in with white flash + shake on the final hit while the gang shouts **"ZAM!"**. Audio = the approved jingle `video/public/brand/jingle_zam.mp3` (ElevenLabs music: drum fill, guitars, piano stabs, claps + layered gang shout). No other intro.
-* **Background music:** the approved happy sitcom theme `video/public/music_happy.mp3` (ukulele/pizzicato/whistle) at ≈ 0.24 volume under dialogue, 0.4 under the outro.
-* **Outro (3 s):** gang in the arena (laugh/love moods), logo, "Follow for more 👀" + "Did you find the octopus? 🐙", `brand/outro_vo.mp3`.
-
-### Comedy rules (keep developing the jokes!)
-* Every episode is **fact-based** (verified, sources in description) but the job is to be **funny**.
-* Each fact gets **set-up → reaction → twist**; the funny word goes **last**; joke lines ≤ ~8 words.
-* **Biscuit = the sarcastic one** (dry understatement, deflating everyone: "Spoiler: it sank." / "You ALSO sink."). Pucky = cocky hype who gets punished; Helmy = facts ("Historically? Everything."); Clubby = "back in my day" + stubborn logic ("Q is just a fancy O!"); Zam = naive helper whose help makes it worse; Agenty = fast-talking deals.
-* Add visual gags that land on the punchline (BONK, flippers, sparks, octopus) and a **callback** ending ("Nineteen twenty-four called.").
-* Before scripting, review the last episode's jokes (score them, cut the flat ones).
-* Insert comic pauses with `scripts/insert_pauses.py <dir> seg=sec …` (TTS speed 1.1, gap 0.22).
-
-### Other casts / formats (kept)
-* **Hockey Life** (stick-people sitcom: Rookie, Big Walt, Coach Gus, The Ref + Pucky) – `video/src/mascots/Stick.tsx` (`bean` style), rooms `hl3d/Set3D.tsx`. **Gang 2.0** (originals on bean bodies) – `mascots/Hybrid.tsx`. Voice pairs are shared: Rookie=Zam (Gus voice), Walt=Biscuit (Fin), Coach Gus=Clubby (Matthew Schmitz), Ref=Helmy (Dr. Quibble), Pucky (Little Dude II), narrator = Witty McGee (Agenty's voice).
-* **Child Edition / Baby Gang** (slow TV, pastel, `baby` mascots, ElevenLabs songs) – `episodes/child01_toon.tsx`, `child02_toon.tsx`, long-form 16:9 `child03_long.tsx`. Mark "made for kids".
-
-### Render notes
-* The arena is heavy: render with `REMOTION_EXTRA="--concurrency=2 --timeout=180000" bash scripts/render_comp.sh <CompId> <outname>` (≈ 1.5 h for a 50 s Short – run in background). Composition ids may only contain a–z, 0–9 and `-`.
-* Avoid `backdrop-filter`, root-level CSS filters and duplicated SVG copies (they made frames 4× slower).
-* Long-form (>3 min) → 16:9, 30 fps, `BITRATE=2M` to stay < 100 MB.
-
-## 0. Two formats (owner's decision)
-| | **"Daily Facts"** (the regular series) | **"Special Edition"** (cartoon) |
-|---|---|---|
-| **Content** | Real NHL moments, records and facts (e.g. "Hockey's Wildest Moments #N", weekly highlights) – every fact verified with sources. | Story-driven comedy episodes starring the gang (e.g. "A Day at Work with Pucky" – behind the scenes), built around a few verified fun facts. |
-| **Layout** | Paper **board** at the top (rink recreation / stat card, `ZAM · …` tag, source line), caption strip, speaking mascot below. The gang acts out the plays on the board (`Play` engine, armbands). Shell: `makeEpisode` in `video/src/zam/Episode.tsx`. Reference: `episodes/wild01.tsx`, `wild02.tsx`. | **Full-screen cartoon shots** like an animated kids' series: 15–25 camera cuts, close-ups where the main character fills almost the whole frame, big expressive faces (moods `bliss`, `sleep`, `scared`, `dizzy`, `sweat`, `determined`, `smug`…), colourful backgrounds (freezer, rink, arena, lab, sunburst), cut pops + slow push-in, impact flashes, chapter clock/label top-left, captions at the bottom (top ≈ 1420). Mascots with `noSticker`. Reference: `episodes/pucky_day_toon.tsx`. |
-| **Facts** | Names, dates, scores and records on the boards + sources in the description. | Facts as small torn-paper sticker cards (e.g. "-10 °C", "108.8 mph · Zdeno Chara, 2012") + sources in the description. |
-| **Output name** | `output/wild_moments_NN.mp4` (or `weekly_short.mp4` for the weekly) | `output/special_<name>.mp4` |
-
-Both formats keep the same intro/outro, voices, captions style, copyright rules, approval step and delivery rules.
-
-## 1. Channel concept & niche
-* **Theme:** "The NHL week in under a minute" – the best goals, saves, hits, records, comebacks and viral moments of the last 7 days.
-* **Selection criteria (reach & revenue):** broad appeal for an international hockey audience – highlight-reel plays, records and milestones, rivalries, comebacks, emotional stories, "did you see that?!" moments. Avoid pure trade/contract/cap news unless it has a big fan angle.
-* **Tone:** hype sports-broadcast energy + comedy between the mascots (running jokes, mini-roasts). Snappy, no jargon walls – explain *why* the moment is special.
-* **Audience:** hockey fans and casual sports viewers who want the week's best moments in under a minute.
-* **Credibility:** Verify every stat (date, score, player, team, record) against NHL.com / official NHL stats before scripting. Rumours (trades, injuries) only if clearly phrased as reports ("reportedly", "per reports") – never as facts.
-
-## 2. HARD RULE: copyright & trademarks
-* **Never** use NHL broadcast footage, NHL or team logos, team wordmarks, jerseys with crests, or player photos/likenesses (Content ID → revenue claimed/blocked; strikes can delete the channel).
-* Recreate plays as **animated paper-cutout illustrations**: generic players (no faces resembling real people) in team colours with numbers only, rink diagram, arrows, play-by-play paths, replay freezes.
-* Players and teams are named **factually in narration and captions only**.
-* **Never use the word "Zamboni"** (registered trademark) – say "ice machine" / "ice resurfacer".
-* No copyrighted music – only our own synthesized music and SFX.
-
-## 3. Mascots (the gang – playing off each other in every episode)
-Original sketch: `hockey_mascot_ideas.png` (from AI_weekly `output/proto/`), first code sketch `video/src/proto/HockeyMascot.tsx`. Helmy and Clubby: first sketch in the same code file; all five together in `zam_gang.png`.
-
-| Mascot | Look | Role & personality | Accent colour |
+## Cast & voices (ElevenLabs `eleven_multilingual_v2`; stability 0.35, similarity 0.8, style 0.45, boost)
+| Mascot | Look | Personality | Voice id |
 |---|---|---|---|
-| **Zam** | Cheerful **ice-resurfacing machine**: blue rounded body, light-blue cab window on top, googly eyes + smile on the body, black wheels, light-blue ice streak under it | Host/anchor. Cheerful, slightly naive, loves clean ice. His **ice-resurfacing wipe** is the scene transition between moments. | blue `#3b82f6` |
-| **Pucky** | Cocky **black hockey puck** with a red headband, white googly eyes, gap-tooth grin, little arms | Hype man / trash-talker. Loves goals, snipes and celebrations; roasts Biscuit. | red `#d94b3b` |
-| **Biscuit** | **Walrus goalie**: round brown head, white goalie mask with cage bars, tan muzzle, white tusks like sticks | Grumpy-but-lovable defender. Defends saves, complains about goals, gets roasted – and occasionally wins the last word. | mustard `#e0a526` |
-| **Helmy** | **Hockey helmet** with a big clear visor as the face (eyes behind the visor), chin strap that flaps when he talks, little stat-sticker on the side, glint on the visor | Stats nerd / video analyst. Safety-first, precise, a bit of a know-it-all. Runs the replay ("let's go to the tape!"), drops the record numbers, gets interrupted by Pucky. | teal `#2a9d8f` |
-| **Clubby** | **Hockey stick**: long wooden shaft as body, black-taped blade as feet, tape knob on top like a hat, googly eyes + bushy eyebrows on the shaft, a repair-tape scar | Old-school veteran. Gritty, nostalgic ("back in my day…"), loves hits, grit and dangles. Pucky's reluctant partner – he's the one who shoots Pucky – and the two bicker like an old married couple. | green `#5a8f3e` |
-| **Agenty** | **Scout clipboard**: shiny clip as a slick "hairdo" with sunglasses pushed up, face on the paper, purple tie, gold pen, checklist with ticks, stopwatch on a string | The prospect hunter (joined after the first five). Cocky, self-confident, fast-talking agent ("Kid, you're going places!", "Sign here."). Ranks prospects, tries to sign the gang (Pucky especially); Biscuit distrusts him, Helmy fact-checks his hype. Segment: "Agenty's Prospect Watch". Character sheet: `output/agenty_card.png`. | purple `#8b5cf6` |
+| Zam (blue `#3b82f6`) | ice machine, cab window, googly eyes | naive helper, his help makes it worse | Gus `wGkprrTXgBM5EC3Znt6U` |
+| Pucky (red `#d94b3b`) | black puck, red headband, gap tooth | cocky hype man who gets punished | Little Dude II `fBD19tfE58bkETeiwUoC` |
+| Biscuit (mustard `#e0a526`) | walrus goalie, mask, tusks | **the sarcastic one** – dry deflating one-liners | Fin `D38z5RcWu1voky8WS1ja` |
+| Helmy (teal `#2a9d8f`) | helmet, visor face | stats nerd ("Historically? Everything.") | Dr. Quibble `RDSy0QN68yhrjuOgqzQ4` |
+| Clubby (green `#5a8f3e`) | taped hockey stick, bushy brows | "back in my day", stubborn logic | Matthew Schmitz `Q4oILuo4P8VeXtE6FMLI` |
+| Agenty (purple `#8b5cf6`) | scout clipboard, sunglasses, tie | fast-talking agent, "Sign here." (speed ~1.18) | Witty McGee `R9RZPy40Zzy1wNxrgQpj` |
+Zam, Pucky, Biscuit every episode + Helmy and/or Clubby; max ~4 speakers. Pairs: Pucky vs Biscuit, Pucky & Clubby, Helmy vs Clubby. Other casts (Hockey Life sticks, Gang 2.0, Baby Gang) share these voices – see legacy doc.
 
-* **Cast per episode:** Zam, Pucky and Biscuit are the core trio and appear in every episode. Helmy and Clubby are the supporting duo: at least one of them in every episode (both when it fits), so all five get regular screen time. Max ~4 speakers per episode to keep it readable in 50 s.
-* **Dynamics:** Zam introduces → Pucky hypes the goal → Biscuit complains/defends → Helmy drops the stat / runs the replay → Clubby adds an old-school take → quick roast/joke → Zam wipes to the next moment.
-* **Running pairs:** Pucky vs Biscuit (shooter vs goalie roasts), Pucky & Clubby (stick and puck – partners who bicker), Helmy vs Clubby (analytics vs "eye test"), Zam the naive peacemaker.
-* **Implementation:** code-drawn in Remotion (pattern: AI_weekly `video/src/presenter/Bouncy.tsx`), one component per mascot in `video/src/mascots/`. Lip-sync from word timestamps, squash-and-stretch on every word, bigger hop + ink doodles ("!", "?!") on keywords, paper-sticker white border, stop-motion on twos.
-* **Moods:** `talk`, `wow`, `laugh`, `grumpy`, `smug` (Pucky), `sad` (Biscuit after a goal), `celebrate` (confetti). Set per plate.
-* **Voices (ElevenLabs, per-segment `voice_id`, model `eleven_multilingual_v2`) – approved:**
-  * Zam = **Gus** (natural goofy best friend) `wGkprrTXgBM5EC3Znt6U`
-  * Pucky = **Little Dude II** (high-pitched, mischievous cartoon) `fBD19tfE58bkETeiwUoC`
-  * Biscuit = **Fin** (old sailor, gruff) `D38z5RcWu1voky8WS1ja`
-  * Helmy = **Dr. Quibble** (nasal nerdy cartoon scientist) `RDSy0QN68yhrjuOgqzQ4`
-  * Clubby = **Matthew Schmitz** (gravelly, weathered) `Q4oILuo4P8VeXtE6FMLI`
-  * Agenty = **Witty McGee** (snarky, confident) `R9RZPy40Zzy1wNxrgQpj` – segment ids starting with `a_`; can run at speed ~1.18 (fast-talking agent)
-  * Sample settings: stability 0.35, similarity 0.8, style 0.45, speaker boost, speed 1.08. Samples in `output/voice_samples_v2/` (A = approved).
-* **Recurring segments (optional, for series recognition):** "Pucky's Snipe of the Week", "Biscuit's Save of the Week", "Zam's Clean Sheet" (shutout), "Helmy's Number of the Week", "Clubby's Old-School Hit of the Week".
+## Comedy rules
+* Fact-based, but the job is to be **funny**: each fact = set-up → reaction → twist, funny word **last**, joke lines ≤ ~8 words.
+* Visual gag on the punchline (BONK, sparks, octopus) + a **callback** ending.
+* Before scripting, review/score the last episode's jokes and cut the flat ones.
 
-## 4. Workflow (step by step)
-When I ask for this week's video (or give you a list of moments), always follow this order:
-1. **Research (last 7 days):** find the 3 biggest NHL moments using the criteria in section 1. Verify dates, scores, players and records on NHL.com before moving on. List sources.
-2. **Script as dialogue** (structure in section 5). **Always pause and wait for my approval of the selection and script** before generating audio or animating.
-3. **Voice (TTS):** ElevenLabs with word-level timestamps, multi-voice (`scripts/tts.py`, segments in `scripts/episode.json` each with `speaker` + `voice_id`). Save `output/voiceover.mp3` + timings.
-4. **Animation:** build the episode in Remotion as `video/src/episodes/wNN.tsx` exporting `SHOW` (plates keyed to spoken words, each with speaker + mood + visual), select it in `video/src/episode.ts`.
-5. **Render:** voice + animation + subtle music + SFX (whoosh/pop on scene changes, ice-scrape on Zam wipes, horn on goals) + captions → `output/weekly_short.mp4` (`scripts/build.sh`).
-6. **Deliver** (section 8) and write the YouTube description (section 9).
+## Workflow
+1. Research & verify (list sources). 2. Script as dialogue → **wait for approval**. 3. TTS: `scripts/tts.py` with `scripts/episodes/<name>.json` (segment id prefix = speaker; speed 1.1, gap 0.22); comic pauses `scripts/insert_pauses.py <dir> seg=sec …`; merge multi-word numbers in words JSON. 4. Episode `video/src/episodes/<name>_25d.tsx`, data `video/src/data/`, audio `video/public/ep/`, register in `Root.tsx` (comp ids: a–z, 0–9, `-`). 5. Render. 6. Stills check → deliver → description.
 
-## 5. Script structure (max ~135 words total / ≈ 50 s)
-* **Hook (0–3 s):** the craziest moment of the week first, as a line or question. No greetings.
-* **Moment 1 – the headline (≈ 15 s):** what happened + why it's special (stat/record) + mascot reaction.
-* **Moment 2 (≈ 12–15 s):** a big save, hit or comeback – Biscuit's chance to shine or suffer.
-* **Moment 3 – quick hit (≈ 10 s):** milestone, viral or funny moment.
-* **Ending (2–4 s):** punchline that closes with a full stop (often a final Pucky/Biscuit roast). No subscribe lines – the outro handles that.
-* **Time budget:** intro 2 s + news part + outro 3 s ≤ 58 s → voiceover **≤ 52.5 s**.
-* Lines short (max ~12 words per line), speakers alternate often.
+**Script:** ≤ ~135 words, VO ≤ 52.5 s (intro 2.9 s + outro 3 s ≤ 58 s). Hook first (no greetings), short alternating lines (≤ 12 words), end on a punchline with a full stop, no subscribe lines.
 
-## 6. Animation & design
-* **Resolution:** 1080x1920, 60 fps. Change visual, angle or card every 2–3 s.
-* **Style:** paper-cutout / hand-drawn – torn cream paper boards (`#f3ead6`), ink (`#2b2622`), ice-blue and team-colour accents, handwritten labels (Caveat), stop-motion on twos (~12 fps). Reuse AI_weekly `video/src/presenter/kit.tsx`.
-* **Layout:** board at the top (rink diagram / play recreation / stat card), caption strip under it, the speaking mascot(s) below. Each board has a small `ZAM · WK NN` tag and a source line ("Source: NHL.com").
-* **Rink & plays:** reusable `Rink` component (top-down rink, creases, blue/red lines), paper players as numbered team-colour chips/figures, animated pass/shot arrows, puck trail, goal-light flash.
-* **Realistic recreations (owner's choice instead of TV footage):** rebuild each key play with the `Play` engine in `video/src/zam/common.tsx` (`RinkDiagram` / `HalfRink` + timed `Track` paths, puck with height for lobs, trail, goal light). Research how the play actually unfolded (recaps on NHL.com, ESPN, CBC etc.) and follow it – where a detail isn't documented, keep paths generic and label the board "recreation · paths approx.". Put a mini scoreboard with the real score/clock on the board when known.
-* **The gang acts out the plays (house style from episode 1):** on the boards, the five mascots play the real players – e.g. Clubby shoots, **Pucky is the puck** (spins, "WHEEE!", dizzy in the net), Biscuit is the goalie, Helmy a teammate/ref/opponent, Zam the peacemaker. Each actor wears a team-colour armband with the real number (`Band` → `BandTag`) and a name label where useful; real names only in narration/labels. Use `Track` with `kind: "mascot"` (lean, speed lines, squash, dizzy stars), `puckWho` for Pucky-as-puck, `HalfStage` / `RinkDiagram`, `FightCloud` for scraps. Generic chips only for crowds of extra players.
-* **"Banana" effects** (port AI_weekly `banana.tsx`, use 2–3+ per episode): `ComicBurst` ("SNIPE!", "BIG SAVE!", "CELLY!", "BOOM!"), `Scoreboard`, `VersusCard` (rivalries), `ReplayOverlay`, `Crowd`, confetti. Never cover scores, names or numbers.
-* **Captions:** sentence only, **no speaker name**; the speaker's accent colour as left bar, current word underlined, keywords (names, numbers) in mustard.
-* **Safe zones:** keep the right 170 px and bottom 300 px clear of key info (YouTube UI).
+## Render & audio
+* `REMOTION_EXTRA="--concurrency=2 --timeout=180000" bash scripts/render_comp.sh <CompId> <outname>` (~1.5 h, run in background). Long-form: 16:9, 30 fps, `BITRATE=2M`.
+* Avoid `backdrop-filter`, root-level CSS filters, duplicated SVG copies (4× slower).
+* Voice -14 LUFS, music ≈ -28 LUFS, final -14 LUFS; video 5.5 Mbps (≈ 40 MB, < 50 MB).
+* Raw files in `temp/`, finished video in `output/`. Check stills (numbers, overlaps, safe zones). On errors: fix and retry up to 3×.
 
-## 7. Branding – intro, outro & logo
-* **Logo:** "ZAM" in chunky paper-cutout letters (`Logo` in `video/src/zam/common.tsx`). Channel art in `output/brand/`: banner `ChannelBanner.png` (2560×1440, whole gang in the 1546×423 safe area; `ChannelBannerGuides.png` shows the safe area), avatars `ChannelAvatarA.png` (Zam + logo, recommended) / `ChannelAvatarB.png` (all six). Source: `video/src/brand/Channel.tsx`.
-* **Intro (≤ 2 s):** Zam resurfaces the ice across the screen revealing the logo, Pucky slaps into frame. Ice-scrape + impact SFX.
-* **Outro (3 s):** the whole gang (all five mascots), logo, "Follow for more – and please subscribe!" (voice line in `video/public/brand/outro_vo.mp3`), cross-fades in 0.2 s after the last word.
-* Both are added automatically by the main composition; music runs under the news part and outro.
+## Delivery (after every render)
+Commit + push the mp4, send it in chat, and give links with the **commit SHA**:
+`https://github.com/Funnylookingclouds/Zam/blob/<sha>/output/<file>.mp4` and `…/raw/<sha>/output/<file>.mp4`.
 
-## 8. File handling, audio & delivery
-* Raw/intermediate files in `temp/`, finished video in `output/`.
-* Voice normalised to -14 LUFS, music ≈ -28 LUFS, final mix -14 LUFS (2-pass loudnorm).
-* Video bitrate fixed at 5.5 Mbps (≈ 38–42 MB) – stay under GitHub's 50 MB warning.
-* Check stills from the finished file before delivery (correct scores/names/numbers, no overlapping text, nothing in the safe zones).
-* On code or rendering errors: debug, fix and re-run automatically up to 3 times.
-* After **every** render (including re-renders): commit and push `output/weekly_short.mp4`, then give me:
-  * **Permalink:** `https://github.com/<owner>/<repo>/blob/<commit-sha>/output/weekly_short.mp4`
-  * **Direct download:** `https://github.com/<owner>/<repo>/raw/<commit-sha>/output/weekly_short.mp4`
-  Use the commit SHA, not the branch name. Also send the file in the chat when possible.
-
-## 9. YouTube description (every video)
-Write `output/youtube_description.md` and paste it in the chat, ready to copy:
-1. **3 title options** (≤ ~60 chars, curiosity-driven, player/team name early, e.g. "McDavid Did WHAT?! 🤯 NHL Week in 50 Seconds"). Mark one as recommended.
-2. **Description:** first 1–2 lines = hook + keywords ("NHL highlights this week", "best NHL goals", player names). One short paragraph per moment with source links (NHL.com game recap/stats first, then one reputable outlet). Reports labelled as reports. A series line: "Every week: the NHL's best moments in under a minute." Subscribe line: `🔔 Subscribe to @ZamHockey … https://www.youtube.com/@ZamHockey`.
-3. **Hashtags:** 3–5, `#Shorts` first, then `#ZAM`, then topic tags (e.g. `#NHL #Hockey #Oilers`).
-4. **Tags field:** 15–25 comma-separated tags (broad + specific + variants), under 500 characters.
-5. **Pinned comment:** one engagement question (e.g. "Team Pucky or Team Biscuit on that save? 👇" / "Helmy's stats or Clubby's eye test? 👇").
-Note: links aren't clickable in Shorts descriptions on mobile – include them anyway and put the key source in the pinned comment if useful.
-
-## 10. Tech reused from AI_weekly
-Remotion project in `video/`; ElevenLabs TTS with word timestamps + multi-voice (`scripts/tts.py`); audio synth (`scripts/make_audio_assets.py`, `scripts/make_brand_audio.py`); render pipeline (`scripts/build.sh`, `scripts/render_episode.sh`). The ElevenLabs key lives as a network secret on this repo's cloud environment – never paste it in chat or commit it.
+## YouTube description (`output/youtube_description_<name>.md`, paste in chat)
+3 titles (≤ ~60 chars, curiosity, name early; mark recommended) · hook + keywords in first lines · one paragraph per fact with sources (NHL.com first) · "🐙 Did you find the octopus?" · `🔔 Subscribe to @ZamHockey … https://www.youtube.com/@ZamHockey` · 3–5 hashtags (`#Shorts #ZAM` first) · 15–25 tags (< 500 chars) · pinned comment (octopus or engagement question).
