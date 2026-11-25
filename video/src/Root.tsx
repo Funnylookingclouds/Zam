@@ -9,6 +9,7 @@ import { DioramaCrowd, DioramaFaceoff, DioramaHero, DioramaTest } from "./hl3d/D
 import { ExpressionReel, ExpressionSheet } from "./mascots/ExpressionSheet";
 import { CupPilot25D, CUP_FRAMES } from "./episodes/cup_pilot_25d";
 import { SummerCamp25D, CAMP25_FRAMES } from "./episodes/summer_camp_25d";
+import { ZamGoalie25D, ZGOAL_FRAMES } from "./episodes/zam_goalie_25d";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -89,6 +90,7 @@ export const Root: React.FC = () => (
     <Composition id="ExpressionReel" component={ExpressionReel} durationInFrames={420} fps={FPS} width={1080} height={1920} />
     <Composition id="CupPilot25D" component={CupPilot25D} durationInFrames={CUP_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="SummerCamp25D" component={SummerCamp25D} durationInFrames={CAMP25_FRAMES} fps={FPS} width={1080} height={1920} />
+    <Composition id="ZamGoalie25D" component={ZamGoalie25D} durationInFrames={ZGOAL_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />

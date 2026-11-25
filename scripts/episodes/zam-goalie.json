@@ -1,0 +1,21 @@
+{
+  "id": "zam-goalie", "language": "en", "voice_id": "wGkprrTXgBM5EC3Znt6U", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "z_hook", "tts": "An ice machine driver... played goalie in the NHL?!"},
+    {"id": "b_no", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Please say no."},
+    {"id": "h_date", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "February twenty-second, 2020. Carolina loses BOTH goalies in Toronto."},
+    {"id": "p_popcorn", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "So who's in net? The popcorn guy?"},
+    {"id": "h_backup", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Their emergency backup: a forty-two-year-old who drove the ice machine."},
+    {"id": "z_us", "tts": "One of US!"},
+    {"id": "c_off", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, the ice machine stayed OFF the net."},
+    {"id": "z_rude", "tts": "Rude."},
+    {"id": "h_saves", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "He made eight saves. Carolina won six to three."},
+    {"id": "b_eight", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Eight saves. In one night."},
+    {"id": "p_season", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "That's your whole season!"},
+    {"id": "h_first", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "He's the first emergency backup goalie ever to win an NHL game."},
+    {"id": "z_shoot", "tts": "Shoot on me, Pucky!"},
+    {"id": "p_bath", "voice_id": "fBD19tfE58bkETeiwUoC", "tts": "No way. You gave me a BATH once."},
+    {"id": "b_wins", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Great. Even the ice machine has more wins than me."}
+  ],
+  "display_map": {}, "keywords": ["ice", "machine", "goalie", "no", "both", "popcorn", "emergency", "us", "off", "rude", "eight", "six", "season", "first", "bath", "wins"]
+}
