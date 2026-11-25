@@ -9,7 +9,7 @@
 Summer camp! Fresh air! Nature! …Biscuit is a walrus. Nature is his enemy. 😂☀️ The ZAM gang hits the track, the gym and the lake – with one very real NHL record.
 
 ⏱ Fastest All-Star lap: At the 2016 NHL All-Star Skills Competition, Detroit's Dylan Larkin skated the Fastest Skater lap in 13.172 seconds – beating Mike Gartner's 13.386 seconds from 1996.
-Source: https://www.nhl.com/ (All-Star Skills – Fastest Skater records)
+Source: https://www.nhl.com/news/larkin-fastest-skater-breaks-gartner-s-mark-278051314 · https://www.espn.com/nhl/story/_/id/14682463/nhl-all-star-game-dylan-larkin-detroit-red-wings-claims-fastest-skate-honors
 
 🐙 The octopus is hiding in THREE places. Can you find them all?
 
