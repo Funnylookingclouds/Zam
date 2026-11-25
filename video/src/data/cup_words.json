@@ -1,0 +1,722 @@
+[
+ {
+  "word": "I",
+  "display": "I",
+  "start": 0.035,
+  "end": 0.081,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "got",
+  "display": "got",
+  "start": 0.163,
+  "end": 0.29,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 0.337,
+  "end": 0.406,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "Stanley",
+  "display": "Stanley",
+  "start": 0.464,
+  "end": 0.813,
+  "segment": "p_hook",
+  "keyword": true
+ },
+ {
+  "word": "Cup",
+  "display": "Cup",
+  "start": 0.871,
+  "end": 1.068,
+  "segment": "p_hook",
+  "keyword": true
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 1.126,
+  "end": 1.277,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "ONE",
+  "display": "ONE",
+  "start": 1.358,
+  "end": 1.625,
+  "segment": "p_hook",
+  "keyword": true
+ },
+ {
+  "word": "day.",
+  "display": "day.",
+  "start": 1.683,
+  "end": 2.101,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "What",
+  "display": "What",
+  "start": 2.566,
+  "end": 2.821,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "could",
+  "display": "could",
+  "start": 2.879,
+  "end": 3.065,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "go",
+  "display": "go",
+  "start": 3.123,
+  "end": 3.274,
+  "segment": "p_hook",
+  "keyword": false
+ },
+ {
+  "word": "wrong?",
+  "display": "wrong?",
+  "start": 3.332,
+  "end": 3.692,
+  "segment": "p_hook",
+  "keyword": true
+ },
+ {
+  "word": "Historically?",
+  "display": "Historically?",
+  "start": 3.97,
+  "end": 4.759,
+  "segment": "h_hist",
+  "keyword": false
+ },
+ {
+  "word": "Everything.",
+  "display": "Everything.",
+  "start": 5.108,
+  "end": 5.711,
+  "segment": "h_hist",
+  "keyword": true
+ },
+ {
+  "word": "1924:",
+  "display": "1924:",
+  "start": 6.582,
+  "end": 7.952,
+  "segment": "h_1924",
+  "keyword": true
+ },
+ {
+  "word": "Montreal",
+  "display": "Montreal",
+  "start": 8.242,
+  "end": 8.927,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "players",
+  "display": "players",
+  "start": 9.009,
+  "end": 9.461,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "left",
+  "display": "left",
+  "start": 9.519,
+  "end": 9.74,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 9.786,
+  "end": 9.856,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "Cup",
+  "display": "Cup",
+  "start": 9.903,
+  "end": 10.088,
+  "segment": "h_1924",
+  "keyword": true
+ },
+ {
+  "word": "on",
+  "display": "on",
+  "start": 10.146,
+  "end": 10.251,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 10.297,
+  "end": 10.367,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "side",
+  "display": "side",
+  "start": 10.413,
+  "end": 10.692,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 10.715,
+  "end": 10.762,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 10.796,
+  "end": 10.866,
+  "segment": "h_1924",
+  "keyword": false
+ },
+ {
+  "word": "road.",
+  "display": "road.",
+  "start": 10.924,
+  "end": 11.284,
+  "segment": "h_1924",
+  "keyword": true
+ },
+ {
+  "word": "Relax.",
+  "display": "Relax.",
+  "start": 11.783,
+  "end": 12.282,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 12.34,
+  "end": 12.387,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "don't",
+  "display": "don't",
+  "start": 12.445,
+  "end": 12.607,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "even",
+  "display": "even",
+  "start": 12.642,
+  "end": 12.793,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "have",
+  "display": "have",
+  "start": 12.84,
+  "end": 12.967,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 12.99,
+  "end": 13.014,
+  "segment": "p_car",
+  "keyword": false
+ },
+ {
+  "word": "car.",
+  "display": "car.",
+  "start": 13.06,
+  "end": 13.49,
+  "segment": "p_car",
+  "keyword": true
+ },
+ {
+  "word": "Need",
+  "display": "Need",
+  "start": 13.953,
+  "end": 14.127,
+  "segment": "z_ride",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 14.162,
+  "end": 14.185,
+  "segment": "z_ride",
+  "keyword": false
+ },
+ {
+  "word": "ride?",
+  "display": "ride?",
+  "start": 14.243,
+  "end": 14.638,
+  "segment": "z_ride",
+  "keyword": true
+ },
+ {
+  "word": "...Oh",
+  "display": "...Oh",
+  "start": 15.602,
+  "end": 16.136,
+  "segment": "p_ohno",
+  "keyword": false
+ },
+ {
+  "word": "no.",
+  "display": "no.",
+  "start": 16.183,
+  "end": 16.554,
+  "segment": "p_ohno",
+  "keyword": true
+ },
+ {
+  "word": "1991:",
+  "display": "1991:",
+  "start": 16.914,
+  "end": 18.33,
+  "segment": "h_1991",
+  "keyword": true
+ },
+ {
+  "word": "Mario",
+  "display": "Mario",
+  "start": 18.679,
+  "end": 19.131,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "Lemieux",
+  "display": "Lemieux",
+  "start": 19.294,
+  "end": 19.712,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "tested",
+  "display": "tested",
+  "start": 20.002,
+  "end": 20.374,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "if",
+  "display": "if",
+  "start": 20.42,
+  "end": 20.513,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 20.571,
+  "end": 20.641,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "Cup",
+  "display": "Cup",
+  "start": 20.699,
+  "end": 20.884,
+  "segment": "h_1991",
+  "keyword": true
+ },
+ {
+  "word": "could",
+  "display": "could",
+  "start": 20.954,
+  "end": 21.128,
+  "segment": "h_1991",
+  "keyword": false
+ },
+ {
+  "word": "float.",
+  "display": "float.",
+  "start": 21.186,
+  "end": 21.593,
+  "segment": "h_1991",
+  "keyword": true
+ },
+ {
+  "word": "Spoiler:",
+  "display": "Spoiler:",
+  "start": 22.314,
+  "end": 22.825,
+  "segment": "b_sank",
+  "keyword": false
+ },
+ {
+  "word": "it",
+  "display": "it",
+  "start": 22.848,
+  "end": 22.965,
+  "segment": "b_sank",
+  "keyword": false
+ },
+ {
+  "word": "sank.",
+  "display": "sank.",
+  "start": 23.023,
+  "end": 23.487,
+  "segment": "b_sank",
+  "keyword": true
+ },
+ {
+  "word": "I'll",
+  "display": "I'll",
+  "start": 23.985,
+  "end": 24.171,
+  "segment": "p_get",
+  "keyword": false
+ },
+ {
+  "word": "go",
+  "display": "go",
+  "start": 24.229,
+  "end": 24.38,
+  "segment": "p_get",
+  "keyword": false
+ },
+ {
+  "word": "get",
+  "display": "get",
+  "start": 24.438,
+  "end": 24.635,
+  "segment": "p_get",
+  "keyword": false
+ },
+ {
+  "word": "it!",
+  "display": "it!",
+  "start": 24.693,
+  "end": 24.879,
+  "segment": "p_get",
+  "keyword": false
+ },
+ {
+  "word": "You're",
+  "display": "You're",
+  "start": 25.666,
+  "end": 25.898,
+  "segment": "b_sink",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 25.933,
+  "end": 25.956,
+  "segment": "b_sink",
+  "keyword": false
+ },
+ {
+  "word": "puck.",
+  "display": "puck.",
+  "start": 26.014,
+  "end": 26.409,
+  "segment": "b_sink",
+  "keyword": false
+ },
+ {
+  "word": "You",
+  "display": "You",
+  "start": 26.514,
+  "end": 26.642,
+  "segment": "b_sink",
+  "keyword": false
+ },
+ {
+  "word": "ALSO",
+  "display": "ALSO",
+  "start": 26.758,
+  "end": 27.142,
+  "segment": "b_sink",
+  "keyword": false
+ },
+ {
+  "word": "sink.",
+  "display": "sink.",
+  "start": 27.21,
+  "end": 27.57,
+  "segment": "b_sink",
+  "keyword": true
+ },
+ {
+  "word": "Back",
+  "display": "Back",
+  "start": 28.069,
+  "end": 28.243,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 28.29,
+  "end": 28.348,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "my",
+  "display": "my",
+  "start": 28.406,
+  "end": 28.51,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "day,",
+  "display": "day,",
+  "start": 28.58,
+  "end": 28.777,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "we",
+  "display": "we",
+  "start": 28.8,
+  "end": 28.893,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "engraved",
+  "display": "engraved",
+  "start": 28.94,
+  "end": 29.323,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "names",
+  "display": "names",
+  "start": 29.369,
+  "end": 29.602,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "by",
+  "display": "by",
+  "start": 29.636,
+  "end": 29.764,
+  "segment": "c_back",
+  "keyword": false
+ },
+ {
+  "word": "hand!",
+  "display": "hand!",
+  "start": 29.834,
+  "end": 30.229,
+  "segment": "c_back",
+  "keyword": true
+ },
+ {
+  "word": "And",
+  "display": "And",
+  "start": 30.728,
+  "end": 30.948,
+  "segment": "h_mis",
+  "keyword": false
+ },
+ {
+  "word": "misspelled",
+  "display": "misspelled",
+  "start": 30.995,
+  "end": 31.459,
+  "segment": "h_mis",
+  "keyword": true
+ },
+ {
+  "word": "them.",
+  "display": "them.",
+  "start": 31.482,
+  "end": 31.738,
+  "segment": "h_mis",
+  "keyword": false
+ },
+ {
+  "word": "Boston:",
+  "display": "Boston:",
+  "start": 32.284,
+  "end": 32.922,
+  "segment": "h_mis",
+  "keyword": false
+ },
+ {
+  "word": "BQSTQN",
+  "display": "B-Q-S-T-Q-N",
+  "start": 33.085,
+  "end": 35.035,
+  "segment": "h_mis",
+  "keyword": true
+ },
+ {
+  "word": "Q",
+  "display": "Q",
+  "start": 35.868,
+  "end": 35.938,
+  "segment": "c_q",
+  "keyword": false
+ },
+ {
+  "word": "is",
+  "display": "is",
+  "start": 36.123,
+  "end": 36.228,
+  "segment": "c_q",
+  "keyword": false
+ },
+ {
+  "word": "just",
+  "display": "just",
+  "start": 36.274,
+  "end": 36.472,
+  "segment": "c_q",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 36.518,
+  "end": 36.541,
+  "segment": "c_q",
+  "keyword": false
+ },
+ {
+  "word": "fancy",
+  "display": "fancy",
+  "start": 36.599,
+  "end": 36.994,
+  "segment": "c_q",
+  "keyword": true
+ },
+ {
+  "word": "O!",
+  "display": "O!",
+  "start": 37.064,
+  "end": 37.354,
+  "segment": "c_q",
+  "keyword": false
+ },
+ {
+  "word": "Okay,",
+  "display": "Okay,",
+  "start": 38.276,
+  "end": 38.671,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 38.705,
+  "end": 38.775,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "Cup",
+  "display": "Cup",
+  "start": 38.821,
+  "end": 38.984,
+  "segment": "p_where",
+  "keyword": true
+ },
+ {
+  "word": "goes",
+  "display": "goes",
+  "start": 39.042,
+  "end": 39.239,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "back.",
+  "display": "back.",
+  "start": 39.298,
+  "end": 39.611,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "Where",
+  "display": "Where",
+  "start": 39.669,
+  "end": 39.936,
+  "segment": "p_where",
+  "keyword": true
+ },
+ {
+  "word": "is",
+  "display": "is",
+  "start": 39.971,
+  "end": 40.075,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "it?",
+  "display": "it?",
+  "start": 40.133,
+  "end": 40.331,
+  "segment": "p_where",
+  "keyword": false
+ },
+ {
+  "word": "1924",
+  "display": "1924",
+  "start": 41.383,
+  "end": 42.301,
+  "segment": "b_called",
+  "keyword": true
+ },
+ {
+  "word": "called.",
+  "display": "called.",
+  "start": 42.359,
+  "end": 42.742,
+  "segment": "b_called",
+  "keyword": true
+ }
+]

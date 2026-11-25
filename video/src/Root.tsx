@@ -7,6 +7,7 @@ import { Proto25DLow, Proto25DOTS, Proto25DWide } from "./hl3d/Proto25D";
 import { GangCard2, GangScene2 } from "./mascots/GangCard2";
 import { DioramaCrowd, DioramaFaceoff, DioramaHero, DioramaTest } from "./hl3d/Diorama";
 import { ExpressionReel, ExpressionSheet } from "./mascots/ExpressionSheet";
+import { CupPilot25D, CUP_FRAMES } from "./episodes/cup_pilot_25d";
 import { HockeyLife01, HL01_FRAMES } from "./episodes/hockey_life_01";
 import { HockeyLifeRef, HLREF_FRAMES } from "./episodes/hockey_life_ref";
 import { Wild05HL, WILD05_FRAMES } from "./episodes/wild05_hl";
@@ -85,6 +86,7 @@ export const Root: React.FC = () => (
     <Composition id="DioramaTest" component={DioramaTest} durationInFrames={480} fps={FPS} width={1080} height={1920} />
     <Still id="ExpressionSheet" component={ExpressionSheet} width={1080} height={1920} />
     <Composition id="ExpressionReel" component={ExpressionReel} durationInFrames={420} fps={FPS} width={1080} height={1920} />
+    <Composition id="CupPilot25D" component={CupPilot25D} durationInFrames={CUP_FRAMES} fps={FPS} width={1080} height={1920} />
     <Still id="HockeyLifeCast" component={HockeyLifeCast} width={1080} height={1920} />
     <Still id="HockeyLifeFrame" component={HockeyLifeFrame} width={1080} height={1920} />
     <Still id="ZamGang" component={HockeyMascots} width={1080} height={1240} />

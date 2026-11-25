@@ -1,0 +1,21 @@
+{
+  "id": "cup-pilot", "language": "en", "voice_id": "fBD19tfE58bkETeiwUoC", "model_id": "eleven_multilingual_v2", "speed": 1.1, "voice_gap": 0.22,
+  "segments": [
+    {"id": "p_hook", "tts": "I got the Stanley Cup for ONE day. What could go wrong?"},
+    {"id": "h_hist", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Historically? Everything."},
+    {"id": "h_1924", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Nineteen twenty-four: Montreal players left the Cup on the side of the road."},
+    {"id": "p_car", "tts": "Relax. I don't even have a car."},
+    {"id": "z_ride", "voice_id": "wGkprrTXgBM5EC3Znt6U", "tts": "Need a ride?"},
+    {"id": "p_ohno", "tts": "...Oh no."},
+    {"id": "h_1991", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "Nineteen ninety-one: Mario Lemieux tested if the Cup could float."},
+    {"id": "b_sank", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Spoiler: it sank."},
+    {"id": "p_get", "tts": "I'll go get it!"},
+    {"id": "b_sink", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "You're a puck. You ALSO sink."},
+    {"id": "c_back", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Back in my day, we engraved names by hand!"},
+    {"id": "h_mis", "voice_id": "RDSy0QN68yhrjuOgqzQ4", "tts": "And misspelled them. Boston: B. Q. S. T. Q. N."},
+    {"id": "c_q", "voice_id": "Q4oILuo4P8VeXtE6FMLI", "tts": "Q is just a fancy O!"},
+    {"id": "p_where", "tts": "Okay, the Cup goes back. Where is it?"},
+    {"id": "b_called", "voice_id": "D38z5RcWu1voky8WS1ja", "tts": "Nineteen twenty-four called."}
+  ],
+  "display_map": {}, "keywords": ["stanley", "cup", "one", "wrong", "everything", "road", "car", "ride", "no", "float", "sank", "sink", "hand", "misspelled", "fancy", "where", "called"]
+}
