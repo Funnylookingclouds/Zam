@@ -1,0 +1,122 @@
+{
+ "id": "special-agenty-story",
+ "language": "en",
+ "voice_id": "wGkprrTXgBM5EC3Znt6U",
+ "model_id": "eleven_multilingual_v2",
+ "speed": 1.1,
+ "voice_gap": 0.22,
+ "segments": [
+  {
+   "id": "z_intro",
+   "tts": "Tonight: the life of Agenty. Greatest agent ever."
+  },
+  {
+   "id": "b_who",
+   "voice_id": "D38z5RcWu1voky8WS1ja",
+   "tts": "Says who?"
+  },
+  {
+   "id": "a_me",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Says me. Sign here.",
+   "speed": 1.18
+  },
+  {
+   "id": "z_word",
+   "tts": "Baby Agenty's very first word?"
+  },
+  {
+   "id": "a_comm",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Commission.",
+   "speed": 1.18
+  },
+  {
+   "id": "b_mama",
+   "voice_id": "D38z5RcWu1voky8WS1ja",
+   "tts": "Most babies say mama."
+  },
+  {
+   "id": "a_mama",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Mama got ten percent.",
+   "speed": 1.18
+  },
+  {
+   "id": "a_hull",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Age six. My hero? Bobby Hull, 1972. Hockey's first million-dollar contract.",
+   "speed": 1.18
+  },
+  {
+   "id": "p_million",
+   "voice_id": "fBD19tfE58bkETeiwUoC",
+   "tts": "A MILLION? For one guy?!"
+  },
+  {
+   "id": "b_fish",
+   "voice_id": "D38z5RcWu1voky8WS1ja",
+   "tts": "I get paid in fish."
+  },
+  {
+   "id": "a_gretzky",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Age twelve. 1979: Gretzky signs a twenty-one-year contract. On his eighteenth birthday.",
+   "speed": 1.18
+  },
+  {
+   "id": "z_lunch",
+   "tts": "Twenty-one years? I can't plan lunch."
+  },
+  {
+   "id": "a_kaprizov",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Today. 2025: Kaprizov, one hundred thirty-six million. Richest deal in NHL history.",
+   "speed": 1.18
+  },
+  {
+   "id": "p_sign",
+   "voice_id": "fBD19tfE58bkETeiwUoC",
+   "tts": "Okay. Sign ME, Agenty!"
+  },
+  {
+   "id": "a_free",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "Kid, you go in the net for free.",
+   "speed": 1.18
+  },
+  {
+   "id": "z_client",
+   "tts": "So who's your biggest client?"
+  },
+  {
+   "id": "a_octo",
+   "voice_id": "R9RZPy40Zzy1wNxrgQpj",
+   "tts": "The octopus. Eight arms. Eight signatures.",
+   "speed": 1.18
+  }
+ ],
+ "display_map": {},
+ "keywords": [
+  "greatest",
+  "who",
+  "sign",
+  "first",
+  "commission",
+  "mama",
+  "percent",
+  "hero",
+  "million",
+  "million-dollar",
+  "fish",
+  "twenty-one-year",
+  "birthday",
+  "lunch",
+  "richest",
+  "me",
+  "free",
+  "client",
+  "octopus",
+  "signatures"
+ ]
+}

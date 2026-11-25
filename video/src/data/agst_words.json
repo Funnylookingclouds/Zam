@@ -1,0 +1,802 @@
+[
+ {
+  "word": "Tonight:",
+  "display": "Tonight:",
+  "start": 0.058,
+  "end": 0.464,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 0.58,
+  "end": 0.697,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "life",
+  "display": "life",
+  "start": 0.755,
+  "end": 0.975,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "of",
+  "display": "of",
+  "start": 1.01,
+  "end": 1.068,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Agenty.",
+  "display": "Agenty.",
+  "start": 1.126,
+  "end": 1.591,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Greatest",
+  "display": "Greatest",
+  "start": 1.637,
+  "end": 2.02,
+  "segment": "z_intro",
+  "keyword": true
+ },
+ {
+  "word": "agent",
+  "display": "agent",
+  "start": 2.067,
+  "end": 2.322,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "ever.",
+  "display": "ever.",
+  "start": 2.38,
+  "end": 2.682,
+  "segment": "z_intro",
+  "keyword": false
+ },
+ {
+  "word": "Says",
+  "display": "Says",
+  "start": 2.982,
+  "end": 3.226,
+  "segment": "b_who",
+  "keyword": false
+ },
+ {
+  "word": "who?",
+  "display": "who?",
+  "start": 3.273,
+  "end": 3.621,
+  "segment": "b_who",
+  "keyword": true
+ },
+ {
+  "word": "Says",
+  "display": "Says",
+  "start": 3.921,
+  "end": 4.118,
+  "segment": "a_me",
+  "keyword": false
+ },
+ {
+  "word": "me.",
+  "display": "me.",
+  "start": 4.176,
+  "end": 4.397,
+  "segment": "a_me",
+  "keyword": true
+ },
+ {
+  "word": "Sign",
+  "display": "Sign",
+  "start": 4.571,
+  "end": 4.78,
+  "segment": "a_me",
+  "keyword": true
+ },
+ {
+  "word": "here.",
+  "display": "here.",
+  "start": 4.815,
+  "end": 5.035,
+  "segment": "a_me",
+  "keyword": false
+ },
+ {
+  "word": "Baby",
+  "display": "Baby",
+  "start": 5.335,
+  "end": 5.579,
+  "segment": "z_word",
+  "keyword": false
+ },
+ {
+  "word": "Agenty's",
+  "display": "Agenty's",
+  "start": 5.637,
+  "end": 6.055,
+  "segment": "z_word",
+  "keyword": false
+ },
+ {
+  "word": "very",
+  "display": "very",
+  "start": 6.101,
+  "end": 6.299,
+  "segment": "z_word",
+  "keyword": false
+ },
+ {
+  "word": "first",
+  "display": "first",
+  "start": 6.357,
+  "end": 6.589,
+  "segment": "z_word",
+  "keyword": true
+ },
+ {
+  "word": "word?",
+  "display": "word?",
+  "start": 6.635,
+  "end": 6.972,
+  "segment": "z_word",
+  "keyword": false
+ },
+ {
+  "word": "Commission.",
+  "display": "Commission.",
+  "start": 7.272,
+  "end": 7.771,
+  "segment": "a_comm",
+  "keyword": true
+ },
+ {
+  "word": "Most",
+  "display": "Most",
+  "start": 8.071,
+  "end": 8.292,
+  "segment": "b_mama",
+  "keyword": false
+ },
+ {
+  "word": "babies",
+  "display": "babies",
+  "start": 8.338,
+  "end": 8.64,
+  "segment": "b_mama",
+  "keyword": false
+ },
+ {
+  "word": "say",
+  "display": "say",
+  "start": 8.675,
+  "end": 8.826,
+  "segment": "b_mama",
+  "keyword": false
+ },
+ {
+  "word": "mama.",
+  "display": "mama.",
+  "start": 8.884,
+  "end": 9.209,
+  "segment": "b_mama",
+  "keyword": true
+ },
+ {
+  "word": "Mama",
+  "display": "Mama",
+  "start": 9.809,
+  "end": 10.053,
+  "segment": "a_mama",
+  "keyword": true
+ },
+ {
+  "word": "got",
+  "display": "got",
+  "start": 10.099,
+  "end": 10.32,
+  "segment": "a_mama",
+  "keyword": false
+ },
+ {
+  "word": "ten",
+  "display": "ten",
+  "start": 10.62,
+  "end": 10.829,
+  "segment": "a_mama",
+  "keyword": false
+ },
+ {
+  "word": "percent.",
+  "display": "percent.",
+  "start": 10.876,
+  "end": 11.294,
+  "segment": "a_mama",
+  "keyword": true
+ },
+ {
+  "word": "Age",
+  "display": "Age",
+  "start": 11.594,
+  "end": 12.07,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "six.",
+  "display": "six.",
+  "start": 12.37,
+  "end": 12.951,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "My",
+  "display": "My",
+  "start": 13.251,
+  "end": 13.379,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "hero?",
+  "display": "hero?",
+  "start": 13.46,
+  "end": 13.948,
+  "segment": "a_hull",
+  "keyword": true
+ },
+ {
+  "word": "Bobby",
+  "display": "Bobby",
+  "start": 14.248,
+  "end": 14.492,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "Hull,",
+  "display": "Hull,",
+  "start": 14.55,
+  "end": 15.014,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "1972.",
+  "display": "1972.",
+  "start": 15.314,
+  "end": 16.301,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "Hockey's",
+  "display": "Hockey's",
+  "start": 16.601,
+  "end": 16.996,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "first",
+  "display": "first",
+  "start": 17.17,
+  "end": 17.507,
+  "segment": "a_hull",
+  "keyword": true
+ },
+ {
+  "word": "million-dollar",
+  "display": "million-dollar",
+  "start": 17.716,
+  "end": 18.343,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "contract.",
+  "display": "contract.",
+  "start": 18.401,
+  "end": 18.993,
+  "segment": "a_hull",
+  "keyword": false
+ },
+ {
+  "word": "A",
+  "display": "A",
+  "start": 19.293,
+  "end": 19.328,
+  "segment": "p_million",
+  "keyword": false
+ },
+ {
+  "word": "MILLION?",
+  "display": "MILLION?",
+  "start": 19.398,
+  "end": 19.804,
+  "segment": "p_million",
+  "keyword": true
+ },
+ {
+  "word": "For",
+  "display": "For",
+  "start": 20.094,
+  "end": 20.245,
+  "segment": "p_million",
+  "keyword": false
+ },
+ {
+  "word": "one",
+  "display": "one",
+  "start": 20.315,
+  "end": 20.489,
+  "segment": "p_million",
+  "keyword": false
+ },
+ {
+  "word": "guy?!",
+  "display": "guy?!",
+  "start": 20.535,
+  "end": 20.872,
+  "segment": "p_million",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 21.172,
+  "end": 21.218,
+  "segment": "b_fish",
+  "keyword": false
+ },
+ {
+  "word": "get",
+  "display": "get",
+  "start": 21.3,
+  "end": 21.439,
+  "segment": "b_fish",
+  "keyword": false
+ },
+ {
+  "word": "paid",
+  "display": "paid",
+  "start": 21.497,
+  "end": 21.764,
+  "segment": "b_fish",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 21.81,
+  "end": 21.892,
+  "segment": "b_fish",
+  "keyword": false
+ },
+ {
+  "word": "fish.",
+  "display": "fish.",
+  "start": 21.961,
+  "end": 22.333,
+  "segment": "b_fish",
+  "keyword": true
+ },
+ {
+  "word": "Age",
+  "display": "Age",
+  "start": 22.633,
+  "end": 23.062,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "twelve.",
+  "display": "twelve.",
+  "start": 23.237,
+  "end": 23.887,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "1979:",
+  "display": "1979:",
+  "start": 24.187,
+  "end": 25.174,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "Gretzky",
+  "display": "Gretzky",
+  "start": 25.452,
+  "end": 25.766,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "signs",
+  "display": "signs",
+  "start": 25.824,
+  "end": 26.114,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "a",
+  "display": "a",
+  "start": 26.149,
+  "end": 26.184,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "twenty-one-year",
+  "display": "twenty-one-year",
+  "start": 26.219,
+  "end": 26.857,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "contract.",
+  "display": "contract.",
+  "start": 26.915,
+  "end": 27.507,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "On",
+  "display": "On",
+  "start": 27.786,
+  "end": 27.914,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "his",
+  "display": "his",
+  "start": 27.948,
+  "end": 28.041,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "eighteenth",
+  "display": "eighteenth",
+  "start": 28.076,
+  "end": 28.413,
+  "segment": "a_gretzky",
+  "keyword": false
+ },
+ {
+  "word": "birthday.",
+  "display": "birthday.",
+  "start": 28.448,
+  "end": 28.982,
+  "segment": "a_gretzky",
+  "keyword": true
+ },
+ {
+  "word": "Twenty-one",
+  "display": "Twenty-one",
+  "start": 29.282,
+  "end": 29.747,
+  "segment": "z_lunch",
+  "keyword": false
+ },
+ {
+  "word": "years?",
+  "display": "years?",
+  "start": 29.782,
+  "end": 30.13,
+  "segment": "z_lunch",
+  "keyword": false
+ },
+ {
+  "word": "I",
+  "display": "I",
+  "start": 30.234,
+  "end": 30.281,
+  "segment": "z_lunch",
+  "keyword": false
+ },
+ {
+  "word": "can't",
+  "display": "can't",
+  "start": 30.339,
+  "end": 30.536,
+  "segment": "z_lunch",
+  "keyword": false
+ },
+ {
+  "word": "plan",
+  "display": "plan",
+  "start": 30.571,
+  "end": 30.769,
+  "segment": "z_lunch",
+  "keyword": false
+ },
+ {
+  "word": "lunch.",
+  "display": "lunch.",
+  "start": 30.838,
+  "end": 31.175,
+  "segment": "z_lunch",
+  "keyword": true
+ },
+ {
+  "word": "Today.",
+  "display": "Today.",
+  "start": 31.475,
+  "end": 31.847,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "2025:",
+  "display": "2025:",
+  "start": 32.147,
+  "end": 33.134,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "Kaprizov,",
+  "display": "Kaprizov,",
+  "start": 33.413,
+  "end": 34.167,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "$136",
+  "display": "$136",
+  "start": 34.467,
+  "end": 35.314,
+  "segment": "a_kaprizov",
+  "keyword": true
+ },
+ {
+  "word": "million.",
+  "display": "MILLION.",
+  "start": 35.372,
+  "end": 35.709,
+  "segment": "a_kaprizov",
+  "keyword": true
+ },
+ {
+  "word": "Richest",
+  "display": "Richest",
+  "start": 35.918,
+  "end": 36.266,
+  "segment": "a_kaprizov",
+  "keyword": true
+ },
+ {
+  "word": "deal",
+  "display": "deal",
+  "start": 36.324,
+  "end": 36.626,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 36.719,
+  "end": 36.8,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "NHL",
+  "display": "NHL",
+  "start": 36.893,
+  "end": 37.334,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "history.",
+  "display": "history.",
+  "start": 37.485,
+  "end": 37.915,
+  "segment": "a_kaprizov",
+  "keyword": false
+ },
+ {
+  "word": "Okay.",
+  "display": "Okay.",
+  "start": 38.215,
+  "end": 38.668,
+  "segment": "p_sign",
+  "keyword": false
+ },
+ {
+  "word": "Sign",
+  "display": "Sign",
+  "start": 38.968,
+  "end": 39.247,
+  "segment": "p_sign",
+  "keyword": true
+ },
+ {
+  "word": "ME,",
+  "display": "ME,",
+  "start": 39.305,
+  "end": 39.479,
+  "segment": "p_sign",
+  "keyword": true
+ },
+ {
+  "word": "Agenty!",
+  "display": "Agenty!",
+  "start": 39.514,
+  "end": 40.013,
+  "segment": "p_sign",
+  "keyword": false
+ },
+ {
+  "word": "Kid,",
+  "display": "Kid,",
+  "start": 40.313,
+  "end": 40.65,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "you",
+  "display": "you",
+  "start": 40.95,
+  "end": 41.054,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "go",
+  "display": "go",
+  "start": 41.112,
+  "end": 41.182,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "in",
+  "display": "in",
+  "start": 41.217,
+  "end": 41.263,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "the",
+  "display": "the",
+  "start": 41.298,
+  "end": 41.368,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "net",
+  "display": "net",
+  "start": 41.391,
+  "end": 41.507,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "for",
+  "display": "for",
+  "start": 41.542,
+  "end": 41.635,
+  "segment": "a_free",
+  "keyword": false
+ },
+ {
+  "word": "free.",
+  "display": "free.",
+  "start": 41.681,
+  "end": 41.948,
+  "segment": "a_free",
+  "keyword": true
+ },
+ {
+  "word": "So",
+  "display": "So",
+  "start": 42.248,
+  "end": 42.341,
+  "segment": "z_client",
+  "keyword": false
+ },
+ {
+  "word": "who's",
+  "display": "who's",
+  "start": 42.376,
+  "end": 42.55,
+  "segment": "z_client",
+  "keyword": false
+ },
+ {
+  "word": "your",
+  "display": "your",
+  "start": 42.585,
+  "end": 42.689,
+  "segment": "z_client",
+  "keyword": false
+ },
+ {
+  "word": "biggest",
+  "display": "biggest",
+  "start": 42.712,
+  "end": 42.979,
+  "segment": "z_client",
+  "keyword": false
+ },
+ {
+  "word": "client?",
+  "display": "client?",
+  "start": 43.026,
+  "end": 43.479,
+  "segment": "z_client",
+  "keyword": true
+ },
+ {
+  "word": "The",
+  "display": "The",
+  "start": 43.879,
+  "end": 43.972,
+  "segment": "a_octo",
+  "keyword": false
+ },
+ {
+  "word": "octopus.",
+  "display": "octopus.",
+  "start": 44.018,
+  "end": 44.529,
+  "segment": "a_octo",
+  "keyword": true
+ },
+ {
+  "word": "Eight",
+  "display": "Eight",
+  "start": 44.829,
+  "end": 45.027,
+  "segment": "a_octo",
+  "keyword": false
+ },
+ {
+  "word": "arms.",
+  "display": "arms.",
+  "start": 45.062,
+  "end": 45.421,
+  "segment": "a_octo",
+  "keyword": false
+ },
+ {
+  "word": "Eight",
+  "display": "Eight",
+  "start": 45.721,
+  "end": 45.976,
+  "segment": "a_octo",
+  "keyword": false
+ },
+ {
+  "word": "signatures.",
+  "display": "signatures.",
+  "start": 46.426,
+  "end": 47.041,
+  "segment": "a_octo",
+  "keyword": true
+ }
+]

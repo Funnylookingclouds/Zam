@@ -7,7 +7,7 @@ Outputs (default dirs):
   temp/words.json             [{word, display, start, end, segment, keyword}]
   output/voiceover.mp3        loudness-normalised (-14 LUFS)
 
-Multi-voice: a segment may set its own "voice_id" (e.g. dialogue between two hosts).
+Multi-voice: a segment may set its own "voice_id" (and "speed") (e.g. dialogue between two hosts).
 Consecutive segments with the same voice are synthesised together; groups are joined
 with a short pause and timings are offset accordingly.
 
@@ -26,11 +26,11 @@ ep = json.loads(EP_PATH.read_text())
 GAP = float(ep.get("voice_gap", 0.3))
 
 
-def synth(text, voice):
+def synth(text, voice, speed=None):
     body = json.dumps({
         "text": text, "model_id": ep["model_id"], "language_code": ep.get("language", "en"),
         "voice_settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35,
-                           "use_speaker_boost": True, "speed": ep["speed"]},
+                           "use_speaker_boost": True, "speed": speed or ep["speed"]},
     }).encode()
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice}/with-timestamps", data=body,
@@ -87,7 +87,7 @@ def parse_words(al, segs, offset):
 groups = []
 for s in ep["segments"]:
     v = s.get("voice_id", ep["voice_id"])
-    if groups and groups[-1][0] == v:
+    if groups and groups[-1][0] == v and groups[-1][1][-1].get("speed") == s.get("speed"):
         groups[-1][1].append(s)
     else:
         groups.append((v, [s]))
@@ -97,7 +97,7 @@ words, offset = [], 0.0
 with tempfile.TemporaryDirectory() as td:
     parts = []
     for k, (voice, segs) in enumerate(groups):
-        audio, al = synth(" ".join(s["tts"] for s in segs), voice)
+        audio, al = synth(" ".join(s["tts"] for s in segs), voice, segs[0].get("speed"))
         mp3 = Path(td) / f"g{k}.mp3"
         mp3.write_bytes(audio)
         wav = Path(td) / f"g{k}.wav"
